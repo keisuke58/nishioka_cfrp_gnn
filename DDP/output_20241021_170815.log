@@ -1,0 +1,1635 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Total valid pairs: 1620Total valid pairs: 1620
+
+Starting Fold 1
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Precision: 0.9904, Recall: 0.9372, F1-Score: 0.9629
+Fold 1, Epoch 1, Train Loss: 2.2883, Val Loss: 2.2262, Val Acc: 0.9353
+Precision: 0.9921, Recall: 0.8485, F1-Score: 0.9144
+Fold 1, Epoch 2, Train Loss: 2.1985, Val Loss: 2.1520, Val Acc: 0.8358
+Precision: 0.9924, Recall: 0.8503, F1-Score: 0.9154
+Fold 1, Epoch 3, Train Loss: 2.1610, Val Loss: 2.1267, Val Acc: 0.8445
+Precision: 0.9923, Recall: 0.9105, F1-Score: 0.9492
+Fold 1, Epoch 4, Train Loss: 2.1303, Val Loss: 2.1004, Val Acc: 0.9323
+Precision: 0.9924, Recall: 0.9226, F1-Score: 0.9559
+Fold 1, Epoch 5, Train Loss: 2.1083, Val Loss: 2.0823, Val Acc: 0.9431
+Precision: 0.9928, Recall: 0.8969, F1-Score: 0.9420
+Fold 1, Epoch 6, Train Loss: 2.0915, Val Loss: 2.0661, Val Acc: 0.9144
+Precision: 0.9929, Recall: 0.8989, F1-Score: 0.9433
+Fold 1, Epoch 7, Train Loss: 2.0895, Val Loss: 2.0694, Val Acc: 0.9169
+Precision: 0.9924, Recall: 0.9650, F1-Score: 0.9782
+Fold 1, Epoch 8, Train Loss: 2.0819, Val Loss: 2.0714, Val Acc: 0.9731
+Precision: 0.9929, Recall: 0.9329, F1-Score: 0.9616
+Fold 1, Epoch 9, Train Loss: 2.0743, Val Loss: 2.0696, Val Acc: 0.9516
+Precision: 0.9928, Recall: 0.9536, F1-Score: 0.9725
+Fold 1, Epoch 10, Train Loss: 2.0718, Val Loss: 2.0476, Val Acc: 0.9652
+Precision: 0.9931, Recall: 0.9364, F1-Score: 0.9636
+Fold 1, Epoch 11, Train Loss: 2.0532, Val Loss: 2.0393, Val Acc: 0.9536
+Precision: 0.9930, Recall: 0.9341, F1-Score: 0.9624
+Fold 1, Epoch 12, Train Loss: 2.0489, Val Loss: 2.0408, Val Acc: 0.9519
+Precision: 0.9930, Recall: 0.9484, F1-Score: 0.9697
+Fold 1, Epoch 13, Train Loss: 2.0475, Val Loss: 2.0305, Val Acc: 0.9615
+Precision: 0.9929, Recall: 0.9383, F1-Score: 0.9645
+Fold 1, Epoch 14, Train Loss: 2.0348, Val Loss: 2.0300, Val Acc: 0.9548
+Precision: 0.9930, Recall: 0.9559, F1-Score: 0.9738
+Fold 1, Epoch 15, Train Loss: 2.0430, Val Loss: 2.0340, Val Acc: 0.9666
+Precision: 0.9931, Recall: 0.9482, F1-Score: 0.9698
+Fold 1, Epoch 16, Train Loss: 2.0368, Val Loss: 2.0256, Val Acc: 0.9617
+Precision: 0.9929, Recall: 0.9419, F1-Score: 0.9663
+Fold 1, Epoch 17, Train Loss: 2.0299, Val Loss: 2.0089, Val Acc: 0.9575
+Precision: 0.9929, Recall: 0.9701, F1-Score: 0.9810
+Fold 1, Epoch 18, Train Loss: 2.0234, Val Loss: 2.0225, Val Acc: 0.9758
+Precision: 0.9928, Recall: 0.9679, F1-Score: 0.9798
+Fold 1, Epoch 19, Train Loss: 2.0202, Val Loss: 2.0235, Val Acc: 0.9743
+Precision: 0.9931, Recall: 0.9404, F1-Score: 0.9657
+Fold 1, Epoch 20, Train Loss: 2.0196, Val Loss: 1.9968, Val Acc: 0.9561
+Precision: 0.9933, Recall: 0.8952, F1-Score: 0.9413
+Fold 1, Epoch 21, Train Loss: 2.0061, Val Loss: 2.0091, Val Acc: 0.9147
+Precision: 0.9931, Recall: 0.9391, F1-Score: 0.9649
+Fold 1, Epoch 22, Train Loss: 2.0111, Val Loss: 1.9871, Val Acc: 0.9551
+Precision: 0.9931, Recall: 0.9691, F1-Score: 0.9807
+Fold 1, Epoch 23, Train Loss: 2.0056, Val Loss: 1.9909, Val Acc: 0.9748
+Precision: 0.9932, Recall: 0.9320, F1-Score: 0.9613
+Fold 1, Epoch 24, Train Loss: 2.0056, Val Loss: 1.9858, Val Acc: 0.9497
+Precision: 0.9931, Recall: 0.9409, F1-Score: 0.9661
+Fold 1, Epoch 25, Train Loss: 1.9963, Val Loss: 1.9815, Val Acc: 0.9567
+Precision: 0.9933, Recall: 0.9439, F1-Score: 0.9678
+Fold 1, Epoch 26, Train Loss: 1.9881, Val Loss: 1.9668, Val Acc: 0.9587
+Precision: 0.9933, Recall: 0.9432, F1-Score: 0.9672
+Fold 1, Epoch 27, Train Loss: 1.9862, Val Loss: 1.9680, Val Acc: 0.9580
+Precision: 0.9932, Recall: 0.9465, F1-Score: 0.9691
+Fold 1, Epoch 28, Train Loss: 1.9812, Val Loss: 1.9830, Val Acc: 0.9606
+Precision: 0.9937, Recall: 0.9221, F1-Score: 0.9563
+Fold 1, Epoch 29, Train Loss: 1.9762, Val Loss: 1.9457, Val Acc: 0.9407
+Precision: 0.9935, Recall: 0.9525, F1-Score: 0.9722
+Fold 1, Epoch 30, Train Loss: 1.9673, Val Loss: 1.9445, Val Acc: 0.9633
+Precision: 0.9933, Recall: 0.9341, F1-Score: 0.9624
+Fold 1, Epoch 31, Train Loss: 1.9743, Val Loss: 1.9468, Val Acc: 0.9508
+Precision: 0.9935, Recall: 0.9613, F1-Score: 0.9768
+Fold 1, Epoch 32, Train Loss: 1.9630, Val Loss: 1.9468, Val Acc: 0.9678
+Precision: 0.9936, Recall: 0.9747, F1-Score: 0.9838
+Fold 1, Epoch 33, Train Loss: 1.9551, Val Loss: 1.9304, Val Acc: 0.9782
+Precision: 0.9934, Recall: 0.9819, F1-Score: 0.9873
+Fold 1, Epoch 34, Train Loss: 1.9526, Val Loss: 1.9161, Val Acc: 0.9833
+Precision: 0.9943, Recall: 0.9742, F1-Score: 0.9836
+Fold 1, Epoch 35, Train Loss: 1.9411, Val Loss: 1.9141, Val Acc: 0.9776
+Precision: 0.9934, Recall: 0.9597, F1-Score: 0.9760
+Fold 1, Epoch 36, Train Loss: 1.9316, Val Loss: 1.9236, Val Acc: 0.9669
+Precision: 0.9937, Recall: 0.9809, F1-Score: 0.9870
+Fold 1, Epoch 37, Train Loss: 1.9346, Val Loss: 1.8923, Val Acc: 0.9825
+Precision: 0.9934, Recall: 0.9712, F1-Score: 0.9819
+Fold 1, Epoch 38, Train Loss: 1.9148, Val Loss: 1.9061, Val Acc: 0.9744
+Precision: 0.9936, Recall: 0.8940, F1-Score: 0.9408
+Fold 1, Epoch 39, Train Loss: 1.9168, Val Loss: 1.9049, Val Acc: 0.9058
+Precision: 0.9936, Recall: 0.9842, F1-Score: 0.9887
+Fold 1, Epoch 40, Train Loss: 1.9222, Val Loss: 1.8867, Val Acc: 0.9847
+Precision: 0.9937, Recall: 0.9783, F1-Score: 0.9857
+Fold 1, Epoch 41, Train Loss: 1.9077, Val Loss: 1.8834, Val Acc: 0.9803
+Precision: 0.9937, Recall: 0.9808, F1-Score: 0.9870
+Fold 1, Epoch 42, Train Loss: 1.9065, Val Loss: 1.8745, Val Acc: 0.9818
+Precision: 0.9937, Recall: 0.9853, F1-Score: 0.9892
+Fold 1, Epoch 43, Train Loss: 1.8940, Val Loss: 1.8856, Val Acc: 0.9852
+Precision: 0.9934, Recall: 0.9396, F1-Score: 0.9655
+Fold 1, Epoch 44, Train Loss: 1.8973, Val Loss: 1.8975, Val Acc: 0.9509
+Precision: 0.9937, Recall: 0.9765, F1-Score: 0.9848
+Fold 1, Epoch 45, Train Loss: 1.9108, Val Loss: 1.8619, Val Acc: 0.9796
+Precision: 0.9939, Recall: 0.9780, F1-Score: 0.9855
+Fold 1, Epoch 46, Train Loss: 1.8889, Val Loss: 1.8550, Val Acc: 0.9802
+Precision: 0.9937, Recall: 0.9828, F1-Score: 0.9880
+Fold 1, Epoch 47, Train Loss: 1.8861, Val Loss: 1.8537, Val Acc: 0.9835
+Precision: 0.9935, Recall: 0.9866, F1-Score: 0.9897
+Fold 1, Epoch 48, Train Loss: 1.8762, Val Loss: 1.8551, Val Acc: 0.9863
+Precision: 0.9941, Recall: 0.9850, F1-Score: 0.9893
+Fold 1, Epoch 49, Train Loss: 1.8834, Val Loss: 1.8556, Val Acc: 0.9846
+Precision: 0.9938, Recall: 0.9863, F1-Score: 0.9899
+Fold 1, Epoch 50, Train Loss: 1.8844, Val Loss: 1.8467, Val Acc: 0.9861
+Precision: 0.9940, Recall: 0.9817, F1-Score: 0.9876
+Fold 1, Epoch 51, Train Loss: 1.8781, Val Loss: 1.8453, Val Acc: 0.9823
+Precision: 0.9936, Recall: 0.9865, F1-Score: 0.9897
+Fold 1, Epoch 52, Train Loss: 1.8714, Val Loss: 1.8503, Val Acc: 0.9862
+Precision: 0.9935, Recall: 0.9681, F1-Score: 0.9804
+Fold 1, Epoch 53, Train Loss: 1.8743, Val Loss: 1.8636, Val Acc: 0.9730
+Precision: 0.9938, Recall: 0.9858, F1-Score: 0.9896
+Fold 1, Epoch 54, Train Loss: 1.8916, Val Loss: 1.8502, Val Acc: 0.9856
+Precision: 0.9937, Recall: 0.9598, F1-Score: 0.9762
+Fold 1, Epoch 55, Train Loss: 1.8659, Val Loss: 1.8920, Val Acc: 0.9661
+Precision: 0.9938, Recall: 0.9834, F1-Score: 0.9882
+Fold 1, Epoch 56, Train Loss: 1.8746, Val Loss: 1.8341, Val Acc: 0.9838
+Precision: 0.9940, Recall: 0.9874, F1-Score: 0.9905
+Fold 1, Epoch 57, Train Loss: 1.8549, Val Loss: 1.8290, Val Acc: 0.9872
+Precision: 0.9938, Recall: 0.9854, F1-Score: 0.9892
+Fold 1, Epoch 58, Train Loss: 1.8571, Val Loss: 1.8313, Val Acc: 0.9852
+Precision: 0.9937, Recall: 0.9877, F1-Score: 0.9904
+Fold 1, Epoch 59, Train Loss: 1.8658, Val Loss: 1.8643, Val Acc: 0.9877
+Precision: 0.9939, Recall: 0.9855, F1-Score: 0.9894
+Fold 1, Epoch 60, Train Loss: 1.8761, Val Loss: 1.8278, Val Acc: 0.9854
+Precision: 0.9938, Recall: 0.9840, F1-Score: 0.9886
+Fold 1, Epoch 61, Train Loss: 1.8585, Val Loss: 1.8309, Val Acc: 0.9846
+Precision: 0.9937, Recall: 0.9874, F1-Score: 0.9903
+Fold 1, Epoch 62, Train Loss: 1.8632, Val Loss: 1.8468, Val Acc: 0.9875
+Precision: 0.9937, Recall: 0.9859, F1-Score: 0.9895
+Fold 1, Epoch 63, Train Loss: 1.8580, Val Loss: 1.8687, Val Acc: 0.9857
+Precision: 0.9937, Recall: 0.9604, F1-Score: 0.9765
+Fold 1, Epoch 64, Train Loss: 1.8658, Val Loss: 1.8261, Val Acc: 0.9663
+Precision: 0.9937, Recall: 0.9832, F1-Score: 0.9881
+Fold 1, Epoch 65, Train Loss: 1.8588, Val Loss: 1.8417, Val Acc: 0.9836
+Precision: 0.9941, Recall: 0.9812, F1-Score: 0.9874
+Fold 1, Epoch 66, Train Loss: 1.8625, Val Loss: 1.8052, Val Acc: 0.9823
+Precision: 0.9936, Recall: 0.9768, F1-Score: 0.9848
+Fold 1, Epoch 67, Train Loss: 1.8508, Val Loss: 1.8213, Val Acc: 0.9792
+Precision: 0.9938, Recall: 0.9867, F1-Score: 0.9899
+Fold 1, Epoch 68, Train Loss: 1.8530, Val Loss: 1.8133, Val Acc: 0.9865
+Precision: 0.9940, Recall: 0.9759, F1-Score: 0.9847
+Fold 1, Epoch 69, Train Loss: 1.8383, Val Loss: 1.8053, Val Acc: 0.9787
+Precision: 0.9935, Recall: 0.9730, F1-Score: 0.9829
+Fold 1, Epoch 70, Train Loss: 1.8434, Val Loss: 1.8079, Val Acc: 0.9765
+Precision: 0.9939, Recall: 0.9747, F1-Score: 0.9840
+Fold 1, Epoch 71, Train Loss: 1.8405, Val Loss: 1.8029, Val Acc: 0.9781
+Precision: 0.9938, Recall: 0.9866, F1-Score: 0.9899
+Fold 1, Epoch 72, Train Loss: 1.8353, Val Loss: 1.7950, Val Acc: 0.9866
+Precision: 0.9938, Recall: 0.9721, F1-Score: 0.9826
+Fold 1, Epoch 73, Train Loss: 1.8351, Val Loss: 1.8193, Val Acc: 0.9751
+Precision: 0.9938, Recall: 0.9809, F1-Score: 0.9871
+Fold 1, Epoch 74, Train Loss: 1.8420, Val Loss: 1.8015, Val Acc: 0.9822
+Precision: 0.9938, Recall: 0.9844, F1-Score: 0.9888
+Fold 1, Epoch 75, Train Loss: 1.8384, Val Loss: 1.8179, Val Acc: 0.9844
+Precision: 0.9939, Recall: 0.9842, F1-Score: 0.9885
+Fold 1, Epoch 76, Train Loss: 1.8360, Val Loss: 1.7899, Val Acc: 0.9845
+Precision: 0.9940, Recall: 0.9845, F1-Score: 0.9889
+Fold 1, Epoch 77, Train Loss: 1.8250, Val Loss: 1.7919, Val Acc: 0.9849
+Precision: 0.9938, Recall: 0.9835, F1-Score: 0.9883
+Fold 1, Epoch 78, Train Loss: 1.8238, Val Loss: 1.8199, Val Acc: 0.9840
+Precision: 0.9936, Recall: 0.9733, F1-Score: 0.9831
+Fold 1, Epoch 79, Train Loss: 1.8285, Val Loss: 1.8447, Val Acc: 0.9763
+Precision: 0.9938, Recall: 0.9851, F1-Score: 0.9892
+Fold 1, Epoch 80, Train Loss: 1.8619, Val Loss: 1.8009, Val Acc: 0.9850
+Precision: 0.9939, Recall: 0.9799, F1-Score: 0.9866
+Fold 1, Epoch 81, Train Loss: 1.8327, Val Loss: 1.7847, Val Acc: 0.9811
+Precision: 0.9943, Recall: 0.9828, F1-Score: 0.9882
+Fold 1, Epoch 82, Train Loss: 1.8320, Val Loss: 1.7867, Val Acc: 0.9837
+Precision: 0.9937, Recall: 0.9852, F1-Score: 0.9891
+Fold 1, Epoch 83, Train Loss: 1.8259, Val Loss: 1.8004, Val Acc: 0.9851
+Precision: 0.9940, Recall: 0.9814, F1-Score: 0.9874
+Fold 1, Epoch 84, Train Loss: 1.8245, Val Loss: 1.7768, Val Acc: 0.9827
+Precision: 0.9941, Recall: 0.9816, F1-Score: 0.9875
+Fold 1, Epoch 85, Train Loss: 1.8188, Val Loss: 1.7930, Val Acc: 0.9824
+Precision: 0.9940, Recall: 0.9870, F1-Score: 0.9903
+Fold 1, Epoch 86, Train Loss: 1.8238, Val Loss: 1.7925, Val Acc: 0.9867
+Precision: 0.9940, Recall: 0.9841, F1-Score: 0.9888
+Fold 1, Epoch 87, Train Loss: 1.8271, Val Loss: 1.7763, Val Acc: 0.9846
+Precision: 0.9940, Recall: 0.9865, F1-Score: 0.9900
+Fold 1, Epoch 88, Train Loss: 1.8114, Val Loss: 1.7746, Val Acc: 0.9865
+Precision: 0.9939, Recall: 0.9761, F1-Score: 0.9847
+Fold 1, Epoch 89, Train Loss: 1.8197, Val Loss: 1.7847, Val Acc: 0.9788
+Precision: 0.9943, Recall: 0.9782, F1-Score: 0.9857
+Fold 1, Epoch 90, Train Loss: 1.8261, Val Loss: 1.7801, Val Acc: 0.9801
+Precision: 0.9941, Recall: 0.9771, F1-Score: 0.9852
+Fold 1, Epoch 91, Train Loss: 1.8174, Val Loss: 1.7771, Val Acc: 0.9795
+Precision: 0.9940, Recall: 0.9815, F1-Score: 0.9874
+Fold 1, Epoch 92, Train Loss: 1.8207, Val Loss: 1.7691, Val Acc: 0.9828
+Precision: 0.9939, Recall: 0.9853, F1-Score: 0.9893
+Fold 1, Epoch 93, Train Loss: 1.8096, Val Loss: 1.7829, Val Acc: 0.9851
+Precision: 0.9939, Recall: 0.9825, F1-Score: 0.9880
+Fold 1, Epoch 94, Train Loss: 1.8102, Val Loss: 1.7761, Val Acc: 0.9835
+Precision: 0.9942, Recall: 0.9833, F1-Score: 0.9883
+Fold 1, Epoch 95, Train Loss: 1.8075, Val Loss: 1.7776, Val Acc: 0.9837
+Precision: 0.9938, Recall: 0.9844, F1-Score: 0.9887
+Fold 1, Epoch 96, Train Loss: 1.8167, Val Loss: 1.7721, Val Acc: 0.9846
+Precision: 0.9941, Recall: 0.9754, F1-Score: 0.9842
+Fold 1, Epoch 97, Train Loss: 1.8119, Val Loss: 1.7858, Val Acc: 0.9759
+Precision: 0.9940, Recall: 0.9834, F1-Score: 0.9885
+Fold 1, Epoch 98, Train Loss: 1.8118, Val Loss: 1.7657, Val Acc: 0.9838
+Precision: 0.9941, Recall: 0.9798, F1-Score: 0.9865
+Fold 1, Epoch 99, Train Loss: 1.8119, Val Loss: 1.7983, Val Acc: 0.9812
+Precision: 0.9940, Recall: 0.9802, F1-Score: 0.9868
+Fold 1, Epoch 100, Train Loss: 1.8148, Val Loss: 1.7697, Val Acc: 0.9809
+Precision: 0.9941, Recall: 0.9831, F1-Score: 0.9883
+Fold 1, Epoch 101, Train Loss: 1.8112, Val Loss: 1.7552, Val Acc: 0.9838
+Precision: 0.9940, Recall: 0.9853, F1-Score: 0.9892
+Fold 1, Epoch 102, Train Loss: 1.8080, Val Loss: 1.7697, Val Acc: 0.9851
+Precision: 0.9942, Recall: 0.9867, F1-Score: 0.9901
+Fold 1, Epoch 103, Train Loss: 1.8236, Val Loss: 1.7785, Val Acc: 0.9865
+Precision: 0.9941, Recall: 0.9873, F1-Score: 0.9904
+Fold 1, Epoch 104, Train Loss: 1.8097, Val Loss: 1.7573, Val Acc: 0.9873
+Precision: 0.9941, Recall: 0.9863, F1-Score: 0.9899
+Fold 1, Epoch 105, Train Loss: 1.8035, Val Loss: 1.7599, Val Acc: 0.9860
+Precision: 0.9938, Recall: 0.9826, F1-Score: 0.9880
+Fold 1, Epoch 106, Train Loss: 1.8098, Val Loss: 1.7662, Val Acc: 0.9835
+Precision: 0.9942, Recall: 0.9835, F1-Score: 0.9885
+Fold 1, Epoch 107, Train Loss: 1.7972, Val Loss: 1.7611, Val Acc: 0.9841
+Precision: 0.9939, Recall: 0.9476, F1-Score: 0.9699
+Fold 1, Epoch 108, Train Loss: 1.8086, Val Loss: 1.8282, Val Acc: 0.9521
+Precision: 0.9939, Recall: 0.9817, F1-Score: 0.9875
+Fold 1, Epoch 109, Train Loss: 1.8112, Val Loss: 1.7852, Val Acc: 0.9827
+Precision: 0.9941, Recall: 0.9847, F1-Score: 0.9891
+Fold 1, Epoch 110, Train Loss: 1.8221, Val Loss: 1.7435, Val Acc: 0.9849
+Precision: 0.9940, Recall: 0.9877, F1-Score: 0.9905
+Fold 1, Epoch 111, Train Loss: 1.7966, Val Loss: 1.7707, Val Acc: 0.9880
+Precision: 0.9941, Recall: 0.9858, F1-Score: 0.9896
+Fold 1, Epoch 112, Train Loss: 1.8017, Val Loss: 1.7470, Val Acc: 0.9856
+Precision: 0.9941, Recall: 0.9873, F1-Score: 0.9904
+Fold 1, Epoch 113, Train Loss: 1.7955, Val Loss: 1.7464, Val Acc: 0.9871
+Precision: 0.9941, Recall: 0.9817, F1-Score: 0.9875
+Fold 1, Epoch 114, Train Loss: 1.7863, Val Loss: 1.7384, Val Acc: 0.9827
+Precision: 0.9941, Recall: 0.9817, F1-Score: 0.9876
+Fold 1, Epoch 115, Train Loss: 1.7881, Val Loss: 1.7691, Val Acc: 0.9824
+Precision: 0.9939, Recall: 0.9794, F1-Score: 0.9864
+Fold 1, Epoch 116, Train Loss: 1.7979, Val Loss: 1.7754, Val Acc: 0.9814
+Precision: 0.9941, Recall: 0.9870, F1-Score: 0.9902
+Fold 1, Epoch 117, Train Loss: 1.8024, Val Loss: 1.7796, Val Acc: 0.9868
+Precision: 0.9942, Recall: 0.9835, F1-Score: 0.9886
+Fold 1, Epoch 118, Train Loss: 1.8052, Val Loss: 1.7429, Val Acc: 0.9840
+Precision: 0.9941, Recall: 0.9798, F1-Score: 0.9866
+Fold 1, Epoch 119, Train Loss: 1.7827, Val Loss: 1.7358, Val Acc: 0.9813
+Precision: 0.9941, Recall: 0.9816, F1-Score: 0.9875
+Fold 1, Epoch 120, Train Loss: 1.7716, Val Loss: 1.7264, Val Acc: 0.9827
+Precision: 0.9940, Recall: 0.9829, F1-Score: 0.9880
+Fold 1, Epoch 121, Train Loss: 1.7684, Val Loss: 1.7249, Val Acc: 0.9836
+Precision: 0.9940, Recall: 0.9746, F1-Score: 0.9839
+Fold 1, Epoch 122, Train Loss: 1.7830, Val Loss: 1.7671, Val Acc: 0.9767
+Precision: 0.9940, Recall: 0.9821, F1-Score: 0.9877
+Fold 1, Epoch 123, Train Loss: 1.7852, Val Loss: 1.7375, Val Acc: 0.9830
+Precision: 0.9942, Recall: 0.9811, F1-Score: 0.9873
+Fold 1, Epoch 124, Train Loss: 1.7767, Val Loss: 1.7336, Val Acc: 0.9824
+Precision: 0.9940, Recall: 0.9787, F1-Score: 0.9861
+Fold 1, Epoch 125, Train Loss: 1.7844, Val Loss: 1.7372, Val Acc: 0.9805
+Precision: 0.9942, Recall: 0.9863, F1-Score: 0.9899
+Fold 1, Epoch 126, Train Loss: 1.7816, Val Loss: 1.7285, Val Acc: 0.9862
+Precision: 0.9948, Recall: 0.9854, F1-Score: 0.9894
+Fold 1, Epoch 127, Train Loss: 1.7717, Val Loss: 1.7287, Val Acc: 0.9853
+Precision: 0.9939, Recall: 0.9855, F1-Score: 0.9893
+Fold 1, Epoch 128, Train Loss: 1.7714, Val Loss: 1.7195, Val Acc: 0.9856
+Precision: 0.9940, Recall: 0.9841, F1-Score: 0.9888
+Fold 1, Epoch 129, Train Loss: 1.7569, Val Loss: 1.7241, Val Acc: 0.9846
+Precision: 0.9941, Recall: 0.9866, F1-Score: 0.9900
+Fold 1, Epoch 130, Train Loss: 1.7796, Val Loss: 1.7572, Val Acc: 0.9865
+Precision: 0.9941, Recall: 0.9802, F1-Score: 0.9868
+Fold 1, Epoch 131, Train Loss: 1.7927, Val Loss: 1.7318, Val Acc: 0.9815
+Precision: 0.9940, Recall: 0.9811, F1-Score: 0.9873
+Fold 1, Epoch 132, Train Loss: 1.7712, Val Loss: 1.7637, Val Acc: 0.9823
+Precision: 0.9941, Recall: 0.9608, F1-Score: 0.9769
+Fold 1, Epoch 133, Train Loss: 1.7843, Val Loss: 1.8451, Val Acc: 0.9674
+Precision: 0.9939, Recall: 0.9838, F1-Score: 0.9886
+Fold 1, Epoch 134, Train Loss: 1.8124, Val Loss: 1.7773, Val Acc: 0.9842
+Precision: 0.9940, Recall: 0.9864, F1-Score: 0.9900
+Fold 1, Epoch 135, Train Loss: 1.7868, Val Loss: 1.7592, Val Acc: 0.9859
+Precision: 0.9942, Recall: 0.9868, F1-Score: 0.9903
+Fold 1, Epoch 136, Train Loss: 1.7898, Val Loss: 1.7535, Val Acc: 0.9865
+Precision: 0.9943, Recall: 0.9623, F1-Score: 0.9776
+Fold 1, Epoch 137, Train Loss: 1.7652, Val Loss: 1.7305, Val Acc: 0.9674
+Precision: 0.9942, Recall: 0.9870, F1-Score: 0.9903
+Fold 1, Epoch 138, Train Loss: 1.7665, Val Loss: 1.7128, Val Acc: 0.9868
+Precision: 0.9942, Recall: 0.9877, F1-Score: 0.9906
+Fold 1, Epoch 139, Train Loss: 1.7594, Val Loss: 1.7102, Val Acc: 0.9875
+Precision: 0.9941, Recall: 0.9875, F1-Score: 0.9905
+Fold 1, Epoch 140, Train Loss: 1.7625, Val Loss: 1.7374, Val Acc: 0.9873
+Precision: 0.9943, Recall: 0.9882, F1-Score: 0.9909
+Fold 1, Epoch 141, Train Loss: 1.7812, Val Loss: 1.7146, Val Acc: 0.9882
+Precision: 0.9943, Recall: 0.9877, F1-Score: 0.9905
+Fold 1, Epoch 142, Train Loss: 1.7646, Val Loss: 1.7207, Val Acc: 0.9876
+Precision: 0.9942, Recall: 0.9846, F1-Score: 0.9891
+Fold 1, Epoch 143, Train Loss: 1.7532, Val Loss: 1.6947, Val Acc: 0.9848
+Precision: 0.9945, Recall: 0.9858, F1-Score: 0.9897
+Fold 1, Epoch 144, Train Loss: 1.7457, Val Loss: 1.6958, Val Acc: 0.9855
+Precision: 0.9944, Recall: 0.9838, F1-Score: 0.9887
+Fold 1, Epoch 145, Train Loss: 1.7573, Val Loss: 1.7599, Val Acc: 0.9839
+Precision: 0.9940, Recall: 0.9868, F1-Score: 0.9900
+Fold 1, Epoch 146, Train Loss: 1.7619, Val Loss: 1.7062, Val Acc: 0.9868
+Precision: 0.9941, Recall: 0.9870, F1-Score: 0.9902
+Fold 1, Epoch 147, Train Loss: 1.7554, Val Loss: 1.7047, Val Acc: 0.9870
+Precision: 0.9941, Recall: 0.9846, F1-Score: 0.9889
+Fold 1, Epoch 148, Train Loss: 1.7550, Val Loss: 1.7072, Val Acc: 0.9847
+Precision: 0.9939, Recall: 0.9858, F1-Score: 0.9895
+Fold 1, Epoch 149, Train Loss: 1.7467, Val Loss: 1.7130, Val Acc: 0.9856
+Precision: 0.9941, Recall: 0.9862, F1-Score: 0.9897
+Fold 1, Epoch 150, Train Loss: 1.7529, Val Loss: 1.7189, Val Acc: 0.9860
+Completed Fold 1
+Starting Fold 2
+Class counts: [4703184    3500    3550    3650    3725    3475    3550    3600    3700
+    3650]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.81690141e-04 2.73972603e-04
+ 2.68456376e-04 2.87769784e-04 2.81690141e-04 2.77777778e-04
+ 2.70270270e-04 2.73972603e-04]
+Class counts: [4703184    3500    3550    3650    3725    3475    3550    3600    3700
+    3650]
+Normalized class weights: [8.49968644e-05 1.14215969e-01 1.12607294e-01 1.09522162e-01
+ 1.07317018e-01 1.15037667e-01 1.12607294e-01 1.11043304e-01
+ 1.08042133e-01 1.09522162e-01]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.81690141e-04 2.73972603e-04
+ 2.68456376e-04 2.87769784e-04 2.81690141e-04 2.77777778e-04
+ 2.70270270e-04 2.73972603e-04]
+Normalized class weights: [8.49968644e-05 1.14215969e-01 1.12607294e-01 1.09522162e-01
+ 1.07317018e-01 1.15037667e-01 1.12607294e-01 1.11043304e-01
+ 1.08042133e-01 1.09522162e-01]
+Class counts: [4703184    3500    3550    3650    3725    3475    3550    3600    3700
+    3650]
+Class counts: [4703184    3500    3550    3650    3725    3475    3550    3600    3700
+    3650]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.81690141e-04 2.73972603e-04
+ 2.68456376e-04 2.87769784e-04 2.81690141e-04 2.77777778e-04
+ 2.70270270e-04 2.73972603e-04]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.81690141e-04 2.73972603e-04
+ 2.68456376e-04 2.87769784e-04 2.81690141e-04 2.77777778e-04
+ 2.70270270e-04 2.73972603e-04]
+Normalized class weights: [8.49968644e-05 1.14215969e-01 1.12607294e-01 1.09522162e-01
+ 1.07317018e-01 1.15037667e-01 1.12607294e-01 1.11043304e-01
+ 1.08042133e-01 1.09522162e-01]
+Normalized class weights: [8.49968644e-05 1.14215969e-01 1.12607294e-01 1.09522162e-01
+ 1.07317018e-01 1.15037667e-01 1.12607294e-01 1.11043304e-01
+ 1.08042133e-01 1.09522162e-01]
+Class counts: [1175796    1000     950     850     775    1025     950     900     800
+     850]
+Class counts: [1175796    1000     950     850     775    1025     950     900     800
+     850]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.05263158e-03 1.17647059e-03
+ 1.29032258e-03 9.75609756e-04 1.05263158e-03 1.11111111e-03
+ 1.25000000e-03 1.17647059e-03]
+Class counts: [1175796    1000     950     850     775    1025     950     900     800
+     850]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.05263158e-03 1.17647059e-03
+ 1.29032258e-03 9.75609756e-04 1.05263158e-03 1.11111111e-03
+ 1.25000000e-03 1.17647059e-03]
+Normalized class weights: [8.43227626e-05 9.91463669e-02 1.04364597e-01 1.16642785e-01
+ 1.27930796e-01 9.67281629e-02 1.04364597e-01 1.10162630e-01
+ 1.23932959e-01 1.16642785e-01]
+Normalized class weights: [8.43227626e-05 9.91463669e-02 1.04364597e-01 1.16642785e-01
+ 1.27930796e-01 9.67281629e-02 1.04364597e-01 1.10162630e-01
+ 1.23932959e-01 1.16642785e-01]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.05263158e-03 1.17647059e-03
+ 1.29032258e-03 9.75609756e-04 1.05263158e-03 1.11111111e-03
+ 1.25000000e-03 1.17647059e-03]
+Normalized class weights: [8.43227626e-05 9.91463669e-02 1.04364597e-01 1.16642785e-01
+ 1.27930796e-01 9.67281629e-02 1.04364597e-01 1.10162630e-01
+ 1.23932959e-01 1.16642785e-01]
+Class counts: [1175796    1000     950     850     775    1025     950     900     800
+     850]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.05263158e-03 1.17647059e-03
+ 1.29032258e-03 9.75609756e-04 1.05263158e-03 1.11111111e-03
+ 1.25000000e-03 1.17647059e-03]
+Normalized class weights: [8.43227626e-05 9.91463669e-02 1.04364597e-01 1.16642785e-01
+ 1.27930796e-01 9.67281629e-02 1.04364597e-01 1.10162630e-01
+ 1.23932959e-01 1.16642785e-01]
+Precision: 0.9939, Recall: 0.9856, F1-Score: 0.9894
+Fold 2, Epoch 1, Train Loss: 1.8287, Val Loss: 1.7366, Val Acc: 0.9858
+Precision: 0.9940, Recall: 0.9840, F1-Score: 0.9886
+Fold 2, Epoch 2, Train Loss: 1.7540, Val Loss: 1.7317, Val Acc: 0.9842
+Precision: 0.9939, Recall: 0.9794, F1-Score: 0.9861
+Fold 2, Epoch 3, Train Loss: 1.7448, Val Loss: 1.7325, Val Acc: 0.9801
+Precision: 0.9940, Recall: 0.9833, F1-Score: 0.9882
+Fold 2, Epoch 4, Train Loss: 1.7499, Val Loss: 1.7308, Val Acc: 0.9836
+Precision: 0.9938, Recall: 0.9825, F1-Score: 0.9877
+Fold 2, Epoch 5, Train Loss: 1.7416, Val Loss: 1.7322, Val Acc: 0.9829
+Precision: 0.9939, Recall: 0.9807, F1-Score: 0.9867
+Fold 2, Epoch 6, Train Loss: 1.7275, Val Loss: 1.7378, Val Acc: 0.9812
+Precision: 0.9939, Recall: 0.9816, F1-Score: 0.9872
+Fold 2, Epoch 7, Train Loss: 1.7432, Val Loss: 1.7331, Val Acc: 0.9820
+Precision: 0.9939, Recall: 0.9756, F1-Score: 0.9842
+Fold 2, Epoch 8, Train Loss: 1.7386, Val Loss: 1.7284, Val Acc: 0.9767
+Precision: 0.9938, Recall: 0.9792, F1-Score: 0.9861
+Fold 2, Epoch 9, Train Loss: 1.7344, Val Loss: 1.7171, Val Acc: 0.9801
+Precision: 0.9940, Recall: 0.9839, F1-Score: 0.9886
+Fold 2, Epoch 10, Train Loss: 1.7299, Val Loss: 1.7185, Val Acc: 0.9842
+Precision: 0.9939, Recall: 0.9833, F1-Score: 0.9883
+Fold 2, Epoch 11, Train Loss: 1.7263, Val Loss: 1.7637, Val Acc: 0.9837
+Precision: 0.9941, Recall: 0.9856, F1-Score: 0.9894
+Fold 2, Epoch 12, Train Loss: 1.7484, Val Loss: 1.7346, Val Acc: 0.9857
+Precision: 0.9938, Recall: 0.9794, F1-Score: 0.9861
+Fold 2, Epoch 13, Train Loss: 1.7423, Val Loss: 1.7211, Val Acc: 0.9800
+Precision: 0.9939, Recall: 0.9821, F1-Score: 0.9877
+Fold 2, Epoch 14, Train Loss: 1.7385, Val Loss: 1.7459, Val Acc: 0.9825
+Precision: 0.9939, Recall: 0.9844, F1-Score: 0.9888
+Fold 2, Epoch 15, Train Loss: 1.7401, Val Loss: 1.7123, Val Acc: 0.9848
+Precision: 0.9940, Recall: 0.9847, F1-Score: 0.9890
+Fold 2, Epoch 16, Train Loss: 1.7366, Val Loss: 1.7279, Val Acc: 0.9849
+Precision: 0.9940, Recall: 0.9869, F1-Score: 0.9901
+Fold 2, Epoch 17, Train Loss: 1.7365, Val Loss: 1.7305, Val Acc: 0.9871
+Precision: 0.9939, Recall: 0.9841, F1-Score: 0.9886
+Fold 2, Epoch 18, Train Loss: 1.7206, Val Loss: 1.7168, Val Acc: 0.9844
+Precision: 0.9938, Recall: 0.9858, F1-Score: 0.9895
+Fold 2, Epoch 19, Train Loss: 1.7262, Val Loss: 1.7231, Val Acc: 0.9860
+Precision: 0.9938, Recall: 0.9830, F1-Score: 0.9881
+Fold 2, Epoch 20, Train Loss: 1.7306, Val Loss: 1.7256, Val Acc: 0.9835
+Precision: 0.9940, Recall: 0.9840, F1-Score: 0.9886
+Fold 2, Epoch 21, Train Loss: 1.7226, Val Loss: 1.7434, Val Acc: 0.9842
+Precision: 0.9937, Recall: 0.9695, F1-Score: 0.9810
+Fold 2, Epoch 22, Train Loss: 1.7378, Val Loss: 1.7681, Val Acc: 0.9694
+Precision: 0.9940, Recall: 0.9860, F1-Score: 0.9896
+Fold 2, Epoch 23, Train Loss: 1.7367, Val Loss: 1.7238, Val Acc: 0.9863
+Precision: 0.9939, Recall: 0.9837, F1-Score: 0.9883
+Fold 2, Epoch 24, Train Loss: 1.7204, Val Loss: 1.7123, Val Acc: 0.9840
+Precision: 0.9941, Recall: 0.9865, F1-Score: 0.9899
+Fold 2, Epoch 25, Train Loss: 1.7228, Val Loss: 1.7015, Val Acc: 0.9867
+Precision: 0.9941, Recall: 0.9843, F1-Score: 0.9888
+Fold 2, Epoch 26, Train Loss: 1.7108, Val Loss: 1.7209, Val Acc: 0.9846
+Precision: 0.9941, Recall: 0.9864, F1-Score: 0.9899
+Fold 2, Epoch 27, Train Loss: 1.7149, Val Loss: 1.7122, Val Acc: 0.9866
+Precision: 0.9940, Recall: 0.9823, F1-Score: 0.9876
+Fold 2, Epoch 28, Train Loss: 1.7060, Val Loss: 1.7185, Val Acc: 0.9828
+Precision: 0.9940, Recall: 0.9856, F1-Score: 0.9894
+Fold 2, Epoch 29, Train Loss: 1.7270, Val Loss: 1.6899, Val Acc: 0.9858
+Precision: 0.9940, Recall: 0.9799, F1-Score: 0.9865
+Fold 2, Epoch 30, Train Loss: 1.7091, Val Loss: 1.7106, Val Acc: 0.9803
+Precision: 0.9941, Recall: 0.9853, F1-Score: 0.9893
+Fold 2, Epoch 31, Train Loss: 1.7147, Val Loss: 1.7089, Val Acc: 0.9854
+Precision: 0.9940, Recall: 0.9823, F1-Score: 0.9877
+Fold 2, Epoch 32, Train Loss: 1.7133, Val Loss: 1.7021, Val Acc: 0.9827
+Precision: 0.9940, Recall: 0.9854, F1-Score: 0.9893
+Fold 2, Epoch 33, Train Loss: 1.6941, Val Loss: 1.6808, Val Acc: 0.9856
+Precision: 0.9940, Recall: 0.9834, F1-Score: 0.9883
+Fold 2, Epoch 34, Train Loss: 1.6984, Val Loss: 1.6877, Val Acc: 0.9838
+Precision: 0.9943, Recall: 0.9850, F1-Score: 0.9892
+Fold 2, Epoch 35, Train Loss: 1.7042, Val Loss: 1.7281, Val Acc: 0.9852
+Precision: 0.9940, Recall: 0.9844, F1-Score: 0.9887
+Fold 2, Epoch 36, Train Loss: 1.7112, Val Loss: 1.6957, Val Acc: 0.9847
+Precision: 0.9940, Recall: 0.9841, F1-Score: 0.9887
+Fold 2, Epoch 37, Train Loss: 1.7000, Val Loss: 1.7079, Val Acc: 0.9844
+Precision: 0.9940, Recall: 0.9816, F1-Score: 0.9872
+Fold 2, Epoch 38, Train Loss: 1.7057, Val Loss: 1.7364, Val Acc: 0.9822
+Precision: 0.9942, Recall: 0.9871, F1-Score: 0.9904
+Fold 2, Epoch 39, Train Loss: 1.7341, Val Loss: 1.7367, Val Acc: 0.9873
+Precision: 0.9941, Recall: 0.9830, F1-Score: 0.9879
+Fold 2, Epoch 40, Train Loss: 1.7181, Val Loss: 1.7192, Val Acc: 0.9834
+Precision: 0.9941, Recall: 0.9860, F1-Score: 0.9897
+Fold 2, Epoch 41, Train Loss: 1.7170, Val Loss: 1.7093, Val Acc: 0.9862
+Precision: 0.9937, Recall: 0.9734, F1-Score: 0.9830
+Fold 2, Epoch 42, Train Loss: 1.7107, Val Loss: 1.7355, Val Acc: 0.9748
+Precision: 0.9939, Recall: 0.9856, F1-Score: 0.9894
+Fold 2, Epoch 43, Train Loss: 1.7201, Val Loss: 1.7034, Val Acc: 0.9858
+Precision: 0.9940, Recall: 0.9857, F1-Score: 0.9895
+Fold 2, Epoch 44, Train Loss: 1.7046, Val Loss: 1.6789, Val Acc: 0.9859
+Precision: 0.9940, Recall: 0.9842, F1-Score: 0.9886
+Fold 2, Epoch 45, Train Loss: 1.6941, Val Loss: 1.6787, Val Acc: 0.9845
+Precision: 0.9941, Recall: 0.9860, F1-Score: 0.9896
+Fold 2, Epoch 46, Train Loss: 1.6953, Val Loss: 1.6820, Val Acc: 0.9861
+Precision: 0.9940, Recall: 0.9846, F1-Score: 0.9889
+Fold 2, Epoch 47, Train Loss: 1.6918, Val Loss: 1.6724, Val Acc: 0.9849
+Precision: 0.9940, Recall: 0.9866, F1-Score: 0.9900
+Fold 2, Epoch 48, Train Loss: 1.6967, Val Loss: 1.6902, Val Acc: 0.9868
+Precision: 0.9941, Recall: 0.9799, F1-Score: 0.9865
+Fold 2, Epoch 49, Train Loss: 1.6994, Val Loss: 1.6847, Val Acc: 0.9803
+Precision: 0.9939, Recall: 0.9844, F1-Score: 0.9889
+Fold 2, Epoch 50, Train Loss: 1.6892, Val Loss: 1.7233, Val Acc: 0.9846
+Precision: 0.9938, Recall: 0.9851, F1-Score: 0.9891
+Fold 2, Epoch 51, Train Loss: 1.7039, Val Loss: 1.6944, Val Acc: 0.9853
+Precision: 0.9938, Recall: 0.9856, F1-Score: 0.9894
+Fold 2, Epoch 52, Train Loss: 1.6982, Val Loss: 1.7174, Val Acc: 0.9859
+Precision: 0.9939, Recall: 0.9825, F1-Score: 0.9878
+Fold 2, Epoch 53, Train Loss: 1.7161, Val Loss: 1.6824, Val Acc: 0.9830
+Precision: 0.9940, Recall: 0.9851, F1-Score: 0.9890
+Fold 2, Epoch 54, Train Loss: 1.6978, Val Loss: 1.7124, Val Acc: 0.9852
+Precision: 0.9940, Recall: 0.9830, F1-Score: 0.9880
+Fold 2, Epoch 55, Train Loss: 1.6939, Val Loss: 1.6848, Val Acc: 0.9836
+Precision: 0.9941, Recall: 0.9864, F1-Score: 0.9899
+Fold 2, Epoch 56, Train Loss: 1.6882, Val Loss: 1.6680, Val Acc: 0.9865
+Precision: 0.9939, Recall: 0.9825, F1-Score: 0.9878
+Fold 2, Epoch 57, Train Loss: 1.6773, Val Loss: 1.6696, Val Acc: 0.9829
+Precision: 0.9940, Recall: 0.9829, F1-Score: 0.9880
+Fold 2, Epoch 58, Train Loss: 1.6907, Val Loss: 1.6921, Val Acc: 0.9832
+Precision: 0.9940, Recall: 0.9799, F1-Score: 0.9865
+Fold 2, Epoch 59, Train Loss: 1.7027, Val Loss: 1.7227, Val Acc: 0.9802
+Precision: 0.9940, Recall: 0.9863, F1-Score: 0.9897
+Fold 2, Epoch 60, Train Loss: 1.7076, Val Loss: 1.6763, Val Acc: 0.9865
+Precision: 0.9940, Recall: 0.9859, F1-Score: 0.9896
+Fold 2, Epoch 61, Train Loss: 1.6863, Val Loss: 1.6754, Val Acc: 0.9862
+Precision: 0.9939, Recall: 0.9853, F1-Score: 0.9891
+Fold 2, Epoch 62, Train Loss: 1.6951, Val Loss: 1.6710, Val Acc: 0.9855
+Precision: 0.9939, Recall: 0.9852, F1-Score: 0.9892
+Fold 2, Epoch 63, Train Loss: 1.6917, Val Loss: 1.6678, Val Acc: 0.9855
+Precision: 0.9946, Recall: 0.9854, F1-Score: 0.9893
+Fold 2, Epoch 64, Train Loss: 1.6899, Val Loss: 1.6619, Val Acc: 0.9855
+Precision: 0.9941, Recall: 0.9832, F1-Score: 0.9881
+Fold 2, Epoch 65, Train Loss: 1.6786, Val Loss: 1.7226, Val Acc: 0.9835
+Precision: 0.9940, Recall: 0.9768, F1-Score: 0.9849
+Fold 2, Epoch 66, Train Loss: 1.6909, Val Loss: 1.6635, Val Acc: 0.9778
+Precision: 0.9941, Recall: 0.9869, F1-Score: 0.9900
+Fold 2, Epoch 67, Train Loss: 1.6778, Val Loss: 1.6840, Val Acc: 0.9870
+Precision: 0.9941, Recall: 0.9845, F1-Score: 0.9889
+Fold 2, Epoch 68, Train Loss: 1.6929, Val Loss: 1.6632, Val Acc: 0.9849
+Precision: 0.9941, Recall: 0.9793, F1-Score: 0.9864
+Fold 2, Epoch 69, Train Loss: 1.6845, Val Loss: 1.6969, Val Acc: 0.9802
+Precision: 0.9941, Recall: 0.9853, F1-Score: 0.9892
+Fold 2, Epoch 70, Train Loss: 1.6832, Val Loss: 1.6755, Val Acc: 0.9854
+Precision: 0.9940, Recall: 0.9832, F1-Score: 0.9881
+Fold 2, Epoch 71, Train Loss: 1.7009, Val Loss: 1.6716, Val Acc: 0.9837
+Precision: 0.9939, Recall: 0.9859, F1-Score: 0.9896
+Fold 2, Epoch 72, Train Loss: 1.6778, Val Loss: 1.6610, Val Acc: 0.9861
+Precision: 0.9940, Recall: 0.9850, F1-Score: 0.9891
+Fold 2, Epoch 73, Train Loss: 1.6781, Val Loss: 1.6639, Val Acc: 0.9851
+Precision: 0.9940, Recall: 0.9831, F1-Score: 0.9882
+Fold 2, Epoch 74, Train Loss: 1.6802, Val Loss: 1.6672, Val Acc: 0.9835
+Precision: 0.9940, Recall: 0.9791, F1-Score: 0.9860
+Fold 2, Epoch 75, Train Loss: 1.6809, Val Loss: 1.7004, Val Acc: 0.9797
+Precision: 0.9941, Recall: 0.9854, F1-Score: 0.9893
+Fold 2, Epoch 76, Train Loss: 1.6954, Val Loss: 1.6964, Val Acc: 0.9855
+Precision: 0.9941, Recall: 0.9857, F1-Score: 0.9895
+Fold 2, Epoch 77, Train Loss: 1.6729, Val Loss: 1.6611, Val Acc: 0.9859
+Precision: 0.9940, Recall: 0.9808, F1-Score: 0.9869
+Fold 2, Epoch 78, Train Loss: 1.6732, Val Loss: 1.6544, Val Acc: 0.9813
+Precision: 0.9939, Recall: 0.9845, F1-Score: 0.9889
+Fold 2, Epoch 79, Train Loss: 1.6592, Val Loss: 1.6680, Val Acc: 0.9848
+Precision: 0.9941, Recall: 0.9820, F1-Score: 0.9874
+Fold 2, Epoch 80, Train Loss: 1.6671, Val Loss: 1.6773, Val Acc: 0.9824
+Precision: 0.9943, Recall: 0.9858, F1-Score: 0.9898
+Fold 2, Epoch 81, Train Loss: 1.7046, Val Loss: 1.6815, Val Acc: 0.9861
+Precision: 0.9939, Recall: 0.9795, F1-Score: 0.9862
+Fold 2, Epoch 82, Train Loss: 1.6836, Val Loss: 1.6851, Val Acc: 0.9798
+Precision: 0.9940, Recall: 0.9870, F1-Score: 0.9902
+Fold 2, Epoch 83, Train Loss: 1.6754, Val Loss: 1.6646, Val Acc: 0.9872
+Precision: 0.9939, Recall: 0.9723, F1-Score: 0.9825
+Fold 2, Epoch 84, Train Loss: 1.6611, Val Loss: 1.6775, Val Acc: 0.9732
+Precision: 0.9940, Recall: 0.9867, F1-Score: 0.9899
+Fold 2, Epoch 85, Train Loss: 1.6662, Val Loss: 1.6495, Val Acc: 0.9869
+Precision: 0.9939, Recall: 0.9786, F1-Score: 0.9859
+Fold 2, Epoch 86, Train Loss: 1.6672, Val Loss: 1.6672, Val Acc: 0.9794
+Precision: 0.9940, Recall: 0.9824, F1-Score: 0.9877
+Fold 2, Epoch 87, Train Loss: 1.6670, Val Loss: 1.6834, Val Acc: 0.9827
+Precision: 0.9942, Recall: 0.9839, F1-Score: 0.9888
+Fold 2, Epoch 88, Train Loss: 1.6717, Val Loss: 1.6592, Val Acc: 0.9842
+Precision: 0.9939, Recall: 0.9741, F1-Score: 0.9834
+Fold 2, Epoch 89, Train Loss: 1.6711, Val Loss: 1.6592, Val Acc: 0.9755
+Precision: 0.9941, Recall: 0.9866, F1-Score: 0.9899
+Fold 2, Epoch 90, Train Loss: 1.6769, Val Loss: 1.6575, Val Acc: 0.9868
+Precision: 0.9940, Recall: 0.9840, F1-Score: 0.9886
+Fold 2, Epoch 91, Train Loss: 1.6729, Val Loss: 1.6601, Val Acc: 0.9845
+Precision: 0.9940, Recall: 0.9850, F1-Score: 0.9891
+Fold 2, Epoch 92, Train Loss: 1.6809, Val Loss: 1.6427, Val Acc: 0.9852
+Precision: 0.9941, Recall: 0.9834, F1-Score: 0.9882
+Fold 2, Epoch 93, Train Loss: 1.6652, Val Loss: 1.6850, Val Acc: 0.9838
+Precision: 0.9942, Recall: 0.9863, F1-Score: 0.9898
+Fold 2, Epoch 94, Train Loss: 1.6760, Val Loss: 1.6587, Val Acc: 0.9864
+Precision: 0.9941, Recall: 0.9851, F1-Score: 0.9893
+Fold 2, Epoch 95, Train Loss: 1.6623, Val Loss: 1.6510, Val Acc: 0.9853
+Precision: 0.9939, Recall: 0.9832, F1-Score: 0.9881
+Fold 2, Epoch 96, Train Loss: 1.6567, Val Loss: 1.6606, Val Acc: 0.9835
+Precision: 0.9940, Recall: 0.9860, F1-Score: 0.9897
+Fold 2, Epoch 97, Train Loss: 1.6627, Val Loss: 1.6625, Val Acc: 0.9863
+Precision: 0.9940, Recall: 0.9858, F1-Score: 0.9895
+Fold 2, Epoch 98, Train Loss: 1.6469, Val Loss: 1.6264, Val Acc: 0.9860
+Precision: 0.9942, Recall: 0.9851, F1-Score: 0.9892
+Fold 2, Epoch 99, Train Loss: 1.6481, Val Loss: 1.6517, Val Acc: 0.9853
+Precision: 0.9940, Recall: 0.9856, F1-Score: 0.9893
+Fold 2, Epoch 100, Train Loss: 1.6585, Val Loss: 1.6406, Val Acc: 0.9858
+Precision: 0.9942, Recall: 0.9851, F1-Score: 0.9894
+Fold 2, Epoch 101, Train Loss: 1.6570, Val Loss: 1.6372, Val Acc: 0.9853
+Precision: 0.9939, Recall: 0.9848, F1-Score: 0.9889
+Fold 2, Epoch 102, Train Loss: 1.6543, Val Loss: 1.6563, Val Acc: 0.9850
+Precision: 0.9944, Recall: 0.9818, F1-Score: 0.9875
+Fold 2, Epoch 103, Train Loss: 1.6619, Val Loss: 1.6325, Val Acc: 0.9825
+Precision: 0.9940, Recall: 0.9845, F1-Score: 0.9887
+Fold 2, Epoch 104, Train Loss: 1.6511, Val Loss: 1.6381, Val Acc: 0.9847
+Precision: 0.9942, Recall: 0.9818, F1-Score: 0.9877
+Fold 2, Epoch 105, Train Loss: 1.6583, Val Loss: 1.6442, Val Acc: 0.9823
+Precision: 0.9943, Recall: 0.9833, F1-Score: 0.9885
+Fold 2, Epoch 106, Train Loss: 1.6552, Val Loss: 1.6566, Val Acc: 0.9838
+Precision: 0.9939, Recall: 0.9850, F1-Score: 0.9891
+Fold 2, Epoch 107, Train Loss: 1.6586, Val Loss: 1.6366, Val Acc: 0.9851
+Precision: 0.9941, Recall: 0.9761, F1-Score: 0.9846
+Fold 2, Epoch 108, Train Loss: 1.6418, Val Loss: 1.6346, Val Acc: 0.9769
+Precision: 0.9941, Recall: 0.9858, F1-Score: 0.9896
+Fold 2, Epoch 109, Train Loss: 1.6415, Val Loss: 1.6466, Val Acc: 0.9861
+Precision: 0.9941, Recall: 0.9857, F1-Score: 0.9896
+Fold 2, Epoch 110, Train Loss: 1.6618, Val Loss: 1.6393, Val Acc: 0.9858
+Precision: 0.9942, Recall: 0.9863, F1-Score: 0.9899
+Fold 2, Epoch 111, Train Loss: 1.6515, Val Loss: 1.6319, Val Acc: 0.9866
+Precision: 0.9941, Recall: 0.9858, F1-Score: 0.9896
+Fold 2, Epoch 112, Train Loss: 1.6488, Val Loss: 1.6553, Val Acc: 0.9860
+Precision: 0.9940, Recall: 0.9840, F1-Score: 0.9885
+Fold 2, Epoch 113, Train Loss: 1.6533, Val Loss: 1.7204, Val Acc: 0.9842
+Precision: 0.9942, Recall: 0.9856, F1-Score: 0.9895
+Fold 2, Epoch 114, Train Loss: 1.6689, Val Loss: 1.6465, Val Acc: 0.9858
+Precision: 0.9940, Recall: 0.9841, F1-Score: 0.9886
+Fold 2, Epoch 115, Train Loss: 1.6401, Val Loss: 1.6473, Val Acc: 0.9843
+Precision: 0.9942, Recall: 0.9857, F1-Score: 0.9897
+Fold 2, Epoch 116, Train Loss: 1.6585, Val Loss: 1.6498, Val Acc: 0.9859
+Precision: 0.9942, Recall: 0.9820, F1-Score: 0.9876
+Fold 2, Epoch 117, Train Loss: 1.6467, Val Loss: 1.6227, Val Acc: 0.9825
+Precision: 0.9940, Recall: 0.9842, F1-Score: 0.9886
+Fold 2, Epoch 118, Train Loss: 1.6309, Val Loss: 1.6347, Val Acc: 0.9844
+Precision: 0.9942, Recall: 0.9862, F1-Score: 0.9897
+Fold 2, Epoch 119, Train Loss: 1.6530, Val Loss: 1.6213, Val Acc: 0.9865
+Precision: 0.9940, Recall: 0.9867, F1-Score: 0.9900
+Fold 2, Epoch 120, Train Loss: 1.6468, Val Loss: 1.6245, Val Acc: 0.9870
+Precision: 0.9943, Recall: 0.9842, F1-Score: 0.9890
+Fold 2, Epoch 121, Train Loss: 1.6531, Val Loss: 1.6384, Val Acc: 0.9846
+Precision: 0.9941, Recall: 0.9834, F1-Score: 0.9883
+Fold 2, Epoch 122, Train Loss: 1.6304, Val Loss: 1.6459, Val Acc: 0.9837
+Precision: 0.9942, Recall: 0.9820, F1-Score: 0.9877
+Fold 2, Epoch 123, Train Loss: 1.6613, Val Loss: 1.6235, Val Acc: 0.9825
+Precision: 0.9941, Recall: 0.9850, F1-Score: 0.9893
+Fold 2, Epoch 124, Train Loss: 1.6319, Val Loss: 1.6205, Val Acc: 0.9851
+Precision: 0.9946, Recall: 0.9841, F1-Score: 0.9887
+Fold 2, Epoch 125, Train Loss: 1.6256, Val Loss: 1.6198, Val Acc: 0.9844
+Precision: 0.9941, Recall: 0.9867, F1-Score: 0.9901
+Fold 2, Epoch 126, Train Loss: 1.6358, Val Loss: 1.6117, Val Acc: 0.9869
+Precision: 0.9941, Recall: 0.9859, F1-Score: 0.9897
+Fold 2, Epoch 127, Train Loss: 1.6390, Val Loss: 1.6326, Val Acc: 0.9862
+Precision: 0.9942, Recall: 0.9834, F1-Score: 0.9885
+Fold 2, Epoch 128, Train Loss: 1.6343, Val Loss: 1.6858, Val Acc: 0.9837
+Precision: 0.9943, Recall: 0.9846, F1-Score: 0.9891
+Fold 2, Epoch 129, Train Loss: 1.6636, Val Loss: 1.6560, Val Acc: 0.9848
+Precision: 0.9941, Recall: 0.9857, F1-Score: 0.9896
+Fold 2, Epoch 130, Train Loss: 1.6476, Val Loss: 1.6359, Val Acc: 0.9860
+Precision: 0.9940, Recall: 0.9841, F1-Score: 0.9887
+Fold 2, Epoch 131, Train Loss: 1.6410, Val Loss: 1.6167, Val Acc: 0.9843
+Precision: 0.9941, Recall: 0.9866, F1-Score: 0.9899
+Fold 2, Epoch 132, Train Loss: 1.6270, Val Loss: 1.6316, Val Acc: 0.9867
+Precision: 0.9941, Recall: 0.9839, F1-Score: 0.9887
+Fold 2, Epoch 133, Train Loss: 1.6291, Val Loss: 1.6093, Val Acc: 0.9842
+Precision: 0.9941, Recall: 0.9875, F1-Score: 0.9905
+Fold 2, Epoch 134, Train Loss: 1.6240, Val Loss: 1.6175, Val Acc: 0.9878
+Precision: 0.9944, Recall: 0.9824, F1-Score: 0.9880
+Fold 2, Epoch 135, Train Loss: 1.6219, Val Loss: 1.6656, Val Acc: 0.9828
+Precision: 0.9942, Recall: 0.9872, F1-Score: 0.9903
+Fold 2, Epoch 136, Train Loss: 1.6462, Val Loss: 1.6139, Val Acc: 0.9875
+Precision: 0.9941, Recall: 0.9860, F1-Score: 0.9896
+Fold 2, Epoch 137, Train Loss: 1.6192, Val Loss: 1.6052, Val Acc: 0.9862
+Precision: 0.9942, Recall: 0.9848, F1-Score: 0.9892
+Fold 2, Epoch 138, Train Loss: 1.6255, Val Loss: 1.6052, Val Acc: 0.9850
+Precision: 0.9941, Recall: 0.9860, F1-Score: 0.9897
+Fold 2, Epoch 139, Train Loss: 1.6210, Val Loss: 1.5996, Val Acc: 0.9863
+Precision: 0.9943, Recall: 0.9883, F1-Score: 0.9908
+Fold 2, Epoch 140, Train Loss: 1.6512, Val Loss: 1.6198, Val Acc: 0.9886
+Precision: 0.9941, Recall: 0.9857, F1-Score: 0.9895
+Fold 2, Epoch 141, Train Loss: 1.6444, Val Loss: 1.6066, Val Acc: 0.9859
+Precision: 0.9943, Recall: 0.9864, F1-Score: 0.9900
+Fold 2, Epoch 142, Train Loss: 1.6341, Val Loss: 1.6036, Val Acc: 0.9866
+Precision: 0.9943, Recall: 0.9834, F1-Score: 0.9886
+Fold 2, Epoch 143, Train Loss: 1.6281, Val Loss: 1.6209, Val Acc: 0.9838
+Precision: 0.9940, Recall: 0.9823, F1-Score: 0.9877
+Fold 2, Epoch 144, Train Loss: 1.6182, Val Loss: 1.6265, Val Acc: 0.9828
+Precision: 0.9945, Recall: 0.9842, F1-Score: 0.9890
+Fold 2, Epoch 145, Train Loss: 1.6308, Val Loss: 1.6202, Val Acc: 0.9845
+Precision: 0.9944, Recall: 0.9845, F1-Score: 0.9891
+Fold 2, Epoch 146, Train Loss: 1.6245, Val Loss: 1.5956, Val Acc: 0.9848
+Precision: 0.9941, Recall: 0.9838, F1-Score: 0.9884
+Fold 2, Epoch 147, Train Loss: 1.6142, Val Loss: 1.6239, Val Acc: 0.9842
+Precision: 0.9943, Recall: 0.9864, F1-Score: 0.9900
+Fold 2, Epoch 148, Train Loss: 1.6308, Val Loss: 1.6397, Val Acc: 0.9865
+Precision: 0.9943, Recall: 0.9802, F1-Score: 0.9868
+Fold 2, Epoch 149, Train Loss: 1.6625, Val Loss: 1.6373, Val Acc: 0.9808
+Precision: 0.9941, Recall: 0.9855, F1-Score: 0.9894
+Fold 2, Epoch 150, Train Loss: 1.6420, Val Loss: 1.6164, Val Acc: 0.9858
+Completed Fold 2
+Starting Fold 3
+Class counts: [4703184    3675    3725    3675    3325    3675    3525    3375    3700
+    3725]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.68456376e-04 2.72108844e-04
+ 3.00751880e-04 2.72108844e-04 2.83687943e-04 2.96296296e-04
+ 2.70270270e-04 2.68456376e-04]
+Class counts: [4703184    3675    3725    3675    3325    3675    3525    3375    3700
+    3725]
+Normalized class weights: [8.48973680e-05 1.08649780e-01 1.07191394e-01 1.08649780e-01
+ 1.20086599e-01 1.08649780e-01 1.13273175e-01 1.18307539e-01
+ 1.07915660e-01 1.07191394e-01]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.68456376e-04 2.72108844e-04
+ 3.00751880e-04 2.72108844e-04 2.83687943e-04 2.96296296e-04
+ 2.70270270e-04 2.68456376e-04]Class counts: [4703184    3675    3725    3675    3325    3675    3525    3375    3700
+    3725]
+
+Normalized class weights: [8.48973680e-05 1.08649780e-01 1.07191394e-01 1.08649780e-01
+ 1.20086599e-01 1.08649780e-01 1.13273175e-01 1.18307539e-01
+ 1.07915660e-01 1.07191394e-01]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.68456376e-04 2.72108844e-04
+ 3.00751880e-04 2.72108844e-04 2.83687943e-04 2.96296296e-04
+ 2.70270270e-04 2.68456376e-04]
+Normalized class weights: [8.48973680e-05 1.08649780e-01 1.07191394e-01 1.08649780e-01
+ 1.20086599e-01 1.08649780e-01 1.13273175e-01 1.18307539e-01
+ 1.07915660e-01 1.07191394e-01]
+Class counts: [4703184    3675    3725    3675    3325    3675    3525    3375    3700
+    3725]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.68456376e-04 2.72108844e-04
+ 3.00751880e-04 2.72108844e-04 2.83687943e-04 2.96296296e-04
+ 2.70270270e-04 2.68456376e-04]
+Normalized class weights: [8.48973680e-05 1.08649780e-01 1.07191394e-01 1.08649780e-01
+ 1.20086599e-01 1.08649780e-01 1.13273175e-01 1.18307539e-01
+ 1.07915660e-01 1.07191394e-01]
+Class counts: [1175796     825     775     825    1175     825     975    1125     800
+     775]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.29032258e-03 1.21212121e-03
+ 8.51063830e-04 1.21212121e-03 1.02564103e-03 8.88888889e-04
+ 1.25000000e-03 1.29032258e-03]
+Normalized class weights: [8.31085722e-05 1.18446941e-01 1.26088680e-01 1.18446941e-01
+ 8.31648738e-02 1.18446941e-01 1.00224335e-01 8.68610904e-02
+ 1.22148408e-01 1.26088680e-01]
+Class counts: [1175796     825     775     825    1175     825     975    1125     800
+     775]
+Class counts: [1175796     825     775     825    1175     825     975    1125     800
+     775]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.29032258e-03 1.21212121e-03
+ 8.51063830e-04 1.21212121e-03 1.02564103e-03 8.88888889e-04
+ 1.25000000e-03 1.29032258e-03]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.29032258e-03 1.21212121e-03
+ 8.51063830e-04 1.21212121e-03 1.02564103e-03 8.88888889e-04
+ 1.25000000e-03 1.29032258e-03]
+Normalized class weights: [8.31085722e-05 1.18446941e-01 1.26088680e-01 1.18446941e-01
+ 8.31648738e-02 1.18446941e-01 1.00224335e-01 8.68610904e-02
+ 1.22148408e-01 1.26088680e-01]
+Normalized class weights: [8.31085722e-05 1.18446941e-01 1.26088680e-01 1.18446941e-01
+ 8.31648738e-02 1.18446941e-01 1.00224335e-01 8.68610904e-02
+ 1.22148408e-01 1.26088680e-01]
+Class counts: [1175796     825     775     825    1175     825     975    1125     800
+     775]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.29032258e-03 1.21212121e-03
+ 8.51063830e-04 1.21212121e-03 1.02564103e-03 8.88888889e-04
+ 1.25000000e-03 1.29032258e-03]
+Normalized class weights: [8.31085722e-05 1.18446941e-01 1.26088680e-01 1.18446941e-01
+ 8.31648738e-02 1.18446941e-01 1.00224335e-01 8.68610904e-02
+ 1.22148408e-01 1.26088680e-01]
+Precision: 0.9942, Recall: 0.9882, F1-Score: 0.9908
+Fold 3, Epoch 1, Train Loss: 1.6888, Val Loss: 1.6188, Val Acc: 0.9863
+Precision: 0.9943, Recall: 0.9855, F1-Score: 0.9895
+Fold 3, Epoch 2, Train Loss: 1.6134, Val Loss: 1.6060, Val Acc: 0.9791
+Precision: 0.9944, Recall: 0.9893, F1-Score: 0.9914
+Fold 3, Epoch 3, Train Loss: 1.6095, Val Loss: 1.6120, Val Acc: 0.9876
+Precision: 0.9944, Recall: 0.9842, F1-Score: 0.9889
+Fold 3, Epoch 4, Train Loss: 1.6347, Val Loss: 1.6153, Val Acc: 0.9789
+Precision: 0.9946, Recall: 0.9860, F1-Score: 0.9898
+Fold 3, Epoch 5, Train Loss: 1.6099, Val Loss: 1.6353, Val Acc: 0.9817
+Precision: 0.9943, Recall: 0.9880, F1-Score: 0.9910
+Fold 3, Epoch 6, Train Loss: 1.6191, Val Loss: 1.6085, Val Acc: 0.9857
+Precision: 0.9944, Recall: 0.9848, F1-Score: 0.9890
+Fold 3, Epoch 7, Train Loss: 1.6288, Val Loss: 1.6366, Val Acc: 0.9809
+Precision: 0.9946, Recall: 0.9883, F1-Score: 0.9910
+Fold 3, Epoch 8, Train Loss: 1.6392, Val Loss: 1.6273, Val Acc: 0.9860
+Precision: 0.9945, Recall: 0.9814, F1-Score: 0.9876
+Fold 3, Epoch 9, Train Loss: 1.6261, Val Loss: 1.6167, Val Acc: 0.9713
+Precision: 0.9941, Recall: 0.9868, F1-Score: 0.9902
+Fold 3, Epoch 10, Train Loss: 1.6295, Val Loss: 1.5957, Val Acc: 0.9825
+Precision: 0.9944, Recall: 0.9875, F1-Score: 0.9905
+Fold 3, Epoch 11, Train Loss: 1.6140, Val Loss: 1.6078, Val Acc: 0.9848
+Precision: 0.9943, Recall: 0.9875, F1-Score: 0.9905
+Fold 3, Epoch 12, Train Loss: 1.6113, Val Loss: 1.5883, Val Acc: 0.9847
+Precision: 0.9944, Recall: 0.9877, F1-Score: 0.9907
+Fold 3, Epoch 13, Train Loss: 1.6062, Val Loss: 1.5969, Val Acc: 0.9850
+Precision: 0.9943, Recall: 0.9850, F1-Score: 0.9894
+Fold 3, Epoch 14, Train Loss: 1.6268, Val Loss: 1.6001, Val Acc: 0.9796
+Precision: 0.9944, Recall: 0.9870, F1-Score: 0.9903
+Fold 3, Epoch 15, Train Loss: 1.6138, Val Loss: 1.5885, Val Acc: 0.9832
+Precision: 0.9943, Recall: 0.9887, F1-Score: 0.9912
+Fold 3, Epoch 16, Train Loss: 1.6099, Val Loss: 1.5889, Val Acc: 0.9868
+Precision: 0.9944, Recall: 0.9847, F1-Score: 0.9893
+Fold 3, Epoch 17, Train Loss: 1.6081, Val Loss: 1.5871, Val Acc: 0.9807
+Precision: 0.9945, Recall: 0.9882, F1-Score: 0.9911
+Fold 3, Epoch 18, Train Loss: 1.6051, Val Loss: 1.5886, Val Acc: 0.9859
+Precision: 0.9943, Recall: 0.9858, F1-Score: 0.9897
+Fold 3, Epoch 19, Train Loss: 1.6174, Val Loss: 1.6072, Val Acc: 0.9825
+Precision: 0.9943, Recall: 0.9821, F1-Score: 0.9876
+Fold 3, Epoch 20, Train Loss: 1.6141, Val Loss: 1.6637, Val Acc: 0.9747
+Precision: 0.9943, Recall: 0.9883, F1-Score: 0.9910
+Fold 3, Epoch 21, Train Loss: 1.6283, Val Loss: 1.5974, Val Acc: 0.9852
+Precision: 0.9942, Recall: 0.9865, F1-Score: 0.9900
+Fold 3, Epoch 22, Train Loss: 1.6042, Val Loss: 1.6247, Val Acc: 0.9829
+Precision: 0.9945, Recall: 0.9870, F1-Score: 0.9905
+Fold 3, Epoch 23, Train Loss: 1.6203, Val Loss: 1.5818, Val Acc: 0.9831
+Precision: 0.9943, Recall: 0.9877, F1-Score: 0.9905
+Fold 3, Epoch 24, Train Loss: 1.5936, Val Loss: 1.5910, Val Acc: 0.9847
+Precision: 0.9943, Recall: 0.9865, F1-Score: 0.9900
+Fold 3, Epoch 25, Train Loss: 1.5844, Val Loss: 1.5967, Val Acc: 0.9832
+Precision: 0.9943, Recall: 0.9885, F1-Score: 0.9911
+Fold 3, Epoch 26, Train Loss: 1.5955, Val Loss: 1.5870, Val Acc: 0.9865
+Precision: 0.9944, Recall: 0.9860, F1-Score: 0.9899
+Fold 3, Epoch 27, Train Loss: 1.6107, Val Loss: 1.6011, Val Acc: 0.9823
+Precision: 0.9944, Recall: 0.9860, F1-Score: 0.9899
+Fold 3, Epoch 28, Train Loss: 1.6123, Val Loss: 1.5821, Val Acc: 0.9830
+Precision: 0.9943, Recall: 0.9886, F1-Score: 0.9912
+Fold 3, Epoch 29, Train Loss: 1.6033, Val Loss: 1.6353, Val Acc: 0.9867
+Precision: 0.9943, Recall: 0.9856, F1-Score: 0.9895
+Fold 3, Epoch 30, Train Loss: 1.6178, Val Loss: 1.5870, Val Acc: 0.9802
+Precision: 0.9943, Recall: 0.9860, F1-Score: 0.9895
+Fold 3, Epoch 31, Train Loss: 1.5845, Val Loss: 1.6048, Val Acc: 0.9813
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9911
+Fold 3, Epoch 32, Train Loss: 1.5991, Val Loss: 1.5725, Val Acc: 0.9864
+Precision: 0.9943, Recall: 0.9871, F1-Score: 0.9902
+Fold 3, Epoch 33, Train Loss: 1.5855, Val Loss: 1.6013, Val Acc: 0.9840
+Precision: 0.9942, Recall: 0.9876, F1-Score: 0.9905
+Fold 3, Epoch 34, Train Loss: 1.6095, Val Loss: 1.6163, Val Acc: 0.9849
+Precision: 0.9944, Recall: 0.9870, F1-Score: 0.9904
+Fold 3, Epoch 35, Train Loss: 1.6197, Val Loss: 1.5790, Val Acc: 0.9833
+Precision: 0.9945, Recall: 0.9875, F1-Score: 0.9907
+Fold 3, Epoch 36, Train Loss: 1.5871, Val Loss: 1.5631, Val Acc: 0.9841
+Precision: 0.9944, Recall: 0.9866, F1-Score: 0.9899
+Fold 3, Epoch 37, Train Loss: 1.5835, Val Loss: 1.5951, Val Acc: 0.9825
+Precision: 0.9945, Recall: 0.9888, F1-Score: 0.9913
+Fold 3, Epoch 38, Train Loss: 1.5818, Val Loss: 1.5750, Val Acc: 0.9866
+Precision: 0.9944, Recall: 0.9850, F1-Score: 0.9892
+Fold 3, Epoch 39, Train Loss: 1.5808, Val Loss: 1.6364, Val Acc: 0.9811
+Precision: 0.9944, Recall: 0.9859, F1-Score: 0.9897
+Fold 3, Epoch 40, Train Loss: 1.6033, Val Loss: 1.5884, Val Acc: 0.9827
+Precision: 0.9945, Recall: 0.9871, F1-Score: 0.9905
+Fold 3, Epoch 41, Train Loss: 1.6032, Val Loss: 1.5701, Val Acc: 0.9835
+Precision: 0.9945, Recall: 0.9877, F1-Score: 0.9908
+Fold 3, Epoch 42, Train Loss: 1.6108, Val Loss: 1.5837, Val Acc: 0.9851
+Precision: 0.9945, Recall: 0.9873, F1-Score: 0.9907
+Fold 3, Epoch 43, Train Loss: 1.6076, Val Loss: 1.5754, Val Acc: 0.9844
+Precision: 0.9944, Recall: 0.9883, F1-Score: 0.9911
+Fold 3, Epoch 44, Train Loss: 1.5856, Val Loss: 1.5591, Val Acc: 0.9860
+Precision: 0.9946, Recall: 0.9884, F1-Score: 0.9911
+Fold 3, Epoch 45, Train Loss: 1.5826, Val Loss: 1.5817, Val Acc: 0.9861
+Precision: 0.9946, Recall: 0.9872, F1-Score: 0.9905
+Fold 3, Epoch 46, Train Loss: 1.6030, Val Loss: 1.5706, Val Acc: 0.9842
+Precision: 0.9944, Recall: 0.9853, F1-Score: 0.9895
+Fold 3, Epoch 47, Train Loss: 1.5948, Val Loss: 1.6049, Val Acc: 0.9813
+Precision: 0.9945, Recall: 0.9867, F1-Score: 0.9902
+Fold 3, Epoch 48, Train Loss: 1.5912, Val Loss: 1.5668, Val Acc: 0.9838
+Precision: 0.9943, Recall: 0.9893, F1-Score: 0.9915
+Fold 3, Epoch 49, Train Loss: 1.5907, Val Loss: 1.5767, Val Acc: 0.9874
+Precision: 0.9946, Recall: 0.9864, F1-Score: 0.9902
+Fold 3, Epoch 50, Train Loss: 1.5853, Val Loss: 1.5751, Val Acc: 0.9830
+Precision: 0.9945, Recall: 0.9880, F1-Score: 0.9910
+Fold 3, Epoch 51, Train Loss: 1.5902, Val Loss: 1.5768, Val Acc: 0.9855
+Precision: 0.9945, Recall: 0.9871, F1-Score: 0.9904
+Fold 3, Epoch 52, Train Loss: 1.5838, Val Loss: 1.5683, Val Acc: 0.9844
+Precision: 0.9944, Recall: 0.9879, F1-Score: 0.9908
+Fold 3, Epoch 53, Train Loss: 1.5676, Val Loss: 1.5798, Val Acc: 0.9856
+Precision: 0.9943, Recall: 0.9885, F1-Score: 0.9911
+Fold 3, Epoch 54, Train Loss: 1.5710, Val Loss: 1.5587, Val Acc: 0.9864
+Precision: 0.9944, Recall: 0.9863, F1-Score: 0.9901
+Fold 3, Epoch 55, Train Loss: 1.5759, Val Loss: 1.5707, Val Acc: 0.9826
+Precision: 0.9943, Recall: 0.9874, F1-Score: 0.9905
+Fold 3, Epoch 56, Train Loss: 1.5776, Val Loss: 1.5820, Val Acc: 0.9848
+Precision: 0.9946, Recall: 0.9866, F1-Score: 0.9903
+Fold 3, Epoch 57, Train Loss: 1.5786, Val Loss: 1.5666, Val Acc: 0.9833
+Precision: 0.9944, Recall: 0.9861, F1-Score: 0.9898
+Fold 3, Epoch 58, Train Loss: 1.5622, Val Loss: 1.6033, Val Acc: 0.9819
+Precision: 0.9945, Recall: 0.9886, F1-Score: 0.9911
+Fold 3, Epoch 59, Train Loss: 1.5863, Val Loss: 1.5920, Val Acc: 0.9867
+Precision: 0.9942, Recall: 0.9880, F1-Score: 0.9906
+Fold 3, Epoch 60, Train Loss: 1.5778, Val Loss: 1.6105, Val Acc: 0.9857
+Precision: 0.9943, Recall: 0.9885, F1-Score: 0.9911
+Fold 3, Epoch 61, Train Loss: 1.5804, Val Loss: 1.5655, Val Acc: 0.9865
+Precision: 0.9945, Recall: 0.9850, F1-Score: 0.9893
+Fold 3, Epoch 62, Train Loss: 1.5928, Val Loss: 1.5599, Val Acc: 0.9799
+Precision: 0.9944, Recall: 0.9874, F1-Score: 0.9904
+Fold 3, Epoch 63, Train Loss: 1.5750, Val Loss: 1.5593, Val Acc: 0.9846
+Precision: 0.9945, Recall: 0.9887, F1-Score: 0.9912
+Fold 3, Epoch 64, Train Loss: 1.5825, Val Loss: 1.5785, Val Acc: 0.9865
+Precision: 0.9946, Recall: 0.9877, F1-Score: 0.9907
+Fold 3, Epoch 65, Train Loss: 1.5797, Val Loss: 1.5552, Val Acc: 0.9849
+Precision: 0.9947, Recall: 0.9878, F1-Score: 0.9908
+Fold 3, Epoch 66, Train Loss: 1.5679, Val Loss: 1.5717, Val Acc: 0.9851
+Precision: 0.9944, Recall: 0.9869, F1-Score: 0.9903
+Fold 3, Epoch 67, Train Loss: 1.5791, Val Loss: 1.5623, Val Acc: 0.9845
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9913
+Fold 3, Epoch 68, Train Loss: 1.5777, Val Loss: 1.5956, Val Acc: 0.9864
+Precision: 0.9944, Recall: 0.9864, F1-Score: 0.9901
+Fold 3, Epoch 69, Train Loss: 1.5741, Val Loss: 1.5692, Val Acc: 0.9833
+Precision: 0.9945, Recall: 0.9879, F1-Score: 0.9909
+Fold 3, Epoch 70, Train Loss: 1.5688, Val Loss: 1.5443, Val Acc: 0.9855
+Precision: 0.9944, Recall: 0.9881, F1-Score: 0.9910
+Fold 3, Epoch 71, Train Loss: 1.5673, Val Loss: 1.5632, Val Acc: 0.9857
+Precision: 0.9944, Recall: 0.9869, F1-Score: 0.9903
+Fold 3, Epoch 72, Train Loss: 1.5723, Val Loss: 1.5511, Val Acc: 0.9840
+Precision: 0.9944, Recall: 0.9879, F1-Score: 0.9908
+Fold 3, Epoch 73, Train Loss: 1.5629, Val Loss: 1.5613, Val Acc: 0.9856
+Precision: 0.9943, Recall: 0.9864, F1-Score: 0.9899
+Fold 3, Epoch 74, Train Loss: 1.5582, Val Loss: 1.5891, Val Acc: 0.9832
+Precision: 0.9945, Recall: 0.9888, F1-Score: 0.9913
+Fold 3, Epoch 75, Train Loss: 1.5862, Val Loss: 1.5836, Val Acc: 0.9868
+Precision: 0.9942, Recall: 0.9874, F1-Score: 0.9904
+Fold 3, Epoch 76, Train Loss: 1.5837, Val Loss: 1.5728, Val Acc: 0.9846
+Precision: 0.9945, Recall: 0.9858, F1-Score: 0.9899
+Fold 3, Epoch 77, Train Loss: 1.5957, Val Loss: 1.5589, Val Acc: 0.9810
+Precision: 0.9947, Recall: 0.9875, F1-Score: 0.9906
+Fold 3, Epoch 78, Train Loss: 1.5730, Val Loss: 1.5655, Val Acc: 0.9851
+Precision: 0.9946, Recall: 0.9869, F1-Score: 0.9904
+Fold 3, Epoch 79, Train Loss: 1.5688, Val Loss: 1.5575, Val Acc: 0.9831
+Precision: 0.9945, Recall: 0.9864, F1-Score: 0.9900
+Fold 3, Epoch 80, Train Loss: 1.5530, Val Loss: 1.5562, Val Acc: 0.9832
+Precision: 0.9946, Recall: 0.9887, F1-Score: 0.9913
+Fold 3, Epoch 81, Train Loss: 1.5655, Val Loss: 1.5623, Val Acc: 0.9864
+Precision: 0.9945, Recall: 0.9869, F1-Score: 0.9904
+Fold 3, Epoch 82, Train Loss: 1.5756, Val Loss: 1.5593, Val Acc: 0.9838
+Precision: 0.9948, Recall: 0.9865, F1-Score: 0.9901
+Fold 3, Epoch 83, Train Loss: 1.5606, Val Loss: 1.5545, Val Acc: 0.9820
+Precision: 0.9943, Recall: 0.9878, F1-Score: 0.9907
+Fold 3, Epoch 84, Train Loss: 1.5697, Val Loss: 1.5485, Val Acc: 0.9855
+Precision: 0.9947, Recall: 0.9863, F1-Score: 0.9899
+Fold 3, Epoch 85, Train Loss: 1.5545, Val Loss: 1.5617, Val Acc: 0.9829
+Precision: 0.9945, Recall: 0.9881, F1-Score: 0.9909
+Fold 3, Epoch 86, Train Loss: 1.5740, Val Loss: 1.5566, Val Acc: 0.9856
+Precision: 0.9944, Recall: 0.9854, F1-Score: 0.9896
+Fold 3, Epoch 87, Train Loss: 1.5689, Val Loss: 1.5511, Val Acc: 0.9824
+Precision: 0.9947, Recall: 0.9853, F1-Score: 0.9896
+Fold 3, Epoch 88, Train Loss: 1.5716, Val Loss: 1.5548, Val Acc: 0.9808
+Precision: 0.9942, Recall: 0.9858, F1-Score: 0.9896
+Fold 3, Epoch 89, Train Loss: 1.5804, Val Loss: 1.6304, Val Acc: 0.9823
+Precision: 0.9944, Recall: 0.9885, F1-Score: 0.9909
+Fold 3, Epoch 90, Train Loss: 1.5976, Val Loss: 1.6260, Val Acc: 0.9864
+Precision: 0.9944, Recall: 0.9895, F1-Score: 0.9916
+Fold 3, Epoch 91, Train Loss: 1.6294, Val Loss: 1.6014, Val Acc: 0.9876
+Precision: 0.9944, Recall: 0.9868, F1-Score: 0.9903
+Fold 3, Epoch 92, Train Loss: 1.6206, Val Loss: 1.5893, Val Acc: 0.9845
+Precision: 0.9945, Recall: 0.9874, F1-Score: 0.9905
+Fold 3, Epoch 93, Train Loss: 1.5822, Val Loss: 1.5936, Val Acc: 0.9840
+Precision: 0.9946, Recall: 0.9871, F1-Score: 0.9906
+Fold 3, Epoch 94, Train Loss: 1.5839, Val Loss: 1.5685, Val Acc: 0.9842
+Precision: 0.9946, Recall: 0.9864, F1-Score: 0.9901
+Fold 3, Epoch 95, Train Loss: 1.5696, Val Loss: 1.5496, Val Acc: 0.9827
+Precision: 0.9943, Recall: 0.9877, F1-Score: 0.9906
+Fold 3, Epoch 96, Train Loss: 1.5742, Val Loss: 1.5762, Val Acc: 0.9849
+Precision: 0.9946, Recall: 0.9877, F1-Score: 0.9909
+Fold 3, Epoch 97, Train Loss: 1.5877, Val Loss: 1.5436, Val Acc: 0.9848
+Precision: 0.9944, Recall: 0.9872, F1-Score: 0.9904
+Fold 3, Epoch 98, Train Loss: 1.5683, Val Loss: 1.5743, Val Acc: 0.9845
+Precision: 0.9944, Recall: 0.9879, F1-Score: 0.9908
+Fold 3, Epoch 99, Train Loss: 1.5775, Val Loss: 1.5629, Val Acc: 0.9855
+Precision: 0.9945, Recall: 0.9879, F1-Score: 0.9905
+Fold 3, Epoch 100, Train Loss: 1.5649, Val Loss: 1.5910, Val Acc: 0.9854
+Precision: 0.9946, Recall: 0.9882, F1-Score: 0.9911
+Fold 3, Epoch 101, Train Loss: 1.5698, Val Loss: 1.5464, Val Acc: 0.9858
+Precision: 0.9943, Recall: 0.9823, F1-Score: 0.9879
+Fold 3, Epoch 102, Train Loss: 1.5649, Val Loss: 1.5757, Val Acc: 0.9764
+Precision: 0.9946, Recall: 0.9857, F1-Score: 0.9898
+Fold 3, Epoch 103, Train Loss: 1.5796, Val Loss: 1.5648, Val Acc: 0.9802
+Precision: 0.9943, Recall: 0.9865, F1-Score: 0.9901
+Fold 3, Epoch 104, Train Loss: 1.5977, Val Loss: 1.5675, Val Acc: 0.9839
+Precision: 0.9946, Recall: 0.9875, F1-Score: 0.9907
+Fold 3, Epoch 105, Train Loss: 1.5630, Val Loss: 1.5400, Val Acc: 0.9845
+Precision: 0.9944, Recall: 0.9883, F1-Score: 0.9909
+Fold 3, Epoch 106, Train Loss: 1.5608, Val Loss: 1.5772, Val Acc: 0.9860
+Precision: 0.9944, Recall: 0.9886, F1-Score: 0.9913
+Fold 3, Epoch 107, Train Loss: 1.5888, Val Loss: 1.5709, Val Acc: 0.9864
+Precision: 0.9943, Recall: 0.9882, F1-Score: 0.9909
+Fold 3, Epoch 108, Train Loss: 1.5692, Val Loss: 1.5517, Val Acc: 0.9862
+Precision: 0.9944, Recall: 0.9870, F1-Score: 0.9903
+Fold 3, Epoch 109, Train Loss: 1.5558, Val Loss: 1.5831, Val Acc: 0.9845
+Precision: 0.9946, Recall: 0.9893, F1-Score: 0.9915
+Fold 3, Epoch 110, Train Loss: 1.5771, Val Loss: 1.5560, Val Acc: 0.9874
+Precision: 0.9945, Recall: 0.9862, F1-Score: 0.9900
+Fold 3, Epoch 111, Train Loss: 1.5682, Val Loss: 1.5588, Val Acc: 0.9834
+Precision: 0.9946, Recall: 0.9869, F1-Score: 0.9905
+Fold 3, Epoch 112, Train Loss: 1.5724, Val Loss: 1.5395, Val Acc: 0.9840
+Precision: 0.9945, Recall: 0.9867, F1-Score: 0.9903
+Fold 3, Epoch 113, Train Loss: 1.5613, Val Loss: 1.5675, Val Acc: 0.9838
+Precision: 0.9945, Recall: 0.9841, F1-Score: 0.9890
+Fold 3, Epoch 114, Train Loss: 1.5648, Val Loss: 1.5492, Val Acc: 0.9777
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9913
+Fold 3, Epoch 115, Train Loss: 1.5668, Val Loss: 1.5482, Val Acc: 0.9861
+Precision: 0.9943, Recall: 0.9830, F1-Score: 0.9883
+Fold 3, Epoch 116, Train Loss: 1.5748, Val Loss: 1.5615, Val Acc: 0.9766
+Precision: 0.9947, Recall: 0.9888, F1-Score: 0.9914
+Fold 3, Epoch 117, Train Loss: 1.5924, Val Loss: 1.5510, Val Acc: 0.9864
+Precision: 0.9945, Recall: 0.9861, F1-Score: 0.9899
+Fold 3, Epoch 118, Train Loss: 1.5495, Val Loss: 1.5541, Val Acc: 0.9820
+Precision: 0.9943, Recall: 0.9884, F1-Score: 0.9911
+Fold 3, Epoch 119, Train Loss: 1.5505, Val Loss: 1.5626, Val Acc: 0.9861
+Precision: 0.9945, Recall: 0.9875, F1-Score: 0.9906
+Fold 3, Epoch 120, Train Loss: 1.5618, Val Loss: 1.5913, Val Acc: 0.9850
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9912
+Fold 3, Epoch 121, Train Loss: 1.5629, Val Loss: 1.5373, Val Acc: 0.9863
+Precision: 0.9947, Recall: 0.9875, F1-Score: 0.9907
+Fold 3, Epoch 122, Train Loss: 1.5400, Val Loss: 1.5475, Val Acc: 0.9847
+Precision: 0.9945, Recall: 0.9877, F1-Score: 0.9906
+Fold 3, Epoch 123, Train Loss: 1.5524, Val Loss: 1.5328, Val Acc: 0.9854
+Precision: 0.9945, Recall: 0.9863, F1-Score: 0.9900
+Fold 3, Epoch 124, Train Loss: 1.5469, Val Loss: 1.5821, Val Acc: 0.9833
+Precision: 0.9945, Recall: 0.9878, F1-Score: 0.9906
+Fold 3, Epoch 125, Train Loss: 1.5601, Val Loss: 1.5799, Val Acc: 0.9856
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9912
+Fold 3, Epoch 126, Train Loss: 1.5677, Val Loss: 1.5350, Val Acc: 0.9858
+Precision: 0.9945, Recall: 0.9866, F1-Score: 0.9903
+Fold 3, Epoch 127, Train Loss: 1.5567, Val Loss: 1.5526, Val Acc: 0.9823
+Precision: 0.9946, Recall: 0.9878, F1-Score: 0.9907
+Fold 3, Epoch 128, Train Loss: 1.5524, Val Loss: 1.5470, Val Acc: 0.9856
+Precision: 0.9945, Recall: 0.9885, F1-Score: 0.9912
+Fold 3, Epoch 129, Train Loss: 1.5543, Val Loss: 1.5531, Val Acc: 0.9859
+Precision: 0.9946, Recall: 0.9867, F1-Score: 0.9903
+Fold 3, Epoch 130, Train Loss: 1.5701, Val Loss: 1.5489, Val Acc: 0.9834
+Precision: 0.9944, Recall: 0.9867, F1-Score: 0.9902
+Fold 3, Epoch 131, Train Loss: 1.5456, Val Loss: 1.5489, Val Acc: 0.9828
+Precision: 0.9945, Recall: 0.9875, F1-Score: 0.9907
+Fold 3, Epoch 132, Train Loss: 1.5451, Val Loss: 1.5356, Val Acc: 0.9848
+Precision: 0.9948, Recall: 0.9890, F1-Score: 0.9916
+Fold 3, Epoch 133, Train Loss: 1.5574, Val Loss: 1.5384, Val Acc: 0.9871
+Precision: 0.9945, Recall: 0.9864, F1-Score: 0.9901
+Fold 3, Epoch 134, Train Loss: 1.5635, Val Loss: 1.5367, Val Acc: 0.9830
+Precision: 0.9943, Recall: 0.9857, F1-Score: 0.9896
+Fold 3, Epoch 135, Train Loss: 1.5475, Val Loss: 1.5713, Val Acc: 0.9827
+Precision: 0.9944, Recall: 0.9883, F1-Score: 0.9910
+Fold 3, Epoch 136, Train Loss: 1.5523, Val Loss: 1.5434, Val Acc: 0.9863
+Precision: 0.9944, Recall: 0.9881, F1-Score: 0.9910
+Fold 3, Epoch 137, Train Loss: 1.5575, Val Loss: 1.5409, Val Acc: 0.9858
+Precision: 0.9944, Recall: 0.9870, F1-Score: 0.9902
+Fold 3, Epoch 138, Train Loss: 1.5536, Val Loss: 1.5509, Val Acc: 0.9840
+Precision: 0.9946, Recall: 0.9880, F1-Score: 0.9908
+Fold 3, Epoch 139, Train Loss: 1.5639, Val Loss: 1.5417, Val Acc: 0.9857
+Precision: 0.9944, Recall: 0.9883, F1-Score: 0.9910
+Fold 3, Epoch 140, Train Loss: 1.5571, Val Loss: 1.5399, Val Acc: 0.9860
+Precision: 0.9944, Recall: 0.9880, F1-Score: 0.9910
+Fold 3, Epoch 141, Train Loss: 1.5503, Val Loss: 1.5268, Val Acc: 0.9857
+Precision: 0.9944, Recall: 0.9861, F1-Score: 0.9899
+Fold 3, Epoch 142, Train Loss: 1.5424, Val Loss: 1.5700, Val Acc: 0.9830
+Precision: 0.9942, Recall: 0.9890, F1-Score: 0.9913
+Fold 3, Epoch 143, Train Loss: 1.5720, Val Loss: 1.5566, Val Acc: 0.9869
+Precision: 0.9945, Recall: 0.9865, F1-Score: 0.9902
+Fold 3, Epoch 144, Train Loss: 1.5504, Val Loss: 1.5578, Val Acc: 0.9842
+Precision: 0.9945, Recall: 0.9894, F1-Score: 0.9915
+Fold 3, Epoch 145, Train Loss: 1.5539, Val Loss: 1.5513, Val Acc: 0.9876
+Precision: 0.9946, Recall: 0.9865, F1-Score: 0.9903
+Fold 3, Epoch 146, Train Loss: 1.5484, Val Loss: 1.5593, Val Acc: 0.9837
+Precision: 0.9945, Recall: 0.9881, F1-Score: 0.9910
+Fold 3, Epoch 147, Train Loss: 1.5601, Val Loss: 1.5332, Val Acc: 0.9858
+Precision: 0.9945, Recall: 0.9859, F1-Score: 0.9897
+Fold 3, Epoch 148, Train Loss: 1.5434, Val Loss: 1.5416, Val Acc: 0.9827
+Precision: 0.9946, Recall: 0.9875, F1-Score: 0.9908
+Fold 3, Epoch 149, Train Loss: 1.5615, Val Loss: 1.5252, Val Acc: 0.9848
+Precision: 0.9947, Recall: 0.9864, F1-Score: 0.9902
+Fold 3, Epoch 150, Train Loss: 1.5544, Val Loss: 1.5403, Val Acc: 0.9817
+Completed Fold 3
+Starting Fold 4
+Class counts: [4703184    3650    3350    3700    3750    3625    3650    3625    3450
+    3600]
+Class weights (before normalization): [2.12621917e-07 2.73972603e-04 2.98507463e-04 2.70270270e-04
+ 2.66666667e-04 2.75862069e-04 2.73972603e-04 2.75862069e-04
+ 2.89855072e-04 2.77777778e-04]
+Normalized class weights: [8.49482149e-05 1.09459475e-01 1.19261817e-01 1.07980293e-01
+ 1.06540556e-01 1.10214368e-01 1.09459475e-01 1.10214368e-01
+ 1.15804952e-01 1.10979746e-01]
+Class counts: [4703184    3650    3350    3700    3750    3625    3650    3625    3450
+    3600]
+Class weights (before normalization): [2.12621917e-07 2.73972603e-04 2.98507463e-04 2.70270270e-04
+ 2.66666667e-04 2.75862069e-04 2.73972603e-04 2.75862069e-04
+ 2.89855072e-04 2.77777778e-04]
+Normalized class weights: [8.49482149e-05 1.09459475e-01 1.19261817e-01 1.07980293e-01
+ 1.06540556e-01 1.10214368e-01 1.09459475e-01 1.10214368e-01
+ 1.15804952e-01 1.10979746e-01]
+Class counts: [4703184    3650    3350    3700    3750    3625    3650    3625    3450
+    3600]
+Class weights (before normalization): [2.12621917e-07 2.73972603e-04 2.98507463e-04 2.70270270e-04
+ 2.66666667e-04 2.75862069e-04 2.73972603e-04 2.75862069e-04
+ 2.89855072e-04 2.77777778e-04]
+Class counts: [4703184    3650    3350    3700    3750    3625    3650    3625    3450
+    3600]
+Normalized class weights: [8.49482149e-05 1.09459475e-01 1.19261817e-01 1.07980293e-01
+ 1.06540556e-01 1.10214368e-01 1.09459475e-01 1.10214368e-01
+ 1.15804952e-01 1.10979746e-01]
+Class weights (before normalization): [2.12621917e-07 2.73972603e-04 2.98507463e-04 2.70270270e-04
+ 2.66666667e-04 2.75862069e-04 2.73972603e-04 2.75862069e-04
+ 2.89855072e-04 2.77777778e-04]
+Normalized class weights: [8.49482149e-05 1.09459475e-01 1.19261817e-01 1.07980293e-01
+ 1.06540556e-01 1.10214368e-01 1.09459475e-01 1.10214368e-01
+ 1.15804952e-01 1.10979746e-01]
+Class counts: [1175796     850    1150     800     750     875     850     875    1050
+     900]
+Class weights (before normalization): [8.50487670e-07 1.17647059e-03 8.69565217e-04 1.25000000e-03
+ 1.33333333e-03 1.14285714e-03 1.17647059e-03 1.14285714e-03
+ 9.52380952e-04 1.11111111e-03]
+Normalized class weights: [8.37432386e-05 1.15841135e-01 8.56217087e-02 1.23081206e-01
+ 1.31286620e-01 1.12531389e-01 1.15841135e-01 1.12531389e-01
+ 9.37761572e-02 1.09405517e-01]
+Class counts: [1175796     850    1150     800     750     875     850     875    1050
+     900]
+Class weights (before normalization): [8.50487670e-07 1.17647059e-03 8.69565217e-04 1.25000000e-03
+ 1.33333333e-03 1.14285714e-03 1.17647059e-03 1.14285714e-03
+ 9.52380952e-04 1.11111111e-03]
+Normalized class weights: [8.37432386e-05 1.15841135e-01 8.56217087e-02 1.23081206e-01
+ 1.31286620e-01 1.12531389e-01 1.15841135e-01 1.12531389e-01
+ 9.37761572e-02 1.09405517e-01]
+Class counts: [1175796     850    1150     800     750     875     850     875    1050
+     900]
+Class counts: [1175796     850    1150     800     750     875     850     875    1050
+     900]
+Class weights (before normalization): [8.50487670e-07 1.17647059e-03 8.69565217e-04 1.25000000e-03
+ 1.33333333e-03 1.14285714e-03 1.17647059e-03 1.14285714e-03
+ 9.52380952e-04 1.11111111e-03]
+Class weights (before normalization): [8.50487670e-07 1.17647059e-03 8.69565217e-04 1.25000000e-03
+ 1.33333333e-03 1.14285714e-03 1.17647059e-03 1.14285714e-03
+ 9.52380952e-04 1.11111111e-03]
+Normalized class weights: [8.37432386e-05 1.15841135e-01 8.56217087e-02 1.23081206e-01
+ 1.31286620e-01 1.12531389e-01 1.15841135e-01 1.12531389e-01
+ 9.37761572e-02 1.09405517e-01]
+Normalized class weights: [8.37432386e-05 1.15841135e-01 8.56217087e-02 1.23081206e-01
+ 1.31286620e-01 1.12531389e-01 1.15841135e-01 1.12531389e-01
+ 9.37761572e-02 1.09405517e-01]
+Precision: 0.9943, Recall: 0.9754, F1-Score: 0.9843
+Fold 4, Epoch 1, Train Loss: 1.7591, Val Loss: 1.5378, Val Acc: 0.9700
+Precision: 0.9947, Recall: 0.9901, F1-Score: 0.9920
+Fold 4, Epoch 2, Train Loss: 1.5962, Val Loss: 1.5066, Val Acc: 0.9884
+Precision: 0.9946, Recall: 0.9888, F1-Score: 0.9914
+Fold 4, Epoch 3, Train Loss: 1.5839, Val Loss: 1.5032, Val Acc: 0.9860
+Precision: 0.9946, Recall: 0.9883, F1-Score: 0.9913
+Fold 4, Epoch 4, Train Loss: 1.5726, Val Loss: 1.4880, Val Acc: 0.9854
+Precision: 0.9946, Recall: 0.9898, F1-Score: 0.9919
+Fold 4, Epoch 5, Train Loss: 1.5548, Val Loss: 1.5120, Val Acc: 0.9880
+Precision: 0.9945, Recall: 0.9901, F1-Score: 0.9920
+Fold 4, Epoch 6, Train Loss: 1.5713, Val Loss: 1.4734, Val Acc: 0.9885
+Precision: 0.9947, Recall: 0.9876, F1-Score: 0.9908
+Fold 4, Epoch 7, Train Loss: 1.5727, Val Loss: 1.5659, Val Acc: 0.9855
+Precision: 0.9947, Recall: 0.9900, F1-Score: 0.9921
+Fold 4, Epoch 8, Train Loss: 1.5834, Val Loss: 1.4753, Val Acc: 0.9884
+Precision: 0.9946, Recall: 0.9903, F1-Score: 0.9922
+Fold 4, Epoch 9, Train Loss: 1.5628, Val Loss: 1.5084, Val Acc: 0.9887
+Precision: 0.9945, Recall: 0.9890, F1-Score: 0.9914
+Fold 4, Epoch 10, Train Loss: 1.5603, Val Loss: 1.4930, Val Acc: 0.9871
+Precision: 0.9945, Recall: 0.9888, F1-Score: 0.9912
+Fold 4, Epoch 11, Train Loss: 1.5778, Val Loss: 1.4934, Val Acc: 0.9864
+Precision: 0.9944, Recall: 0.9885, F1-Score: 0.9911
+Fold 4, Epoch 12, Train Loss: 1.5695, Val Loss: 1.5232, Val Acc: 0.9865
+Precision: 0.9949, Recall: 0.9902, F1-Score: 0.9921
+Fold 4, Epoch 13, Train Loss: 1.5785, Val Loss: 1.4870, Val Acc: 0.9881
+Precision: 0.9946, Recall: 0.9893, F1-Score: 0.9917
+Fold 4, Epoch 14, Train Loss: 1.5531, Val Loss: 1.4950, Val Acc: 0.9878
+Precision: 0.9948, Recall: 0.9897, F1-Score: 0.9919
+Fold 4, Epoch 15, Train Loss: 1.5577, Val Loss: 1.4765, Val Acc: 0.9879
+Precision: 0.9945, Recall: 0.9863, F1-Score: 0.9901
+Fold 4, Epoch 16, Train Loss: 1.5551, Val Loss: 1.5014, Val Acc: 0.9834
+Precision: 0.9946, Recall: 0.9898, F1-Score: 0.9920
+Fold 4, Epoch 17, Train Loss: 1.5688, Val Loss: 1.4730, Val Acc: 0.9881
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9919
+Fold 4, Epoch 18, Train Loss: 1.5484, Val Loss: 1.4714, Val Acc: 0.9882
+Precision: 0.9947, Recall: 0.9891, F1-Score: 0.9916
+Fold 4, Epoch 19, Train Loss: 1.5684, Val Loss: 1.4682, Val Acc: 0.9873
+Precision: 0.9947, Recall: 0.9892, F1-Score: 0.9917
+Fold 4, Epoch 20, Train Loss: 1.5561, Val Loss: 1.4909, Val Acc: 0.9871
+Precision: 0.9945, Recall: 0.9894, F1-Score: 0.9915
+Fold 4, Epoch 21, Train Loss: 1.5538, Val Loss: 1.5046, Val Acc: 0.9876
+Precision: 0.9946, Recall: 0.9895, F1-Score: 0.9916
+Fold 4, Epoch 22, Train Loss: 1.5930, Val Loss: 1.5084, Val Acc: 0.9878
+Precision: 0.9948, Recall: 0.9898, F1-Score: 0.9920
+Fold 4, Epoch 23, Train Loss: 1.5702, Val Loss: 1.5083, Val Acc: 0.9877
+Precision: 0.9947, Recall: 0.9890, F1-Score: 0.9916
+Fold 4, Epoch 24, Train Loss: 1.5657, Val Loss: 1.5038, Val Acc: 0.9872
+Precision: 0.9947, Recall: 0.9891, F1-Score: 0.9915
+Fold 4, Epoch 25, Train Loss: 1.5587, Val Loss: 1.4878, Val Acc: 0.9872
+Precision: 0.9948, Recall: 0.9896, F1-Score: 0.9919
+Fold 4, Epoch 26, Train Loss: 1.5544, Val Loss: 1.4763, Val Acc: 0.9879
+Precision: 0.9947, Recall: 0.9894, F1-Score: 0.9919
+Fold 4, Epoch 27, Train Loss: 1.5591, Val Loss: 1.5038, Val Acc: 0.9874
+Precision: 0.9944, Recall: 0.9902, F1-Score: 0.9920
+Fold 4, Epoch 28, Train Loss: 1.5562, Val Loss: 1.4855, Val Acc: 0.9887
+Precision: 0.9946, Recall: 0.9890, F1-Score: 0.9913
+Fold 4, Epoch 29, Train Loss: 1.5685, Val Loss: 1.4758, Val Acc: 0.9868
+Precision: 0.9948, Recall: 0.9896, F1-Score: 0.9920
+Fold 4, Epoch 30, Train Loss: 1.5692, Val Loss: 1.5162, Val Acc: 0.9882
+Precision: 0.9950, Recall: 0.9876, F1-Score: 0.9908
+Fold 4, Epoch 31, Train Loss: 1.5534, Val Loss: 1.4793, Val Acc: 0.9845
+Precision: 0.9946, Recall: 0.9887, F1-Score: 0.9914
+Fold 4, Epoch 32, Train Loss: 1.5729, Val Loss: 1.4762, Val Acc: 0.9859
+Precision: 0.9946, Recall: 0.9892, F1-Score: 0.9917
+Fold 4, Epoch 33, Train Loss: 1.5441, Val Loss: 1.4670, Val Acc: 0.9873
+Precision: 0.9949, Recall: 0.9899, F1-Score: 0.9921
+Fold 4, Epoch 34, Train Loss: 1.5572, Val Loss: 1.4761, Val Acc: 0.9884
+Precision: 0.9947, Recall: 0.9900, F1-Score: 0.9920
+Fold 4, Epoch 35, Train Loss: 1.5396, Val Loss: 1.4757, Val Acc: 0.9886
+Precision: 0.9945, Recall: 0.9897, F1-Score: 0.9916
+Fold 4, Epoch 36, Train Loss: 1.5547, Val Loss: 1.4833, Val Acc: 0.9877
+Precision: 0.9947, Recall: 0.9897, F1-Score: 0.9919
+Fold 4, Epoch 37, Train Loss: 1.5574, Val Loss: 1.4881, Val Acc: 0.9877
+Precision: 0.9947, Recall: 0.9885, F1-Score: 0.9912
+Fold 4, Epoch 38, Train Loss: 1.5644, Val Loss: 1.4667, Val Acc: 0.9862
+Precision: 0.9946, Recall: 0.9892, F1-Score: 0.9916
+Fold 4, Epoch 39, Train Loss: 1.5585, Val Loss: 1.4908, Val Acc: 0.9874
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9921
+Fold 4, Epoch 40, Train Loss: 1.5574, Val Loss: 1.5358, Val Acc: 0.9887
+Precision: 0.9946, Recall: 0.9888, F1-Score: 0.9913
+Fold 4, Epoch 41, Train Loss: 1.5663, Val Loss: 1.4718, Val Acc: 0.9870
+Precision: 0.9947, Recall: 0.9898, F1-Score: 0.9921
+Fold 4, Epoch 42, Train Loss: 1.5565, Val Loss: 1.4766, Val Acc: 0.9882
+Precision: 0.9948, Recall: 0.9895, F1-Score: 0.9919
+Fold 4, Epoch 43, Train Loss: 1.5542, Val Loss: 1.4788, Val Acc: 0.9875
+Precision: 0.9944, Recall: 0.9877, F1-Score: 0.9908
+Fold 4, Epoch 44, Train Loss: 1.5547, Val Loss: 1.4773, Val Acc: 0.9852
+Precision: 0.9947, Recall: 0.9898, F1-Score: 0.9920
+Fold 4, Epoch 45, Train Loss: 1.5507, Val Loss: 1.4757, Val Acc: 0.9875
+Precision: 0.9949, Recall: 0.9896, F1-Score: 0.9919
+Fold 4, Epoch 46, Train Loss: 1.5494, Val Loss: 1.4753, Val Acc: 0.9879
+Precision: 0.9944, Recall: 0.9613, F1-Score: 0.9772
+Fold 4, Epoch 47, Train Loss: 1.5696, Val Loss: 1.5145, Val Acc: 0.9550
+Precision: 0.9948, Recall: 0.9905, F1-Score: 0.9924
+Fold 4, Epoch 48, Train Loss: 1.5745, Val Loss: 1.5097, Val Acc: 0.9888
+Precision: 0.9946, Recall: 0.9885, F1-Score: 0.9914
+Fold 4, Epoch 49, Train Loss: 1.5763, Val Loss: 1.4892, Val Acc: 0.9864
+Precision: 0.9949, Recall: 0.9893, F1-Score: 0.9918
+Fold 4, Epoch 50, Train Loss: 1.5713, Val Loss: 1.5303, Val Acc: 0.9878
+Precision: 0.9948, Recall: 0.9901, F1-Score: 0.9920
+Fold 4, Epoch 51, Train Loss: 1.5665, Val Loss: 1.5354, Val Acc: 0.9886
+Precision: 0.9945, Recall: 0.9902, F1-Score: 0.9920
+Fold 4, Epoch 52, Train Loss: 1.5902, Val Loss: 1.4910, Val Acc: 0.9882
+Precision: 0.9949, Recall: 0.9898, F1-Score: 0.9919
+Fold 4, Epoch 53, Train Loss: 1.5776, Val Loss: 1.5096, Val Acc: 0.9879
+Precision: 0.9946, Recall: 0.9893, F1-Score: 0.9917
+Fold 4, Epoch 54, Train Loss: 1.5734, Val Loss: 1.4855, Val Acc: 0.9871
+Precision: 0.9945, Recall: 0.9901, F1-Score: 0.9918
+Fold 4, Epoch 55, Train Loss: 1.5495, Val Loss: 1.5241, Val Acc: 0.9884
+Precision: 0.9948, Recall: 0.9894, F1-Score: 0.9917
+Fold 4, Epoch 56, Train Loss: 1.5777, Val Loss: 1.5176, Val Acc: 0.9874
+Precision: 0.9948, Recall: 0.9901, F1-Score: 0.9922
+Fold 4, Epoch 57, Train Loss: 1.5565, Val Loss: 1.5105, Val Acc: 0.9884
+Precision: 0.9944, Recall: 0.9877, F1-Score: 0.9907
+Fold 4, Epoch 58, Train Loss: 1.5625, Val Loss: 1.4885, Val Acc: 0.9856
+Precision: 0.9948, Recall: 0.9902, F1-Score: 0.9922
+Fold 4, Epoch 59, Train Loss: 1.5569, Val Loss: 1.4713, Val Acc: 0.9884
+Precision: 0.9946, Recall: 0.9872, F1-Score: 0.9907
+Fold 4, Epoch 60, Train Loss: 1.5440, Val Loss: 1.4745, Val Acc: 0.9834
+Precision: 0.9945, Recall: 0.9901, F1-Score: 0.9920
+Fold 4, Epoch 61, Train Loss: 1.5442, Val Loss: 1.4769, Val Acc: 0.9886
+Precision: 0.9947, Recall: 0.9897, F1-Score: 0.9917
+Fold 4, Epoch 62, Train Loss: 1.5581, Val Loss: 1.4669, Val Acc: 0.9877
+Precision: 0.9947, Recall: 0.9899, F1-Score: 0.9919
+Fold 4, Epoch 63, Train Loss: 1.5514, Val Loss: 1.4885, Val Acc: 0.9882
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9919
+Fold 4, Epoch 64, Train Loss: 1.5528, Val Loss: 1.5094, Val Acc: 0.9880
+Precision: 0.9948, Recall: 0.9900, F1-Score: 0.9920
+Fold 4, Epoch 65, Train Loss: 1.5600, Val Loss: 1.4949, Val Acc: 0.9882
+Precision: 0.9950, Recall: 0.9903, F1-Score: 0.9923
+Fold 4, Epoch 66, Train Loss: 1.5527, Val Loss: 1.4846, Val Acc: 0.9886
+Precision: 0.9947, Recall: 0.9897, F1-Score: 0.9918
+Fold 4, Epoch 67, Train Loss: 1.5254, Val Loss: 1.4841, Val Acc: 0.9880
+Precision: 0.9949, Recall: 0.9902, F1-Score: 0.9922
+Fold 4, Epoch 68, Train Loss: 1.5586, Val Loss: 1.4843, Val Acc: 0.9886
+Precision: 0.9949, Recall: 0.9896, F1-Score: 0.9919
+Fold 4, Epoch 69, Train Loss: 1.5466, Val Loss: 1.4742, Val Acc: 0.9877
+Precision: 0.9948, Recall: 0.9897, F1-Score: 0.9918
+Fold 4, Epoch 70, Train Loss: 1.5495, Val Loss: 1.4651, Val Acc: 0.9878
+Precision: 0.9949, Recall: 0.9904, F1-Score: 0.9923
+Fold 4, Epoch 71, Train Loss: 1.5473, Val Loss: 1.5115, Val Acc: 0.9888
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9921
+Fold 4, Epoch 72, Train Loss: 1.5669, Val Loss: 1.4855, Val Acc: 0.9884
+Precision: 0.9946, Recall: 0.9892, F1-Score: 0.9917
+Fold 4, Epoch 73, Train Loss: 1.5611, Val Loss: 1.4748, Val Acc: 0.9874
+Precision: 0.9948, Recall: 0.9898, F1-Score: 0.9919
+Fold 4, Epoch 74, Train Loss: 1.5678, Val Loss: 1.4769, Val Acc: 0.9881
+Precision: 0.9947, Recall: 0.9901, F1-Score: 0.9922
+Fold 4, Epoch 75, Train Loss: 1.5569, Val Loss: 1.5095, Val Acc: 0.9883
+Precision: 0.9944, Recall: 0.9874, F1-Score: 0.9906
+Fold 4, Epoch 76, Train Loss: 1.5661, Val Loss: 1.4851, Val Acc: 0.9849
+Precision: 0.9948, Recall: 0.9897, F1-Score: 0.9920
+Fold 4, Epoch 77, Train Loss: 1.5602, Val Loss: 1.5051, Val Acc: 0.9878
+Precision: 0.9946, Recall: 0.9899, F1-Score: 0.9920
+Fold 4, Epoch 78, Train Loss: 1.5451, Val Loss: 1.4757, Val Acc: 0.9883
+Precision: 0.9948, Recall: 0.9893, F1-Score: 0.9919
+Fold 4, Epoch 79, Train Loss: 1.5478, Val Loss: 1.4924, Val Acc: 0.9877
+Precision: 0.9945, Recall: 0.9895, F1-Score: 0.9917
+Fold 4, Epoch 80, Train Loss: 1.5523, Val Loss: 1.4787, Val Acc: 0.9880
+Precision: 0.9946, Recall: 0.9898, F1-Score: 0.9919
+Fold 4, Epoch 81, Train Loss: 1.5484, Val Loss: 1.4539, Val Acc: 0.9883
+Precision: 0.9943, Recall: 0.9890, F1-Score: 0.9912
+Fold 4, Epoch 82, Train Loss: 1.5265, Val Loss: 1.5171, Val Acc: 0.9868
+Precision: 0.9945, Recall: 0.9902, F1-Score: 0.9919
+Fold 4, Epoch 83, Train Loss: 1.5738, Val Loss: 1.5103, Val Acc: 0.9883
+Precision: 0.9947, Recall: 0.9906, F1-Score: 0.9923
+Fold 4, Epoch 84, Train Loss: 1.5634, Val Loss: 1.4643, Val Acc: 0.9892
+Precision: 0.9946, Recall: 0.9902, F1-Score: 0.9922
+Fold 4, Epoch 85, Train Loss: 1.5408, Val Loss: 1.4647, Val Acc: 0.9885
+Precision: 0.9946, Recall: 0.9893, F1-Score: 0.9916
+Fold 4, Epoch 86, Train Loss: 1.5479, Val Loss: 1.4805, Val Acc: 0.9871
+Precision: 0.9946, Recall: 0.9891, F1-Score: 0.9916
+Fold 4, Epoch 87, Train Loss: 1.5473, Val Loss: 1.4759, Val Acc: 0.9869
+Precision: 0.9946, Recall: 0.9894, F1-Score: 0.9918
+Fold 4, Epoch 88, Train Loss: 1.5481, Val Loss: 1.4924, Val Acc: 0.9876
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9921
+Fold 4, Epoch 89, Train Loss: 1.5568, Val Loss: 1.4615, Val Acc: 0.9885
+Precision: 0.9948, Recall: 0.9878, F1-Score: 0.9911
+Fold 4, Epoch 90, Train Loss: 1.5450, Val Loss: 1.5113, Val Acc: 0.9856
+Precision: 0.9946, Recall: 0.9897, F1-Score: 0.9918
+Fold 4, Epoch 91, Train Loss: 1.5408, Val Loss: 1.4947, Val Acc: 0.9878
+Precision: 0.9949, Recall: 0.9895, F1-Score: 0.9917
+Fold 4, Epoch 92, Train Loss: 1.5620, Val Loss: 1.4679, Val Acc: 0.9880
+Precision: 0.9945, Recall: 0.9892, F1-Score: 0.9916
+Fold 4, Epoch 93, Train Loss: 1.5525, Val Loss: 1.4670, Val Acc: 0.9873
+Precision: 0.9947, Recall: 0.9885, F1-Score: 0.9913
+Fold 4, Epoch 94, Train Loss: 1.5417, Val Loss: 1.4725, Val Acc: 0.9852
+Precision: 0.9947, Recall: 0.9875, F1-Score: 0.9908
+Fold 4, Epoch 95, Train Loss: 1.5505, Val Loss: 1.4677, Val Acc: 0.9845
+Precision: 0.9946, Recall: 0.9889, F1-Score: 0.9914
+Fold 4, Epoch 96, Train Loss: 1.5589, Val Loss: 1.4689, Val Acc: 0.9867
+Precision: 0.9947, Recall: 0.9904, F1-Score: 0.9923
+Fold 4, Epoch 97, Train Loss: 1.5568, Val Loss: 1.4793, Val Acc: 0.9888
+Precision: 0.9947, Recall: 0.9874, F1-Score: 0.9908
+Fold 4, Epoch 98, Train Loss: 1.5446, Val Loss: 1.4825, Val Acc: 0.9842
+Precision: 0.9946, Recall: 0.9891, F1-Score: 0.9914
+Fold 4, Epoch 99, Train Loss: 1.5583, Val Loss: 1.4560, Val Acc: 0.9871
+Precision: 0.9948, Recall: 0.9893, F1-Score: 0.9917
+Fold 4, Epoch 100, Train Loss: 1.5441, Val Loss: 1.4680, Val Acc: 0.9876
+Precision: 0.9946, Recall: 0.9900, F1-Score: 0.9918
+Fold 4, Epoch 101, Train Loss: 1.5489, Val Loss: 1.5131, Val Acc: 0.9881
+Precision: 0.9947, Recall: 0.9909, F1-Score: 0.9925
+Fold 4, Epoch 102, Train Loss: 1.5614, Val Loss: 1.4775, Val Acc: 0.9895
+Precision: 0.9944, Recall: 0.9791, F1-Score: 0.9864
+Fold 4, Epoch 103, Train Loss: 1.5499, Val Loss: 1.4937, Val Acc: 0.9739
+Precision: 0.9945, Recall: 0.9903, F1-Score: 0.9921
+Fold 4, Epoch 104, Train Loss: 1.5430, Val Loss: 1.4706, Val Acc: 0.9884
+Precision: 0.9947, Recall: 0.9903, F1-Score: 0.9922
+Fold 4, Epoch 105, Train Loss: 1.5488, Val Loss: 1.4888, Val Acc: 0.9886
+Precision: 0.9945, Recall: 0.9893, F1-Score: 0.9917
+Fold 4, Epoch 106, Train Loss: 1.5562, Val Loss: 1.4760, Val Acc: 0.9875
+Precision: 0.9945, Recall: 0.9892, F1-Score: 0.9916
+Fold 4, Epoch 107, Train Loss: 1.5325, Val Loss: 1.4617, Val Acc: 0.9876
+Precision: 0.9948, Recall: 0.9893, F1-Score: 0.9918
+Fold 4, Epoch 108, Train Loss: 1.5395, Val Loss: 1.5020, Val Acc: 0.9878
+Precision: 0.9945, Recall: 0.9896, F1-Score: 0.9918
+Fold 4, Epoch 109, Train Loss: 1.5456, Val Loss: 1.4865, Val Acc: 0.9879
+Precision: 0.9946, Recall: 0.9890, F1-Score: 0.9916
+Fold 4, Epoch 110, Train Loss: 1.5509, Val Loss: 1.4787, Val Acc: 0.9871
+Precision: 0.9945, Recall: 0.9897, F1-Score: 0.9918
+Fold 4, Epoch 111, Train Loss: 1.5416, Val Loss: 1.4698, Val Acc: 0.9881
+Precision: 0.9948, Recall: 0.9898, F1-Score: 0.9919
+Fold 4, Epoch 112, Train Loss: 1.5370, Val Loss: 1.4590, Val Acc: 0.9877
+Precision: 0.9946, Recall: 0.9897, F1-Score: 0.9918
+Fold 4, Epoch 113, Train Loss: 1.5363, Val Loss: 1.4706, Val Acc: 0.9877
+Precision: 0.9947, Recall: 0.9881, F1-Score: 0.9911
+Fold 4, Epoch 114, Train Loss: 1.5610, Val Loss: 1.4968, Val Acc: 0.9859
+Precision: 0.9947, Recall: 0.9888, F1-Score: 0.9914
+Fold 4, Epoch 115, Train Loss: 1.5406, Val Loss: 1.4801, Val Acc: 0.9870
+Precision: 0.9945, Recall: 0.9902, F1-Score: 0.9922
+Fold 4, Epoch 116, Train Loss: 1.5477, Val Loss: 1.4932, Val Acc: 0.9885
+Precision: 0.9947, Recall: 0.9895, F1-Score: 0.9915
+Fold 4, Epoch 117, Train Loss: 1.5327, Val Loss: 1.5396, Val Acc: 0.9878
+Precision: 0.9947, Recall: 0.9894, F1-Score: 0.9918
+Fold 4, Epoch 118, Train Loss: 1.5868, Val Loss: 1.4663, Val Acc: 0.9875
+Precision: 0.9947, Recall: 0.9894, F1-Score: 0.9919
+Fold 4, Epoch 119, Train Loss: 1.5429, Val Loss: 1.5007, Val Acc: 0.9876
+Precision: 0.9950, Recall: 0.9893, F1-Score: 0.9917
+Fold 4, Epoch 120, Train Loss: 1.5546, Val Loss: 1.4960, Val Acc: 0.9873
+Precision: 0.9946, Recall: 0.9903, F1-Score: 0.9922
+Fold 4, Epoch 121, Train Loss: 1.5541, Val Loss: 1.5187, Val Acc: 0.9889
+Precision: 0.9943, Recall: 0.9882, F1-Score: 0.9908
+Fold 4, Epoch 122, Train Loss: 1.5537, Val Loss: 1.5253, Val Acc: 0.9861
+Precision: 0.9948, Recall: 0.9897, F1-Score: 0.9920
+Fold 4, Epoch 123, Train Loss: 1.5698, Val Loss: 1.4812, Val Acc: 0.9878
+Precision: 0.9948, Recall: 0.9896, F1-Score: 0.9920
+Fold 4, Epoch 124, Train Loss: 1.5496, Val Loss: 1.4779, Val Acc: 0.9875
+Precision: 0.9948, Recall: 0.9895, F1-Score: 0.9919
+Fold 4, Epoch 125, Train Loss: 1.5433, Val Loss: 1.4568, Val Acc: 0.9875
+Precision: 0.9947, Recall: 0.9897, F1-Score: 0.9920
+Fold 4, Epoch 126, Train Loss: 1.5266, Val Loss: 1.4744, Val Acc: 0.9877
+Precision: 0.9944, Recall: 0.9881, F1-Score: 0.9908
+Fold 4, Epoch 127, Train Loss: 1.5280, Val Loss: 1.5291, Val Acc: 0.9857
+Precision: 0.9948, Recall: 0.9906, F1-Score: 0.9924
+Fold 4, Epoch 128, Train Loss: 1.5834, Val Loss: 1.4999, Val Acc: 0.9893
+Precision: 0.9947, Recall: 0.9898, F1-Score: 0.9921
+Fold 4, Epoch 129, Train Loss: 1.5571, Val Loss: 1.4955, Val Acc: 0.9879
+Precision: 0.9946, Recall: 0.9892, F1-Score: 0.9915
+Fold 4, Epoch 130, Train Loss: 1.5375, Val Loss: 1.4687, Val Acc: 0.9871
+Precision: 0.9946, Recall: 0.9898, F1-Score: 0.9919
+Early stopping triggered for Fold 4 at epoch 131
+Completed Fold 4
+Starting Fold 5
+Class counts: [4703184    3675    3700    3475    3425    3625    3775    3550    3550
+    3625]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.70270270e-04 2.87769784e-04
+ 2.91970803e-04 2.75862069e-04 2.64900662e-04 2.81690141e-04
+ 2.81690141e-04 2.75862069e-04]
+Normalized class weights: [8.49693239e-05 1.08741868e-01 1.08007126e-01 1.15000393e-01
+ 1.16679231e-01 1.10241756e-01 1.05861289e-01 1.12570807e-01
+ 1.12570807e-01 1.10241756e-01]
+Class counts: [4703184    3675    3700    3475    3425    3625    3775    3550    3550
+    3625]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.70270270e-04 2.87769784e-04
+ 2.91970803e-04 2.75862069e-04 2.64900662e-04 2.81690141e-04
+ 2.81690141e-04 2.75862069e-04]
+Normalized class weights: [8.49693239e-05 1.08741868e-01 1.08007126e-01 1.15000393e-01
+ 1.16679231e-01 1.10241756e-01 1.05861289e-01 1.12570807e-01
+ 1.12570807e-01 1.10241756e-01]
+Class counts: [4703184    3675    3700    3475    3425    3625    3775    3550    3550
+    3625]
+Class counts: [4703184    3675    3700    3475    3425    3625    3775    3550    3550
+    3625]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.70270270e-04 2.87769784e-04
+ 2.91970803e-04 2.75862069e-04 2.64900662e-04 2.81690141e-04
+ 2.81690141e-04 2.75862069e-04]
+Class weights (before normalization): [2.12621917e-07 2.72108844e-04 2.70270270e-04 2.87769784e-04
+ 2.91970803e-04 2.75862069e-04 2.64900662e-04 2.81690141e-04
+ 2.81690141e-04 2.75862069e-04]
+Normalized class weights: [8.49693239e-05 1.08741868e-01 1.08007126e-01 1.15000393e-01
+ 1.16679231e-01 1.10241756e-01 1.05861289e-01 1.12570807e-01
+ 1.12570807e-01 1.10241756e-01]
+Normalized class weights: [8.49693239e-05 1.08741868e-01 1.08007126e-01 1.15000393e-01
+ 1.16679231e-01 1.10241756e-01 1.05861289e-01 1.12570807e-01
+ 1.12570807e-01 1.10241756e-01]
+Class counts: [1175796     825     800    1025    1075     875     725     950     950
+     875]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.25000000e-03 9.75609756e-04
+ 9.30232558e-04 1.14285714e-03 1.37931034e-03 1.05263158e-03
+ 1.05263158e-03 1.14285714e-03]
+Class counts: [1175796     825     800    1025    1075     875     725     950     950
+     875]
+Normalized class weights: [8.38819539e-05 1.19549171e-01 1.23285082e-01 9.62225032e-02
+ 9.17470380e-02 1.12717790e-01 1.36038711e-01 1.03819017e-01
+ 1.03819017e-01 1.12717790e-01]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.25000000e-03 9.75609756e-04
+ 9.30232558e-04 1.14285714e-03 1.37931034e-03 1.05263158e-03
+ 1.05263158e-03 1.14285714e-03]
+Normalized class weights: [8.38819539e-05 1.19549171e-01 1.23285082e-01 9.62225032e-02
+ 9.17470380e-02 1.12717790e-01 1.36038711e-01 1.03819017e-01
+ 1.03819017e-01 1.12717790e-01]
+Class counts: [1175796     825     800    1025    1075     875     725     950     950
+     875]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.25000000e-03 9.75609756e-04
+ 9.30232558e-04 1.14285714e-03 1.37931034e-03 1.05263158e-03
+ 1.05263158e-03 1.14285714e-03]
+Normalized class weights: [8.38819539e-05 1.19549171e-01 1.23285082e-01 9.62225032e-02
+ 9.17470380e-02 1.12717790e-01 1.36038711e-01 1.03819017e-01
+ 1.03819017e-01 1.12717790e-01]
+Class counts: [1175796     825     800    1025    1075     875     725     950     950
+     875]
+Class weights (before normalization): [8.50487670e-07 1.21212121e-03 1.25000000e-03 9.75609756e-04
+ 9.30232558e-04 1.14285714e-03 1.37931034e-03 1.05263158e-03
+ 1.05263158e-03 1.14285714e-03]
+Normalized class weights: [8.38819539e-05 1.19549171e-01 1.23285082e-01 9.62225032e-02
+ 9.17470380e-02 1.12717790e-01 1.36038711e-01 1.03819017e-01
+ 1.03819017e-01 1.12717790e-01]
+Precision: 0.9946, Recall: 0.9888, F1-Score: 0.9914
+Fold 5, Epoch 1, Train Loss: 1.6688, Val Loss: 1.5053, Val Acc: 0.9892
+Precision: 0.9943, Recall: 0.9843, F1-Score: 0.9887
+Fold 5, Epoch 2, Train Loss: 1.5520, Val Loss: 1.5189, Val Acc: 0.9853
+Precision: 0.9944, Recall: 0.9874, F1-Score: 0.9905
+Fold 5, Epoch 3, Train Loss: 1.5591, Val Loss: 1.4784, Val Acc: 0.9877
+Precision: 0.9945, Recall: 0.9882, F1-Score: 0.9911
+Fold 5, Epoch 4, Train Loss: 1.5420, Val Loss: 1.4721, Val Acc: 0.9884
+Precision: 0.9947, Recall: 0.9876, F1-Score: 0.9907
+Fold 5, Epoch 5, Train Loss: 1.5413, Val Loss: 1.4691, Val Acc: 0.9879
+Precision: 0.9944, Recall: 0.9862, F1-Score: 0.9899
+Fold 5, Epoch 6, Train Loss: 1.5327, Val Loss: 1.4926, Val Acc: 0.9867
+Precision: 0.9948, Recall: 0.9860, F1-Score: 0.9901
+Fold 5, Epoch 7, Train Loss: 1.5505, Val Loss: 1.5201, Val Acc: 0.9866
+Precision: 0.9947, Recall: 0.9869, F1-Score: 0.9904
+Fold 5, Epoch 8, Train Loss: 1.5652, Val Loss: 1.5301, Val Acc: 0.9872
+Precision: 0.9945, Recall: 0.9863, F1-Score: 0.9901
+Fold 5, Epoch 9, Train Loss: 1.5371, Val Loss: 1.4859, Val Acc: 0.9866
+Precision: 0.9946, Recall: 0.9866, F1-Score: 0.9902
+Fold 5, Epoch 10, Train Loss: 1.5451, Val Loss: 1.4767, Val Acc: 0.9872
+Precision: 0.9943, Recall: 0.9882, F1-Score: 0.9909
+Fold 5, Epoch 11, Train Loss: 1.5582, Val Loss: 1.5011, Val Acc: 0.9883
+Precision: 0.9947, Recall: 0.9867, F1-Score: 0.9903
+Fold 5, Epoch 12, Train Loss: 1.5651, Val Loss: 1.4814, Val Acc: 0.9871
+Precision: 0.9943, Recall: 0.9835, F1-Score: 0.9885
+Fold 5, Epoch 13, Train Loss: 1.5397, Val Loss: 1.4866, Val Acc: 0.9845
+Precision: 0.9943, Recall: 0.9816, F1-Score: 0.9875
+Fold 5, Epoch 14, Train Loss: 1.5485, Val Loss: 1.4811, Val Acc: 0.9836
+Precision: 0.9947, Recall: 0.9872, F1-Score: 0.9906
+Fold 5, Epoch 15, Train Loss: 1.5419, Val Loss: 1.4852, Val Acc: 0.9877
+Precision: 0.9945, Recall: 0.9850, F1-Score: 0.9893
+Fold 5, Epoch 16, Train Loss: 1.5594, Val Loss: 1.5179, Val Acc: 0.9856
+Precision: 0.9943, Recall: 0.9888, F1-Score: 0.9912
+Fold 5, Epoch 17, Train Loss: 1.5446, Val Loss: 1.5098, Val Acc: 0.9893
+Precision: 0.9945, Recall: 0.9851, F1-Score: 0.9893
+Fold 5, Epoch 18, Train Loss: 1.5857, Val Loss: 1.4963, Val Acc: 0.9856
+Precision: 0.9944, Recall: 0.9872, F1-Score: 0.9905
+Fold 5, Epoch 19, Train Loss: 1.5531, Val Loss: 1.4913, Val Acc: 0.9875
+Precision: 0.9945, Recall: 0.9874, F1-Score: 0.9907
+Fold 5, Epoch 20, Train Loss: 1.5418, Val Loss: 1.4709, Val Acc: 0.9878
+Precision: 0.9947, Recall: 0.9842, F1-Score: 0.9889
+Fold 5, Epoch 21, Train Loss: 1.5374, Val Loss: 1.4861, Val Acc: 0.9852
+Precision: 0.9945, Recall: 0.9865, F1-Score: 0.9902
+Fold 5, Epoch 22, Train Loss: 1.5545, Val Loss: 1.4846, Val Acc: 0.9869
+Precision: 0.9947, Recall: 0.9870, F1-Score: 0.9905
+Fold 5, Epoch 23, Train Loss: 1.5394, Val Loss: 1.4810, Val Acc: 0.9874
+Precision: 0.9943, Recall: 0.9773, F1-Score: 0.9852
+Fold 5, Epoch 24, Train Loss: 1.5495, Val Loss: 1.5202, Val Acc: 0.9803
+Precision: 0.9948, Recall: 0.9877, F1-Score: 0.9909
+Fold 5, Epoch 25, Train Loss: 1.5403, Val Loss: 1.4738, Val Acc: 0.9878
+Precision: 0.9943, Recall: 0.9842, F1-Score: 0.9888
+Fold 5, Epoch 26, Train Loss: 1.5435, Val Loss: 1.4905, Val Acc: 0.9849
+Precision: 0.9945, Recall: 0.9880, F1-Score: 0.9910
+Fold 5, Epoch 27, Train Loss: 1.5427, Val Loss: 1.4772, Val Acc: 0.9885
+Precision: 0.9944, Recall: 0.9804, F1-Score: 0.9869
+Fold 5, Epoch 28, Train Loss: 1.5336, Val Loss: 1.4832, Val Acc: 0.9828
+Precision: 0.9948, Recall: 0.9866, F1-Score: 0.9903
+Fold 5, Epoch 29, Train Loss: 1.5286, Val Loss: 1.4958, Val Acc: 0.9869
+Precision: 0.9947, Recall: 0.9859, F1-Score: 0.9898
+Fold 5, Epoch 30, Train Loss: 1.5402, Val Loss: 1.4803, Val Acc: 0.9862
+Precision: 0.9945, Recall: 0.9880, F1-Score: 0.9909
+Fold 5, Epoch 31, Train Loss: 1.5369, Val Loss: 1.4985, Val Acc: 0.9882
+Precision: 0.9947, Recall: 0.9855, F1-Score: 0.9897
+Fold 5, Epoch 32, Train Loss: 1.5592, Val Loss: 1.4965, Val Acc: 0.9862
+Precision: 0.9944, Recall: 0.9842, F1-Score: 0.9888
+Fold 5, Epoch 33, Train Loss: 1.5438, Val Loss: 1.5127, Val Acc: 0.9851
+Precision: 0.9946, Recall: 0.9892, F1-Score: 0.9916
+Fold 5, Epoch 34, Train Loss: 1.5596, Val Loss: 1.4987, Val Acc: 0.9897
+Precision: 0.9942, Recall: 0.9796, F1-Score: 0.9865
+Fold 5, Epoch 35, Train Loss: 1.5547, Val Loss: 1.4862, Val Acc: 0.9821
+Precision: 0.9944, Recall: 0.9860, F1-Score: 0.9897
+Fold 5, Epoch 36, Train Loss: 1.5349, Val Loss: 1.4899, Val Acc: 0.9863
+Precision: 0.9946, Recall: 0.9868, F1-Score: 0.9903
+Fold 5, Epoch 37, Train Loss: 1.5532, Val Loss: 1.5146, Val Acc: 0.9870
+Precision: 0.9947, Recall: 0.9872, F1-Score: 0.9906
+Fold 5, Epoch 38, Train Loss: 1.5502, Val Loss: 1.5032, Val Acc: 0.9874
+Precision: 0.9946, Recall: 0.9880, F1-Score: 0.9908
+Fold 5, Epoch 39, Train Loss: 1.5312, Val Loss: 1.4793, Val Acc: 0.9881
+Precision: 0.9945, Recall: 0.9879, F1-Score: 0.9908
+Fold 5, Epoch 40, Train Loss: 1.5371, Val Loss: 1.4938, Val Acc: 0.9883
+Precision: 0.9944, Recall: 0.9863, F1-Score: 0.9899
+Fold 5, Epoch 41, Train Loss: 1.5378, Val Loss: 1.4907, Val Acc: 0.9864
+Precision: 0.9945, Recall: 0.9871, F1-Score: 0.9904
+Fold 5, Epoch 42, Train Loss: 1.5332, Val Loss: 1.4854, Val Acc: 0.9874
+Precision: 0.9948, Recall: 0.9864, F1-Score: 0.9902
+Fold 5, Epoch 43, Train Loss: 1.5328, Val Loss: 1.4925, Val Acc: 0.9869
+Precision: 0.9945, Recall: 0.9872, F1-Score: 0.9906
+Fold 5, Epoch 44, Train Loss: 1.5543, Val Loss: 1.5068, Val Acc: 0.9874
+Precision: 0.9946, Recall: 0.9867, F1-Score: 0.9902
+Fold 5, Epoch 45, Train Loss: 1.5574, Val Loss: 1.4782, Val Acc: 0.9874
+Precision: 0.9945, Recall: 0.9832, F1-Score: 0.9885
+Fold 5, Epoch 46, Train Loss: 1.5423, Val Loss: 1.4989, Val Acc: 0.9844
+Precision: 0.9944, Recall: 0.9822, F1-Score: 0.9878
+Fold 5, Epoch 47, Train Loss: 1.5345, Val Loss: 1.4914, Val Acc: 0.9837
+Precision: 0.9946, Recall: 0.9882, F1-Score: 0.9911
+Fold 5, Epoch 48, Train Loss: 1.5460, Val Loss: 1.4785, Val Acc: 0.9887
+Precision: 0.9945, Recall: 0.9883, F1-Score: 0.9911
+Fold 5, Epoch 49, Train Loss: 1.5428, Val Loss: 1.4920, Val Acc: 0.9884
+Precision: 0.9945, Recall: 0.9779, F1-Score: 0.9857
+Fold 5, Epoch 50, Train Loss: 1.5522, Val Loss: 1.4859, Val Acc: 0.9804
+Precision: 0.9944, Recall: 0.9877, F1-Score: 0.9907
+Fold 5, Epoch 51, Train Loss: 1.5377, Val Loss: 1.4923, Val Acc: 0.9880
+Precision: 0.9946, Recall: 0.9855, F1-Score: 0.9897
+Fold 5, Epoch 52, Train Loss: 1.5531, Val Loss: 1.4840, Val Acc: 0.9861
+Precision: 0.9947, Recall: 0.9853, F1-Score: 0.9895
+Fold 5, Epoch 53, Train Loss: 1.5612, Val Loss: 1.4861, Val Acc: 0.9861
+Precision: 0.9945, Recall: 0.9852, F1-Score: 0.9895
+Fold 5, Epoch 54, Train Loss: 1.5460, Val Loss: 1.4760, Val Acc: 0.9860
+Precision: 0.9946, Recall: 0.9888, F1-Score: 0.9913
+Early stopping triggered for Fold 5 at epoch 55
+Completed Fold 5
+Starting final training on all data...
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Test Loss: 1.7062, Test Accuracy: 0.9848
+Precision: 0.9941, Recall: 0.9848, F1-Score: 0.9891

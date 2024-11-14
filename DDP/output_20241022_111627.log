@@ -1,0 +1,2035 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Pair 1:Pair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Pair 1:
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Pair 1:Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npyx shape: torch.Size([3654, 4])
+
+
+y shape: torch.Size([3654])x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npySample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+
+Sample y: tensor([0, 0])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Pair 3:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 2.2796, Val Loss: 2.2527, Val Acc: 0.0008
+Precision: 0.0000, Recall: 0.0009, F1-Score: 0.0000
+Fold 1, Epoch 2, Train Loss: 2.2702, Val Loss: 2.2462, Val Acc: 0.0008
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 1, Epoch 3, Train Loss: 2.2463, Val Loss: 2.2337, Val Acc: 0.0006
+Precision: 0.0001, Recall: 0.0009, F1-Score: 0.0002
+Fold 1, Epoch 4, Train Loss: 2.2340, Val Loss: 2.2287, Val Acc: 0.0008
+Precision: 0.0001, Recall: 0.0007, F1-Score: 0.0001
+Fold 1, Epoch 5, Train Loss: 2.2231, Val Loss: 2.2181, Val Acc: 0.0007
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 1, Epoch 6, Train Loss: 2.2210, Val Loss: 2.2133, Val Acc: 0.0007
+Precision: 0.9933, Recall: 0.0114, F1-Score: 0.0207
+Fold 1, Epoch 7, Train Loss: 2.2132, Val Loss: 2.1972, Val Acc: 0.0117
+Precision: 0.9925, Recall: 0.9061, F1-Score: 0.9471
+Fold 1, Epoch 8, Train Loss: 2.2001, Val Loss: 2.2147, Val Acc: 0.9189
+Precision: 0.9929, Recall: 0.8388, F1-Score: 0.9090
+Fold 1, Epoch 9, Train Loss: 2.1950, Val Loss: 2.1964, Val Acc: 0.8253
+Precision: 0.9931, Recall: 0.7658, F1-Score: 0.8643
+Fold 1, Epoch 10, Train Loss: 2.1843, Val Loss: 2.1595, Val Acc: 0.7214
+Precision: 0.9931, Recall: 0.4502, F1-Score: 0.6188
+Fold 1, Epoch 11, Train Loss: 2.1657, Val Loss: 2.1659, Val Acc: 0.4289
+Precision: 0.9932, Recall: 0.6658, F1-Score: 0.7966
+Fold 1, Epoch 12, Train Loss: 2.1663, Val Loss: 2.1494, Val Acc: 0.6253
+Precision: 0.9932, Recall: 0.6959, F1-Score: 0.8177
+Fold 1, Epoch 13, Train Loss: 2.1553, Val Loss: 2.1295, Val Acc: 0.6547
+Precision: 0.9931, Recall: 0.6309, F1-Score: 0.7710
+Fold 1, Epoch 14, Train Loss: 2.1558, Val Loss: 2.1512, Val Acc: 0.5928
+Precision: 0.9933, Recall: 0.8688, F1-Score: 0.9265
+Fold 1, Epoch 15, Train Loss: 2.1436, Val Loss: 2.1261, Val Acc: 0.8817
+Precision: 0.9933, Recall: 0.8547, F1-Score: 0.9184
+Fold 1, Epoch 16, Train Loss: 2.1304, Val Loss: 2.1101, Val Acc: 0.8561
+Precision: 0.9932, Recall: 0.8489, F1-Score: 0.9149
+Fold 1, Epoch 17, Train Loss: 2.1162, Val Loss: 2.0906, Val Acc: 0.8468
+Precision: 0.9932, Recall: 0.9388, F1-Score: 0.9649
+Fold 1, Epoch 18, Train Loss: 2.1103, Val Loss: 2.1107, Val Acc: 0.9521
+Precision: 0.9936, Recall: 0.9678, F1-Score: 0.9801
+Fold 1, Epoch 19, Train Loss: 2.1053, Val Loss: 2.0939, Val Acc: 0.9721
+Precision: 0.9937, Recall: 0.9677, F1-Score: 0.9803
+Fold 1, Epoch 20, Train Loss: 2.0883, Val Loss: 2.1130, Val Acc: 0.9705
+Precision: 0.9934, Recall: 0.9346, F1-Score: 0.9628
+Fold 1, Epoch 21, Train Loss: 2.0862, Val Loss: 2.0391, Val Acc: 0.9509
+Precision: 0.9937, Recall: 0.9014, F1-Score: 0.9449
+Fold 1, Epoch 22, Train Loss: 2.0518, Val Loss: 2.0313, Val Acc: 0.9182
+Precision: 0.9938, Recall: 0.9699, F1-Score: 0.9814
+Fold 1, Epoch 23, Train Loss: 2.0480, Val Loss: 2.0223, Val Acc: 0.9693
+Precision: 0.9939, Recall: 0.9703, F1-Score: 0.9816
+Fold 1, Epoch 24, Train Loss: 2.0396, Val Loss: 2.0064, Val Acc: 0.9741
+Precision: 0.9937, Recall: 0.9730, F1-Score: 0.9829
+Fold 1, Epoch 25, Train Loss: 2.0390, Val Loss: 2.0358, Val Acc: 0.9755
+Precision: 0.9938, Recall: 0.9515, F1-Score: 0.9718
+Fold 1, Epoch 26, Train Loss: 2.0401, Val Loss: 1.9960, Val Acc: 0.9608
+Precision: 0.9936, Recall: 0.8994, F1-Score: 0.9438
+Fold 1, Epoch 27, Train Loss: 2.0277, Val Loss: 2.0295, Val Acc: 0.9181
+Precision: 0.9938, Recall: 0.9477, F1-Score: 0.9699
+Fold 1, Epoch 28, Train Loss: 2.0373, Val Loss: 1.9828, Val Acc: 0.9573
+Precision: 0.9937, Recall: 0.9230, F1-Score: 0.9567
+Fold 1, Epoch 29, Train Loss: 2.0118, Val Loss: 1.9825, Val Acc: 0.9410
+Precision: 0.9937, Recall: 0.9751, F1-Score: 0.9839
+Fold 1, Epoch 30, Train Loss: 2.0143, Val Loss: 1.9990, Val Acc: 0.9771
+Precision: 0.9936, Recall: 0.9446, F1-Score: 0.9682
+Fold 1, Epoch 31, Train Loss: 2.0147, Val Loss: 1.9805, Val Acc: 0.9574
+Precision: 0.9938, Recall: 0.9323, F1-Score: 0.9617
+Fold 1, Epoch 32, Train Loss: 2.0072, Val Loss: 1.9858, Val Acc: 0.9495
+Precision: 0.9937, Recall: 0.9801, F1-Score: 0.9865
+Fold 1, Epoch 33, Train Loss: 1.9960, Val Loss: 1.9476, Val Acc: 0.9801
+Precision: 0.9940, Recall: 0.9560, F1-Score: 0.9742
+Fold 1, Epoch 34, Train Loss: 1.9982, Val Loss: 1.9391, Val Acc: 0.9629
+Precision: 0.9938, Recall: 0.9683, F1-Score: 0.9805
+Fold 1, Epoch 35, Train Loss: 1.9866, Val Loss: 1.9495, Val Acc: 0.9684
+Precision: 0.9938, Recall: 0.9755, F1-Score: 0.9843
+Fold 1, Epoch 36, Train Loss: 1.9694, Val Loss: 1.9481, Val Acc: 0.9770
+Precision: 0.9937, Recall: 0.9592, F1-Score: 0.9758
+Fold 1, Epoch 37, Train Loss: 1.9773, Val Loss: 1.9515, Val Acc: 0.9653
+Precision: 0.9939, Recall: 0.9612, F1-Score: 0.9769
+Fold 1, Epoch 38, Train Loss: 1.9707, Val Loss: 1.9034, Val Acc: 0.9663
+Precision: 0.9937, Recall: 0.9670, F1-Score: 0.9799
+Fold 1, Epoch 39, Train Loss: 1.9526, Val Loss: 1.9098, Val Acc: 0.9697
+Precision: 0.9941, Recall: 0.9622, F1-Score: 0.9775
+Fold 1, Epoch 40, Train Loss: 1.9464, Val Loss: 1.8929, Val Acc: 0.9650
+Precision: 0.9942, Recall: 0.9708, F1-Score: 0.9820
+Fold 1, Epoch 41, Train Loss: 1.9416, Val Loss: 1.8831, Val Acc: 0.9723
+Precision: 0.9940, Recall: 0.9743, F1-Score: 0.9838
+Fold 1, Epoch 42, Train Loss: 1.9409, Val Loss: 1.8622, Val Acc: 0.9757
+Precision: 0.9942, Recall: 0.9709, F1-Score: 0.9820
+Fold 1, Epoch 43, Train Loss: 1.9149, Val Loss: 1.8625, Val Acc: 0.9735
+Precision: 0.9938, Recall: 0.9780, F1-Score: 0.9855
+Fold 1, Epoch 44, Train Loss: 1.9243, Val Loss: 1.8655, Val Acc: 0.9788
+Precision: 0.9939, Recall: 0.9761, F1-Score: 0.9846
+Fold 1, Epoch 45, Train Loss: 1.9089, Val Loss: 1.8313, Val Acc: 0.9766
+Precision: 0.9941, Recall: 0.9668, F1-Score: 0.9799
+Fold 1, Epoch 46, Train Loss: 1.8968, Val Loss: 1.8310, Val Acc: 0.9668
+Precision: 0.9941, Recall: 0.9776, F1-Score: 0.9855
+Fold 1, Epoch 47, Train Loss: 1.9059, Val Loss: 1.8044, Val Acc: 0.9782
+Precision: 0.9941, Recall: 0.9776, F1-Score: 0.9854
+Fold 1, Epoch 48, Train Loss: 1.8863, Val Loss: 1.8149, Val Acc: 0.9769
+Precision: 0.9940, Recall: 0.9709, F1-Score: 0.9820
+Fold 1, Epoch 49, Train Loss: 1.8850, Val Loss: 1.8133, Val Acc: 0.9730
+Precision: 0.9940, Recall: 0.9656, F1-Score: 0.9793
+Fold 1, Epoch 50, Train Loss: 1.8867, Val Loss: 1.7966, Val Acc: 0.9684
+Precision: 0.9942, Recall: 0.9732, F1-Score: 0.9831
+Fold 1, Epoch 51, Train Loss: 1.8845, Val Loss: 1.7774, Val Acc: 0.9752
+Precision: 0.9942, Recall: 0.9782, F1-Score: 0.9856
+Fold 1, Epoch 52, Train Loss: 1.8580, Val Loss: 1.8206, Val Acc: 0.9779
+Precision: 0.9943, Recall: 0.9827, F1-Score: 0.9880
+Fold 1, Epoch 53, Train Loss: 1.8738, Val Loss: 1.8095, Val Acc: 0.9826
+Precision: 0.9939, Recall: 0.9723, F1-Score: 0.9826
+Fold 1, Epoch 54, Train Loss: 1.8622, Val Loss: 1.7433, Val Acc: 0.9739
+Precision: 0.9944, Recall: 0.9730, F1-Score: 0.9831
+Fold 1, Epoch 55, Train Loss: 1.8256, Val Loss: 1.7305, Val Acc: 0.9742
+Precision: 0.9943, Recall: 0.9754, F1-Score: 0.9843
+Fold 1, Epoch 56, Train Loss: 1.8135, Val Loss: 1.6827, Val Acc: 0.9761
+Precision: 0.9940, Recall: 0.9594, F1-Score: 0.9759
+Fold 1, Epoch 57, Train Loss: 1.7962, Val Loss: 1.6749, Val Acc: 0.9647
+Precision: 0.9942, Recall: 0.9665, F1-Score: 0.9797
+Fold 1, Epoch 58, Train Loss: 1.7650, Val Loss: 1.7229, Val Acc: 0.9703
+Precision: 0.9947, Recall: 0.9597, F1-Score: 0.9764
+Fold 1, Epoch 59, Train Loss: 1.7705, Val Loss: 1.6186, Val Acc: 0.9643
+Precision: 0.9943, Recall: 0.9480, F1-Score: 0.9701
+Fold 1, Epoch 60, Train Loss: 1.7279, Val Loss: 1.5874, Val Acc: 0.9554
+Precision: 0.9949, Recall: 0.9551, F1-Score: 0.9742
+Fold 1, Epoch 61, Train Loss: 1.6911, Val Loss: 1.5235, Val Acc: 0.9626
+Precision: 0.9943, Recall: 0.9781, F1-Score: 0.9857
+Fold 1, Epoch 62, Train Loss: 1.6994, Val Loss: 1.5409, Val Acc: 0.9789
+Precision: 0.9947, Recall: 0.9758, F1-Score: 0.9847
+Fold 1, Epoch 63, Train Loss: 1.6686, Val Loss: 1.5069, Val Acc: 0.9777
+Precision: 0.9945, Recall: 0.9766, F1-Score: 0.9850
+Fold 1, Epoch 64, Train Loss: 1.6385, Val Loss: 1.4713, Val Acc: 0.9776
+Precision: 0.9944, Recall: 0.9568, F1-Score: 0.9748
+Fold 1, Epoch 65, Train Loss: 1.6233, Val Loss: 1.5586, Val Acc: 0.9619
+Precision: 0.9945, Recall: 0.9663, F1-Score: 0.9797
+Fold 1, Epoch 66, Train Loss: 1.6445, Val Loss: 1.4675, Val Acc: 0.9699
+Precision: 0.9948, Recall: 0.9629, F1-Score: 0.9781
+Fold 1, Epoch 67, Train Loss: 1.5839, Val Loss: 1.4160, Val Acc: 0.9688
+Precision: 0.9946, Recall: 0.9697, F1-Score: 0.9815
+Fold 1, Epoch 68, Train Loss: 1.5643, Val Loss: 1.4406, Val Acc: 0.9730
+Precision: 0.9944, Recall: 0.9718, F1-Score: 0.9826
+Fold 1, Epoch 69, Train Loss: 1.5331, Val Loss: 1.3982, Val Acc: 0.9747
+Precision: 0.9948, Recall: 0.9717, F1-Score: 0.9827
+Fold 1, Epoch 70, Train Loss: 1.5426, Val Loss: 1.3643, Val Acc: 0.9737
+Precision: 0.9946, Recall: 0.9762, F1-Score: 0.9849
+Fold 1, Epoch 71, Train Loss: 1.5354, Val Loss: 1.3724, Val Acc: 0.9776
+Precision: 0.9947, Recall: 0.9514, F1-Score: 0.9722
+Fold 1, Epoch 72, Train Loss: 1.5537, Val Loss: 1.3733, Val Acc: 0.9597
+Precision: 0.9947, Recall: 0.9707, F1-Score: 0.9821
+Fold 1, Epoch 73, Train Loss: 1.5180, Val Loss: 1.3320, Val Acc: 0.9728
+Precision: 0.9948, Recall: 0.9712, F1-Score: 0.9824
+Fold 1, Epoch 74, Train Loss: 1.4900, Val Loss: 1.3303, Val Acc: 0.9746
+Precision: 0.9946, Recall: 0.9554, F1-Score: 0.9742
+Fold 1, Epoch 75, Train Loss: 1.4855, Val Loss: 1.3168, Val Acc: 0.9630
+Precision: 0.9946, Recall: 0.9677, F1-Score: 0.9806
+Fold 1, Epoch 76, Train Loss: 1.4783, Val Loss: 1.3273, Val Acc: 0.9693
+Precision: 0.9943, Recall: 0.9692, F1-Score: 0.9810
+Fold 1, Epoch 77, Train Loss: 1.4853, Val Loss: 1.3476, Val Acc: 0.9712
+Precision: 0.9943, Recall: 0.9781, F1-Score: 0.9856
+Fold 1, Epoch 78, Train Loss: 1.4708, Val Loss: 1.3724, Val Acc: 0.9780
+Precision: 0.9947, Recall: 0.9774, F1-Score: 0.9854
+Fold 1, Epoch 79, Train Loss: 1.4772, Val Loss: 1.3118, Val Acc: 0.9788
+Precision: 0.9946, Recall: 0.9691, F1-Score: 0.9812
+Fold 1, Epoch 80, Train Loss: 1.4745, Val Loss: 1.2857, Val Acc: 0.9726
+Precision: 0.9949, Recall: 0.9700, F1-Score: 0.9819
+Fold 1, Epoch 81, Train Loss: 1.4441, Val Loss: 1.2544, Val Acc: 0.9710
+Precision: 0.9950, Recall: 0.9699, F1-Score: 0.9818
+Fold 1, Epoch 82, Train Loss: 1.4136, Val Loss: 1.2369, Val Acc: 0.9730
+Precision: 0.9948, Recall: 0.9761, F1-Score: 0.9849
+Fold 1, Epoch 83, Train Loss: 1.4097, Val Loss: 1.3039, Val Acc: 0.9770
+Precision: 0.9952, Recall: 0.9429, F1-Score: 0.9678
+Fold 1, Epoch 84, Train Loss: 1.4433, Val Loss: 1.2357, Val Acc: 0.9501
+Precision: 0.9949, Recall: 0.9756, F1-Score: 0.9846
+Fold 1, Epoch 85, Train Loss: 1.3872, Val Loss: 1.1959, Val Acc: 0.9773
+Precision: 0.9952, Recall: 0.9795, F1-Score: 0.9867
+Fold 1, Epoch 86, Train Loss: 1.3632, Val Loss: 1.1667, Val Acc: 0.9809
+Precision: 0.9950, Recall: 0.9740, F1-Score: 0.9839
+Fold 1, Epoch 87, Train Loss: 1.3567, Val Loss: 1.1908, Val Acc: 0.9757
+Precision: 0.9951, Recall: 0.9778, F1-Score: 0.9859
+Fold 1, Epoch 88, Train Loss: 1.3447, Val Loss: 1.1568, Val Acc: 0.9791
+Precision: 0.9953, Recall: 0.9747, F1-Score: 0.9844
+Fold 1, Epoch 89, Train Loss: 1.3395, Val Loss: 1.1527, Val Acc: 0.9763
+Precision: 0.9951, Recall: 0.9766, F1-Score: 0.9853
+Fold 1, Epoch 90, Train Loss: 1.3284, Val Loss: 1.1463, Val Acc: 0.9774
+Precision: 0.9952, Recall: 0.9759, F1-Score: 0.9850
+Fold 1, Epoch 91, Train Loss: 1.2967, Val Loss: 1.1116, Val Acc: 0.9771
+Precision: 0.9952, Recall: 0.9817, F1-Score: 0.9879
+Fold 1, Epoch 92, Train Loss: 1.2980, Val Loss: 1.0952, Val Acc: 0.9825
+Precision: 0.9951, Recall: 0.9771, F1-Score: 0.9855
+Fold 1, Epoch 93, Train Loss: 1.2977, Val Loss: 1.1372, Val Acc: 0.9785
+Precision: 0.9951, Recall: 0.9847, F1-Score: 0.9894
+Fold 1, Epoch 94, Train Loss: 1.2822, Val Loss: 1.0915, Val Acc: 0.9840
+Precision: 0.9953, Recall: 0.9712, F1-Score: 0.9826
+Fold 1, Epoch 95, Train Loss: 1.2697, Val Loss: 1.0842, Val Acc: 0.9716
+Precision: 0.9952, Recall: 0.9870, F1-Score: 0.9906
+Fold 1, Epoch 96, Train Loss: 1.2558, Val Loss: 1.0838, Val Acc: 0.9867
+Precision: 0.9952, Recall: 0.9753, F1-Score: 0.9847
+Fold 1, Epoch 97, Train Loss: 1.2859, Val Loss: 1.0597, Val Acc: 0.9768
+Precision: 0.9952, Recall: 0.9655, F1-Score: 0.9796
+Fold 1, Epoch 98, Train Loss: 1.2409, Val Loss: 1.0649, Val Acc: 0.9653
+Precision: 0.9950, Recall: 0.9844, F1-Score: 0.9892
+Fold 1, Epoch 99, Train Loss: 1.2368, Val Loss: 1.0417, Val Acc: 0.9843
+Pair 1:Pair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Precision: 0.9954, Recall: 0.9811, F1-Score: 0.9877
+Fold 1, Epoch 100, Train Loss: 1.2200, Val Loss: 1.0278, Val Acc: 0.9811
+Completed Fold 1
+Starting Fold 2
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])
+Pair 3:
+Pair 3:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Precision: 0.9948, Recall: 0.9320, F1-Score: 0.9617
+Fold 2, Epoch 1, Train Loss: 1.2698, Val Loss: 1.0808, Val Acc: 0.9342
+Precision: 0.9951, Recall: 0.9785, F1-Score: 0.9863
+Fold 2, Epoch 2, Train Loss: 1.1880, Val Loss: 1.0703, Val Acc: 0.9795
+Precision: 0.9951, Recall: 0.9827, F1-Score: 0.9884
+Fold 2, Epoch 3, Train Loss: 1.1765, Val Loss: 1.0361, Val Acc: 0.9833
+Precision: 0.9950, Recall: 0.9750, F1-Score: 0.9844
+Fold 2, Epoch 4, Train Loss: 1.1452, Val Loss: 1.0379, Val Acc: 0.9763
+Precision: 0.9951, Recall: 0.9811, F1-Score: 0.9875
+Fold 2, Epoch 5, Train Loss: 1.1372, Val Loss: 1.0313, Val Acc: 0.9817
+Precision: 0.9948, Recall: 0.9801, F1-Score: 0.9868
+Fold 2, Epoch 6, Train Loss: 1.1285, Val Loss: 1.1026, Val Acc: 0.9807
+Precision: 0.9950, Recall: 0.9837, F1-Score: 0.9888
+Fold 2, Epoch 7, Train Loss: 1.1356, Val Loss: 1.0445, Val Acc: 0.9842
+Precision: 0.9951, Recall: 0.9807, F1-Score: 0.9873
+Fold 2, Epoch 8, Train Loss: 1.1314, Val Loss: 1.0141, Val Acc: 0.9814
+Precision: 0.9952, Recall: 0.9453, F1-Score: 0.9690
+Fold 2, Epoch 9, Train Loss: 1.1101, Val Loss: 1.0147, Val Acc: 0.9472
+Precision: 0.9952, Recall: 0.9802, F1-Score: 0.9871
+Fold 2, Epoch 10, Train Loss: 1.1304, Val Loss: 1.0151, Val Acc: 0.9810
+Precision: 0.9951, Recall: 0.9851, F1-Score: 0.9896
+Fold 2, Epoch 11, Train Loss: 1.1064, Val Loss: 0.9896, Val Acc: 0.9856
+Precision: 0.9951, Recall: 0.9846, F1-Score: 0.9894
+Fold 2, Epoch 12, Train Loss: 1.0758, Val Loss: 1.0289, Val Acc: 0.9852
+Precision: 0.9951, Recall: 0.9845, F1-Score: 0.9894
+Fold 2, Epoch 13, Train Loss: 1.1023, Val Loss: 0.9831, Val Acc: 0.9849
+Precision: 0.9951, Recall: 0.9670, F1-Score: 0.9802
+Fold 2, Epoch 14, Train Loss: 1.1435, Val Loss: 0.9838, Val Acc: 0.9685
+Precision: 0.9944, Recall: 0.8967, F1-Score: 0.9420
+Fold 2, Epoch 15, Train Loss: 1.0981, Val Loss: 0.9979, Val Acc: 0.8922
+Precision: 0.9953, Recall: 0.9737, F1-Score: 0.9838
+Fold 2, Epoch 16, Train Loss: 1.1023, Val Loss: 1.0149, Val Acc: 0.9751
+Precision: 0.9947, Recall: 0.9677, F1-Score: 0.9801
+Fold 2, Epoch 17, Train Loss: 1.0686, Val Loss: 0.9768, Val Acc: 0.9690
+Precision: 0.9952, Recall: 0.9650, F1-Score: 0.9792
+Fold 2, Epoch 18, Train Loss: 1.0537, Val Loss: 0.9338, Val Acc: 0.9665
+Precision: 0.9953, Recall: 0.9862, F1-Score: 0.9902
+Fold 2, Epoch 19, Train Loss: 1.0360, Val Loss: 0.9507, Val Acc: 0.9867
+Precision: 0.9954, Recall: 0.9851, F1-Score: 0.9898
+Fold 2, Epoch 20, Train Loss: 1.0498, Val Loss: 0.9567, Val Acc: 0.9856
+Precision: 0.9951, Recall: 0.9843, F1-Score: 0.9891
+Fold 2, Epoch 21, Train Loss: 1.0428, Val Loss: 0.9701, Val Acc: 0.9845
+Precision: 0.9953, Recall: 0.9844, F1-Score: 0.9894
+Fold 2, Epoch 22, Train Loss: 1.0328, Val Loss: 0.9649, Val Acc: 0.9849
+Precision: 0.9948, Recall: 0.9751, F1-Score: 0.9840
+Fold 2, Epoch 23, Train Loss: 1.0339, Val Loss: 0.9228, Val Acc: 0.9766
+Precision: 0.9954, Recall: 0.9787, F1-Score: 0.9864
+Fold 2, Epoch 24, Train Loss: 1.0419, Val Loss: 0.9011, Val Acc: 0.9799
+Precision: 0.9953, Recall: 0.9818, F1-Score: 0.9880
+Fold 2, Epoch 25, Train Loss: 1.0458, Val Loss: 0.9224, Val Acc: 0.9825
+Precision: 0.9952, Recall: 0.9854, F1-Score: 0.9899
+Fold 2, Epoch 26, Train Loss: 1.0403, Val Loss: 0.9737, Val Acc: 0.9859
+Precision: 0.9954, Recall: 0.9814, F1-Score: 0.9878
+Fold 2, Epoch 27, Train Loss: 1.0319, Val Loss: 0.9497, Val Acc: 0.9820
+Precision: 0.9954, Recall: 0.9853, F1-Score: 0.9898
+Fold 2, Epoch 28, Train Loss: 0.9945, Val Loss: 0.9232, Val Acc: 0.9858
+Precision: 0.9954, Recall: 0.9820, F1-Score: 0.9881
+Fold 2, Epoch 29, Train Loss: 1.0155, Val Loss: 0.8966, Val Acc: 0.9826
+Precision: 0.9953, Recall: 0.9701, F1-Score: 0.9820
+Fold 2, Epoch 30, Train Loss: 1.0066, Val Loss: 0.9039, Val Acc: 0.9717
+Precision: 0.9955, Recall: 0.9819, F1-Score: 0.9882
+Fold 2, Epoch 31, Train Loss: 0.9954, Val Loss: 0.9052, Val Acc: 0.9828
+Precision: 0.9953, Recall: 0.9785, F1-Score: 0.9863
+Fold 2, Epoch 32, Train Loss: 1.0356, Val Loss: 0.8967, Val Acc: 0.9798
+Precision: 0.9953, Recall: 0.9787, F1-Score: 0.9864
+Fold 2, Epoch 33, Train Loss: 0.9988, Val Loss: 0.9102, Val Acc: 0.9800
+Precision: 0.9953, Recall: 0.9870, F1-Score: 0.9907
+Fold 2, Epoch 34, Train Loss: 0.9794, Val Loss: 0.8741, Val Acc: 0.9874
+Precision: 0.9955, Recall: 0.9686, F1-Score: 0.9813
+Fold 2, Epoch 35, Train Loss: 0.9703, Val Loss: 0.8942, Val Acc: 0.9700
+Precision: 0.9954, Recall: 0.9799, F1-Score: 0.9870
+Fold 2, Epoch 36, Train Loss: 0.9993, Val Loss: 0.8590, Val Acc: 0.9809
+Precision: 0.9951, Recall: 0.9758, F1-Score: 0.9847
+Fold 2, Epoch 37, Train Loss: 0.9589, Val Loss: 0.8639, Val Acc: 0.9771
+Precision: 0.9954, Recall: 0.9856, F1-Score: 0.9900
+Fold 2, Epoch 38, Train Loss: 0.9834, Val Loss: 0.8906, Val Acc: 0.9861
+Precision: 0.9954, Recall: 0.9858, F1-Score: 0.9900
+Fold 2, Epoch 39, Train Loss: 1.0131, Val Loss: 0.8797, Val Acc: 0.9862
+Precision: 0.9954, Recall: 0.9849, F1-Score: 0.9896
+Fold 2, Epoch 40, Train Loss: 0.9706, Val Loss: 0.8671, Val Acc: 0.9853
+Precision: 0.9954, Recall: 0.9840, F1-Score: 0.9891
+Fold 2, Epoch 41, Train Loss: 0.9811, Val Loss: 0.8620, Val Acc: 0.9844
+Precision: 0.9954, Recall: 0.9840, F1-Score: 0.9891
+Fold 2, Epoch 42, Train Loss: 0.9901, Val Loss: 0.8741, Val Acc: 0.9845
+Precision: 0.9955, Recall: 0.9851, F1-Score: 0.9897
+Fold 2, Epoch 43, Train Loss: 0.9686, Val Loss: 0.8290, Val Acc: 0.9856
+Precision: 0.9955, Recall: 0.9851, F1-Score: 0.9898
+Fold 2, Epoch 44, Train Loss: 0.9623, Val Loss: 0.8501, Val Acc: 0.9855
+Precision: 0.9950, Recall: 0.9716, F1-Score: 0.9824
+Fold 2, Epoch 45, Train Loss: 0.9355, Val Loss: 0.8470, Val Acc: 0.9734
+Precision: 0.9955, Recall: 0.9863, F1-Score: 0.9904
+Fold 2, Epoch 46, Train Loss: 0.9396, Val Loss: 0.8538, Val Acc: 0.9868
+Precision: 0.9955, Recall: 0.9747, F1-Score: 0.9844
+Fold 2, Epoch 47, Train Loss: 0.9493, Val Loss: 0.8228, Val Acc: 0.9762
+Precision: 0.9955, Recall: 0.9828, F1-Score: 0.9885
+Fold 2, Epoch 48, Train Loss: 0.9371, Val Loss: 0.8338, Val Acc: 0.9835
+Precision: 0.9954, Recall: 0.9853, F1-Score: 0.9898
+Fold 2, Epoch 49, Train Loss: 0.9496, Val Loss: 0.8147, Val Acc: 0.9858
+Precision: 0.9956, Recall: 0.9826, F1-Score: 0.9885
+Fold 2, Epoch 50, Train Loss: 0.9399, Val Loss: 0.8144, Val Acc: 0.9831
+Precision: 0.9954, Recall: 0.9825, F1-Score: 0.9884
+Fold 2, Epoch 51, Train Loss: 0.9295, Val Loss: 0.8577, Val Acc: 0.9833
+Precision: 0.9955, Recall: 0.9760, F1-Score: 0.9851
+Fold 2, Epoch 52, Train Loss: 0.9584, Val Loss: 0.8303, Val Acc: 0.9774
+Precision: 0.9954, Recall: 0.9797, F1-Score: 0.9869
+Fold 2, Epoch 53, Train Loss: 0.9017, Val Loss: 0.8028, Val Acc: 0.9807
+Precision: 0.9955, Recall: 0.9853, F1-Score: 0.9898
+Fold 2, Epoch 54, Train Loss: 0.9175, Val Loss: 0.8230, Val Acc: 0.9857
+Precision: 0.9952, Recall: 0.9825, F1-Score: 0.9882
+Fold 2, Epoch 55, Train Loss: 0.9126, Val Loss: 0.8144, Val Acc: 0.9834
+Precision: 0.9955, Recall: 0.9833, F1-Score: 0.9888
+Fold 2, Epoch 56, Train Loss: 0.8982, Val Loss: 0.8136, Val Acc: 0.9839
+Precision: 0.9955, Recall: 0.9864, F1-Score: 0.9905
+Fold 2, Epoch 57, Train Loss: 0.9065, Val Loss: 0.8003, Val Acc: 0.9869
+Precision: 0.9956, Recall: 0.9855, F1-Score: 0.9900
+Fold 2, Epoch 58, Train Loss: 0.9397, Val Loss: 0.7874, Val Acc: 0.9859
+Precision: 0.9955, Recall: 0.9802, F1-Score: 0.9872
+Fold 2, Epoch 59, Train Loss: 0.9359, Val Loss: 0.8250, Val Acc: 0.9812
+Precision: 0.9957, Recall: 0.9856, F1-Score: 0.9901
+Fold 2, Epoch 60, Train Loss: 0.9590, Val Loss: 0.8311, Val Acc: 0.9860
+Precision: 0.9951, Recall: 0.9840, F1-Score: 0.9889
+Fold 2, Epoch 61, Train Loss: 0.9353, Val Loss: 0.8355, Val Acc: 0.9848
+Precision: 0.9955, Recall: 0.9860, F1-Score: 0.9902
+Fold 2, Epoch 62, Train Loss: 0.9343, Val Loss: 0.8005, Val Acc: 0.9864
+Precision: 0.9955, Recall: 0.9869, F1-Score: 0.9907
+Fold 2, Epoch 63, Train Loss: 0.9026, Val Loss: 0.7828, Val Acc: 0.9874
+Precision: 0.9955, Recall: 0.9848, F1-Score: 0.9896
+Fold 2, Epoch 64, Train Loss: 0.9170, Val Loss: 0.7839, Val Acc: 0.9852
+Precision: 0.9955, Recall: 0.9822, F1-Score: 0.9883
+Fold 2, Epoch 65, Train Loss: 0.9043, Val Loss: 0.7833, Val Acc: 0.9828
+Precision: 0.9956, Recall: 0.9859, F1-Score: 0.9902
+Fold 2, Epoch 66, Train Loss: 0.8894, Val Loss: 0.7823, Val Acc: 0.9864
+Precision: 0.9954, Recall: 0.9863, F1-Score: 0.9902
+Fold 2, Epoch 67, Train Loss: 0.8968, Val Loss: 0.8011, Val Acc: 0.9867
+Precision: 0.9956, Recall: 0.9877, F1-Score: 0.9911
+Fold 2, Epoch 68, Train Loss: 0.8882, Val Loss: 0.7780, Val Acc: 0.9882
+Precision: 0.9956, Recall: 0.9865, F1-Score: 0.9905
+Fold 2, Epoch 69, Train Loss: 0.8666, Val Loss: 0.7689, Val Acc: 0.9870
+Precision: 0.9956, Recall: 0.9873, F1-Score: 0.9909
+Fold 2, Epoch 70, Train Loss: 0.8858, Val Loss: 0.8083, Val Acc: 0.9877
+Precision: 0.9955, Recall: 0.9853, F1-Score: 0.9899
+Fold 2, Epoch 71, Train Loss: 0.8969, Val Loss: 0.8099, Val Acc: 0.9857
+Precision: 0.9956, Recall: 0.9866, F1-Score: 0.9906
+Fold 2, Epoch 72, Train Loss: 0.9091, Val Loss: 0.7884, Val Acc: 0.9870
+Precision: 0.9956, Recall: 0.9862, F1-Score: 0.9903
+Fold 2, Epoch 73, Train Loss: 0.8853, Val Loss: 0.7537, Val Acc: 0.9866
+Precision: 0.9955, Recall: 0.9804, F1-Score: 0.9873
+Fold 2, Epoch 74, Train Loss: 0.8985, Val Loss: 0.7584, Val Acc: 0.9814
+Precision: 0.9955, Recall: 0.9880, F1-Score: 0.9913
+Fold 2, Epoch 75, Train Loss: 0.9067, Val Loss: 0.7934, Val Acc: 0.9884
+Precision: 0.9954, Recall: 0.9864, F1-Score: 0.9902
+Fold 2, Epoch 76, Train Loss: 0.9151, Val Loss: 0.7916, Val Acc: 0.9869
+Precision: 0.9956, Recall: 0.9880, F1-Score: 0.9913
+Fold 2, Epoch 77, Train Loss: 0.8926, Val Loss: 0.7971, Val Acc: 0.9883
+Precision: 0.9949, Recall: 0.8977, F1-Score: 0.9427
+Fold 2, Epoch 78, Train Loss: 0.8960, Val Loss: 0.7675, Val Acc: 0.8938
+Precision: 0.9955, Recall: 0.9880, F1-Score: 0.9912
+Fold 2, Epoch 79, Train Loss: 0.8503, Val Loss: 0.7709, Val Acc: 0.9884
+Precision: 0.9948, Recall: 0.9207, F1-Score: 0.9552
+Fold 2, Epoch 80, Train Loss: 0.8610, Val Loss: 0.9099, Val Acc: 0.9151
+Precision: 0.9955, Recall: 0.9861, F1-Score: 0.9902
+Fold 2, Epoch 81, Train Loss: 0.9417, Val Loss: 0.7848, Val Acc: 0.9865
+Precision: 0.9956, Recall: 0.9861, F1-Score: 0.9903
+Fold 2, Epoch 82, Train Loss: 0.8520, Val Loss: 0.7676, Val Acc: 0.9864
+Precision: 0.9956, Recall: 0.9870, F1-Score: 0.9908
+Fold 2, Epoch 83, Train Loss: 0.8442, Val Loss: 0.7698, Val Acc: 0.9873
+Precision: 0.9956, Recall: 0.9878, F1-Score: 0.9911
+Fold 2, Epoch 84, Train Loss: 0.8635, Val Loss: 0.7495, Val Acc: 0.9881
+Precision: 0.9953, Recall: 0.9853, F1-Score: 0.9896
+Fold 2, Epoch 85, Train Loss: 0.8401, Val Loss: 0.7651, Val Acc: 0.9857
+Precision: 0.9956, Recall: 0.9857, F1-Score: 0.9900
+Fold 2, Epoch 86, Train Loss: 0.8597, Val Loss: 0.7460, Val Acc: 0.9861
+Precision: 0.9957, Recall: 0.9873, F1-Score: 0.9909
+Fold 2, Epoch 87, Train Loss: 0.8438, Val Loss: 0.7551, Val Acc: 0.9876
+Precision: 0.9954, Recall: 0.9819, F1-Score: 0.9880
+Fold 2, Epoch 88, Train Loss: 0.8761, Val Loss: 0.7638, Val Acc: 0.9824
+Precision: 0.9953, Recall: 0.9855, F1-Score: 0.9899
+Fold 2, Epoch 89, Train Loss: 0.8517, Val Loss: 0.7761, Val Acc: 0.9861
+Precision: 0.9955, Recall: 0.9869, F1-Score: 0.9906
+Fold 2, Epoch 90, Train Loss: 0.8800, Val Loss: 0.7431, Val Acc: 0.9873
+Precision: 0.9956, Recall: 0.9875, F1-Score: 0.9910
+Fold 2, Epoch 91, Train Loss: 0.8577, Val Loss: 0.7338, Val Acc: 0.9879
+Precision: 0.9956, Recall: 0.9869, F1-Score: 0.9907
+Fold 2, Epoch 92, Train Loss: 0.8758, Val Loss: 0.7432, Val Acc: 0.9873
+Precision: 0.9956, Recall: 0.9872, F1-Score: 0.9908
+Fold 2, Epoch 93, Train Loss: 0.8405, Val Loss: 0.7404, Val Acc: 0.9876
+Precision: 0.9956, Recall: 0.9865, F1-Score: 0.9905
+Fold 2, Epoch 94, Train Loss: 0.8754, Val Loss: 0.7379, Val Acc: 0.9868
+Precision: 0.9956, Recall: 0.9862, F1-Score: 0.9902
+Fold 2, Epoch 95, Train Loss: 0.8480, Val Loss: 0.7406, Val Acc: 0.9865
+Precision: 0.9956, Recall: 0.9869, F1-Score: 0.9907
+Fold 2, Epoch 96, Train Loss: 0.8209, Val Loss: 0.7226, Val Acc: 0.9872
+Precision: 0.9956, Recall: 0.9882, F1-Score: 0.9913
+Fold 2, Epoch 97, Train Loss: 0.8141, Val Loss: 0.7160, Val Acc: 0.9885
+Precision: 0.9949, Recall: 0.9399, F1-Score: 0.9655
+Fold 2, Epoch 98, Train Loss: 0.8045, Val Loss: 0.6910, Val Acc: 0.9370
+Precision: 0.9957, Recall: 0.9869, F1-Score: 0.9907
+Fold 2, Epoch 99, Train Loss: 0.8095, Val Loss: 0.7609, Val Acc: 0.9871
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+Sample y: tensor([0, 0])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npyPair 3:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npyx shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Precision: 0.9955, Recall: 0.9881, F1-Score: 0.9912
+Fold 2, Epoch 100, Train Loss: 0.8583, Val Loss: 0.7179, Val Acc: 0.9884
+Completed Fold 2
+Starting Fold 3
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 1:
+Pair 1:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+Pair 2:Pair 2:x shape: torch.Size([3654, 4])
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npyy shape: torch.Size([3654])
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Pair 3:Pair 3:Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npyx shape: torch.Size([3654, 4])Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+
+
+y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+
+Pair 3:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Precision: 0.9959, Recall: 0.9879, F1-Score: 0.9915
+Fold 3, Epoch 1, Train Loss: 1.2287, Val Loss: 0.8629, Val Acc: 0.9865
+Precision: 0.9958, Recall: 0.9871, F1-Score: 0.9909
+Fold 3, Epoch 2, Train Loss: 0.8997, Val Loss: 0.7630, Val Acc: 0.9851
+Precision: 0.9957, Recall: 0.9869, F1-Score: 0.9907
+Fold 3, Epoch 3, Train Loss: 0.8426, Val Loss: 0.7097, Val Acc: 0.9852
+Precision: 0.9959, Recall: 0.9827, F1-Score: 0.9887
+Fold 3, Epoch 4, Train Loss: 0.8431, Val Loss: 0.7391, Val Acc: 0.9804
+Precision: 0.9958, Recall: 0.9894, F1-Score: 0.9922
+Fold 3, Epoch 5, Train Loss: 0.8258, Val Loss: 0.7469, Val Acc: 0.9883
+Precision: 0.9958, Recall: 0.9890, F1-Score: 0.9919
+Fold 3, Epoch 6, Train Loss: 0.8137, Val Loss: 0.7061, Val Acc: 0.9876
+Precision: 0.9957, Recall: 0.9881, F1-Score: 0.9914
+Fold 3, Epoch 7, Train Loss: 0.8004, Val Loss: 0.7265, Val Acc: 0.9869
+Precision: 0.9957, Recall: 0.9889, F1-Score: 0.9918
+Fold 3, Epoch 8, Train Loss: 0.8111, Val Loss: 0.6924, Val Acc: 0.9875
+Precision: 0.9959, Recall: 0.9877, F1-Score: 0.9913
+Fold 3, Epoch 9, Train Loss: 0.8388, Val Loss: 0.7308, Val Acc: 0.9862
+Precision: 0.9958, Recall: 0.9887, F1-Score: 0.9918
+Fold 3, Epoch 10, Train Loss: 0.8489, Val Loss: 0.7239, Val Acc: 0.9873
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9918
+Fold 3, Epoch 11, Train Loss: 0.8083, Val Loss: 0.7442, Val Acc: 0.9873
+Precision: 0.9956, Recall: 0.9881, F1-Score: 0.9913
+Fold 3, Epoch 12, Train Loss: 0.8190, Val Loss: 0.7256, Val Acc: 0.9867
+Precision: 0.9958, Recall: 0.9888, F1-Score: 0.9918
+Fold 3, Epoch 13, Train Loss: 0.8090, Val Loss: 0.6983, Val Acc: 0.9874
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9923
+Fold 3, Epoch 14, Train Loss: 0.8048, Val Loss: 0.6980, Val Acc: 0.9886
+Precision: 0.9958, Recall: 0.9835, F1-Score: 0.9890
+Fold 3, Epoch 15, Train Loss: 0.8286, Val Loss: 0.6921, Val Acc: 0.9813
+Precision: 0.9957, Recall: 0.9885, F1-Score: 0.9915
+Fold 3, Epoch 16, Train Loss: 0.8080, Val Loss: 0.7091, Val Acc: 0.9874
+Precision: 0.9957, Recall: 0.9875, F1-Score: 0.9911
+Fold 3, Epoch 17, Train Loss: 0.8277, Val Loss: 0.7220, Val Acc: 0.9858
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9917
+Fold 3, Epoch 18, Train Loss: 0.8226, Val Loss: 0.6976, Val Acc: 0.9870
+Precision: 0.9956, Recall: 0.9889, F1-Score: 0.9917
+Fold 3, Epoch 19, Train Loss: 0.8025, Val Loss: 0.7195, Val Acc: 0.9876
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9917
+Fold 3, Epoch 20, Train Loss: 0.8021, Val Loss: 0.7075, Val Acc: 0.9873
+Precision: 0.9958, Recall: 0.9895, F1-Score: 0.9921
+Fold 3, Epoch 21, Train Loss: 0.7923, Val Loss: 0.7113, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9890, F1-Score: 0.9919
+Fold 3, Epoch 22, Train Loss: 0.7782, Val Loss: 0.6965, Val Acc: 0.9877
+Precision: 0.9957, Recall: 0.9881, F1-Score: 0.9913
+Fold 3, Epoch 23, Train Loss: 0.8154, Val Loss: 0.7121, Val Acc: 0.9868
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 3, Epoch 24, Train Loss: 0.8034, Val Loss: 0.6968, Val Acc: 0.9884
+Precision: 0.9959, Recall: 0.9889, F1-Score: 0.9919
+Fold 3, Epoch 25, Train Loss: 0.7968, Val Loss: 0.6991, Val Acc: 0.9875
+Precision: 0.9958, Recall: 0.9885, F1-Score: 0.9916
+Fold 3, Epoch 26, Train Loss: 0.8029, Val Loss: 0.7080, Val Acc: 0.9873
+Precision: 0.9959, Recall: 0.9890, F1-Score: 0.9920
+Fold 3, Epoch 27, Train Loss: 0.8006, Val Loss: 0.7468, Val Acc: 0.9878
+Precision: 0.9958, Recall: 0.9867, F1-Score: 0.9906
+Fold 3, Epoch 28, Train Loss: 0.8001, Val Loss: 0.6839, Val Acc: 0.9847
+Precision: 0.9959, Recall: 0.9891, F1-Score: 0.9921
+Fold 3, Epoch 29, Train Loss: 0.7935, Val Loss: 0.7022, Val Acc: 0.9879
+Precision: 0.9957, Recall: 0.9877, F1-Score: 0.9912
+Fold 3, Epoch 30, Train Loss: 0.7906, Val Loss: 0.7053, Val Acc: 0.9859
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 3, Epoch 31, Train Loss: 0.7786, Val Loss: 0.7117, Val Acc: 0.9880
+Precision: 0.9956, Recall: 0.9878, F1-Score: 0.9911
+Fold 3, Epoch 32, Train Loss: 0.8087, Val Loss: 0.6987, Val Acc: 0.9858
+Precision: 0.9958, Recall: 0.9892, F1-Score: 0.9920
+Fold 3, Epoch 33, Train Loss: 0.7922, Val Loss: 0.7120, Val Acc: 0.9881
+Precision: 0.9957, Recall: 0.9892, F1-Score: 0.9919
+Fold 3, Epoch 34, Train Loss: 0.7948, Val Loss: 0.6731, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9881, F1-Score: 0.9914
+Fold 3, Epoch 35, Train Loss: 0.8086, Val Loss: 0.6742, Val Acc: 0.9867
+Precision: 0.9956, Recall: 0.9883, F1-Score: 0.9913
+Fold 3, Epoch 36, Train Loss: 0.7714, Val Loss: 0.6935, Val Acc: 0.9868
+Precision: 0.9958, Recall: 0.9896, F1-Score: 0.9922
+Fold 3, Epoch 37, Train Loss: 0.7844, Val Loss: 0.6792, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9893, F1-Score: 0.9921
+Fold 3, Epoch 38, Train Loss: 0.7727, Val Loss: 0.6929, Val Acc: 0.9879
+Precision: 0.9958, Recall: 0.9884, F1-Score: 0.9916
+Fold 3, Epoch 39, Train Loss: 0.7938, Val Loss: 0.6660, Val Acc: 0.9871
+Precision: 0.9958, Recall: 0.9856, F1-Score: 0.9902
+Fold 3, Epoch 40, Train Loss: 0.7916, Val Loss: 0.7042, Val Acc: 0.9836
+Precision: 0.9956, Recall: 0.9886, F1-Score: 0.9915
+Fold 3, Epoch 41, Train Loss: 0.7952, Val Loss: 0.6858, Val Acc: 0.9866
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9923
+Fold 3, Epoch 42, Train Loss: 0.7782, Val Loss: 0.6624, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9894, F1-Score: 0.9921
+Fold 3, Epoch 43, Train Loss: 0.7735, Val Loss: 0.6457, Val Acc: 0.9881
+Precision: 0.9958, Recall: 0.9888, F1-Score: 0.9918
+Fold 3, Epoch 44, Train Loss: 0.7773, Val Loss: 0.6981, Val Acc: 0.9873
+Precision: 0.9957, Recall: 0.9881, F1-Score: 0.9913
+Fold 3, Epoch 45, Train Loss: 0.8093, Val Loss: 0.7095, Val Acc: 0.9863
+Precision: 0.9957, Recall: 0.9885, F1-Score: 0.9916
+Fold 3, Epoch 46, Train Loss: 0.8584, Val Loss: 0.8122, Val Acc: 0.9873
+Precision: 0.9958, Recall: 0.9889, F1-Score: 0.9919
+Fold 3, Epoch 47, Train Loss: 0.8137, Val Loss: 0.6936, Val Acc: 0.9875
+Precision: 0.9958, Recall: 0.9892, F1-Score: 0.9920
+Fold 3, Epoch 48, Train Loss: 0.7634, Val Loss: 0.7056, Val Acc: 0.9880
+Precision: 0.9957, Recall: 0.9890, F1-Score: 0.9918
+Fold 3, Epoch 49, Train Loss: 0.7669, Val Loss: 0.6728, Val Acc: 0.9876
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9922
+Fold 3, Epoch 50, Train Loss: 0.7915, Val Loss: 0.6812, Val Acc: 0.9883
+Precision: 0.9959, Recall: 0.9893, F1-Score: 0.9920
+Fold 3, Epoch 51, Train Loss: 0.7535, Val Loss: 0.6543, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9891, F1-Score: 0.9920
+Fold 3, Epoch 52, Train Loss: 0.7478, Val Loss: 0.6514, Val Acc: 0.9879
+Precision: 0.9959, Recall: 0.9891, F1-Score: 0.9920
+Fold 3, Epoch 53, Train Loss: 0.7464, Val Loss: 0.6539, Val Acc: 0.9880
+Precision: 0.9958, Recall: 0.9884, F1-Score: 0.9915
+Fold 3, Epoch 54, Train Loss: 0.7276, Val Loss: 0.6471, Val Acc: 0.9863
+Precision: 0.9958, Recall: 0.9881, F1-Score: 0.9914
+Fold 3, Epoch 55, Train Loss: 0.7673, Val Loss: 0.6537, Val Acc: 0.9860
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 3, Epoch 56, Train Loss: 0.7485, Val Loss: 0.6713, Val Acc: 0.9886
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9920
+Fold 3, Epoch 57, Train Loss: 0.7766, Val Loss: 0.6448, Val Acc: 0.9876
+Precision: 0.9955, Recall: 0.9880, F1-Score: 0.9913
+Fold 3, Epoch 58, Train Loss: 0.7481, Val Loss: 0.8067, Val Acc: 0.9865
+Precision: 0.9957, Recall: 0.9883, F1-Score: 0.9915
+Fold 3, Epoch 59, Train Loss: 0.7782, Val Loss: 0.7595, Val Acc: 0.9868
+Precision: 0.9958, Recall: 0.9892, F1-Score: 0.9919
+Fold 3, Epoch 60, Train Loss: 0.7512, Val Loss: 0.6471, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9888, F1-Score: 0.9918
+Fold 3, Epoch 61, Train Loss: 0.7310, Val Loss: 0.6639, Val Acc: 0.9873
+Precision: 0.9958, Recall: 0.9891, F1-Score: 0.9919
+Fold 3, Epoch 62, Train Loss: 0.7675, Val Loss: 0.6621, Val Acc: 0.9878
+Precision: 0.9956, Recall: 0.9884, F1-Score: 0.9914
+Fold 3, Epoch 63, Train Loss: 0.7554, Val Loss: 0.6555, Val Acc: 0.9866
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 3, Epoch 64, Train Loss: 0.7211, Val Loss: 0.6560, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9893, F1-Score: 0.9920
+Fold 3, Epoch 65, Train Loss: 0.7485, Val Loss: 0.6379, Val Acc: 0.9879
+Precision: 0.9957, Recall: 0.9885, F1-Score: 0.9916
+Fold 3, Epoch 66, Train Loss: 0.7431, Val Loss: 0.7685, Val Acc: 0.9870
+Precision: 0.9960, Recall: 0.9890, F1-Score: 0.9920
+Fold 3, Epoch 67, Train Loss: 0.7564, Val Loss: 0.6594, Val Acc: 0.9877
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 3, Epoch 68, Train Loss: 0.7490, Val Loss: 0.6593, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9890, F1-Score: 0.9920
+Fold 3, Epoch 69, Train Loss: 0.7764, Val Loss: 0.7103, Val Acc: 0.9878
+Precision: 0.9958, Recall: 0.9891, F1-Score: 0.9919
+Fold 3, Epoch 70, Train Loss: 0.7545, Val Loss: 0.6428, Val Acc: 0.9879
+Precision: 0.9957, Recall: 0.9882, F1-Score: 0.9913
+Fold 3, Epoch 71, Train Loss: 0.7479, Val Loss: 0.6529, Val Acc: 0.9866
+Precision: 0.9961, Recall: 0.9900, F1-Score: 0.9926
+Fold 3, Epoch 72, Train Loss: 0.7442, Val Loss: 0.6563, Val Acc: 0.9889
+Precision: 0.9958, Recall: 0.9888, F1-Score: 0.9918
+Fold 3, Epoch 73, Train Loss: 0.7500, Val Loss: 0.6541, Val Acc: 0.9873
+Precision: 0.9959, Recall: 0.9893, F1-Score: 0.9921
+Fold 3, Epoch 74, Train Loss: 0.7414, Val Loss: 0.7004, Val Acc: 0.9882
+Precision: 0.9958, Recall: 0.9881, F1-Score: 0.9914
+Fold 3, Epoch 75, Train Loss: 0.7375, Val Loss: 0.6560, Val Acc: 0.9867
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9921
+Fold 3, Epoch 76, Train Loss: 0.7345, Val Loss: 0.7036, Val Acc: 0.9879
+Precision: 0.9958, Recall: 0.9885, F1-Score: 0.9916
+Fold 3, Epoch 77, Train Loss: 0.7985, Val Loss: 0.7353, Val Acc: 0.9871
+Precision: 0.9957, Recall: 0.9890, F1-Score: 0.9918
+Fold 3, Epoch 78, Train Loss: 0.7591, Val Loss: 0.6585, Val Acc: 0.9880
+Precision: 0.9960, Recall: 0.9893, F1-Score: 0.9921
+Fold 3, Epoch 79, Train Loss: 0.7320, Val Loss: 0.6522, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9922
+Fold 3, Epoch 80, Train Loss: 0.7279, Val Loss: 0.6442, Val Acc: 0.9881
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9921
+Fold 3, Epoch 81, Train Loss: 0.7491, Val Loss: 0.6511, Val Acc: 0.9879
+Precision: 0.9958, Recall: 0.9888, F1-Score: 0.9917
+Fold 3, Epoch 82, Train Loss: 0.7178, Val Loss: 0.6319, Val Acc: 0.9873
+Precision: 0.9959, Recall: 0.9887, F1-Score: 0.9918
+Fold 3, Epoch 83, Train Loss: 0.7024, Val Loss: 0.6263, Val Acc: 0.9874
+Precision: 0.9959, Recall: 0.9893, F1-Score: 0.9921
+Fold 3, Epoch 84, Train Loss: 0.7527, Val Loss: 0.6467, Val Acc: 0.9879
+Precision: 0.9957, Recall: 0.9883, F1-Score: 0.9914
+Fold 3, Epoch 85, Train Loss: 0.7542, Val Loss: 0.7060, Val Acc: 0.9866
+Precision: 0.9960, Recall: 0.9896, F1-Score: 0.9923
+Fold 3, Epoch 86, Train Loss: 0.7316, Val Loss: 0.6384, Val Acc: 0.9887
+Precision: 0.9960, Recall: 0.9883, F1-Score: 0.9916
+Fold 3, Epoch 87, Train Loss: 0.7099, Val Loss: 0.6067, Val Acc: 0.9866
+Precision: 0.9961, Recall: 0.9892, F1-Score: 0.9921
+Fold 3, Epoch 88, Train Loss: 0.7497, Val Loss: 0.6264, Val Acc: 0.9878
+Precision: 0.9956, Recall: 0.9878, F1-Score: 0.9912
+Fold 3, Epoch 89, Train Loss: 0.7357, Val Loss: 0.7361, Val Acc: 0.9862
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 3, Epoch 90, Train Loss: 0.7501, Val Loss: 0.6581, Val Acc: 0.9882
+Precision: 0.9958, Recall: 0.9893, F1-Score: 0.9920
+Fold 3, Epoch 91, Train Loss: 0.7194, Val Loss: 0.6500, Val Acc: 0.9880
+Precision: 0.9960, Recall: 0.9894, F1-Score: 0.9921
+Fold 3, Epoch 92, Train Loss: 0.7089, Val Loss: 0.6107, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9883, F1-Score: 0.9916
+Fold 3, Epoch 93, Train Loss: 0.7044, Val Loss: 0.6356, Val Acc: 0.9869
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9920
+Fold 3, Epoch 94, Train Loss: 0.7213, Val Loss: 0.6390, Val Acc: 0.9878
+Precision: 0.9961, Recall: 0.9892, F1-Score: 0.9922
+Fold 3, Epoch 95, Train Loss: 0.7310, Val Loss: 0.6287, Val Acc: 0.9879
+Precision: 0.9960, Recall: 0.9897, F1-Score: 0.9923
+Fold 3, Epoch 96, Train Loss: 0.7011, Val Loss: 0.6313, Val Acc: 0.9888
+Precision: 0.9961, Recall: 0.9897, F1-Score: 0.9924
+Fold 3, Epoch 97, Train Loss: 0.6999, Val Loss: 0.6110, Val Acc: 0.9886
+Precision: 0.9961, Recall: 0.9890, F1-Score: 0.9920
+Fold 3, Epoch 98, Train Loss: 0.7130, Val Loss: 0.6340, Val Acc: 0.9874
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9917
+Fold 3, Epoch 99, Train Loss: 0.7081, Val Loss: 0.6662, Val Acc: 0.9871
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Pair 1:x shape: torch.Size([3654, 4])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyy shape: torch.Size([3654])
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Precision: 0.9960, Recall: 0.9883, F1-Score: 0.9916
+Fold 3, Epoch 100, Train Loss: 0.7154, Val Loss: 0.6474, Val Acc: 0.9870
+Completed Fold 3
+Starting Fold 4
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+Pair 1:x shape: torch.Size([3654, 4])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npyy shape: torch.Size([3654])
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Pair 2:
+Pair 2:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9923
+Fold 4, Epoch 1, Train Loss: 0.9102, Val Loss: 0.6062, Val Acc: 0.9888
+Precision: 0.9958, Recall: 0.9902, F1-Score: 0.9925
+Fold 4, Epoch 2, Train Loss: 0.7454, Val Loss: 0.5496, Val Acc: 0.9896
+Precision: 0.9959, Recall: 0.9883, F1-Score: 0.9915
+Fold 4, Epoch 3, Train Loss: 0.7465, Val Loss: 0.5454, Val Acc: 0.9870
+Precision: 0.9959, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 4, Train Loss: 0.7449, Val Loss: 0.5253, Val Acc: 0.9893
+Precision: 0.9959, Recall: 0.9902, F1-Score: 0.9925
+Fold 4, Epoch 5, Train Loss: 0.7021, Val Loss: 0.5263, Val Acc: 0.9895
+Precision: 0.9959, Recall: 0.9898, F1-Score: 0.9923
+Fold 4, Epoch 6, Train Loss: 0.7280, Val Loss: 0.5313, Val Acc: 0.9890
+Precision: 0.9959, Recall: 0.9887, F1-Score: 0.9918
+Fold 4, Epoch 7, Train Loss: 0.7200, Val Loss: 0.5191, Val Acc: 0.9873
+Precision: 0.9959, Recall: 0.9896, F1-Score: 0.9922
+Fold 4, Epoch 8, Train Loss: 0.7062, Val Loss: 0.5446, Val Acc: 0.9890
+Precision: 0.9960, Recall: 0.9902, F1-Score: 0.9926
+Fold 4, Epoch 9, Train Loss: 0.7268, Val Loss: 0.5223, Val Acc: 0.9894
+Precision: 0.9958, Recall: 0.9897, F1-Score: 0.9922
+Fold 4, Epoch 10, Train Loss: 0.7089, Val Loss: 0.5195, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9903, F1-Score: 0.9927
+Fold 4, Epoch 11, Train Loss: 0.7029, Val Loss: 0.5220, Val Acc: 0.9897
+Precision: 0.9958, Recall: 0.9894, F1-Score: 0.9921
+Fold 4, Epoch 12, Train Loss: 0.7234, Val Loss: 0.5195, Val Acc: 0.9887
+Precision: 0.9959, Recall: 0.9900, F1-Score: 0.9924
+Fold 4, Epoch 13, Train Loss: 0.7035, Val Loss: 0.5048, Val Acc: 0.9891
+Precision: 0.9957, Recall: 0.9878, F1-Score: 0.9911
+Fold 4, Epoch 14, Train Loss: 0.7012, Val Loss: 0.5082, Val Acc: 0.9850
+Precision: 0.9958, Recall: 0.9896, F1-Score: 0.9922
+Fold 4, Epoch 15, Train Loss: 0.7071, Val Loss: 0.5327, Val Acc: 0.9883
+Precision: 0.9959, Recall: 0.9875, F1-Score: 0.9912
+Fold 4, Epoch 16, Train Loss: 0.7231, Val Loss: 0.5162, Val Acc: 0.9870
+Precision: 0.9958, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 17, Train Loss: 0.7020, Val Loss: 0.5516, Val Acc: 0.9897
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 18, Train Loss: 0.6894, Val Loss: 0.5206, Val Acc: 0.9888
+Precision: 0.9960, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 19, Train Loss: 0.7167, Val Loss: 0.5537, Val Acc: 0.9895
+Precision: 0.9959, Recall: 0.9902, F1-Score: 0.9925
+Fold 4, Epoch 20, Train Loss: 0.7063, Val Loss: 0.4994, Val Acc: 0.9893
+Precision: 0.9959, Recall: 0.9898, F1-Score: 0.9923
+Fold 4, Epoch 21, Train Loss: 0.6872, Val Loss: 0.5186, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9900, F1-Score: 0.9924
+Fold 4, Epoch 22, Train Loss: 0.7026, Val Loss: 0.5318, Val Acc: 0.9892
+Precision: 0.9959, Recall: 0.9898, F1-Score: 0.9923
+Fold 4, Epoch 23, Train Loss: 0.6929, Val Loss: 0.5311, Val Acc: 0.9890
+Precision: 0.9960, Recall: 0.9897, F1-Score: 0.9923
+Fold 4, Epoch 24, Train Loss: 0.6858, Val Loss: 0.5015, Val Acc: 0.9889
+Precision: 0.9960, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 25, Train Loss: 0.6988, Val Loss: 0.5081, Val Acc: 0.9895
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9917
+Fold 4, Epoch 26, Train Loss: 0.7026, Val Loss: 0.5190, Val Acc: 0.9871
+Precision: 0.9959, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 27, Train Loss: 0.7210, Val Loss: 0.5329, Val Acc: 0.9891
+Precision: 0.9959, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 28, Train Loss: 0.7090, Val Loss: 0.5387, Val Acc: 0.9891
+Precision: 0.9959, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 29, Train Loss: 0.7168, Val Loss: 0.5144, Val Acc: 0.9895
+Precision: 0.9960, Recall: 0.9898, F1-Score: 0.9925
+Fold 4, Epoch 30, Train Loss: 0.7159, Val Loss: 0.5290, Val Acc: 0.9892
+Precision: 0.9959, Recall: 0.9898, F1-Score: 0.9924
+Fold 4, Epoch 31, Train Loss: 0.6919, Val Loss: 0.5228, Val Acc: 0.9891
+Precision: 0.9957, Recall: 0.9892, F1-Score: 0.9919
+Fold 4, Epoch 32, Train Loss: 0.6988, Val Loss: 0.5500, Val Acc: 0.9884
+Precision: 0.9960, Recall: 0.9895, F1-Score: 0.9923
+Fold 4, Epoch 33, Train Loss: 0.6892, Val Loss: 0.5010, Val Acc: 0.9890
+Precision: 0.9960, Recall: 0.9900, F1-Score: 0.9925
+Fold 4, Epoch 34, Train Loss: 0.6833, Val Loss: 0.4930, Val Acc: 0.9893
+Precision: 0.9961, Recall: 0.9904, F1-Score: 0.9928
+Fold 4, Epoch 35, Train Loss: 0.6684, Val Loss: 0.4911, Val Acc: 0.9896
+Precision: 0.9959, Recall: 0.9902, F1-Score: 0.9926
+Fold 4, Epoch 36, Train Loss: 0.6701, Val Loss: 0.4986, Val Acc: 0.9897
+Precision: 0.9960, Recall: 0.9902, F1-Score: 0.9926
+Fold 4, Epoch 37, Train Loss: 0.6645, Val Loss: 0.5012, Val Acc: 0.9895
+Precision: 0.9956, Recall: 0.9882, F1-Score: 0.9913
+Fold 4, Epoch 38, Train Loss: 0.6721, Val Loss: 0.5134, Val Acc: 0.9855
+Precision: 0.9958, Recall: 0.9894, F1-Score: 0.9921
+Fold 4, Epoch 39, Train Loss: 0.6930, Val Loss: 0.4956, Val Acc: 0.9881
+Precision: 0.9960, Recall: 0.9900, F1-Score: 0.9925
+Fold 4, Epoch 40, Train Loss: 0.6969, Val Loss: 0.5024, Val Acc: 0.9893
+Precision: 0.9960, Recall: 0.9901, F1-Score: 0.9926
+Fold 4, Epoch 41, Train Loss: 0.6741, Val Loss: 0.4892, Val Acc: 0.9895
+Precision: 0.9959, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 42, Train Loss: 0.6830, Val Loss: 0.5175, Val Acc: 0.9893
+Precision: 0.9958, Recall: 0.9892, F1-Score: 0.9919
+Fold 4, Epoch 43, Train Loss: 0.6844, Val Loss: 0.5167, Val Acc: 0.9877
+Precision: 0.9960, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 44, Train Loss: 0.6806, Val Loss: 0.5051, Val Acc: 0.9894
+Precision: 0.9959, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 45, Train Loss: 0.6812, Val Loss: 0.5005, Val Acc: 0.9893
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 4, Epoch 46, Train Loss: 0.6722, Val Loss: 0.5164, Val Acc: 0.9884
+Precision: 0.9960, Recall: 0.9897, F1-Score: 0.9924
+Fold 4, Epoch 47, Train Loss: 0.6963, Val Loss: 0.5211, Val Acc: 0.9890
+Precision: 0.9962, Recall: 0.9907, F1-Score: 0.9930
+Fold 4, Epoch 48, Train Loss: 0.6880, Val Loss: 0.4974, Val Acc: 0.9902
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9922
+Fold 4, Epoch 49, Train Loss: 0.6808, Val Loss: 0.4901, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9896, F1-Score: 0.9923
+Fold 4, Epoch 50, Train Loss: 0.6907, Val Loss: 0.5463, Val Acc: 0.9890
+Precision: 0.9962, Recall: 0.9904, F1-Score: 0.9928
+Fold 4, Epoch 51, Train Loss: 0.6751, Val Loss: 0.4891, Val Acc: 0.9899
+Precision: 0.9958, Recall: 0.9891, F1-Score: 0.9919
+Fold 4, Epoch 52, Train Loss: 0.6649, Val Loss: 0.5094, Val Acc: 0.9871
+Precision: 0.9958, Recall: 0.9900, F1-Score: 0.9924
+Fold 4, Epoch 53, Train Loss: 0.6915, Val Loss: 0.5140, Val Acc: 0.9891
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9920
+Fold 4, Epoch 54, Train Loss: 0.6797, Val Loss: 0.4894, Val Acc: 0.9882
+Precision: 0.9959, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 55, Train Loss: 0.6405, Val Loss: 0.5158, Val Acc: 0.9894
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 56, Train Loss: 0.6980, Val Loss: 0.4939, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 4, Epoch 57, Train Loss: 0.6883, Val Loss: 0.5040, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9923
+Fold 4, Epoch 58, Train Loss: 0.6699, Val Loss: 0.5137, Val Acc: 0.9890
+Precision: 0.9959, Recall: 0.9900, F1-Score: 0.9925
+Fold 4, Epoch 59, Train Loss: 0.6716, Val Loss: 0.5116, Val Acc: 0.9895
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9921
+Fold 4, Epoch 60, Train Loss: 0.6812, Val Loss: 0.4991, Val Acc: 0.9888
+Precision: 0.9960, Recall: 0.9904, F1-Score: 0.9927
+Fold 4, Epoch 61, Train Loss: 0.6723, Val Loss: 0.4839, Val Acc: 0.9897
+Precision: 0.9960, Recall: 0.9896, F1-Score: 0.9923
+Fold 4, Epoch 62, Train Loss: 0.6749, Val Loss: 0.5162, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 63, Train Loss: 0.6913, Val Loss: 0.4927, Val Acc: 0.9896
+Precision: 0.9960, Recall: 0.9899, F1-Score: 0.9925
+Fold 4, Epoch 64, Train Loss: 0.6692, Val Loss: 0.5044, Val Acc: 0.9892
+Precision: 0.9959, Recall: 0.9896, F1-Score: 0.9922
+Fold 4, Epoch 65, Train Loss: 0.6715, Val Loss: 0.4789, Val Acc: 0.9889
+Precision: 0.9957, Recall: 0.9895, F1-Score: 0.9921
+Fold 4, Epoch 66, Train Loss: 0.6726, Val Loss: 0.5125, Val Acc: 0.9886
+Precision: 0.9956, Recall: 0.9892, F1-Score: 0.9919
+Fold 4, Epoch 67, Train Loss: 0.6725, Val Loss: 0.5704, Val Acc: 0.9883
+Precision: 0.9960, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 68, Train Loss: 0.6966, Val Loss: 0.4907, Val Acc: 0.9893
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9922
+Fold 4, Epoch 69, Train Loss: 0.6666, Val Loss: 0.5323, Val Acc: 0.9887
+Precision: 0.9960, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 70, Train Loss: 0.6774, Val Loss: 0.5084, Val Acc: 0.9890
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 4, Epoch 71, Train Loss: 0.6548, Val Loss: 0.5013, Val Acc: 0.9883
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9921
+Fold 4, Epoch 72, Train Loss: 0.6512, Val Loss: 0.4876, Val Acc: 0.9882
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9921
+Fold 4, Epoch 73, Train Loss: 0.6633, Val Loss: 0.4965, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9923
+Fold 4, Epoch 74, Train Loss: 0.7153, Val Loss: 0.4763, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9894, F1-Score: 0.9921
+Fold 4, Epoch 75, Train Loss: 0.6691, Val Loss: 0.5025, Val Acc: 0.9882
+Precision: 0.9958, Recall: 0.9855, F1-Score: 0.9900
+Fold 4, Epoch 76, Train Loss: 0.6670, Val Loss: 0.4968, Val Acc: 0.9839
+Precision: 0.9961, Recall: 0.9901, F1-Score: 0.9926
+Fold 4, Epoch 77, Train Loss: 0.6599, Val Loss: 0.4671, Val Acc: 0.9895
+Precision: 0.9958, Recall: 0.9890, F1-Score: 0.9918
+Fold 4, Epoch 78, Train Loss: 0.6456, Val Loss: 0.4704, Val Acc: 0.9878
+Precision: 0.9961, Recall: 0.9895, F1-Score: 0.9923
+Fold 4, Epoch 79, Train Loss: 0.6620, Val Loss: 0.4892, Val Acc: 0.9887
+Precision: 0.9959, Recall: 0.9897, F1-Score: 0.9923
+Fold 4, Epoch 80, Train Loss: 0.6850, Val Loss: 0.4844, Val Acc: 0.9890
+Precision: 0.9960, Recall: 0.9897, F1-Score: 0.9923
+Fold 4, Epoch 81, Train Loss: 0.6431, Val Loss: 0.4671, Val Acc: 0.9888
+Precision: 0.9960, Recall: 0.9899, F1-Score: 0.9925
+Fold 4, Epoch 82, Train Loss: 0.6244, Val Loss: 0.4985, Val Acc: 0.9891
+Precision: 0.9960, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 83, Train Loss: 0.6401, Val Loss: 0.4827, Val Acc: 0.9883
+Precision: 0.9960, Recall: 0.9899, F1-Score: 0.9924
+Fold 4, Epoch 84, Train Loss: 0.6591, Val Loss: 0.4842, Val Acc: 0.9892
+Precision: 0.9960, Recall: 0.9898, F1-Score: 0.9924
+Fold 4, Epoch 85, Train Loss: 0.6286, Val Loss: 0.4687, Val Acc: 0.9889
+Precision: 0.9961, Recall: 0.9899, F1-Score: 0.9925
+Fold 4, Epoch 86, Train Loss: 0.6570, Val Loss: 0.5036, Val Acc: 0.9891
+Precision: 0.9961, Recall: 0.9902, F1-Score: 0.9927
+Fold 4, Epoch 87, Train Loss: 0.6720, Val Loss: 0.4732, Val Acc: 0.9894
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 88, Train Loss: 0.6496, Val Loss: 0.4618, Val Acc: 0.9888
+Precision: 0.9957, Recall: 0.9888, F1-Score: 0.9918
+Fold 4, Epoch 89, Train Loss: 0.6490, Val Loss: 0.5720, Val Acc: 0.9878
+Precision: 0.9960, Recall: 0.9887, F1-Score: 0.9918
+Fold 4, Epoch 90, Train Loss: 0.6987, Val Loss: 0.4721, Val Acc: 0.9875
+Precision: 0.9957, Recall: 0.9891, F1-Score: 0.9918
+Fold 4, Epoch 91, Train Loss: 0.6594, Val Loss: 0.5250, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9902, F1-Score: 0.9925
+Fold 4, Epoch 92, Train Loss: 0.6549, Val Loss: 0.5083, Val Acc: 0.9895
+Precision: 0.9960, Recall: 0.9901, F1-Score: 0.9925
+Fold 4, Epoch 93, Train Loss: 0.6546, Val Loss: 0.4550, Val Acc: 0.9895
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 94, Train Loss: 0.6502, Val Loss: 0.4922, Val Acc: 0.9887
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 95, Train Loss: 0.6688, Val Loss: 0.4810, Val Acc: 0.9887
+Precision: 0.9960, Recall: 0.9900, F1-Score: 0.9925
+Fold 4, Epoch 96, Train Loss: 0.6600, Val Loss: 0.4812, Val Acc: 0.9891
+Precision: 0.9960, Recall: 0.9895, F1-Score: 0.9923
+Fold 4, Epoch 97, Train Loss: 0.6625, Val Loss: 0.5089, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9895, F1-Score: 0.9922
+Fold 4, Epoch 98, Train Loss: 0.6609, Val Loss: 0.4758, Val Acc: 0.9887
+Precision: 0.9958, Recall: 0.9895, F1-Score: 0.9921
+Fold 4, Epoch 99, Train Loss: 0.6482, Val Loss: 0.4910, Val Acc: 0.9883
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npySample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+
+x shape: torch.Size([3654, 4])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])y shape: torch.Size([3654])
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Precision: 0.9960, Recall: 0.9898, F1-Score: 0.9924
+Fold 4, Epoch 100, Train Loss: 0.6874, Val Loss: 0.4646, Val Acc: 0.9890
+Completed Fold 4
+Starting Fold 5
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:Pair 1:Pair 1:
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npyx shape: torch.Size([3654, 4])Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+
+
+y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])x shape: torch.Size([3654, 4])
+
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+y shape: torch.Size([3654])
+Pair 2:Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample y: tensor([0, 0])
+Pair 3:Pair 3:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npyPair 3:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])Pair 3:
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+Sample y: tensor([0, 0])
+Precision: 0.9959, Recall: 0.9886, F1-Score: 0.9916
+Fold 5, Epoch 1, Train Loss: 0.8207, Val Loss: 0.5330, Val Acc: 0.9887
+Precision: 0.9958, Recall: 0.9889, F1-Score: 0.9917
+Fold 5, Epoch 2, Train Loss: 0.6653, Val Loss: 0.4708, Val Acc: 0.9892
+Precision: 0.9959, Recall: 0.9887, F1-Score: 0.9917
+Fold 5, Epoch 3, Train Loss: 0.6311, Val Loss: 0.4993, Val Acc: 0.9890
+Precision: 0.9957, Recall: 0.9888, F1-Score: 0.9917
+Fold 5, Epoch 4, Train Loss: 0.6339, Val Loss: 0.4826, Val Acc: 0.9891
+Precision: 0.9960, Recall: 0.9887, F1-Score: 0.9917
+Fold 5, Epoch 5, Train Loss: 0.6453, Val Loss: 0.5011, Val Acc: 0.9890
+Precision: 0.9958, Recall: 0.9886, F1-Score: 0.9916
+Fold 5, Epoch 6, Train Loss: 0.6480, Val Loss: 0.4835, Val Acc: 0.9889
+Precision: 0.9957, Recall: 0.9880, F1-Score: 0.9913
+Fold 5, Epoch 7, Train Loss: 0.6653, Val Loss: 0.5008, Val Acc: 0.9882
+Precision: 0.9957, Recall: 0.9873, F1-Score: 0.9909
+Fold 5, Epoch 8, Train Loss: 0.6419, Val Loss: 0.4606, Val Acc: 0.9876
+Precision: 0.9959, Recall: 0.9892, F1-Score: 0.9920
+Fold 5, Epoch 9, Train Loss: 0.6378, Val Loss: 0.4731, Val Acc: 0.9896
+Precision: 0.9959, Recall: 0.9886, F1-Score: 0.9916
+Fold 5, Epoch 10, Train Loss: 0.6487, Val Loss: 0.4710, Val Acc: 0.9888
+Precision: 0.9960, Recall: 0.9888, F1-Score: 0.9918
+Fold 5, Epoch 11, Train Loss: 0.6588, Val Loss: 0.4911, Val Acc: 0.9891
+Precision: 0.9957, Recall: 0.9880, F1-Score: 0.9912
+Fold 5, Epoch 12, Train Loss: 0.6555, Val Loss: 0.4866, Val Acc: 0.9883
+Precision: 0.9959, Recall: 0.9881, F1-Score: 0.9913
+Fold 5, Epoch 13, Train Loss: 0.6304, Val Loss: 0.4771, Val Acc: 0.9883
+Precision: 0.9959, Recall: 0.9888, F1-Score: 0.9917
+Fold 5, Epoch 14, Train Loss: 0.6367, Val Loss: 0.4713, Val Acc: 0.9890
+Precision: 0.9958, Recall: 0.9887, F1-Score: 0.9916
+Fold 5, Epoch 15, Train Loss: 0.6296, Val Loss: 0.4698, Val Acc: 0.9889
+Precision: 0.9958, Recall: 0.9872, F1-Score: 0.9908
+Fold 5, Epoch 16, Train Loss: 0.6478, Val Loss: 0.4634, Val Acc: 0.9877
+Precision: 0.9958, Recall: 0.9887, F1-Score: 0.9916
+Fold 5, Epoch 17, Train Loss: 0.6201, Val Loss: 0.4816, Val Acc: 0.9891
+Precision: 0.9957, Recall: 0.9876, F1-Score: 0.9911
+Fold 5, Epoch 18, Train Loss: 0.6608, Val Loss: 0.5235, Val Acc: 0.9878
+Precision: 0.9959, Recall: 0.9885, F1-Score: 0.9916
+Fold 5, Epoch 19, Train Loss: 0.6421, Val Loss: 0.4728, Val Acc: 0.9886
+Precision: 0.9957, Recall: 0.9876, F1-Score: 0.9910
+Fold 5, Epoch 20, Train Loss: 0.6335, Val Loss: 0.4889, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9882, F1-Score: 0.9914
+Fold 5, Epoch 21, Train Loss: 0.6285, Val Loss: 0.4659, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9880, F1-Score: 0.9912
+Fold 5, Epoch 22, Train Loss: 0.6678, Val Loss: 0.4822, Val Acc: 0.9881
+Precision: 0.9958, Recall: 0.9895, F1-Score: 0.9921
+Fold 5, Epoch 23, Train Loss: 0.6497, Val Loss: 0.5265, Val Acc: 0.9897
+Precision: 0.9958, Recall: 0.9879, F1-Score: 0.9912
+Fold 5, Epoch 24, Train Loss: 0.6719, Val Loss: 0.4953, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9883, F1-Score: 0.9915
+Fold 5, Epoch 25, Train Loss: 0.6561, Val Loss: 0.5164, Val Acc: 0.9885
+Precision: 0.9957, Recall: 0.9881, F1-Score: 0.9912
+Fold 5, Epoch 26, Train Loss: 0.6703, Val Loss: 0.5212, Val Acc: 0.9884
+Precision: 0.9960, Recall: 0.9889, F1-Score: 0.9918
+Fold 5, Epoch 27, Train Loss: 0.6292, Val Loss: 0.4677, Val Acc: 0.9892
+Precision: 0.9959, Recall: 0.9882, F1-Score: 0.9914
+Fold 5, Epoch 28, Train Loss: 0.6208, Val Loss: 0.4861, Val Acc: 0.9884
+Precision: 0.9958, Recall: 0.9879, F1-Score: 0.9911
+Fold 5, Epoch 29, Train Loss: 0.6467, Val Loss: 0.4699, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9886, F1-Score: 0.9916
+Fold 5, Epoch 30, Train Loss: 0.6339, Val Loss: 0.4811, Val Acc: 0.9888
+Precision: 0.9958, Recall: 0.9885, F1-Score: 0.9915
+Fold 5, Epoch 31, Train Loss: 0.6296, Val Loss: 0.4687, Val Acc: 0.9887
+Precision: 0.9957, Recall: 0.9876, F1-Score: 0.9910
+Fold 5, Epoch 32, Train Loss: 0.6458, Val Loss: 0.4878, Val Acc: 0.9878
+Precision: 0.9960, Recall: 0.9891, F1-Score: 0.9920
+Fold 5, Epoch 33, Train Loss: 0.6524, Val Loss: 0.4959, Val Acc: 0.9894
+Precision: 0.9956, Recall: 0.9875, F1-Score: 0.9909
+Fold 5, Epoch 34, Train Loss: 0.6307, Val Loss: 0.5108, Val Acc: 0.9878
+Precision: 0.9958, Recall: 0.9884, F1-Score: 0.9915
+Fold 5, Epoch 35, Train Loss: 0.6432, Val Loss: 0.4817, Val Acc: 0.9887
+Precision: 0.9955, Recall: 0.9843, F1-Score: 0.9890
+Fold 5, Epoch 36, Train Loss: 0.6214, Val Loss: 0.4899, Val Acc: 0.9848
+Precision: 0.9957, Recall: 0.9872, F1-Score: 0.9908
+Fold 5, Epoch 37, Train Loss: 0.6378, Val Loss: 0.4769, Val Acc: 0.9874
+Precision: 0.9959, Recall: 0.9891, F1-Score: 0.9919
+Fold 5, Epoch 38, Train Loss: 0.6546, Val Loss: 0.5127, Val Acc: 0.9893
+Precision: 0.9959, Recall: 0.9886, F1-Score: 0.9917
+Fold 5, Epoch 39, Train Loss: 0.6345, Val Loss: 0.5441, Val Acc: 0.9887
+Precision: 0.9959, Recall: 0.9887, F1-Score: 0.9917
+Fold 5, Epoch 40, Train Loss: 0.6203, Val Loss: 0.4577, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9891, F1-Score: 0.9919
+Fold 5, Epoch 41, Train Loss: 0.6141, Val Loss: 0.4530, Val Acc: 0.9895
+Precision: 0.9953, Recall: 0.9079, F1-Score: 0.9485
+Fold 5, Epoch 42, Train Loss: 0.6009, Val Loss: 0.5306, Val Acc: 0.9301
+Precision: 0.9958, Recall: 0.9882, F1-Score: 0.9913
+Fold 5, Epoch 43, Train Loss: 0.6425, Val Loss: 0.4582, Val Acc: 0.9884
+Precision: 0.9956, Recall: 0.9880, F1-Score: 0.9912
+Fold 5, Epoch 44, Train Loss: 0.6258, Val Loss: 0.5224, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9878, F1-Score: 0.9912
+Fold 5, Epoch 45, Train Loss: 0.6718, Val Loss: 0.4959, Val Acc: 0.9879
+Precision: 0.9959, Recall: 0.9884, F1-Score: 0.9915
+Fold 5, Epoch 46, Train Loss: 0.6439, Val Loss: 0.5163, Val Acc: 0.9885
+Precision: 0.9959, Recall: 0.9884, F1-Score: 0.9915
+Fold 5, Epoch 47, Train Loss: 0.6236, Val Loss: 0.4813, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9884, F1-Score: 0.9915
+Fold 5, Epoch 48, Train Loss: 0.6411, Val Loss: 0.5501, Val Acc: 0.9886
+Precision: 0.9958, Recall: 0.9881, F1-Score: 0.9913
+Fold 5, Epoch 49, Train Loss: 0.6629, Val Loss: 0.4973, Val Acc: 0.9882
+Precision: 0.9959, Recall: 0.9877, F1-Score: 0.9912
+Fold 5, Epoch 50, Train Loss: 0.6641, Val Loss: 0.5186, Val Acc: 0.9879
+Precision: 0.9959, Recall: 0.9883, F1-Score: 0.9915
+Fold 5, Epoch 51, Train Loss: 0.6215, Val Loss: 0.5910, Val Acc: 0.9884
+Precision: 0.9956, Recall: 0.9871, F1-Score: 0.9907
+Fold 5, Epoch 52, Train Loss: 0.6477, Val Loss: 0.4846, Val Acc: 0.9872
+Precision: 0.9958, Recall: 0.9885, F1-Score: 0.9915
+Fold 5, Epoch 53, Train Loss: 0.6374, Val Loss: 0.5142, Val Acc: 0.9886
+Precision: 0.9956, Recall: 0.9877, F1-Score: 0.9910
+Fold 5, Epoch 54, Train Loss: 0.6423, Val Loss: 0.4850, Val Acc: 0.9878
+Precision: 0.9958, Recall: 0.9891, F1-Score: 0.9918
+Fold 5, Epoch 55, Train Loss: 0.6097, Val Loss: 0.4717, Val Acc: 0.9894
+Precision: 0.9957, Recall: 0.9878, F1-Score: 0.9910
+Fold 5, Epoch 56, Train Loss: 0.6156, Val Loss: 0.4614, Val Acc: 0.9880
+Precision: 0.9959, Recall: 0.9887, F1-Score: 0.9917
+Fold 5, Epoch 57, Train Loss: 0.6444, Val Loss: 0.4997, Val Acc: 0.9889
+Precision: 0.9958, Recall: 0.9878, F1-Score: 0.9911
+Fold 5, Epoch 58, Train Loss: 0.6613, Val Loss: 0.5416, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9888, F1-Score: 0.9917
+Fold 5, Epoch 59, Train Loss: 0.6498, Val Loss: 0.4819, Val Acc: 0.9889
+Precision: 0.9957, Recall: 0.9879, F1-Score: 0.9912
+Fold 5, Epoch 60, Train Loss: 0.6450, Val Loss: 0.4951, Val Acc: 0.9879
+Precision: 0.9958, Recall: 0.9887, F1-Score: 0.9916
+Fold 5, Epoch 61, Train Loss: 0.6284, Val Loss: 0.4849, Val Acc: 0.9888
+Precision: 0.9959, Recall: 0.9886, F1-Score: 0.9916
+Fold 5, Epoch 62, Train Loss: 0.6216, Val Loss: 0.4829, Val Acc: 0.9889
+Precision: 0.9956, Recall: 0.9874, F1-Score: 0.9909
+Fold 5, Epoch 63, Train Loss: 0.6317, Val Loss: 0.5629, Val Acc: 0.9875
+Precision: 0.9957, Recall: 0.9883, F1-Score: 0.9914
+Fold 5, Epoch 64, Train Loss: 0.6816, Val Loss: 0.5213, Val Acc: 0.9886
+Precision: 0.9957, Recall: 0.9877, F1-Score: 0.9910
+Fold 5, Epoch 65, Train Loss: 0.6670, Val Loss: 0.4843, Val Acc: 0.9878
+Precision: 0.9957, Recall: 0.9875, F1-Score: 0.9909
+Fold 5, Epoch 66, Train Loss: 0.6362, Val Loss: 0.5508, Val Acc: 0.9876
+Precision: 0.9958, Recall: 0.9888, F1-Score: 0.9917
+Fold 5, Epoch 67, Train Loss: 0.6699, Val Loss: 0.4938, Val Acc: 0.9891
+Precision: 0.9955, Recall: 0.9869, F1-Score: 0.9905
+Fold 5, Epoch 68, Train Loss: 0.6295, Val Loss: 0.5079, Val Acc: 0.9874
+Precision: 0.9957, Recall: 0.9886, F1-Score: 0.9915
+Fold 5, Epoch 69, Train Loss: 0.6135, Val Loss: 0.4477, Val Acc: 0.9888
+Precision: 0.9958, Recall: 0.9882, F1-Score: 0.9914
+Fold 5, Epoch 70, Train Loss: 0.6240, Val Loss: 0.4894, Val Acc: 0.9884
+Precision: 0.9956, Recall: 0.9867, F1-Score: 0.9905
+Fold 5, Epoch 71, Train Loss: 0.6192, Val Loss: 0.4781, Val Acc: 0.9870
+Precision: 0.9958, Recall: 0.9891, F1-Score: 0.9918
+Fold 5, Epoch 72, Train Loss: 0.6180, Val Loss: 0.4761, Val Acc: 0.9894
+Precision: 0.9958, Recall: 0.9868, F1-Score: 0.9905
+Fold 5, Epoch 73, Train Loss: 0.6217, Val Loss: 0.4638, Val Acc: 0.9868
+Precision: 0.9957, Recall: 0.9880, F1-Score: 0.9912
+Fold 5, Epoch 74, Train Loss: 0.6110, Val Loss: 0.4556, Val Acc: 0.9883
+Precision: 0.9958, Recall: 0.9884, F1-Score: 0.9914
+Fold 5, Epoch 75, Train Loss: 0.6317, Val Loss: 0.4918, Val Acc: 0.9889
+Precision: 0.9957, Recall: 0.9879, F1-Score: 0.9911
+Fold 5, Epoch 76, Train Loss: 0.6173, Val Loss: 0.5000, Val Acc: 0.9882
+Precision: 0.9957, Recall: 0.9885, F1-Score: 0.9915
+Fold 5, Epoch 77, Train Loss: 0.6259, Val Loss: 0.4682, Val Acc: 0.9889
+Precision: 0.9959, Recall: 0.9884, F1-Score: 0.9915
+Fold 5, Epoch 78, Train Loss: 0.5955, Val Loss: 0.4613, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9883, F1-Score: 0.9915
+Fold 5, Epoch 79, Train Loss: 0.6229, Val Loss: 0.4781, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9875, F1-Score: 0.9910
+Fold 5, Epoch 80, Train Loss: 0.6383, Val Loss: 0.4641, Val Acc: 0.9877
+Precision: 0.9957, Recall: 0.9885, F1-Score: 0.9915
+Fold 5, Epoch 81, Train Loss: 0.6318, Val Loss: 0.5281, Val Acc: 0.9889
+Precision: 0.9959, Recall: 0.9880, F1-Score: 0.9913
+Fold 5, Epoch 82, Train Loss: 0.6455, Val Loss: 0.4664, Val Acc: 0.9882
+Precision: 0.9957, Recall: 0.9884, F1-Score: 0.9914
+Fold 5, Epoch 83, Train Loss: 0.6183, Val Loss: 0.4715, Val Acc: 0.9886
+Precision: 0.9959, Recall: 0.9888, F1-Score: 0.9917
+Fold 5, Epoch 84, Train Loss: 0.6156, Val Loss: 0.4515, Val Acc: 0.9888
+Precision: 0.9958, Recall: 0.9881, F1-Score: 0.9913
+Fold 5, Epoch 85, Train Loss: 0.5983, Val Loss: 0.4692, Val Acc: 0.9883
+Precision: 0.9957, Recall: 0.9884, F1-Score: 0.9914
+Fold 5, Epoch 86, Train Loss: 0.6284, Val Loss: 0.4666, Val Acc: 0.9885
+Precision: 0.9958, Recall: 0.9883, F1-Score: 0.9913
+Fold 5, Epoch 87, Train Loss: 0.6118, Val Loss: 0.4546, Val Acc: 0.9884
+Precision: 0.9957, Recall: 0.9880, F1-Score: 0.9912
+Fold 5, Epoch 88, Train Loss: 0.6314, Val Loss: 0.4954, Val Acc: 0.9881
+Precision: 0.9959, Recall: 0.9879, F1-Score: 0.9913
+Fold 5, Epoch 89, Train Loss: 0.6192, Val Loss: 0.4824, Val Acc: 0.9881
+Precision: 0.9957, Recall: 0.9858, F1-Score: 0.9900
+Fold 5, Epoch 90, Train Loss: 0.6066, Val Loss: 0.4718, Val Acc: 0.9862
+Precision: 0.9956, Recall: 0.9865, F1-Score: 0.9903
+Fold 5, Epoch 91, Train Loss: 0.6140, Val Loss: 0.4776, Val Acc: 0.9871
+Precision: 0.9958, Recall: 0.9884, F1-Score: 0.9914
+Fold 5, Epoch 92, Train Loss: 0.5969, Val Loss: 0.4826, Val Acc: 0.9887
+Precision: 0.9957, Recall: 0.9876, F1-Score: 0.9910
+Fold 5, Epoch 93, Train Loss: 0.5894, Val Loss: 0.4823, Val Acc: 0.9878
+Precision: 0.9956, Recall: 0.9877, F1-Score: 0.9909
+Fold 5, Epoch 94, Train Loss: 0.5968, Val Loss: 0.4554, Val Acc: 0.9881
+Precision: 0.9958, Recall: 0.9877, F1-Score: 0.9910
+Fold 5, Epoch 95, Train Loss: 0.5949, Val Loss: 0.4394, Val Acc: 0.9879
+Precision: 0.9960, Recall: 0.9892, F1-Score: 0.9920
+Fold 5, Epoch 96, Train Loss: 0.6049, Val Loss: 0.4585, Val Acc: 0.9896
+Precision: 0.9957, Recall: 0.9875, F1-Score: 0.9909
+Fold 5, Epoch 97, Train Loss: 0.6099, Val Loss: 0.4496, Val Acc: 0.9876
+Precision: 0.9957, Recall: 0.9828, F1-Score: 0.9884
+Fold 5, Epoch 98, Train Loss: 0.6181, Val Loss: 0.4725, Val Acc: 0.9829
+Precision: 0.9958, Recall: 0.9881, F1-Score: 0.9913
+Fold 5, Epoch 99, Train Loss: 0.6005, Val Loss: 0.4907, Val Acc: 0.9882
+Precision: 0.9957, Recall: 0.9879, F1-Score: 0.9912
+Fold 5, Epoch 100, Train Loss: 0.6183, Val Loss: 0.4890, Val Acc: 0.9880
+Completed Fold 5
+Starting final training on all data...
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L4B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L4B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6828],
+        [0.0110, 0.0000, 0.0357, 0.6772]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B23.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B23.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7105],
+        [0.0110, 0.0000, 0.0357, 0.7009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L7B86.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L7B86.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7604],
+        [0.0110, 0.0000, 0.0357, 0.7529]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B43.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B43.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7178],
+        [0.0110, 0.0000, 0.0357, 0.7089]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B33.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B33.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7886],
+        [0.0110, 0.0000, 0.0357, 0.7828]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L9B20.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L9B20.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7661],
+        [0.0110, 0.0000, 0.0357, 0.7600]])
+Sample y: tensor([0, 0])
+Test Loss: 1.0159, Test Accuracy: 0.9811
+Precision: 0.9952, Recall: 0.9811, F1-Score: 0.9876

@@ -1,0 +1,276 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 1, Train Loss: 0.5406, Val Loss: 0.2789, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 2, Train Loss: 0.1766, Val Loss: 0.0646, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 3, Train Loss: 0.0513, Val Loss: 0.0445, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 4, Train Loss: 0.0437, Val Loss: 0.0405, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 5, Train Loss: 0.0408, Val Loss: 0.0388, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 6, Train Loss: 0.0389, Val Loss: 0.0372, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 1, Epoch 7, Train Loss: 0.0376, Val Loss: 0.0364, Val Acc: 0.2483
+Rank 0: correct = 293954, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9866, Recall: 0.9932, F1-Score: 0.9898
+Fold 1, Epoch 8, Train Loss: 0.0368, Val Loss: 0.0357, Val Acc: 0.2483
+Rank 0: correct = 293964, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9868, Recall: 0.9932, F1-Score: 0.9900
+Fold 1, Epoch 9, Train Loss: 0.0365, Val Loss: 0.0352, Val Acc: 0.2483
+Rank 0: correct = 293951, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9866, Recall: 0.9932, F1-Score: 0.9898
+Fold 1, Epoch 10, Train Loss: 0.0362, Val Loss: 0.0363, Val Acc: 0.2483
+Completed Fold 1
+Starting Fold 2
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 2, Epoch 1, Train Loss: 0.1564, Val Loss: 0.0981, Val Acc: 0.2483
+Rank 0: correct = 294047, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9891, Recall: 0.9935, F1-Score: 0.9913
+Fold 2, Epoch 2, Train Loss: 0.0638, Val Loss: 0.0616, Val Acc: 0.2483
+Rank 0: correct = 293985, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9882, Recall: 0.9933, F1-Score: 0.9907
+Fold 2, Epoch 3, Train Loss: 0.0509, Val Loss: 0.0399, Val Acc: 0.2483
+Rank 0: correct = 294000, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9876, Recall: 0.9933, F1-Score: 0.9904
+Fold 2, Epoch 4, Train Loss: 0.0380, Val Loss: 0.0353, Val Acc: 0.2483
+Rank 0: correct = 293999, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9875, Recall: 0.9933, F1-Score: 0.9904
+Fold 2, Epoch 5, Train Loss: 0.0372, Val Loss: 0.0352, Val Acc: 0.2483
+Rank 0: correct = 293996, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9876, Recall: 0.9933, F1-Score: 0.9904
+Fold 2, Epoch 6, Train Loss: 0.0359, Val Loss: 0.0352, Val Acc: 0.2483
+Rank 0: correct = 294009, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9877, Recall: 0.9934, F1-Score: 0.9905
+Fold 2, Epoch 7, Train Loss: 0.0356, Val Loss: 0.0352, Val Acc: 0.2483
+Rank 0: correct = 294009, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9877, Recall: 0.9934, F1-Score: 0.9905
+Fold 2, Epoch 8, Train Loss: 0.0356, Val Loss: 0.0352, Val Acc: 0.2483
+Rank 0: correct = 294003, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9878, Recall: 0.9933, F1-Score: 0.9905
+Fold 2, Epoch 9, Train Loss: 0.0357, Val Loss: 0.0353, Val Acc: 0.2483
+Rank 0: correct = 293992, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9876, Recall: 0.9933, F1-Score: 0.9904
+Fold 2, Epoch 10, Train Loss: 0.0356, Val Loss: 0.0352, Val Acc: 0.2483
+Completed Fold 2
+Starting Fold 3
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 3, Epoch 1, Train Loss: 0.3552, Val Loss: 0.0843, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 3, Epoch 2, Train Loss: 0.2312, Val Loss: 0.3376, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 3, Epoch 3, Train Loss: 0.3217, Val Loss: 0.1160, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 3, Epoch 4, Train Loss: 0.2096, Val Loss: 0.2126, Val Acc: 0.2483
+Rank 0: correct = 293871, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9900, Recall: 0.9929, F1-Score: 0.9913
+Fold 3, Epoch 5, Train Loss: 0.1286, Val Loss: 0.0486, Val Acc: 0.2482
+Rank 0: correct = 293921, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9894, Recall: 0.9931, F1-Score: 0.9912
+Fold 3, Epoch 6, Train Loss: 0.0528, Val Loss: 0.0450, Val Acc: 0.2483
+Rank 0: correct = 293976, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9891, Recall: 0.9932, F1-Score: 0.9911
+Fold 3, Epoch 7, Train Loss: 0.0448, Val Loss: 0.0407, Val Acc: 0.2483
+Rank 0: correct = 293997, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9886, Recall: 0.9933, F1-Score: 0.9909
+Fold 3, Epoch 8, Train Loss: 0.0408, Val Loss: 0.0383, Val Acc: 0.2483
+Rank 0: correct = 294001, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9884, Recall: 0.9933, F1-Score: 0.9909
+Fold 3, Epoch 9, Train Loss: 0.0386, Val Loss: 0.0363, Val Acc: 0.2483
+Rank 0: correct = 294020, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9885, Recall: 0.9934, F1-Score: 0.9909
+Fold 3, Epoch 10, Train Loss: 0.0370, Val Loss: 0.0356, Val Acc: 0.2483
+Completed Fold 3
+Starting Fold 4
+Rank 0: correct = 289476, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9909, Recall: 0.9780, F1-Score: 0.9842
+Fold 4, Epoch 1, Train Loss: 0.0614, Val Loss: 0.3199, Val Acc: 0.2444
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 4, Epoch 2, Train Loss: 0.2260, Val Loss: 0.2509, Val Acc: 0.2483
+Rank 0: correct = 293969, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9877, Recall: 0.9932, F1-Score: 0.9904
+Fold 4, Epoch 3, Train Loss: 0.1423, Val Loss: 0.1137, Val Acc: 0.2483
+Rank 0: correct = 293386, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9904, Recall: 0.9913, F1-Score: 0.9907
+Fold 4, Epoch 4, Train Loss: 0.0964, Val Loss: 0.0574, Val Acc: 0.2475
+Rank 0: correct = 293953, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9891, Recall: 0.9932, F1-Score: 0.9911
+Fold 4, Epoch 5, Train Loss: 0.0573, Val Loss: 0.0440, Val Acc: 0.2483
+Rank 0: correct = 293972, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9886, Recall: 0.9932, F1-Score: 0.9909
+Fold 4, Epoch 6, Train Loss: 0.0432, Val Loss: 0.0394, Val Acc: 0.2483
+Rank 0: correct = 293985, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9884, Recall: 0.9933, F1-Score: 0.9908
+Fold 4, Epoch 7, Train Loss: 0.0387, Val Loss: 0.0371, Val Acc: 0.2483
+Rank 0: correct = 293982, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9881, Recall: 0.9933, F1-Score: 0.9907
+Fold 4, Epoch 8, Train Loss: 0.0377, Val Loss: 0.0354, Val Acc: 0.2483
+Rank 0: correct = 293984, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9881, Recall: 0.9933, F1-Score: 0.9907
+Fold 4, Epoch 9, Train Loss: 0.0369, Val Loss: 0.0347, Val Acc: 0.2483
+Rank 0: correct = 293978, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9879, Recall: 0.9933, F1-Score: 0.9906
+Fold 4, Epoch 10, Train Loss: 0.0361, Val Loss: 0.0345, Val Acc: 0.2483
+Completed Fold 4
+Starting Fold 5
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 5, Epoch 1, Train Loss: 0.0860, Val Loss: 0.0909, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 5, Epoch 2, Train Loss: 0.0807, Val Loss: 0.1119, Val Acc: 0.2483
+Rank 0: correct = 293949, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9898
+Fold 5, Epoch 3, Train Loss: 0.0936, Val Loss: 0.1396, Val Acc: 0.2483
+Rank 0: correct = 293950, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9868, Recall: 0.9932, F1-Score: 0.9899
+Fold 5, Epoch 4, Train Loss: 0.1064, Val Loss: 0.1153, Val Acc: 0.2483
+Rank 0: correct = 293742, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9901, Recall: 0.9925, F1-Score: 0.9912
+Fold 5, Epoch 5, Train Loss: 0.1058, Val Loss: 0.0446, Val Acc: 0.2482
+Rank 0: correct = 293977, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9885, Recall: 0.9933, F1-Score: 0.9909
+Fold 5, Epoch 6, Train Loss: 0.0517, Val Loss: 0.0457, Val Acc: 0.2483
+Rank 0: correct = 293950, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9885, Recall: 0.9932, F1-Score: 0.9908
+Fold 5, Epoch 7, Train Loss: 0.0400, Val Loss: 0.0382, Val Acc: 0.2483
+Rank 0: correct = 293953, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9885, Recall: 0.9932, F1-Score: 0.9908
+Fold 5, Epoch 8, Train Loss: 0.0368, Val Loss: 0.0357, Val Acc: 0.2483
+Rank 0: correct = 293953, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9885, Recall: 0.9932, F1-Score: 0.9908
+Fold 5, Epoch 9, Train Loss: 0.0359, Val Loss: 0.0347, Val Acc: 0.2483
+Rank 0: correct = 294000, total_samples = 1183896.0
+/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Precision: 0.9883, Recall: 0.9933, F1-Score: 0.9908
+Fold 5, Epoch 10, Train Loss: 0.0350, Val Loss: 0.0342, Val Acc: 0.2483
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 0.0357, Test Accuracy: 0.9932

@@ -1,0 +1,147 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Total valid pairs: 1620
+Class counts: [5878980    4500    4500    4500    4500    4500    4500    4500    4500
+    4500]
+Class weights (before normalization): [1.70097534e-07 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04]
+Normalized class weights: [8.50415343e-05 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01]
+Class counts: [5878980    4500    4500    4500    4500    4500    4500    4500    4500
+    4500]
+Class weights (before normalization): [1.70097534e-07 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04]
+Normalized class weights: [8.50415343e-05 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 378, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 187, in main
+    ddp_model = DDP(model, device_ids=[rank])
+Class counts: [5878980    4500    4500    4500    4500    4500    4500    4500    4500
+    4500]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 731, in __init__
+Class weights (before normalization): [1.70097534e-07 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04]
+Normalized class weights: [8.50415343e-05 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01]
+    self.process_group = _get_default_group()
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 977, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 378, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 187, in main
+    ddp_model = DDP(model, device_ids=[rank])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 731, in __init__
+    self.process_group = _get_default_group()
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 977, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+Class counts: [5878980    4500    4500    4500    4500    4500    4500    4500    4500
+    4500]
+Class weights (before normalization): [1.70097534e-07 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04 2.22222222e-04 2.22222222e-04
+ 2.22222222e-04 2.22222222e-04]
+Normalized class weights: [8.50415343e-05 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01 1.11101662e-01 1.11101662e-01
+ 1.11101662e-01 1.11101662e-01]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 378, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 187, in main
+    ddp_model = DDP(model, device_ids=[rank])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 731, in __init__
+    self.process_group = _get_default_group()
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 977, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 378, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 187, in main
+    ddp_model = DDP(model, device_ids=[rank])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 731, in __init__
+    self.process_group = _get_default_group()
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 977, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+[2024-10-21 16:37:19,515] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 29371) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDP10class4x4_3.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-21_16:37:19
+  host      : stuttgart03
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 29372)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-21_16:37:19
+  host      : stuttgart03
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 29373)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-21_16:37:19
+  host      : stuttgart03
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 29374)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-21_16:37:19
+  host      : stuttgart03
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 29371)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

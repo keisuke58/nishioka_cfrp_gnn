@@ -1,0 +1,128 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Starting Fold 1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 561, in <module>
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 561, in <module>
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 561, in <module>
+        main(args)    main(args)
+main(args)
+
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 382, in main
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 382, in main
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 382, in main
+    loss = loss_fn(out, y)    
+    loss = loss_fn(out, y)loss = loss_fn(out, y)
+
+                        ^  ^  ^  ^  ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+^^^
+^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^    ^return self._call_impl(*args, **kwargs)^
+^^^^^^^^^^^^ ^ ^ ^ 
+     File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^    ^return self._call_impl(*args, **kwargs)^
+    ^return forward_call(*args, **kwargs)^
+^^^^^^
+     File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 73, in forward
+                  ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    ^^alpha = self.alpha[targets]  # Get the weight for each class in the batch^^
+^^^^^^^^^^ ^^ ^^ ^^ ^^ ^^ ^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 73, in forward
+ ^ ^ 
+     File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+~~~~~~~~~~^^^^^^^^^
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
+    alpha = self.alpha[targets]  # Get the weight for each class in the batch
+            ~~~~~~~~~~^^^^^^^^^
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 561, in <module>
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 73, in forward
+    alpha = self.alpha[targets]  # Get the weight for each class in the batch
+            ~~~~~~~~~~^^^^^^^^^
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 382, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 73, in forward
+    alpha = self.alpha[targets]  # Get the weight for each class in the batch
+            ~~~~~~~~~~^^^^^^^^^
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
+[2024-10-31 12:37:05,579] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3678055) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT19class4x4_2_focal_loss.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-31_12:37:05
+  host      : stuttgart01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3678056)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-31_12:37:05
+  host      : stuttgart01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3678057)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-31_12:37:05
+  host      : stuttgart01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3678058)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-31_12:37:05
+  host      : stuttgart01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3678055)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

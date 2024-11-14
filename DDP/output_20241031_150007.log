@@ -1,0 +1,73 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Starting Fold 1
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 892.7732, Val Loss: 652.5764, Val Acc: 0.0007
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 1, Epoch 2, Train Loss: 818.5811, Val Loss: 571.0179, Val Acc: 0.0006
+Precision: 0.0000, Recall: 0.0006, F1-Score: 0.0000
+Fold 1, Epoch 3, Train Loss: 701.3402, Val Loss: 515.7316, Val Acc: 0.0007
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 1, Epoch 4, Train Loss: 667.6526, Val Loss: 474.3771, Val Acc: 0.0007
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 1, Epoch 5, Train Loss: 618.4691, Val Loss: 443.2485, Val Acc: 0.0011
+Completed Fold 1
+Starting Fold 2
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 1, Train Loss: 703.4316, Val Loss: 486.0568, Val Acc: 0.0006
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 2, Epoch 2, Train Loss: 650.3615, Val Loss: 473.3972, Val Acc: 0.0006
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 2, Epoch 3, Train Loss: 609.3589, Val Loss: 435.5118, Val Acc: 0.0009
+Precision: 0.0000, Recall: 0.0013, F1-Score: 0.0001
+Fold 2, Epoch 4, Train Loss: 574.8981, Val Loss: 421.2165, Val Acc: 0.0009
+Precision: 0.9931, Recall: 0.0230, F1-Score: 0.0430
+Fold 2, Epoch 5, Train Loss: 555.2361, Val Loss: 405.2438, Val Acc: 0.0238
+Completed Fold 2
+Starting Fold 3
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 1, Train Loss: 611.9730, Val Loss: 453.3301, Val Acc: 0.0009
+Precision: 0.0000, Recall: 0.0006, F1-Score: 0.0001
+Fold 3, Epoch 2, Train Loss: 585.0944, Val Loss: 452.5134, Val Acc: 0.0006
+Precision: 0.0000, Recall: 0.0009, F1-Score: 0.0001
+Fold 3, Epoch 3, Train Loss: 562.4639, Val Loss: 411.0837, Val Acc: 0.0010
+Precision: 0.0000, Recall: 0.0009, F1-Score: 0.0001
+Fold 3, Epoch 4, Train Loss: 540.2245, Val Loss: 400.0544, Val Acc: 0.0011
+Precision: 0.9931, Recall: 0.0217, F1-Score: 0.0401
+Fold 3, Epoch 5, Train Loss: 517.0118, Val Loss: 390.4048, Val Acc: 0.0215
+Completed Fold 3
+Starting Fold 4
+Precision: 0.0001, Recall: 0.0009, F1-Score: 0.0001
+Fold 4, Epoch 1, Train Loss: 656.5502, Val Loss: 436.6500, Val Acc: 0.0011
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 4, Epoch 2, Train Loss: 576.0797, Val Loss: 424.9969, Val Acc: 0.0009
+Precision: 0.0001, Recall: 0.0009, F1-Score: 0.0001
+Fold 4, Epoch 3, Train Loss: 564.6627, Val Loss: 410.2226, Val Acc: 0.0009
+Precision: 0.0001, Recall: 0.0008, F1-Score: 0.0001
+Fold 4, Epoch 4, Train Loss: 541.9169, Val Loss: 395.3767, Val Acc: 0.0008
+Precision: 0.0002, Recall: 0.0009, F1-Score: 0.0003
+Fold 4, Epoch 5, Train Loss: 526.1107, Val Loss: 385.2160, Val Acc: 0.0009
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9932, Recall: 0.0382, F1-Score: 0.0724
+Fold 5, Epoch 1, Train Loss: 669.2272, Val Loss: 542.9385, Val Acc: 0.0411
+Precision: 0.9932, Recall: 0.0098, F1-Score: 0.0181
+Fold 5, Epoch 2, Train Loss: 653.5887, Val Loss: 445.4789, Val Acc: 0.0106
+Precision: 0.9933, Recall: 0.0058, F1-Score: 0.0104
+Fold 5, Epoch 3, Train Loss: 563.1890, Val Loss: 409.5363, Val Acc: 0.0066
+Precision: 0.9932, Recall: 0.0689, F1-Score: 0.1266
+Fold 5, Epoch 4, Train Loss: 528.8746, Val Loss: 377.9521, Val Acc: 0.0745
+Precision: 0.9933, Recall: 0.0466, F1-Score: 0.0868
+Fold 5, Epoch 5, Train Loss: 508.0278, Val Loss: 369.8892, Val Acc: 0.0510
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 590.9980, Test Accuracy: 0.0011
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000

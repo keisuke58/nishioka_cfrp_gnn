@@ -1,0 +1,432 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Starting Fold 1
+Pair 1:Pair 1:Pair 1:
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+y shape: torch.Size([3654])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyPair 2:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:Pair 3:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Pair 3:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 400, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 400, in <module>
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 400, in <module>
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 400, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 247, in main
+    main(args)
+    main(args)
+      File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 247, in main
+main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 247, in main
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 247, in main
+    out = ddp_model(batch)
+          ^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    out = ddp_model(batch)
+          ^^^    ^out = ddp_model(batch)^
+^^    ^out = ddp_model(batch)^
+^^^^^^^
+     File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+             ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)    
+return self._call_impl(*args, **kwargs)
+                      return self._call_impl(*args, **kwargs)  
+^ ^ ^^^^^^^^^^^^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^    ^    return forward_call(*args, **kwargs)^return forward_call(*args, **kwargs)
+^
+^^^^^^^^^ ^  ^  ^  ^  ^  ^  ^  ^  ^      ^return forward_call(*args, **kwargs)  ^
+^ ^^^^^^^^^^^^^ ^^
+ ^^ ^^   File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^
+^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         else self._run_ddp_forward(*inputs, **kwargs) 
+   ^^^^^^^^^^^^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+         return forward_call(*args, **kwargs) 
+     ^^^^^^^^^^^^ ^ ^ ^ ^ ^     ^else self._run_ddp_forward(*inputs, **kwargs) ^
+ ^ ^ ^ ^^^^^^^^ ^^ ^^ ^^ ^^ 
+^ ^   File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    else self._run_ddp_forward(*inputs, **kwargs)
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+         ^^^^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    ^^return self._call_impl(*args, **kwargs)^^
+^^^^^^
+^^   File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+^ ^ 
+      File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+    return forward_call(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 43, in forward
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    x = F.relu(self.conv3(x, edge_index))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 43, in forward
+    return forward_call(*args, **kwargs)
+               ^return self.module(*inputs, **kwargs)  # type: ignore[index]^
+^^^^^^^^^^^^^^^^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^
+^^^  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 43, in forward
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    x = F.relu(self.conv3(x, edge_index))
+       return self._call_impl(*args, **kwargs) 
+           ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 341, in forward
+    x = F.relu(self.conv3(x, edge_index))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    out = self.propagate(edge_index, x=x, alpha=alpha, size=size)
+          ^^^^^^    ^return self._call_impl(*args, **kwargs)^
+^^^^^^^^^^^^^^ ^ ^     ^return forward_call(*args, **kwargs) ^
+ ^ ^ ^ ^ ^ ^  ^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    ^^^return self._call_impl(*args, **kwargs)^
+^
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/message_passing.py", line 547, in propagate
+^^^^^^^ ^^ ^^ ^^ ^^ 
+^ ^ ^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+ ^ ^ ^ 
+^^^  File "/home/nishioka/GNN/DDP/DDPGAT10class4x4_1.py", line 43, in forward
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 341, in forward
+    x = F.relu(self.conv3(x, edge_index))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 341, in forward
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    out = self.propagate(edge_index, x=x, alpha=alpha, size=size)
+    out = self.propagate(edge_index, x=x, alpha=alpha, size=size)
+                 ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/message_passing.py", line 547, in propagate
+
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/message_passing.py", line 547, in propagate
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 341, in forward
+    out = self.propagate(edge_index, x=x, alpha=alpha, size=size)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/message_passing.py", line 547, in propagate
+    out = self.message(**msg_kwargs)    
+    out = self.message(**msg_kwargs)out = self.message(**msg_kwargs)
+
+             ^  ^  ^  ^  ^  ^  ^  ^  ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 386, in message
+^^^^^^^^^^
+^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 386, in message
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 386, in message
+    out = self.message(**msg_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch_geometric/nn/conv/gat_conv.py", line 386, in message
+    return alpha.unsqueeze(-1) * x_j
+    return alpha.unsqueeze(-1) * x_j
+                  ~     ~ return alpha.unsqueeze(-1) * x_j~ 
+~ ~~~~~~~~~~~~~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ^~ ~~~~~~~~~~^~
+~~~~~~torch.cuda~~.
+~OutOfMemoryError~: torch.cuda~CUDA out of memory. Tried to allocate 2.63 GiB. GPU 1 has a total capacity of 23.68 GiB of which 1.15 GiB is free. Including non-PyTorch memory, this process has 22.53 GiB memory in use. Of the allocated memory 20.34 GiB is allocated by PyTorch, and 1.78 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables).~
+OutOfMemoryError~: ~CUDA out of memory. Tried to allocate 2.63 GiB. GPU 0 has a total capacity of 23.68 GiB of which 1.15 GiB is free. Including non-PyTorch memory, this process has 22.53 GiB memory in use. Of the allocated memory 20.34 GiB is allocated by PyTorch, and 1.78 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)~
+~~~~~^~~~~
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.63 GiB. GPU 3 has a total capacity of 23.68 GiB of which 1.15 GiB is free. Including non-PyTorch memory, this process has 22.53 GiB memory in use. Of the allocated memory 20.34 GiB is allocated by PyTorch, and 1.78 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    return alpha.unsqueeze(-1) * x_j
+           ~~~~~~~~~~~~~~~~~~~~^~~~~
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.63 GiB. GPU 2 has a total capacity of 23.68 GiB of which 1.15 GiB is free. Including non-PyTorch memory, this process has 22.53 GiB memory in use. Of the allocated memory 20.34 GiB is allocated by PyTorch, and 1.78 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2024-10-21 18:48:50,902] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 51756) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT10class4x4_1.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-21_18:48:50
+  host      : stuttgart03
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 51757)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-21_18:48:50
+  host      : stuttgart03
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 51758)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-21_18:48:50
+  host      : stuttgart03
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 51759)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-21_18:48:50
+  host      : stuttgart03
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 51756)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

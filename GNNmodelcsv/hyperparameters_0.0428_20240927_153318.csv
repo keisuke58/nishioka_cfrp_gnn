@@ -1,0 +1,8 @@
+Parameter,Value
+Learning Rate,0.0001
+Batch Size,32.0
+Epochs,150.0
+Weight Decay,0.0001
+Training Samples,1296.0
+Validation Samples,162.0
+Test Samples,163.0

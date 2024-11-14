@@ -1,0 +1,74 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Starting Fold 1
+Precision: 0.9894, Recall: 0.9779, F1-Score: 0.9836
+Fold 1, Epoch 1, Train Loss: 2.2518, Val Loss: 2.2498, Val Acc: 0.9805
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9905, Recall: 0.8086, F1-Score: 0.8902
+Fold 2, Epoch 1, Train Loss: 2.2423, Val Loss: 2.2212, Val Acc: 0.8101
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9904, Recall: 0.8868, F1-Score: 0.9355
+Fold 3, Epoch 1, Train Loss: 2.2229, Val Loss: 2.1998, Val Acc: 0.8785
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9906, Recall: 0.9042, F1-Score: 0.9453
+Fold 4, Epoch 1, Train Loss: 2.1944, Val Loss: 2.1716, Val Acc: 0.9119
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9904, Recall: 0.9881, F1-Score: 0.9891
+Fold 5, Epoch 1, Train Loss: 2.1714, Val Loss: 2.1720, Val Acc: 0.9890
+Completed Fold 5
+Starting final training on all data...
+Evaluating and Visualizing on Test Data
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 615, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 548, in main
+    evaluate_and_visualize(final_test_loader, ddp_model, device, class_weights)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 191, in evaluate_and_visualize
+    balanced_acc = balanced_accuracy_score(all_labels, all_preds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'balanced_accuracy_score' is not defined
+[2024-11-01 12:39:09,176] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 1235532) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT19class4x4_2_focal_loss.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-11-01_12:39:09
+  host      : stuttgart03
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1235532)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,10 @@
+{
+    "model": "GATModel",
+    "hidden_channels": 64,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 985,
+    "weight_decay": 0.0005,
+    "patience": 200,
+    "weight_factor": 2.0
+}

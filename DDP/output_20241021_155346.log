@@ -1,0 +1,37 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 1 using device: cuda:1
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 1, Epoch 1, Train Loss: 0.5406, Val Loss: 0.2789, Val Acc: 3.9726
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 2, Epoch 1, Train Loss: 0.0937, Val Loss: 0.0553, Val Acc: 3.9726
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 3, Epoch 1, Train Loss: 0.0834, Val Loss: 0.1246, Val Acc: 3.9726
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9874, Recall: 0.9932, F1-Score: 0.9898
+Fold 4, Epoch 1, Train Loss: 0.1390, Val Loss: 0.0450, Val Acc: 3.9726
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897
+Fold 5, Epoch 1, Train Loss: 0.1278, Val Loss: 0.1592, Val Acc: 3.9726
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 0.2763, Test Accuracy: 0.9932
+Precision: 0.9864, Recall: 0.9932, F1-Score: 0.9897

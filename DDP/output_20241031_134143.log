@@ -1,0 +1,168 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090Using device: NVIDIA GeForce RTX 3090
+
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Starting Fold 1
+Class weights: [2.12621917e-07 5.63380282e-04 5.63380282e-04 5.97014925e-04
+ 5.71428571e-04 5.40540541e-04 5.40540541e-04 5.00000000e-04
+ 5.97014925e-04 5.63380282e-04 6.15384615e-04 5.19480519e-04
+ 5.40540541e-04 6.06060606e-04 5.71428571e-04 4.93827160e-04
+ 5.47945205e-04 5.26315789e-04 5.79710145e-04]
+Class weights: [2.12621917e-07 5.63380282e-04 5.63380282e-04 5.97014925e-04
+ 5.71428571e-04 5.40540541e-04 5.40540541e-04 5.00000000e-04
+ 5.97014925e-04 5.63380282e-04 6.15384615e-04 5.19480519e-04
+ 5.40540541e-04 6.06060606e-04 5.71428571e-04 4.93827160e-04
+ 5.47945205e-04 5.26315789e-04 5.79710145e-04]
+Class weights: [2.12621917e-07 5.63380282e-04 5.63380282e-04 5.97014925e-04
+ 5.71428571e-04 5.40540541e-04 5.40540541e-04 5.00000000e-04
+ 5.97014925e-04 5.63380282e-04 6.15384615e-04 5.19480519e-04
+ 5.40540541e-04 6.06060606e-04 5.71428571e-04 4.93827160e-04
+ 5.47945205e-04 5.26315789e-04 5.79710145e-04]
+Class weights: [2.12621917e-07 5.63380282e-04 5.63380282e-04 5.97014925e-04
+ 5.71428571e-04 5.40540541e-04 5.40540541e-04 5.00000000e-04
+ 5.97014925e-04 5.63380282e-04 6.15384615e-04 5.19480519e-04
+ 5.40540541e-04 6.06060606e-04 5.71428571e-04 4.93827160e-04
+ 5.47945205e-04 5.26315789e-04 5.79710145e-04]
+Class weights: [8.50487670e-07 2.10526316e-03 2.10526316e-03 1.73913043e-03
+ 2.00000000e-03 2.50000000e-03 2.50000000e-03 4.00000000e-03
+ 1.73913043e-03 2.10526316e-03 1.60000000e-03 3.07692308e-03
+ 2.50000000e-03 1.66666667e-03 2.00000000e-03 4.44444444e-03
+ 2.35294118e-03 2.85714286e-03 1.90476190e-03]
+Class weights: [8.50487670e-07 2.10526316e-03 2.10526316e-03 1.73913043e-03
+ 2.00000000e-03 2.50000000e-03 2.50000000e-03 4.00000000e-03
+ 1.73913043e-03 2.10526316e-03 1.60000000e-03 3.07692308e-03
+ 2.50000000e-03 1.66666667e-03 2.00000000e-03 4.44444444e-03
+ 2.35294118e-03 2.85714286e-03 1.90476190e-03]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 579, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 393, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 72, in forward
+    print(f"Softmax output at epoch {epoch}: {inputs[:5]}")
+                                     ^^^^^
+NameError: name 'epoch' is not defined
+Class weights: [8.50487670e-07 2.10526316e-03 2.10526316e-03 1.73913043e-03
+ 2.00000000e-03 2.50000000e-03 2.50000000e-03 4.00000000e-03
+ 1.73913043e-03 2.10526316e-03 1.60000000e-03 3.07692308e-03
+ 2.50000000e-03 1.66666667e-03 2.00000000e-03 4.44444444e-03
+ 2.35294118e-03 2.85714286e-03 1.90476190e-03]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 579, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 393, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 72, in forward
+    print(f"Softmax output at epoch {epoch}: {inputs[:5]}")
+                                     ^^^^^
+NameError: name 'epoch' is not defined
+Class weights: [8.50487670e-07 2.10526316e-03 2.10526316e-03 1.73913043e-03
+ 2.00000000e-03 2.50000000e-03 2.50000000e-03 4.00000000e-03
+ 1.73913043e-03 2.10526316e-03 1.60000000e-03 3.07692308e-03
+ 2.50000000e-03 1.66666667e-03 2.00000000e-03 4.44444444e-03
+ 2.35294118e-03 2.85714286e-03 1.90476190e-03]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 579, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 393, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 72, in forward
+    print(f"Softmax output at epoch {epoch}: {inputs[:5]}")
+                                     ^^^^^
+NameError: name 'epoch' is not defined
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 579, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 393, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 72, in forward
+    print(f"Softmax output at epoch {epoch}: {inputs[:5]}")
+                                     ^^^^^
+NameError: name 'epoch' is not defined
+[2024-10-31 13:42:01,571] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3688290) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT19class4x4_2_focal_loss.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-31_13:42:01
+  host      : stuttgart01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3688291)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-31_13:42:01
+  host      : stuttgart01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3688292)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-31_13:42:01
+  host      : stuttgart01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3688293)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-31_13:42:01
+  host      : stuttgart01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3688290)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

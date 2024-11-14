@@ -1,0 +1,600 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Rank 1 using device: cuda:1
+Starting Fold 1
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Layer conv1.att_src grad: 3.496335998498523e-10
+Layer conv1.att_src grad: 3.496335998498523e-10Layer conv1.att_src grad: 3.496335998498523e-10
+
+Layer conv1.att_src grad: 3.496335998498523e-10
+Layer conv1.att_dst grad: 1.8647122040915676e-11
+Layer conv1.att_dst grad: 1.8647122040915676e-11Layer conv1.att_dst grad: 1.8647122040915676e-11
+Layer conv1.att_dst grad: 1.8647122040915676e-11
+
+Layer conv1.bias grad: 3.2428883400825725e-07
+Layer conv1.bias grad: 3.2428883400825725e-07Layer conv1.bias grad: 3.2428883400825725e-07
+Layer conv1.bias grad: 3.2428883400825725e-07
+
+Layer conv1.lin.weight grad: 1.8672989199330914e-07
+Layer conv1.lin.weight grad: 1.8672989199330914e-07Layer conv1.lin.weight grad: 1.8672989199330914e-07
+
+Layer conv1.lin.weight grad: 1.8672989199330914e-07
+Layer conv2.att_src grad: 5.714088091579583e-10
+Layer conv2.att_src grad: 5.714088091579583e-10
+Layer conv2.att_src grad: 5.714088091579583e-10
+Layer conv2.att_src grad: 5.714088091579583e-10
+Layer conv2.att_dst grad: 4.572499601174229e-10
+Layer conv2.att_dst grad: 4.572499601174229e-10
+Layer conv2.att_dst grad: 4.572499601174229e-10
+Layer conv2.att_dst grad: 4.572499601174229e-10
+Layer conv2.bias grad: 3.7671389918614295e-07
+Layer conv2.bias grad: 3.7671389918614295e-07
+Layer conv2.bias grad: 3.7671389918614295e-07Layer conv2.bias grad: 3.7671389918614295e-07
+
+Layer conv2.lin.weight grad: 1.8950073510382026e-08
+Layer conv2.lin.weight grad: 1.8950073510382026e-08
+Layer conv2.lin.weight grad: 1.8950073510382026e-08Layer conv2.lin.weight grad: 1.8950073510382026e-08
+Layer conv3.att_src grad: 6.441254751798908e-10
+Layer conv3.att_src grad: 6.441254751798908e-10
+
+Layer conv3.att_dst grad: 2.6789073737099045e-10Layer conv3.att_src grad: 6.441254751798908e-10
+Layer conv3.att_dst grad: 2.6789073737099045e-10Layer conv3.att_src grad: 6.441254751798908e-10
+
+
+Layer conv3.bias grad: 7.392170005005028e-07
+Layer conv3.att_dst grad: 2.6789073737099045e-10Layer conv3.bias grad: 7.392170005005028e-07
+Layer conv3.att_dst grad: 2.6789073737099045e-10
+
+Layer conv3.lin.weight grad: 1.8811821433928344e-08
+Layer conv3.bias grad: 7.392170005005028e-07
+Layer conv3.bias grad: 7.392170005005028e-07
+Layer conv3.lin.weight grad: 1.8811821433928344e-08
+Layer conv4.att_src grad: 4.228777328307842e-10
+Layer conv3.lin.weight grad: 1.8811821433928344e-08
+Layer conv3.lin.weight grad: 1.8811821433928344e-08Layer conv4.att_src grad: 4.228777328307842e-10
+Layer conv4.att_dst grad: 2.1693413732037925e-10
+
+Layer conv4.att_src grad: 4.228777328307842e-10
+Layer conv4.bias grad: 9.992731975216884e-07
+Layer conv4.att_src grad: 4.228777328307842e-10Layer conv4.att_dst grad: 2.1693413732037925e-10
+
+Layer conv4.att_dst grad: 2.1693413732037925e-10
+Layer conv4.lin.weight grad: 2.4571257029037952e-08
+Layer conv4.att_dst grad: 2.1693413732037925e-10Layer conv4.bias grad: 9.992731975216884e-07
+
+Layer conv4.bias grad: 9.992731975216884e-07
+Layer fc.weight grad: 7.765115839220016e-08
+Layer conv4.bias grad: 9.992731975216884e-07
+Layer conv4.lin.weight grad: 2.4571257029037952e-08
+Layer fc.bias grad: 4.538245320873102e-06
+Layer conv4.lin.weight grad: 2.4571257029037952e-08
+Layer conv4.lin.weight grad: 2.4571257029037952e-08
+Layer fc.weight grad: 7.765115839220016e-08
+Layer fc.weight grad: 7.765115839220016e-08
+Layer fc.weight grad: 7.765115839220016e-08Layer fc.bias grad: 4.538245320873102e-06
+
+Layer fc.bias grad: 4.538245320873102e-06
+Layer fc.bias grad: 4.538245320873102e-06
+Layer conv1.att_src grad: 3.4650596281160517e-10Layer conv1.att_src grad: 3.4650596281160517e-10Layer conv1.att_src grad: 3.4650596281160517e-10Layer conv1.att_src grad: 3.4650596281160517e-10
+
+
+
+Layer conv1.att_dst grad: 1.8991834146997455e-11Layer conv1.att_dst grad: 1.8991834146997455e-11Layer conv1.att_dst grad: 1.8991834146997455e-11
+Layer conv1.att_dst grad: 1.8991834146997455e-11
+
+
+Layer conv1.bias grad: 2.5094834654737497e-07Layer conv1.bias grad: 2.5094834654737497e-07
+
+Layer conv1.bias grad: 2.5094834654737497e-07
+Layer conv1.bias grad: 2.5094834654737497e-07
+Layer conv1.lin.weight grad: 1.3934268849880027e-07Layer conv1.lin.weight grad: 1.3934268849880027e-07
+Layer conv1.lin.weight grad: 1.3934268849880027e-07
+
+Layer conv1.lin.weight grad: 1.3934268849880027e-07
+Layer conv2.att_src grad: 3.606156762092638e-10
+Layer conv2.att_src grad: 3.606156762092638e-10Layer conv2.att_src grad: 3.606156762092638e-10
+
+Layer conv2.att_src grad: 3.606156762092638e-10
+Layer conv2.att_dst grad: 2.13286305283944e-10
+Layer conv2.att_dst grad: 2.13286305283944e-10Layer conv2.att_dst grad: 2.13286305283944e-10
+
+Layer conv2.att_dst grad: 2.13286305283944e-10
+Layer conv2.bias grad: 3.383200350981497e-07
+Layer conv2.bias grad: 3.383200350981497e-07Layer conv2.bias grad: 3.383200350981497e-07
+
+Layer conv2.bias grad: 3.383200350981497e-07
+Layer conv2.lin.weight grad: 1.4813325677209832e-08
+Layer conv2.lin.weight grad: 1.4813325677209832e-08Layer conv2.lin.weight grad: 1.4813325677209832e-08
+
+Layer conv2.lin.weight grad: 1.4813325677209832e-08
+Layer conv3.att_src grad: 2.900112372472563e-10
+Layer conv3.att_src grad: 2.900112372472563e-10Layer conv3.att_src grad: 2.900112372472563e-10
+
+Layer conv3.att_dst grad: 8.949509189282168e-11
+Layer conv3.att_src grad: 2.900112372472563e-10
+Layer conv3.att_dst grad: 8.949509189282168e-11Layer conv3.att_dst grad: 8.949509189282168e-11
+
+Layer conv3.bias grad: 7.911997954579419e-07
+Layer conv3.att_dst grad: 8.949509189282168e-11
+Layer conv3.bias grad: 7.911997954579419e-07Layer conv3.bias grad: 7.911997954579419e-07
+
+Layer conv3.lin.weight grad: 1.598035126448849e-08Layer conv3.bias grad: 7.911997954579419e-07
+
+Layer conv3.lin.weight grad: 1.598035126448849e-08Layer conv3.lin.weight grad: 1.598035126448849e-08
+
+Layer conv4.att_src grad: 2.060413090143598e-10
+Layer conv3.lin.weight grad: 1.598035126448849e-08
+Layer conv4.att_src grad: 2.060413090143598e-10Layer conv4.att_src grad: 2.060413090143598e-10
+
+Layer conv4.att_dst grad: 1.2062026377712698e-10
+Layer conv4.att_src grad: 2.060413090143598e-10Layer conv4.att_dst grad: 1.2062026377712698e-10Layer conv4.att_dst grad: 1.2062026377712698e-10
+
+
+Layer conv4.bias grad: 1.1148267731186934e-06
+Layer conv4.bias grad: 1.1148267731186934e-06Layer conv4.bias grad: 1.1148267731186934e-06
+Layer conv4.att_dst grad: 1.2062026377712698e-10
+
+Layer conv4.lin.weight grad: 2.0829029168112356e-08
+Layer conv4.lin.weight grad: 2.0829029168112356e-08
+Layer conv4.lin.weight grad: 2.0829029168112356e-08Layer conv4.bias grad: 1.1148267731186934e-06
+Layer fc.weight grad: 6.557672094231748e-08
+
+Layer fc.weight grad: 6.557672094231748e-08
+Layer fc.weight grad: 6.557672094231748e-08Layer fc.bias grad: 5.526319000637159e-06
+
+Layer conv4.lin.weight grad: 2.0829029168112356e-08
+Layer fc.bias grad: 5.526319000637159e-06
+Layer fc.bias grad: 5.526319000637159e-06
+Layer fc.weight grad: 6.557672094231748e-08
+Layer fc.bias grad: 5.526319000637159e-06
+Layer conv1.att_src grad: 2.407218868683003e-10Layer conv1.att_src grad: 2.407218868683003e-10Layer conv1.att_src grad: 2.407218868683003e-10Layer conv1.att_src grad: 2.407218868683003e-10
+
+
+
+Layer conv1.att_dst grad: 8.354988575987043e-12Layer conv1.att_dst grad: 8.354988575987043e-12Layer conv1.att_dst grad: 8.354988575987043e-12
+Layer conv1.att_dst grad: 8.354988575987043e-12
+
+
+Layer conv1.bias grad: 1.4794423464081774e-07
+Layer conv1.bias grad: 1.4794423464081774e-07Layer conv1.bias grad: 1.4794423464081774e-07
+
+Layer conv1.bias grad: 1.4794423464081774e-07
+Layer conv1.lin.weight grad: 8.205654467019485e-08
+Layer conv1.lin.weight grad: 8.205654467019485e-08Layer conv1.lin.weight grad: 8.205654467019485e-08
+
+Layer conv1.lin.weight grad: 8.205654467019485e-08
+Layer conv2.att_src grad: 1.342673194848487e-10
+Layer conv2.att_src grad: 1.342673194848487e-10Layer conv2.att_src grad: 1.342673194848487e-10
+
+Layer conv2.att_src grad: 1.342673194848487e-10
+Layer conv2.att_dst grad: 5.4702093549297004e-11
+Layer conv2.att_dst grad: 5.4702093549297004e-11Layer conv2.att_dst grad: 5.4702093549297004e-11
+
+Layer conv2.att_dst grad: 5.4702093549297004e-11
+Layer conv2.bias grad: 2.0463861005737272e-07
+Layer conv2.bias grad: 2.0463861005737272e-07Layer conv2.bias grad: 2.0463861005737272e-07
+
+Layer conv2.bias grad: 2.0463861005737272e-07
+Layer conv2.lin.weight grad: 8.925322703134952e-09
+Layer conv2.lin.weight grad: 8.925322703134952e-09Layer conv2.lin.weight grad: 8.925322703134952e-09
+
+Layer conv3.att_src grad: 1.3603000670325827e-10Layer conv2.lin.weight grad: 8.925322703134952e-09
+
+Layer conv3.att_src grad: 1.3603000670325827e-10Layer conv3.att_src grad: 1.3603000670325827e-10
+
+Layer conv3.att_dst grad: 5.229396429773381e-11
+Layer conv3.att_src grad: 1.3603000670325827e-10
+Layer conv3.att_dst grad: 5.229396429773381e-11Layer conv3.att_dst grad: 5.229396429773381e-11
+
+Layer conv3.bias grad: 5.054853886576893e-07
+Layer conv3.att_dst grad: 5.229396429773381e-11
+Layer conv3.bias grad: 5.054853886576893e-07Layer conv3.bias grad: 5.054853886576893e-07
+
+Layer conv3.lin.weight grad: 9.475686901794234e-09
+Layer conv3.bias grad: 5.054853886576893e-07
+Layer conv3.lin.weight grad: 9.475686901794234e-09Layer conv3.lin.weight grad: 9.475686901794234e-09
+
+Layer conv4.att_src grad: 7.856192085764491e-11
+Layer conv3.lin.weight grad: 9.475686901794234e-09
+Layer conv4.att_src grad: 7.856192085764491e-11Layer conv4.att_src grad: 7.856192085764491e-11
+
+Layer conv4.att_dst grad: 3.189817160409447e-11
+Layer conv4.att_dst grad: 3.189817160409447e-11Layer conv4.att_dst grad: 3.189817160409447e-11Layer conv4.att_src grad: 7.856192085764491e-11
+Layer conv4.bias grad: 7.621862323503592e-07
+
+
+Layer conv4.bias grad: 7.621862323503592e-07
+Layer conv4.bias grad: 7.621862323503592e-07
+Layer conv4.att_dst grad: 3.189817160409447e-11Layer conv4.lin.weight grad: 1.1762666396464283e-08
+
+Layer conv4.lin.weight grad: 1.1762666396464283e-08
+Layer conv4.lin.weight grad: 1.1762666396464283e-08
+Layer conv4.bias grad: 7.621862323503592e-07Layer fc.weight grad: 3.9272656238154013e-08
+
+Layer fc.weight grad: 3.9272656238154013e-08
+Layer fc.weight grad: 3.9272656238154013e-08
+Layer fc.bias grad: 4.537204404186923e-06
+Layer conv4.lin.weight grad: 1.1762666396464283e-08
+Layer fc.bias grad: 4.537204404186923e-06
+Layer fc.bias grad: 4.537204404186923e-06
+Layer fc.weight grad: 3.9272656238154013e-08
+Layer fc.bias grad: 4.537204404186923e-06
+Layer conv1.att_src grad: 1.1496556484580367e-10Layer conv1.att_src grad: 1.1496556484580367e-10Layer conv1.att_src grad: 1.1496556484580367e-10Layer conv1.att_src grad: 1.1496556484580367e-10
+
+
+
+Layer conv1.att_dst grad: 9.408766300789129e-12Layer conv1.att_dst grad: 9.408766300789129e-12Layer conv1.att_dst grad: 9.408766300789129e-12
+
+
+Layer conv1.att_dst grad: 9.408766300789129e-12
+Layer conv1.bias grad: 9.83331602810722e-08
+Layer conv1.bias grad: 9.83331602810722e-08
+Layer conv1.bias grad: 9.83331602810722e-08
+Layer conv1.bias grad: 9.83331602810722e-08
+Layer conv1.lin.weight grad: 6.537581498378131e-08Layer conv1.lin.weight grad: 6.537581498378131e-08
+
+Layer conv1.lin.weight grad: 6.537581498378131e-08Layer conv1.lin.weight grad: 6.537581498378131e-08
+
+Layer conv2.att_src grad: 1.1678297218153944e-10Layer conv2.att_src grad: 1.1678297218153944e-10
+
+Layer conv2.att_src grad: 1.1678297218153944e-10
+Layer conv2.att_src grad: 1.1678297218153944e-10
+Layer conv2.att_dst grad: 7.673248147987977e-11Layer conv2.att_dst grad: 7.673248147987977e-11
+
+Layer conv2.att_dst grad: 7.673248147987977e-11
+Layer conv2.att_dst grad: 7.673248147987977e-11
+Layer conv2.bias grad: 1.6423749116256658e-07Layer conv2.bias grad: 1.6423749116256658e-07
+
+Layer conv2.bias grad: 1.6423749116256658e-07
+Layer conv2.bias grad: 1.6423749116256658e-07
+Layer conv2.lin.weight grad: 7.836129078953036e-09Layer conv2.lin.weight grad: 7.836129078953036e-09
+Layer conv2.lin.weight grad: 7.836129078953036e-09
+
+Layer conv2.lin.weight grad: 7.836129078953036e-09
+Layer conv3.att_src grad: 9.019237440233141e-11Layer conv3.att_src grad: 9.019237440233141e-11
+Layer conv3.att_src grad: 9.019237440233141e-11
+
+Layer conv3.att_src grad: 9.019237440233141e-11
+Layer conv3.att_dst grad: 3.142465454519794e-11
+Layer conv3.att_dst grad: 3.142465454519794e-11Layer conv3.att_dst grad: 3.142465454519794e-11
+
+Layer conv3.att_dst grad: 3.142465454519794e-11
+Layer conv3.bias grad: 4.87383601921465e-07
+Layer conv3.bias grad: 4.87383601921465e-07Layer conv3.bias grad: 4.87383601921465e-07
+
+Layer conv3.bias grad: 4.87383601921465e-07
+Layer conv3.lin.weight grad: 9.156861935366578e-09
+Layer conv3.lin.weight grad: 9.156861935366578e-09Layer conv3.lin.weight grad: 9.156861935366578e-09
+
+Layer conv4.att_src grad: 5.895706145508939e-11Layer conv3.lin.weight grad: 9.156861935366578e-09
+
+Layer conv4.att_src grad: 5.895706145508939e-11Layer conv4.att_src grad: 5.895706145508939e-11
+
+Layer conv4.att_dst grad: 2.6464549301996598e-11
+Layer conv4.att_dst grad: 2.6464549301996598e-11Layer conv4.att_dst grad: 2.6464549301996598e-11
+Layer conv4.att_src grad: 5.895706145508939e-11
+
+Layer conv4.bias grad: 8.858194746608206e-07
+Layer conv4.bias grad: 8.858194746608206e-07
+Layer conv4.bias grad: 8.858194746608206e-07
+Layer conv4.att_dst grad: 2.6464549301996598e-11
+Layer conv4.lin.weight grad: 1.2234858459692077e-08
+Layer conv4.lin.weight grad: 1.2234858459692077e-08
+Layer conv4.lin.weight grad: 1.2234858459692077e-08
+Layer conv4.bias grad: 8.858194746608206e-07
+Layer fc.weight grad: 3.9037036714262285e-08
+Layer fc.weight grad: 3.9037036714262285e-08
+Layer fc.weight grad: 3.9037036714262285e-08
+Layer conv4.lin.weight grad: 1.2234858459692077e-08
+Layer fc.bias grad: 4.864652055402985e-06Layer fc.bias grad: 4.864652055402985e-06
+
+Layer fc.bias grad: 4.864652055402985e-06
+Layer fc.weight grad: 3.9037036714262285e-08
+Layer fc.bias grad: 4.864652055402985e-06
+Layer conv1.att_src grad: 5.5727204101296834e-11Layer conv1.att_src grad: 5.5727204101296834e-11Layer conv1.att_src grad: 5.5727204101296834e-11Layer conv1.att_src grad: 5.5727204101296834e-11
+
+
+
+Layer conv1.att_dst grad: 1.2074588724708679e-11Layer conv1.att_dst grad: 1.2074588724708679e-11Layer conv1.att_dst grad: 1.2074588724708679e-11Layer conv1.att_dst grad: 1.2074588724708679e-11
+
+
+
+Layer conv1.bias grad: 8.859376521286322e-08Layer conv1.bias grad: 8.859376521286322e-08
+Layer conv1.bias grad: 8.859376521286322e-08
+Layer conv1.bias grad: 8.859376521286322e-08
+
+Layer conv1.lin.weight grad: 5.4382873315717006e-08
+Layer conv1.lin.weight grad: 5.4382873315717006e-08
+Layer conv1.lin.weight grad: 5.4382873315717006e-08Layer conv1.lin.weight grad: 5.4382873315717006e-08
+
+Layer conv2.att_src grad: 4.366743425188169e-11
+Layer conv2.att_src grad: 4.366743425188169e-11Layer conv2.att_src grad: 4.366743425188169e-11
+
+Layer conv2.att_src grad: 4.366743425188169e-11
+Layer conv2.att_dst grad: 1.7693149029218702e-11
+Layer conv2.att_dst grad: 1.7693149029218702e-11
+Layer conv2.att_dst grad: 1.7693149029218702e-11
+Layer conv2.bias grad: 1.5892541682660521e-07
+Layer conv2.att_dst grad: 1.7693149029218702e-11
+Layer conv2.bias grad: 1.5892541682660521e-07
+Layer conv2.bias grad: 1.5892541682660521e-07
+Layer conv2.lin.weight grad: 6.409889063974106e-09
+Layer conv2.bias grad: 1.5892541682660521e-07
+Layer conv2.lin.weight grad: 6.409889063974106e-09
+Layer conv3.att_src grad: 5.176837084008845e-11Layer conv2.lin.weight grad: 6.409889063974106e-09
+
+Layer conv2.lin.weight grad: 6.409889063974106e-09
+Layer conv3.att_src grad: 5.176837084008845e-11
+Layer conv3.att_dst grad: 2.1980743614147258e-11
+Layer conv3.att_src grad: 5.176837084008845e-11
+Layer conv3.att_src grad: 5.176837084008845e-11Layer conv3.att_dst grad: 2.1980743614147258e-11
+
+Layer conv3.bias grad: 4.7140704850789916e-07
+Layer conv3.att_dst grad: 2.1980743614147258e-11
+Layer conv3.att_dst grad: 2.1980743614147258e-11Layer conv3.bias grad: 4.7140704850789916e-07
+
+Layer conv3.lin.weight grad: 6.939115060333734e-09
+Layer conv3.bias grad: 4.7140704850789916e-07
+Layer conv3.bias grad: 4.7140704850789916e-07
+Layer conv3.lin.weight grad: 6.939115060333734e-09
+Layer conv4.att_src grad: 3.070731169341201e-11
+Layer conv3.lin.weight grad: 6.939115060333734e-09
+Layer conv3.lin.weight grad: 6.939115060333734e-09
+Layer conv4.att_src grad: 3.070731169341201e-11
+Layer conv4.att_dst grad: 1.535711141587015e-11
+Layer conv4.att_src grad: 3.070731169341201e-11
+Layer conv4.att_src grad: 3.070731169341201e-11
+Layer conv4.att_dst grad: 1.535711141587015e-11
+Layer conv4.bias grad: 9.114364729612134e-07
+Layer conv4.att_dst grad: 1.535711141587015e-11
+Layer conv4.att_dst grad: 1.535711141587015e-11
+Layer conv4.bias grad: 9.114364729612134e-07
+Layer conv4.lin.weight grad: 9.075153073467845e-09
+Layer conv4.bias grad: 9.114364729612134e-07
+Layer conv4.bias grad: 9.114364729612134e-07
+Layer conv4.lin.weight grad: 9.075153073467845e-09
+Layer fc.weight grad: 2.911630581081681e-08
+Layer conv4.lin.weight grad: 9.075153073467845e-09
+Layer conv4.lin.weight grad: 9.075153073467845e-09
+Layer fc.weight grad: 2.911630581081681e-08
+Layer fc.bias grad: 5.744219379266724e-06
+Layer fc.weight grad: 2.911630581081681e-08
+Layer fc.weight grad: 2.911630581081681e-08
+Layer fc.bias grad: 5.744219379266724e-06
+Layer fc.bias grad: 5.744219379266724e-06
+Layer fc.bias grad: 5.744219379266724e-06
+Layer conv1.att_src grad: 5.7716706414190355e-11Layer conv1.att_src grad: 5.7716706414190355e-11
+
+Layer conv1.att_dst grad: 1.5796199417938972e-11
+Layer conv1.att_dst grad: 1.5796199417938972e-11
+Layer conv1.bias grad: 2.2838275981484912e-07
+Layer conv1.lin.weight grad: 1.3363857931381062e-07
+Layer conv1.bias grad: 2.2838275981484912e-07
+Layer conv2.att_src grad: 9.116623428395698e-11Layer conv1.att_src grad: 5.7716706414190355e-11
+
+Layer conv1.lin.weight grad: 1.3363857931381062e-07Layer conv2.att_dst grad: 5.44684644609994e-11Layer conv1.att_src grad: 5.7716706414190355e-11
+
+
+Layer conv1.att_dst grad: 1.5796199417938972e-11
+Layer conv2.bias grad: 4.683331553678727e-07
+Layer conv2.att_src grad: 9.116623428395698e-11
+Layer conv1.bias grad: 2.2838275981484912e-07Layer conv1.att_dst grad: 1.5796199417938972e-11
+Layer conv2.lin.weight grad: 1.671322635843353e-08
+
+Layer conv2.att_dst grad: 5.44684644609994e-11
+Layer conv3.att_src grad: 7.720998840277105e-11
+Layer conv1.bias grad: 2.2838275981484912e-07Layer conv1.lin.weight grad: 1.3363857931381062e-07
+
+Layer conv3.att_dst grad: 1.5379952519878337e-11
+Layer conv2.bias grad: 4.683331553678727e-07
+Layer conv3.bias grad: 1.4613309531341656e-06
+Layer conv2.att_src grad: 9.116623428395698e-11Layer conv1.lin.weight grad: 1.3363857931381062e-07
+
+Layer conv3.lin.weight grad: 1.7632764581776428e-08
+Layer conv2.lin.weight grad: 1.671322635843353e-08
+Layer conv4.att_src grad: 1.191320930793438e-10
+Layer conv2.att_dst grad: 5.44684644609994e-11
+Layer conv2.att_src grad: 9.116623428395698e-11
+Layer conv3.att_src grad: 7.720998840277105e-11
+Layer conv4.att_dst grad: 5.7236035355678894e-11
+Layer conv4.bias grad: 2.6003342554759e-06
+Layer conv2.bias grad: 4.683331553678727e-07
+Layer conv2.att_dst grad: 5.44684644609994e-11Layer conv3.att_dst grad: 1.5379952519878337e-11
+
+Layer conv4.lin.weight grad: 2.0335908956781168e-08
+Layer conv3.bias grad: 1.4613309531341656e-06Layer fc.weight grad: 6.394388663011341e-08Layer conv2.bias grad: 4.683331553678727e-07
+
+Layer conv2.lin.weight grad: 1.671322635843353e-08
+
+Layer fc.bias grad: 1.5952206013025716e-05
+Layer conv3.lin.weight grad: 1.7632764581776428e-08
+Layer conv3.att_src grad: 7.720998840277105e-11
+Layer conv2.lin.weight grad: 1.671322635843353e-08
+Layer conv4.att_src grad: 1.191320930793438e-10
+Layer conv3.att_dst grad: 1.5379952519878337e-11
+Layer conv3.att_src grad: 7.720998840277105e-11
+Layer conv4.att_dst grad: 5.7236035355678894e-11
+Layer conv3.bias grad: 1.4613309531341656e-06
+Layer conv3.att_dst grad: 1.5379952519878337e-11
+Layer conv4.bias grad: 2.6003342554759e-06
+Layer conv3.lin.weight grad: 1.7632764581776428e-08Layer conv3.bias grad: 1.4613309531341656e-06
+
+Layer conv4.lin.weight grad: 2.0335908956781168e-08
+Layer conv4.att_src grad: 1.191320930793438e-10
+Layer conv3.lin.weight grad: 1.7632764581776428e-08
+Layer fc.weight grad: 6.394388663011341e-08
+Layer conv4.att_dst grad: 5.7236035355678894e-11
+Layer fc.bias grad: 1.5952206013025716e-05Layer conv4.att_src grad: 1.191320930793438e-10
+
+Layer conv4.bias grad: 2.6003342554759e-06
+Layer conv4.att_dst grad: 5.7236035355678894e-11
+Layer conv4.lin.weight grad: 2.0335908956781168e-08
+Layer conv4.bias grad: 2.6003342554759e-06
+Layer fc.weight grad: 6.394388663011341e-08
+Layer conv4.lin.weight grad: 2.0335908956781168e-08
+Layer fc.bias grad: 1.5952206013025716e-05
+Layer fc.weight grad: 6.394388663011341e-08
+Layer fc.bias grad: 1.5952206013025716e-05
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 591, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 432, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 591, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 432, in main
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 591, in <module>
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 82, in forward
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 432, in main
+    loss = loss_fn(out, y)
+               ^return self._call_impl(*args, **kwargs)^
+^    ^if epoch % 20 ==0:^
+^^^^^^ ^  ^  ^  ^  
+       File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+  ~ ~ ~^~^~^~^^^~^~^~^
+^^TypeError^: ^unsupported operand type(s) for %: 'NoneType' and 'int'^
+^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 591, in <module>
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+        return forward_call(*args, **kwargs)return forward_call(*args, **kwargs)
+
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 82, in forward
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 82, in forward
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 432, in main
+    if epoch % 20 ==0:
+       ~~~~~~^~~~
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'int'
+    if epoch % 20 ==0:
+       ~~~~~~^~~~
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'int'
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 82, in forward
+    if epoch % 20 ==0:
+       ~~~~~~^~~~
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'int'
+[2024-10-31 14:05:48,412] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3692119) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT19class4x4_2_focal_loss.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-31_14:05:48
+  host      : stuttgart01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3692120)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-31_14:05:48
+  host      : stuttgart01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3692121)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-31_14:05:48
+  host      : stuttgart01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3692122)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-31_14:05:48
+  host      : stuttgart01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3692119)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

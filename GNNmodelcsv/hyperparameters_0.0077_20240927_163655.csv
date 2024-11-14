@@ -1,0 +1,10 @@
+Parameter,Value
+Model,GCNModel
+Learning Rate,1e-05
+Batch Size,64
+Epochs,1500
+Weight Decay,0.0005
+Patience,30
+Training Samples,1296
+Validation Samples,162
+Test Samples,163

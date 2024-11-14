@@ -1,0 +1,76 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Starting Fold 1
+Precision: 0.9877, Recall: 0.9931, F1-Score: 0.9904
+Fold 1, Epoch 1, Train Loss: 2.7250, Val Loss: 2.7130, Val Acc: 0.9932
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9914, Recall: 0.5969, F1-Score: 0.7450
+Fold 2, Epoch 1, Train Loss: 2.6921, Val Loss: 2.6450, Val Acc: 0.5993
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9927, Recall: 0.1628, F1-Score: 0.2791
+Fold 3, Epoch 1, Train Loss: 2.7643, Val Loss: 2.6952, Val Acc: 0.1620
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9922, Recall: 0.6614, F1-Score: 0.7934
+Fold 4, Epoch 1, Train Loss: 2.7016, Val Loss: 2.6591, Val Acc: 0.6687
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9911, Recall: 0.9905, F1-Score: 0.9907
+Fold 5, Epoch 1, Train Loss: 2.6659, Val Loss: 2.6329, Val Acc: 0.9909
+Completed Fold 5
+Starting final training on all data...
+Evaluating and Visualizing on Test Data
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241113_140221
+Training data predictions saved for all training samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Train20241113_140221
+Shape of all_preds: (4735584,)
+Shape of all_labels: (4735584,)
+Shape of all_probs: (4735584, 19)
+Balanced Accuracy: 0.06241688035958784
+Matthews Correlation Coefficient: 0.20422544186693858
+ROC AUC Score: 0.6997483444104614
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00   4703184
+           1       0.00      0.00      0.00      1775
+           2       0.00      0.00      0.00      1775
+           3       0.00      0.00      0.00      1675
+           4       0.00      0.00      0.00      1750
+           5       0.00      0.00      0.00      1850
+           6       0.00      0.00      0.00      1850
+           7       0.00      0.00      0.00      2000
+           8       0.04      0.01      0.02      1675
+           9       0.00      0.00      0.00      1775
+          10       0.04      0.05      0.04      1625
+          11       0.00      0.00      0.00      1925
+          12       0.00      0.00      0.00      1850
+          13       0.00      0.00      0.00      1650
+          14       0.07      0.13      0.09      1750
+          15       0.00      0.00      0.00      2025
+          16       0.00      0.00      0.00      1825
+          17       0.00      0.00      0.00      1900
+          18       0.00      0.00      0.00      1725
+
+    accuracy                           0.99   4735584
+   macro avg       0.06      0.06      0.06   4735584
+weighted avg       0.99      0.99      0.99   4735584
+
+Test Loss: 0.0000, Test Accuracy: 0.9932
+Precision: 0.9875, Recall: 0.9931, F1-Score: 0.9903
+Balanced Accuracy: 0.0624
+Matthews Correlation Coefficient (MCC): 0.2042
+ROC AUC Score: 0.6997483444104614
+Images have been saved in /home/nishioka/GNN/Predict_truth/pred_vs_true_images_20241113_140221
+Test Loss: 2.7149, Test Accuracy: 0.9932
+Precision: 0.9876, Recall: 0.9932, F1-Score: 0.9904

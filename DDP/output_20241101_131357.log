@@ -1,0 +1,70 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Starting Fold 1
+Precision: 0.9897, Recall: 0.9692, F1-Score: 0.9793
+Fold 1, Epoch 1, Train Loss: 1.7203, Val Loss: 1.7179, Val Acc: 0.9715
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9906, Recall: 0.7491, F1-Score: 0.8529
+Fold 2, Epoch 1, Train Loss: 1.7098, Val Loss: 1.6881, Val Acc: 0.7499
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9905, Recall: 0.8535, F1-Score: 0.9166
+Fold 3, Epoch 1, Train Loss: 1.6904, Val Loss: 1.6697, Val Acc: 0.8448
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9908, Recall: 0.8741, F1-Score: 0.9287
+Fold 4, Epoch 1, Train Loss: 1.6651, Val Loss: 1.6437, Val Acc: 0.8826
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9906, Recall: 0.9830, F1-Score: 0.9867
+Fold 5, Epoch 1, Train Loss: 1.6440, Val Loss: 1.6431, Val Acc: 0.9852
+Completed Fold 5
+Starting final training on all data...
+Evaluating and Visualizing on Test Data
+Balanced Accuracy: 0.07423771551133736
+Matthews Correlation Coefficient: 0.12377097052883942
+ROC AUC Score: 0.6182798472191985
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99   1175796
+           1       0.00      0.00      0.00       475
+           2       0.00      0.00      0.00       475
+           3       0.00      0.00      0.00       575
+           4       0.00      0.00      0.00       500
+           5       0.04      0.16      0.07       400
+           6       0.00      0.28      0.01       400
+           7       0.00      0.00      0.00       250
+           8       0.00      0.00      0.00       575
+           9       0.00      0.00      0.00       475
+          10       0.00      0.00      0.00       625
+          11       0.00      0.00      0.00       325
+          12       0.00      0.00      0.00       400
+          13       0.00      0.00      0.00       600
+          14       0.00      0.00      0.00       500
+          15       0.00      0.00      0.00       225
+          16       0.00      0.00      0.00       425
+          17       0.00      0.00      0.00       350
+          18       0.00      0.00      0.00       525
+
+    accuracy                           0.97   1183896
+   macro avg       0.05      0.07      0.06   1183896
+weighted avg       0.99      0.97      0.98   1183896
+
+Test Loss: 0.0000, Test Accuracy: 0.9715
+Precision: 0.9895, Recall: 0.9715, F1-Score: 0.9803
+Balanced Accuracy: 0.0742
+Matthews Correlation Coefficient (MCC): 0.1238
+ROC AUC Score: 0.6182798472191985
+Test Loss: 1.7179, Test Accuracy: 0.9715
+Precision: 0.9895, Recall: 0.9715, F1-Score: 0.9803

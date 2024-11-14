@@ -1,0 +1,202 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [4703184    3500    3675    3500    3775    3600    3500    3850    3600
+    3400]
+Class weights (before normalization): [2.12621917e-07 2.85714286e-04 2.72108844e-04 2.85714286e-04
+ 2.64900662e-04 2.77777778e-04 2.85714286e-04 2.59740260e-04
+ 2.77777778e-04 2.94117647e-04]
+Normalized class weights: [8.49204200e-05 1.14113246e-01 1.08679282e-01 1.14113246e-01
+ 1.05800360e-01 1.10943434e-01 1.14113246e-01 1.03739314e-01
+ 1.10943434e-01 1.17469518e-01]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 383, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 230, in main
+    out = ddp_model(batch)
+          ^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 37, in forward
+    x, edge_index = data.x, data.edge_index
+                    ^^^^^^
+AttributeError: 'Tensor' object has no attribute 'x'
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Class counts: [1175796    1000     825    1000     725     900    1000     650     900
+    1100]
+Class weights (before normalization): [8.50487670e-07 1.00000000e-03 1.21212121e-03 1.00000000e-03
+ 1.37931034e-03 1.11111111e-03 1.00000000e-03 1.53846154e-03
+ 1.11111111e-03 9.09090909e-04]
+Normalized class weights: [8.28769216e-05 9.74463529e-02 1.18116791e-01 9.74463529e-02
+ 1.34408763e-01 1.08273725e-01 9.74463529e-02 1.49917466e-01
+ 1.08273725e-01 8.85875935e-02]
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 383, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 230, in main
+    out = ddp_model(batch)
+          ^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 37, in forward
+    x, edge_index = data.x, data.edge_index
+                    ^^^^^^
+AttributeError: 'Tensor' object has no attribute 'x'
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 383, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 228, in main
+    batch = batch.to(device)
+            ^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 383, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP10class4x4_3.py", line 228, in main
+    batch = batch.to(device)
+            ^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+[2024-10-21 16:41:10,315] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 30063) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDP10class4x4_3.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-21_16:41:10
+  host      : stuttgart03
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 30064)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-21_16:41:10
+  host      : stuttgart03
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 30065)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-21_16:41:10
+  host      : stuttgart03
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 30066)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-21_16:41:10
+  host      : stuttgart03
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 30063)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

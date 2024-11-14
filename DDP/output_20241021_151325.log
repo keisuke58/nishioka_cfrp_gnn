@@ -1,0 +1,101 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 1 using device: cuda:1
+Rank 2 using device: cuda:2
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Fold 1, Epoch 1, Train Loss: 2.1543, Val Loss: 2.1115, Val Acc: 0.2483
+Fold 1, Epoch 2, Train Loss: 2.0731, Val Loss: 2.0224, Val Acc: 0.2483
+Fold 1, Epoch 3, Train Loss: 1.9688, Val Loss: 1.8961, Val Acc: 0.2483
+Fold 1, Epoch 4, Train Loss: 1.8175, Val Loss: 1.7095, Val Acc: 0.2483
+Fold 1, Epoch 5, Train Loss: 1.5971, Val Loss: 1.4450, Val Acc: 0.2483
+Fold 1, Epoch 6, Train Loss: 1.2922, Val Loss: 1.0939, Val Acc: 0.2483
+Fold 1, Epoch 7, Train Loss: 0.9120, Val Loss: 0.6878, Val Acc: 0.2483
+Fold 1, Epoch 8, Train Loss: 0.5293, Val Loss: 0.3501, Val Acc: 0.2483
+Fold 1, Epoch 9, Train Loss: 0.2619, Val Loss: 0.1689, Val Acc: 0.2483
+Fold 1, Epoch 10, Train Loss: 0.1364, Val Loss: 0.0983, Val Acc: 0.2483
+Fold 1, Epoch 11, Train Loss: 0.0886, Val Loss: 0.0733, Val Acc: 0.2483
+Fold 1, Epoch 12, Train Loss: 0.0714, Val Loss: 0.0640, Val Acc: 0.2483
+Fold 1, Epoch 13, Train Loss: 0.0644, Val Loss: 0.0600, Val Acc: 0.2483
+Fold 1, Epoch 14, Train Loss: 0.0607, Val Loss: 0.0581, Val Acc: 0.2483
+Fold 1, Epoch 15, Train Loss: 0.0593, Val Loss: 0.0570, Val Acc: 0.2483
+Completed Fold 1
+Starting Fold 2
+Fold 2, Epoch 1, Train Loss: 0.0570, Val Loss: 0.0551, Val Acc: 0.2483
+Fold 2, Epoch 2, Train Loss: 0.0546, Val Loss: 0.0532, Val Acc: 0.2483
+Fold 2, Epoch 3, Train Loss: 0.0533, Val Loss: 0.0518, Val Acc: 0.2483
+Fold 2, Epoch 4, Train Loss: 0.0516, Val Loss: 0.0505, Val Acc: 0.2483
+Fold 2, Epoch 5, Train Loss: 0.0505, Val Loss: 0.0493, Val Acc: 0.2483
+Fold 2, Epoch 6, Train Loss: 0.0493, Val Loss: 0.0482, Val Acc: 0.2483
+Fold 2, Epoch 7, Train Loss: 0.0484, Val Loss: 0.0472, Val Acc: 0.2483
+Fold 2, Epoch 8, Train Loss: 0.0474, Val Loss: 0.0461, Val Acc: 0.2483
+Fold 2, Epoch 9, Train Loss: 0.0463, Val Loss: 0.0451, Val Acc: 0.2483
+Fold 2, Epoch 10, Train Loss: 0.0454, Val Loss: 0.0442, Val Acc: 0.2483
+Fold 2, Epoch 11, Train Loss: 0.0444, Val Loss: 0.0432, Val Acc: 0.2483
+Fold 2, Epoch 12, Train Loss: 0.0436, Val Loss: 0.0423, Val Acc: 0.2483
+Fold 2, Epoch 13, Train Loss: 0.0427, Val Loss: 0.0415, Val Acc: 0.2483
+Fold 2, Epoch 14, Train Loss: 0.0419, Val Loss: 0.0407, Val Acc: 0.2483
+Fold 2, Epoch 15, Train Loss: 0.0412, Val Loss: 0.0400, Val Acc: 0.2483
+Completed Fold 2
+Starting Fold 3
+Fold 3, Epoch 1, Train Loss: 0.0406, Val Loss: 0.0396, Val Acc: 0.2483
+Fold 3, Epoch 2, Train Loss: 0.0399, Val Loss: 0.0391, Val Acc: 0.2483
+Fold 3, Epoch 3, Train Loss: 0.0395, Val Loss: 0.0387, Val Acc: 0.2483
+Fold 3, Epoch 4, Train Loss: 0.0391, Val Loss: 0.0383, Val Acc: 0.2483
+Fold 3, Epoch 5, Train Loss: 0.0389, Val Loss: 0.0380, Val Acc: 0.2483
+Fold 3, Epoch 6, Train Loss: 0.0385, Val Loss: 0.0377, Val Acc: 0.2483
+Fold 3, Epoch 7, Train Loss: 0.0382, Val Loss: 0.0374, Val Acc: 0.2483
+Fold 3, Epoch 8, Train Loss: 0.0379, Val Loss: 0.0372, Val Acc: 0.2483
+Fold 3, Epoch 9, Train Loss: 0.0377, Val Loss: 0.0369, Val Acc: 0.2483
+Fold 3, Epoch 10, Train Loss: 0.0375, Val Loss: 0.0367, Val Acc: 0.2483
+Fold 3, Epoch 11, Train Loss: 0.0373, Val Loss: 0.0365, Val Acc: 0.2483
+Fold 3, Epoch 12, Train Loss: 0.0371, Val Loss: 0.0363, Val Acc: 0.2483
+Fold 3, Epoch 13, Train Loss: 0.0370, Val Loss: 0.0362, Val Acc: 0.2483
+Fold 3, Epoch 14, Train Loss: 0.0368, Val Loss: 0.0361, Val Acc: 0.2483
+Fold 3, Epoch 15, Train Loss: 0.0366, Val Loss: 0.0359, Val Acc: 0.2483
+Completed Fold 3
+Starting Fold 4
+Fold 4, Epoch 1, Train Loss: 0.0367, Val Loss: 0.0353, Val Acc: 0.2483
+Fold 4, Epoch 2, Train Loss: 0.0366, Val Loss: 0.0352, Val Acc: 0.2483
+Fold 4, Epoch 3, Train Loss: 0.0365, Val Loss: 0.0353, Val Acc: 0.2483
+Fold 4, Epoch 4, Train Loss: 0.0364, Val Loss: 0.0349, Val Acc: 0.2483
+Fold 4, Epoch 5, Train Loss: 0.0364, Val Loss: 0.0351, Val Acc: 0.2483
+Fold 4, Epoch 6, Train Loss: 0.0360, Val Loss: 0.0348, Val Acc: 0.2483
+Fold 4, Epoch 7, Train Loss: 0.0361, Val Loss: 0.0349, Val Acc: 0.2483
+Fold 4, Epoch 8, Train Loss: 0.0362, Val Loss: 0.0348, Val Acc: 0.2483
+Fold 4, Epoch 9, Train Loss: 0.0362, Val Loss: 0.0347, Val Acc: 0.2483
+Fold 4, Epoch 10, Train Loss: 0.0358, Val Loss: 0.0347, Val Acc: 0.2483
+Fold 4, Epoch 11, Train Loss: 0.0359, Val Loss: 0.0345, Val Acc: 0.2483
+Fold 4, Epoch 12, Train Loss: 0.0360, Val Loss: 0.0347, Val Acc: 0.2483
+Fold 4, Epoch 13, Train Loss: 0.0356, Val Loss: 0.0344, Val Acc: 0.2483
+Fold 4, Epoch 14, Train Loss: 0.0358, Val Loss: 0.0346, Val Acc: 0.2483
+Fold 4, Epoch 15, Train Loss: 0.0357, Val Loss: 0.0345, Val Acc: 0.2483
+Completed Fold 4
+Starting Fold 5
+Fold 5, Epoch 1, Train Loss: 0.0355, Val Loss: 0.0345, Val Acc: 0.2483
+Fold 5, Epoch 2, Train Loss: 0.0355, Val Loss: 0.0347, Val Acc: 0.2483
+Fold 5, Epoch 3, Train Loss: 0.0354, Val Loss: 0.0345, Val Acc: 0.2483
+Fold 5, Epoch 4, Train Loss: 0.0354, Val Loss: 0.0345, Val Acc: 0.2483
+Fold 5, Epoch 5, Train Loss: 0.0354, Val Loss: 0.0345, Val Acc: 0.2483
+Fold 5, Epoch 6, Train Loss: 0.0352, Val Loss: 0.0344, Val Acc: 0.2483
+Fold 5, Epoch 7, Train Loss: 0.0353, Val Loss: 0.0344, Val Acc: 0.2483
+Fold 5, Epoch 8, Train Loss: 0.0353, Val Loss: 0.0343, Val Acc: 0.2483
+Fold 5, Epoch 9, Train Loss: 0.0352, Val Loss: 0.0342, Val Acc: 0.2483
+Fold 5, Epoch 10, Train Loss: 0.0352, Val Loss: 0.0343, Val Acc: 0.2483
+Fold 5, Epoch 11, Train Loss: 0.0354, Val Loss: 0.0343, Val Acc: 0.2483
+Fold 5, Epoch 12, Train Loss: 0.0351, Val Loss: 0.0342, Val Acc: 0.2483
+Fold 5, Epoch 13, Train Loss: 0.0349, Val Loss: 0.0341, Val Acc: 0.2483
+Fold 5, Epoch 14, Train Loss: 0.0350, Val Loss: 0.0343, Val Acc: 0.2483
+Fold 5, Epoch 15, Train Loss: 0.0348, Val Loss: 0.0340, Val Acc: 0.2483
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 0.0569, Test Accuracy: 0.9932

@@ -1,0 +1,140 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 3 using device: cuda:3
+Rank 1 using device: cuda:1
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Starting Fold 1
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 605, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 417, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 103, in forward
+    weights = self._get_weights(target).to(x.device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 53, in _get_weights
+    weights = target * self.weights
+              ~~~~~~~^~~~~~~~~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:2 and cpu!
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 605, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 417, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 605, in <module>
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 103, in forward
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 417, in main
+    weights = self._get_weights(target).to(x.device)
+              ^^^^^^^^^^^^^    ^loss = loss_fn(out, y)^
+^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 53, in _get_weights
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    weights = target * self.weights
+              ~~~~~~~^~~~~~~~~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:3 and cpu!
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 103, in forward
+    weights = self._get_weights(target).to(x.device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 53, in _get_weights
+    weights = target * self.weights
+              ~~~~~~~^~~~~~~~~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 605, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDPGAT19class4x4_2_focal_loss.py", line 417, in main
+    loss = loss_fn(out, y)
+           ^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 103, in forward
+    weights = self._get_weights(target).to(x.device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/GNN/DDP/Loss/focal_loss.py", line 53, in _get_weights
+    weights = target * self.weights
+              ~~~~~~~^~~~~~~~~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:1 and cpu!
+[2024-10-31 17:36:31,397] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3725508) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDPGAT19class4x4_2_focal_loss.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-31_17:36:31
+  host      : stuttgart01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3725509)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-31_17:36:31
+  host      : stuttgart01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3725510)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-31_17:36:31
+  host      : stuttgart01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3725511)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-31_17:36:31
+  host      : stuttgart01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3725508)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

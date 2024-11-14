@@ -1,0 +1,1614 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Rank 3 using device: cuda:3
+Rank 1 using device: cuda:1
+Rank 2 using device: cuda:2
+Starting Fold 1
+Precision: 0.0000, Recall: 0.0006, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 1, Epoch 2, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 1, Epoch 3, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 1, Epoch 4, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 5, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 6, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 7, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 8, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 9, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00033787 0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00067551 0.         0.
+ 0.        ]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 10, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 11, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 12, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 13, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 14, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 15, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 16, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 17, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 18, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 19, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.0002534 0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.00050667 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 20, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 21, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 22, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 23, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 24, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 25, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 26, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 27, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 28, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 29, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Learning Rate: 0.001
+Learning Rate: 0.001
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00033787 0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00067551 0.         0.
+ 0.        ]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 30, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 31, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 32, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 33, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 34, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 1, Epoch 35, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 36, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 37, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 38, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 39, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+
+
+--- Epoch 40 ---
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+
+
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.0002534 0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.00050667 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 40, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 41, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 42, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 43, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 44, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 45, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 46, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 47, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 48, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 49, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+
+--- Epoch 50 ---
+--- Epoch 50 ---
+--- Epoch 50 ---
+
+
+
+--- Epoch 50 ---
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001
+
+Learning Rate: 0.001
+Learning Rate: 0.001
+Class Weights: [2.1182575e-05 2.8063533e-01 2.8063533e-01 2.9738969e-01 2.8464442e-01
+ 2.6925823e-01 2.6925823e-01 2.4906386e-01 2.9738969e-01 2.8063533e-01
+ 3.0654013e-01 2.5876766e-01 2.6925823e-01 3.0189559e-01 2.8464442e-01
+ 2.4598901e-01 2.7294672e-01 2.6217249e-01 2.8876969e-01]
+Learning Rate: 0.001Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.0002534 0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.00050667 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 50, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0002
+Completed Fold 1
+Starting Fold 2
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 1, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 2, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 3, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 4, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 5, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 6, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 7, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 8, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 9, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+--- Epoch 10 ---
+
+
+--- Epoch 10 ---
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.0005068]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.00101309]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.0000, Weighted Recall: 0.0005, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 10, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 11, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 12, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 13, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 14, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 15, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 16, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 17, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 2, Epoch 18, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 19, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+
+Learning Rate: 0.001Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.0002534 0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00050667 0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 20, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 21, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 22, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 23, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 24, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 25, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 26, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 27, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 28, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 29, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.0002534 0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00050667 0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 30, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 31, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 32, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 33, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 34, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 35, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 36, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 37, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 38, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 39, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+Learning Rate: 0.001Learning Rate: 0.001
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.00042233 0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.00084431 0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.0000, Weighted Recall: 0.0004, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 40, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 41, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 42, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 43, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 44, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 45, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 46, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 47, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 2, Epoch 48, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 49, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 50 ---
+--- Epoch 50 ---
+--- Epoch 50 ---
+
+
+
+--- Epoch 50 ---
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+
+Class Weights: [2.1216663e-05 2.8510249e-01 2.7338597e-01 2.7718300e-01 2.4638487e-01
+ 2.7338597e-01 2.7718300e-01 2.8510249e-01 2.6259440e-01 2.8510249e-01
+ 2.6259440e-01 2.7718300e-01 2.6969156e-01 2.8510249e-01 3.0238143e-01
+ 2.9348788e-01 2.6969156e-01 2.8923443e-01 2.8510249e-01]
+Learning Rate: 0.001Learning Rate: 0.001
+
+Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.00033787
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.00067551
+ 0.        ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 2, Epoch 50, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Completed Fold 2
+Starting Fold 3
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 1, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 2, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 3, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 4, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 5, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 6, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 7, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 8, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 9, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00084467 0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.00168791 0.         0.
+ 0.        ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.0000, Weighted Recall: 0.0008, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 10, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 11, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 12, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 3, Epoch 13, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 14, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 15, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 16, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 17, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 18, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 19, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+Learning Rate: 0.001
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.0005068 0.        0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.00101309 0.
+ 0.        ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.0000, Weighted Recall: 0.0005, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 20, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 21, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 22, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 23, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 24, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 25, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 26, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 27, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 28, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 29, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+
+
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.00033787 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.00067551 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 30, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 31, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 32, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 33, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 34, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 35, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 36, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 37, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 38, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 39, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+
+
+--- Epoch 40 ---
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.00042233 0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.00084431 0.         0.         0.
+ 0.        ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.0000, Weighted Recall: 0.0004, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 40, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 41, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 42, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 43, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 3, Epoch 44, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 45, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 46, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 47, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 48, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 3, Epoch 49, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 50 ---
+--- Epoch 50 ---
+--- Epoch 50 ---
+
+
+
+--- Epoch 50 ---
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]
+Learning Rate: 0.001
+
+Learning Rate: 0.001Class Weights: [2.1200665e-05 2.6239640e-01 2.7317980e-01 2.6948819e-01 3.0215341e-01
+ 2.7697396e-01 2.9764366e-01 2.8901631e-01 2.5243196e-01 2.5898865e-01
+ 2.7697396e-01 2.8901631e-01 3.0215341e-01 2.6948819e-01 2.6589501e-01
+ 2.9764366e-01 2.7317980e-01 2.6239640e-01 2.8087500e-01]Learning Rate: 0.001
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.00033787 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.00067551 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 3, Epoch 50, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0005
+Completed Fold 3
+Starting Fold 4
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 1, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 2, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 3, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 4, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 5, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 6, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 7, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 8, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 9, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+
+
+Learning Rate: 0.001
+Learning Rate: 0.001Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Learning Rate: 0.001
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 10, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 11, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 12, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 13, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 14, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 15, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 16, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 17, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 18, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 19, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+--- Epoch 20 ---
+
+
+--- Epoch 20 ---
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Learning Rate: 0.001
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.00033787 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.00067551 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 20, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 21, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 22, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 23, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 24, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 25, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 26, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 27, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 28, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 29, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 30, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 31, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 32, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 33, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0006, F1-Score: 0.0000
+Fold 4, Epoch 34, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 35, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 36, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 37, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 38, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 39, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+
+
+--- Epoch 40 ---
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Learning Rate: 0.001
+
+
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Learning Rate: 0.001Learning Rate: 0.001
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 40, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 41, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 42, Train Loss: 0.0046, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 43, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 44, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 4, Epoch 45, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 46, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 47, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 48, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 49, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 50 ---
+--- Epoch 50 ---
+--- Epoch 50 ---
+
+
+
+--- Epoch 50 ---
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+
+Class Weights: [2.1213975e-05 2.7714786e-01 2.8919774e-01 2.6965737e-01 2.7714786e-01
+ 2.8506637e-01 2.7714786e-01 2.7714786e-01 2.6965737e-01 2.8506637e-01
+ 2.6965737e-01 3.1179133e-01 2.7335131e-01 2.6965737e-01 2.6606193e-01
+ 2.5582877e-01 2.6965737e-01 3.0699453e-01 2.6965737e-01]
+Learning Rate: 0.001
+Learning Rate: 0.001
+Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.
+ 0.         0.00042233 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.00084431 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0004, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0004, F1-Score: 0.0000
+Fold 4, Epoch 50, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Completed Fold 4
+Starting Fold 5
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 1, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 2, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 3, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 4, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 5, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 6, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 7, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 8, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 9, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 10, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 11, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 12, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 13, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 14, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 15, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 16, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 17, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 18, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 19, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+
+--- Epoch 20 ---
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+--- Epoch 20 ---
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+
+Learning Rate: 0.001
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+
+Per-Class Precision: [0.        0.        0.        0.0002534 0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.       ]
+Per-Class Recall: [0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.00050667 0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 20, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 21, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 22, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 23, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 24, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 25, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 26, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 27, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 28, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 29, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+
+
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 30, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 31, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 32, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 33, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 34, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 35, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 36, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 37, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 38, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 39, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+
+--- Epoch 40 ---
+--- Epoch 40 ---
+--- Epoch 40 ---
+
+
+
+--- Epoch 40 ---
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+
+
+Learning Rate: 0.001Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.         0.         0.         0.         0.         0.00033787
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Per-Class Recall: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.00067551
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0003, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 40, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 41, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 5, Epoch 42, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0004
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 43, Train Loss: 0.0046, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 44, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 45, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 46, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 47, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 48, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 49, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+
+--- Epoch 50 ---
+
+--- Epoch 50 ---
+
+--- Epoch 50 ---
+
+--- Epoch 50 ---
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+Learning Rate: 0.001
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+Learning Rate: 0.001
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+Train Loss: 0.0045, Val Loss: 0.0046
+Learning Rate: 0.001
+Class Weights: [2.1204974e-05 2.8093210e-01 2.6954296e-01 2.7323532e-01 2.8093210e-01
+ 2.8093210e-01 2.6594904e-01 2.8907505e-01 3.1165904e-01 2.7703026e-01
+ 2.7323532e-01 2.5572026e-01 2.7323532e-01 2.6244971e-01 2.6954296e-01
+ 3.0221483e-01 3.0221483e-01 2.6954296e-01 2.6244971e-01]
+Learning Rate: 0.001Train Loss: 0.0045, Val Loss: 0.0046
+
+Train Loss: 0.0045, Val Loss: 0.0046
+Train Loss: 0.0045, Val Loss: 0.0046
+Per-Class Precision: [0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.0005068 0.       ]
+Per-Class Recall: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+Per-Class F1-Score: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.00101309
+ 0.        ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.0000, Weighted Recall: 0.0005, Weighted F1-Score: 0.0000
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000
+Fold 5, Epoch 50, Train Loss: 0.0045, Val Loss: 0.0046, Val Acc: 0.0003
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 0.0046, Test Accuracy: 0.0005
+Precision: 0.0000, Recall: 0.0005, F1-Score: 0.0000

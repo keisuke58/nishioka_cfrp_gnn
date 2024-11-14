@@ -1,0 +1,80 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 0 using device: cuda:0
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Rank 3 using device: cuda:3
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+out dtype: torch.float32, out shape: torch.Size([233856, 19])
+y dtype: torch.int64, y shape: torch.Size([233856])
+Unique labels in y: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+        18], device='cuda:0')
+out dtype: torch.float32, out shape: torch.Size([233856, 19])
+y dtype: torch.int64, y shape: torch.Size([233856])
+Unique labels in y: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 14, 15, 16, 17, 18],
+       device='cuda:0')
+out dtype: torch.float32, out shape: torch.Size([233856, 19])
+y dtype: torch.int64, y shape: torch.Size([233856])
+Unique labels in y: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 13, 14, 15, 16, 17, 18],
+       device='cuda:0')
+out dtype: torch.float32, out shape: torch.Size([233856, 19])
+y dtype: torch.int64, y shape: torch.Size([233856])
+Unique labels in y: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+        18], device='cuda:0')
+out dtype: torch.float32, out shape: torch.Size([233856, 19])
+y dtype: torch.int64, y shape: torch.Size([233856])
+Unique labels in y: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+        18], device='cuda:0')
+out dtype: torch.float32, out shape: torch.Size([14616, 19])
+y dtype: torch.int64, y shape: torch.Size([14616])
+Unique labels in y: tensor([ 0,  8, 10, 13, 15], device='cuda:0')
+Traceback (most recent call last):
+  File "/home/nishioka/GNN/DDP/DDP19class4x4_1.py", line 472, in <module>
+    main(args)
+  File "/home/nishioka/GNN/DDP/DDP19class4x4_1.py", line 365, in main
+    cm = confusion_matrix(all_labels, all_preds)
+         ^^^^^^^^^^^^^^^^
+NameError: name 'confusion_matrix' is not defined
+[2024-10-31 16:45:44,170] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3717222 closing signal SIGTERM
+[2024-10-31 16:45:44,172] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3717223 closing signal SIGTERM
+[2024-10-31 16:45:44,172] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3717224 closing signal SIGTERM
+[2024-10-31 16:45:44,551] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3717221) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDP19class4x4_1.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-31_16:45:44
+  host      : stuttgart01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3717221)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

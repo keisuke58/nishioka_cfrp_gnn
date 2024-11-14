@@ -1,0 +1,1045 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090Using device: NVIDIA GeForce RTX 3090
+
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Pair 1:Pair 1:
+x shape: torch.Size([3654, 4])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+y shape: torch.Size([3654])
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6969],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7479],
+        [0.0110, 0.0000, 0.0357, 0.7406]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7031],
+        [0.0110, 0.0000, 0.0357, 0.6937]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 2.2768, Val Loss: 2.2510, Val Acc: 0.0008
+Completed Fold 1
+Starting Fold 2
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6208],
+        [0.0110, 0.0000, 0.0357, 0.6121]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5756],
+        [0.0110, 0.0000, 0.0357, 0.5702]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5735],
+        [0.0110, 0.0000, 0.0357, 0.5670]])
+Sample y: tensor([0, 0])
+Pair 1:Pair 1:Pair 1:
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+
+
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+
+
+Sample y: tensor([0, 0])Sample y: tensor([0, 0])
+
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npyPair 2:
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+x shape: torch.Size([3654, 4])y shape: torch.Size([3654])
+
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+Pair 3:x shape: torch.Size([3654, 4])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+y shape: torch.Size([3654])Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Precision: 0.0000, Recall: 0.0006, F1-Score: 0.0000
+Fold 2, Epoch 1, Train Loss: 2.2565, Val Loss: 2.2321, Val Acc: 0.0008
+Completed Fold 2
+Starting Fold 3
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Pair 2:Sample y: tensor([0, 0])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+Pair 3:
+x shape: torch.Size([3654, 4])Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npyy shape: torch.Size([3654])
+
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Pair 3:Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 3, Epoch 1, Train Loss: 2.2390, Val Loss: 2.2285, Val Acc: 0.0007
+Completed Fold 3
+Starting Fold 4
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6866],
+        [0.0110, 0.0000, 0.0357, 0.6787]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6054],
+        [0.0110, 0.0000, 0.0357, 0.6009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6080],
+        [0.0110, 0.0000, 0.0357, 0.6036]])
+Sample y: tensor([0, 0])
+Pair 1:Pair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npyLabel file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 3:
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample y: tensor([0, 0])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Precision: 0.0001, Recall: 0.0009, F1-Score: 0.0001
+Fold 4, Epoch 1, Train Loss: 2.2324, Val Loss: 2.2429, Val Acc: 0.0008
+Completed Fold 4
+Starting Fold 5
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7766],
+        [0.0110, 0.0000, 0.0357, 0.7705]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5476],
+        [0.0110, 0.0000, 0.0357, 0.5359]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.5790],
+        [0.0110, 0.0000, 0.0357, 0.5722]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7021],
+        [0.0110, 0.0000, 0.0357, 0.6920]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7512],
+        [0.0110, 0.0000, 0.0357, 0.7422]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6084],
+        [0.0110, 0.0000, 0.0357, 0.6040]])
+Sample y: tensor([0, 0])
+Precision: 0.0001, Recall: 0.0008, F1-Score: 0.0001
+Fold 5, Epoch 1, Train Loss: 2.2339, Val Loss: 2.2212, Val Acc: 0.0009
+Completed Fold 5
+Starting final training on all data...
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L4B24.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L4B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.6828],
+        [0.0110, 0.0000, 0.0357, 0.6772]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B23.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B23.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7105],
+        [0.0110, 0.0000, 0.0357, 0.7009]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L7B86.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L7B86.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7604],
+        [0.0110, 0.0000, 0.0357, 0.7529]])
+Sample y: tensor([0, 0])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B43.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L6B43.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7178],
+        [0.0110, 0.0000, 0.0357, 0.7089]])
+Sample y: tensor([0, 0])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B33.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L8B33.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7886],
+        [0.0110, 0.0000, 0.0357, 0.7828]])
+Sample y: tensor([0, 0])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L9B20.npy
+Label file: /home/nishioka/GNN/Defect10Class_OneHot_test1/Defect10Class_L9B20.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Sample x: tensor([[0.0110, 0.0000, 0.0000, 0.7661],
+        [0.0110, 0.0000, 0.0357, 0.7600]])
+Sample y: tensor([0, 0])
+Test Loss: 2.2533, Test Accuracy: 0.0008
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000

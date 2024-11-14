@@ -1,0 +1,1904 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Rank 1 using device: cuda:1
+Total valid pairs: 1620
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:Pair 2:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyLabel file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+[2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B74.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B74.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B51.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L8B51.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B40.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B40.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Class weights: Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+[1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+Precision: 0.0000, Recall: 0.0003, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 2.9478, Val Loss: 2.9469, Val Acc: 0.0004
+Precision: 0.9929, Recall: 0.3881, F1-Score: 0.5577
+Fold 1, Epoch 2, Train Loss: 2.9426, Val Loss: 2.9422, Val Acc: 0.3700
+Precision: 0.9898, Recall: 0.9622, F1-Score: 0.9757
+Fold 1, Epoch 3, Train Loss: 2.9388, Val Loss: 2.9390, Val Acc: 0.9625
+Precision: 0.9886, Recall: 0.9923, F1-Score: 0.9904
+Fold 1, Epoch 4, Train Loss: 2.9398, Val Loss: 2.9353, Val Acc: 0.9926
+Precision: 0.9900, Recall: 0.9625, F1-Score: 0.9760
+Fold 1, Epoch 5, Train Loss: 2.9289, Val Loss: 2.9207, Val Acc: 0.9633
+Precision: 0.9891, Recall: 0.9909, F1-Score: 0.9899
+Fold 1, Epoch 6, Train Loss: 2.9087, Val Loss: 2.9110, Val Acc: 0.9914
+Precision: 0.9909, Recall: 0.8943, F1-Score: 0.9399
+Fold 1, Epoch 7, Train Loss: 2.8995, Val Loss: 2.8846, Val Acc: 0.8913
+Precision: 0.9911, Recall: 0.9265, F1-Score: 0.9576
+Fold 1, Epoch 8, Train Loss: 2.8751, Val Loss: 2.8674, Val Acc: 0.9265
+Precision: 0.9921, Recall: 0.8330, F1-Score: 0.9055
+Fold 1, Epoch 9, Train Loss: 2.8527, Val Loss: 2.8602, Val Acc: 0.8224
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+
+
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+
+Learning Rate: 0.001
+Train Loss: 2.8545, Val Loss: 2.8367Train Loss: 2.8545, Val Loss: 2.8367
+Train Loss: 2.8545, Val Loss: 2.8367Train Loss: 2.8545, Val Loss: 2.8367
+
+
+Per-Class Precision: [9.98945344e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.78794922e-04
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.24548011e-03
+ 0.00000000e+00 0.00000000e+00 2.63157895e-02 3.98428732e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+Per-Class Recall: [0.89578464 0.         0.         0.         0.         0.
+ 0.         0.01333333 0.         0.         0.         0.20666667
+ 0.         0.         0.04       0.71       0.         0.
+ 0.        ]
+Per-Class F1-Score: [9.44556643e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 3.52858151e-04
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 2.47603834e-03
+ 0.00000000e+00 0.00000000e+00 3.17460317e-02 7.54516472e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.9921, Weighted Recall: 0.8900, Weighted F1-Score: 0.9381
+Precision: 0.9921, Recall: 0.8900, F1-Score: 0.9381
+Fold 1, Epoch 10, Train Loss: 2.8545, Val Loss: 2.8367, Val Acc: 0.8932
+Precision: 0.9923, Recall: 0.8819, F1-Score: 0.9336
+Fold 1, Epoch 11, Train Loss: 2.8298, Val Loss: 2.8139, Val Acc: 0.8867
+Precision: 0.9925, Recall: 0.8801, F1-Score: 0.9327
+Fold 1, Epoch 12, Train Loss: 2.8125, Val Loss: 2.7915, Val Acc: 0.8870
+Precision: 0.9923, Recall: 0.9203, F1-Score: 0.9547
+Fold 1, Epoch 13, Train Loss: 2.8089, Val Loss: 2.7954, Val Acc: 0.9343
+Precision: 0.9926, Recall: 0.8794, F1-Score: 0.9324
+Fold 1, Epoch 14, Train Loss: 2.8027, Val Loss: 2.7815, Val Acc: 0.8895
+Precision: 0.9927, Recall: 0.8575, F1-Score: 0.9199
+Fold 1, Epoch 15, Train Loss: 2.7905, Val Loss: 2.7823, Val Acc: 0.8590
+Precision: 0.9926, Recall: 0.8923, F1-Score: 0.9396
+Fold 1, Epoch 16, Train Loss: 2.7924, Val Loss: 2.7916, Val Acc: 0.9039
+Precision: 0.9927, Recall: 0.8925, F1-Score: 0.9398
+Fold 1, Epoch 17, Train Loss: 2.7830, Val Loss: 2.7855, Val Acc: 0.9034
+Precision: 0.9927, Recall: 0.9035, F1-Score: 0.9458
+Fold 1, Epoch 18, Train Loss: 2.7818, Val Loss: 2.7800, Val Acc: 0.9161
+Precision: 0.9927, Recall: 0.9196, F1-Score: 0.9546
+Fold 1, Epoch 19, Train Loss: 2.7639, Val Loss: 2.7781, Val Acc: 0.9342
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+
+
+Learning Rate: 0.001
+Train Loss: 2.7606, Val Loss: 2.7475
+Train Loss: 2.7606, Val Loss: 2.7475Train Loss: 2.7606, Val Loss: 2.7475
+
+Train Loss: 2.7606, Val Loss: 2.7475
+Per-Class Precision: [9.99690415e-01 0.00000000e+00 0.00000000e+00 5.88235294e-02
+ 0.00000000e+00 2.59067358e-02 2.55967236e-04 1.29740519e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 9.98203234e-04
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 1.21200820e-02]
+Per-Class Recall: [0.91178402 0.         0.         0.01333333 0.         0.05
+ 0.04       0.17333333 0.         0.         0.         0.03333333
+ 0.         0.         0.         0.         0.         0.
+ 0.86666667]
+Per-Class F1-Score: [9.53715862e-01 0.00000000e+00 0.00000000e+00 2.17391304e-02
+ 0.00000000e+00 3.41296928e-02 5.08679341e-04 2.41411328e-02
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.93836015e-03
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 2.39058477e-02]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.9929, Weighted Recall: 0.9059, Weighted F1-Score: 0.9472
+Precision: 0.9929, Recall: 0.9059, F1-Score: 0.9472
+Fold 1, Epoch 20, Train Loss: 2.7606, Val Loss: 2.7475, Val Acc: 0.9212
+Precision: 0.9930, Recall: 0.8948, F1-Score: 0.9412
+Fold 1, Epoch 21, Train Loss: 2.7523, Val Loss: 2.7402, Val Acc: 0.9076
+Precision: 0.9931, Recall: 0.8684, F1-Score: 0.9263
+Fold 1, Epoch 22, Train Loss: 2.7417, Val Loss: 2.7359, Val Acc: 0.8743
+Precision: 0.9930, Recall: 0.9325, F1-Score: 0.9616
+Fold 1, Epoch 23, Train Loss: 2.7522, Val Loss: 2.7252, Val Acc: 0.9483
+Precision: 0.9930, Recall: 0.9321, F1-Score: 0.9614
+Fold 1, Epoch 24, Train Loss: 2.7340, Val Loss: 2.7112, Val Acc: 0.9488
+Precision: 0.9931, Recall: 0.9612, F1-Score: 0.9766
+Fold 1, Epoch 25, Train Loss: 2.7219, Val Loss: 2.7012, Val Acc: 0.9680
+Precision: 0.9930, Recall: 0.9707, F1-Score: 0.9815
+Fold 1, Epoch 26, Train Loss: 2.7151, Val Loss: 2.7087, Val Acc: 0.9746
+Precision: 0.9930, Recall: 0.9680, F1-Score: 0.9801
+Fold 1, Epoch 27, Train Loss: 2.7087, Val Loss: 2.6972, Val Acc: 0.9722
+Precision: 0.9930, Recall: 0.9740, F1-Score: 0.9832
+Fold 1, Epoch 28, Train Loss: 2.7007, Val Loss: 2.7009, Val Acc: 0.9766
+Precision: 0.9935, Recall: 0.9709, F1-Score: 0.9817
+Fold 1, Epoch 29, Train Loss: 2.6951, Val Loss: 2.7026, Val Acc: 0.9750
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+--- Epoch 30 ---
+
+
+--- Epoch 30 ---
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+Learning Rate: 0.001Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]
+
+Class Weights: [2.1182575e-05 5.6127068e-02 5.6127068e-02 5.9477936e-02 5.6928884e-02
+ 5.3851645e-02 5.3851645e-02 4.9812771e-02 5.9477936e-02 5.6127068e-02
+ 6.1308030e-02 5.1753532e-02 5.3851645e-02 6.0379118e-02 5.6928884e-02
+ 4.9197800e-02 5.4589339e-02 5.2434497e-02 5.7753939e-02]Learning Rate: 0.001Learning Rate: 0.001
+
+
+Learning Rate: 0.001
+Train Loss: 2.6934, Val Loss: 2.6912
+Train Loss: 2.6934, Val Loss: 2.6912
+Train Loss: 2.6934, Val Loss: 2.6912
+Train Loss: 2.6934, Val Loss: 2.6912
+Pair 1:Pair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npyLabel file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Pair 3:Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npyLabel file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Per-Class Precision: [0.99985757 0.         0.         0.01530612 0.         0.
+ 0.         0.01662404 0.         0.01958042 0.004329   0.
+ 0.         0.         0.         0.         0.         0.
+ 0.02910267]
+Per-Class Recall: [0.97914604 0.         0.         0.02       0.         0.
+ 0.         0.17333333 0.         0.18666667 0.136      0.
+ 0.         0.         0.         0.         0.         0.
+ 0.96      ]
+Per-Class F1-Score: [0.98939343 0.         0.         0.01734104 0.         0.
+ 0.         0.03033839 0.         0.03544304 0.00839092 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.05649274]
+Support per Class: [293949    100    150    150    100    100    100     75    100     75
+    125    150    125    175     75    100    175     75     75]
+Weighted Precision: 0.9930, Weighted Recall: 0.9728, Weighted F1-Score: 0.9827
+Precision: 0.9930, Recall: 0.9728, F1-Score: 0.9827
+Fold 1, Epoch 30, Train Loss: 2.6934, Val Loss: 2.6912, Val Acc: 0.9762
+Completed Fold 1
+Starting Fold 2
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: Class weights: [2.12166641e-05 5.70205001e-02 5.46771919e-02 5.54365974e-02
+ 4.92769754e-02 5.46771919e-02 5.54365974e-02 5.70205001e-02
+ 5.25188817e-02 5.70205001e-02 5.25188817e-02 5.54365974e-02
+ 5.39383109e-02 5.70205001e-02 6.04762880e-02 5.86975737e-02
+ 5.39383109e-02 5.78468842e-02 5.70205001e-02]
+[2.12166641e-05 5.70205001e-02 5.46771919e-02 5.54365974e-02
+ 4.92769754e-02 5.46771919e-02 5.54365974e-02 5.70205001e-02
+ 5.25188817e-02 5.70205001e-02 5.25188817e-02 5.54365974e-02
+ 5.39383109e-02 5.70205001e-02 6.04762880e-02 5.86975737e-02
+ 5.39383109e-02 5.78468842e-02 5.70205001e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12166641e-05 5.70205001e-02 5.46771919e-02 5.54365974e-02
+ 4.92769754e-02 5.46771919e-02 5.54365974e-02 5.70205001e-02
+ 5.25188817e-02 5.70205001e-02 5.25188817e-02 5.54365974e-02
+ 5.39383109e-02 5.70205001e-02 6.04762880e-02 5.86975737e-02
+ 5.39383109e-02 5.78468842e-02 5.70205001e-02]
+Class weights: [2.12166641e-05 5.70205001e-02 5.46771919e-02 5.54365974e-02
+ 4.92769754e-02 5.46771919e-02 5.54365974e-02 5.70205001e-02
+ 5.25188817e-02 5.70205001e-02 5.25188817e-02 5.54365974e-02
+ 5.39383109e-02 5.70205001e-02 6.04762880e-02 5.86975737e-02
+ 5.39383109e-02 5.78468842e-02 5.70205001e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B44.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B44.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B60.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B60.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L15B7.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L15B7.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.02875088e-05 4.77079434e-02 5.61269922e-02 5.30088260e-02
+ 1.06017652e-01 5.61269922e-02 5.30088260e-02 4.77079434e-02
+ 6.81542048e-02 4.77079434e-02 6.81542048e-02 5.30088260e-02
+ 5.96349292e-02 4.77079434e-02 3.97566195e-02 4.33708576e-02
+ 5.96349292e-02 4.54361365e-02 4.77079434e-02]
+Class weights: Class weights:[2.02875088e-05 4.77079434e-02 5.61269922e-02 5.30088260e-02
+ 1.06017652e-01 5.61269922e-02 5.30088260e-02 4.77079434e-02
+ 6.81542048e-02 4.77079434e-02 6.81542048e-02 5.30088260e-02
+ 5.96349292e-02 4.77079434e-02 3.97566195e-02 4.33708576e-02
+ 5.96349292e-02 4.54361365e-02 4.77079434e-02] 
+[2.02875088e-05 4.77079434e-02 5.61269922e-02 5.30088260e-02
+ 1.06017652e-01 5.61269922e-02 5.30088260e-02 4.77079434e-02
+ 6.81542048e-02 4.77079434e-02 6.81542048e-02 5.30088260e-02
+ 5.96349292e-02 4.77079434e-02 3.97566195e-02 4.33708576e-02
+ 5.96349292e-02 4.54361365e-02 4.77079434e-02]
+Class weights: [2.02875088e-05 4.77079434e-02 5.61269922e-02 5.30088260e-02
+ 1.06017652e-01 5.61269922e-02 5.30088260e-02 4.77079434e-02
+ 6.81542048e-02 4.77079434e-02 6.81542048e-02 5.30088260e-02
+ 5.96349292e-02 4.77079434e-02 3.97566195e-02 4.33708576e-02
+ 5.96349292e-02 4.54361365e-02 4.77079434e-02]
+Precision: 0.9931, Recall: 0.9469, F1-Score: 0.9692
+Fold 2, Epoch 1, Train Loss: 2.7035, Val Loss: 2.6977, Val Acc: 0.9452
+Precision: 0.9931, Recall: 0.9713, F1-Score: 0.9819
+Fold 2, Epoch 2, Train Loss: 2.6828, Val Loss: 2.6614, Val Acc: 0.9728
+Precision: 0.9931, Recall: 0.9762, F1-Score: 0.9844
+Fold 2, Epoch 3, Train Loss: 2.6799, Val Loss: 2.6614, Val Acc: 0.9777
+Precision: 0.9931, Recall: 0.9717, F1-Score: 0.9821
+Fold 2, Epoch 4, Train Loss: 2.6785, Val Loss: 2.6572, Val Acc: 0.9730
+Precision: 0.9931, Recall: 0.9693, F1-Score: 0.9809
+Fold 2, Epoch 5, Train Loss: 2.6683, Val Loss: 2.6581, Val Acc: 0.9703
+Precision: 0.9932, Recall: 0.9701, F1-Score: 0.9813
+Fold 2, Epoch 6, Train Loss: 2.6601, Val Loss: 2.6463, Val Acc: 0.9714
+Precision: 0.9932, Recall: 0.9748, F1-Score: 0.9837
+Fold 2, Epoch 7, Train Loss: 2.6498, Val Loss: 2.6373, Val Acc: 0.9762
+Precision: 0.9932, Recall: 0.9666, F1-Score: 0.9795
+Fold 2, Epoch 8, Train Loss: 2.6447, Val Loss: 2.6236, Val Acc: 0.9685
+Precision: 0.9932, Recall: 0.9632, F1-Score: 0.9777
+Fold 2, Epoch 9, Train Loss: 2.6367, Val Loss: 2.6320, Val Acc: 0.9634
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 2.6128, Val Loss: 2.5956Train Loss: 2.6128, Val Loss: 2.5956
+
+Train Loss: 2.6128, Val Loss: 2.5956Train Loss: 2.6128, Val Loss: 2.5956
+
+Per-Class Precision: [0.99990211 0.         0.01388889 0.07915567 0.         0.00325733
+ 0.03378378 0.01092896 0.         0.04814815 0.00823983 0.03333333
+ 0.         0.         0.         0.0451505  0.         0.125
+ 0.04525547]
+Per-Class Recall: [0.9729647  0.         0.01333333 0.3        0.         0.01333333
+ 0.16       0.08       0.         0.14857143 0.47       0.06
+ 0.         0.         0.         0.36       0.         0.02
+ 0.20666667]
+Per-Class F1-Score: [0.9862495  0.         0.01360544 0.12526096 0.         0.0052356
+ 0.05578801 0.01923077 0.         0.07272727 0.01619573 0.04285714
+ 0.         0.         0.         0.08023774 0.         0.03448276
+ 0.0742515 ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.9932, Weighted Recall: 0.9670, Weighted F1-Score: 0.9797
+Precision: 0.9932, Recall: 0.9670, F1-Score: 0.9797
+Fold 2, Epoch 10, Train Loss: 2.6128, Val Loss: 2.5956, Val Acc: 0.9688
+Precision: 0.9932, Recall: 0.9746, F1-Score: 0.9836
+Fold 2, Epoch 11, Train Loss: 2.6104, Val Loss: 2.5771, Val Acc: 0.9761
+Precision: 0.9935, Recall: 0.9771, F1-Score: 0.9849
+Fold 2, Epoch 12, Train Loss: 2.6005, Val Loss: 2.5635, Val Acc: 0.9780
+Precision: 0.9933, Recall: 0.9722, F1-Score: 0.9824
+Fold 2, Epoch 13, Train Loss: 2.5985, Val Loss: 2.5717, Val Acc: 0.9739
+Precision: 0.9932, Recall: 0.9673, F1-Score: 0.9798
+Fold 2, Epoch 14, Train Loss: 2.5843, Val Loss: 2.5810, Val Acc: 0.9686
+Precision: 0.9932, Recall: 0.9735, F1-Score: 0.9831
+Fold 2, Epoch 15, Train Loss: 2.5944, Val Loss: 2.5601, Val Acc: 0.9752
+Precision: 0.9932, Recall: 0.9781, F1-Score: 0.9854
+Fold 2, Epoch 16, Train Loss: 2.5787, Val Loss: 2.5500, Val Acc: 0.9793
+Precision: 0.9932, Recall: 0.9636, F1-Score: 0.9779
+Fold 2, Epoch 17, Train Loss: 2.5698, Val Loss: 2.5410, Val Acc: 0.9658
+Precision: 0.9933, Recall: 0.9789, F1-Score: 0.9859
+Fold 2, Epoch 18, Train Loss: 2.5611, Val Loss: 2.5447, Val Acc: 0.9799
+Precision: 0.9935, Recall: 0.9642, F1-Score: 0.9784
+Fold 2, Epoch 19, Train Loss: 2.5534, Val Loss: 2.5232, Val Acc: 0.9659
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+
+Learning Rate: 0.001Learning Rate: 0.001
+
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+Learning Rate: 0.001
+Learning Rate: 0.001
+Train Loss: 2.5326, Val Loss: 2.5141
+Train Loss: 2.5326, Val Loss: 2.5141
+Train Loss: 2.5326, Val Loss: 2.5141Train Loss: 2.5326, Val Loss: 2.5141
+
+Per-Class Precision: [0.99990635 0.05729877 0.10958904 0.13768116 0.5        0.02173913
+ 0.05361305 0.         0.03550296 0.03321033 0.01499483 0.
+ 0.         0.1875     0.06818182 0.0443686  0.         0.
+ 0.        ]
+Per-Class Recall: [0.98076197 0.28       0.10666667 0.19       0.01333333 0.18666667
+ 0.184      0.         0.06       0.05142857 0.58       0.
+ 0.         0.168      0.08571429 0.34666667 0.         0.
+ 0.        ]
+Per-Class F1-Score: [0.99024164 0.09513024 0.10810811 0.15966387 0.02597403 0.03894298
+ 0.08303249 0.         0.04460967 0.04035874 0.02923387 0.
+ 0.         0.17721519 0.07594937 0.07866868 0.         0.
+ 0.        ]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.9935, Weighted Recall: 0.9749, Weighted F1-Score: 0.9838
+Precision: 0.9935, Recall: 0.9749, F1-Score: 0.9838
+Fold 2, Epoch 20, Train Loss: 2.5326, Val Loss: 2.5141, Val Acc: 0.9763
+Precision: 0.9935, Recall: 0.9674, F1-Score: 0.9800
+Fold 2, Epoch 21, Train Loss: 2.5313, Val Loss: 2.5087, Val Acc: 0.9687
+Precision: 0.9935, Recall: 0.9707, F1-Score: 0.9817
+Fold 2, Epoch 22, Train Loss: 2.5220, Val Loss: 2.5195, Val Acc: 0.9723
+Precision: 0.9935, Recall: 0.9810, F1-Score: 0.9870
+Fold 2, Epoch 23, Train Loss: 2.5167, Val Loss: 2.5432, Val Acc: 0.9818
+Precision: 0.9934, Recall: 0.9730, F1-Score: 0.9828
+Fold 2, Epoch 24, Train Loss: 2.5546, Val Loss: 2.4954, Val Acc: 0.9746
+Precision: 0.9932, Recall: 0.9717, F1-Score: 0.9821
+Fold 2, Epoch 25, Train Loss: 2.5198, Val Loss: 2.4732, Val Acc: 0.9737
+Precision: 0.9937, Recall: 0.9795, F1-Score: 0.9862
+Fold 2, Epoch 26, Train Loss: 2.5173, Val Loss: 2.4613, Val Acc: 0.9803
+Precision: 0.9935, Recall: 0.9737, F1-Score: 0.9832
+Fold 2, Epoch 27, Train Loss: 2.4831, Val Loss: 2.4517, Val Acc: 0.9752
+Precision: 0.9939, Recall: 0.9798, F1-Score: 0.9862
+Fold 2, Epoch 28, Train Loss: 2.4887, Val Loss: 2.4723, Val Acc: 0.9807
+Precision: 0.9933, Recall: 0.9797, F1-Score: 0.9862
+Fold 2, Epoch 29, Train Loss: 2.4748, Val Loss: 2.4875, Val Acc: 0.9806
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+Class Weights: [2.1216663e-05 5.7020500e-02 5.4677192e-02 5.5436596e-02 4.9276974e-02
+ 5.4677192e-02 5.5436596e-02 5.7020500e-02 5.2518882e-02 5.7020500e-02
+ 5.2518882e-02 5.5436596e-02 5.3938311e-02 5.7020500e-02 6.0476288e-02
+ 5.8697574e-02 5.3938311e-02 5.7846885e-02 5.7020500e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+
+Train Loss: 2.4950, Val Loss: 2.4554
+Train Loss: 2.4950, Val Loss: 2.4554
+Train Loss: 2.4950, Val Loss: 2.4554Train Loss: 2.4950, Val Loss: 2.4554
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npyPair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Pair 3:Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Per-Class Precision: [0.99992055 0.01612903 0.05263158 0.12977099 0.         0.02003339
+ 0.04298643 0.00118203 0.048      0.         0.02970297 0.06779661
+ 0.05882353 0.05405405 0.08333333 0.         0.         0.10643016
+ 0.0821382 ]
+Per-Class Recall: [0.98469803 0.01333333 0.10666667 0.17       0.         0.16
+ 0.456      0.008      0.06       0.         0.48       0.16
+ 0.02666667 0.016      0.04571429 0.         0.         0.48
+ 0.42      ]
+Per-Class F1-Score: [0.99225091 0.01459854 0.07048458 0.14718615 0.         0.03560831
+ 0.07856651 0.00205973 0.05333333 0.         0.05594406 0.0952381
+ 0.03669725 0.02469136 0.05904059 0.         0.         0.17422868
+ 0.13740458]
+Support per Class: [293949    150     75    100     75     75    125    125    100    175
+    100     50     75    125    175     75    175    100    150]
+Weighted Precision: 0.9934, Weighted Recall: 0.9789, Weighted F1-Score: 0.9858
+Precision: 0.9934, Recall: 0.9789, F1-Score: 0.9858
+Fold 2, Epoch 30, Train Loss: 2.4950, Val Loss: 2.4554, Val Acc: 0.9798
+Completed Fold 2
+Starting Fold 3
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12006644e-05 5.24792767e-02 5.46359593e-02 5.38976355e-02
+ 6.04306823e-02 5.53947921e-02 5.95287318e-02 5.78032613e-02
+ 5.04863928e-02 5.17977277e-02 5.53947921e-02 5.78032613e-02
+ 6.04306823e-02 5.38976355e-02 5.31790004e-02 5.95287318e-02
+ 5.46359593e-02 5.24792767e-02 5.61750004e-02]
+Class weights: [2.12006644e-05 5.24792767e-02 5.46359593e-02 5.38976355e-02
+ 6.04306823e-02 5.53947921e-02 5.95287318e-02 5.78032613e-02
+ 5.04863928e-02 5.17977277e-02 5.53947921e-02 5.78032613e-02
+ 6.04306823e-02 5.38976355e-02 5.31790004e-02 5.95287318e-02
+ 5.46359593e-02 5.24792767e-02 5.61750004e-02]
+Class weights: [2.12006644e-05 5.24792767e-02 5.46359593e-02 5.38976355e-02
+ 6.04306823e-02 5.53947921e-02 5.95287318e-02 5.78032613e-02
+ 5.04863928e-02 5.17977277e-02 5.53947921e-02 5.78032613e-02
+ 6.04306823e-02 5.38976355e-02 5.31790004e-02 5.95287318e-02
+ 5.46359593e-02 5.24792767e-02 5.61750004e-02]
+Class weights: [2.12006644e-05 5.24792767e-02 5.46359593e-02 5.38976355e-02
+ 6.04306823e-02 5.53947921e-02 5.95287318e-02 5.78032613e-02
+ 5.04863928e-02 5.17977277e-02 5.53947921e-02 5.78032613e-02
+ 6.04306823e-02 5.38976355e-02 5.31790004e-02 5.95287318e-02
+ 5.46359593e-02 5.24792767e-02 5.61750004e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.02633130e-05 6.80729210e-02 5.60600526e-02 5.95638058e-02
+ 3.97092039e-02 5.29456052e-02 4.14356910e-02 4.53819473e-02
+ 8.66382630e-02 7.33092995e-02 5.29456052e-02 4.53819473e-02
+ 3.97092039e-02 5.95638058e-02 6.35347262e-02 4.14356910e-02
+ 5.60600526e-02 6.80729210e-02 5.01589944e-02]
+Class weights: [2.02633130e-05 6.80729210e-02 5.60600526e-02 5.95638058e-02
+ 3.97092039e-02 5.29456052e-02 4.14356910e-02 4.53819473e-02
+ 8.66382630e-02 7.33092995e-02 5.29456052e-02 4.53819473e-02
+ 3.97092039e-02 5.95638058e-02 6.35347262e-02 4.14356910e-02
+ 5.60600526e-02 6.80729210e-02 5.01589944e-02]
+Class weights: [2.02633130e-05 6.80729210e-02 5.60600526e-02 5.95638058e-02
+ 3.97092039e-02 5.29456052e-02 4.14356910e-02 4.53819473e-02
+ 8.66382630e-02 7.33092995e-02 5.29456052e-02 4.53819473e-02
+ 3.97092039e-02 5.95638058e-02 6.35347262e-02 4.14356910e-02
+ 5.60600526e-02 6.80729210e-02 5.01589944e-02]
+Class weights: [2.02633130e-05 6.80729210e-02 5.60600526e-02 5.95638058e-02
+ 3.97092039e-02 5.29456052e-02 4.14356910e-02 4.53819473e-02
+ 8.66382630e-02 7.33092995e-02 5.29456052e-02 4.53819473e-02
+ 3.97092039e-02 5.95638058e-02 6.35347262e-02 4.14356910e-02
+ 5.60600526e-02 6.80729210e-02 5.01589944e-02]
+Precision: 0.9936, Recall: 0.9811, F1-Score: 0.9870
+Fold 3, Epoch 1, Train Loss: 2.5329, Val Loss: 2.4271, Val Acc: 0.9753
+Precision: 0.9935, Recall: 0.9828, F1-Score: 0.9879
+Fold 3, Epoch 2, Train Loss: 2.4748, Val Loss: 2.4459, Val Acc: 0.9799
+Precision: 0.9935, Recall: 0.9803, F1-Score: 0.9866
+Fold 3, Epoch 3, Train Loss: 2.4605, Val Loss: 2.4094, Val Acc: 0.9739
+Precision: 0.9935, Recall: 0.9800, F1-Score: 0.9864
+Fold 3, Epoch 4, Train Loss: 2.4545, Val Loss: 2.4154, Val Acc: 0.9734
+Precision: 0.9936, Recall: 0.9814, F1-Score: 0.9872
+Fold 3, Epoch 5, Train Loss: 2.4278, Val Loss: 2.4325, Val Acc: 0.9755
+Precision: 0.9936, Recall: 0.9781, F1-Score: 0.9855
+Fold 3, Epoch 6, Train Loss: 2.4479, Val Loss: 2.3941, Val Acc: 0.9710
+Precision: 0.9937, Recall: 0.9828, F1-Score: 0.9880
+Fold 3, Epoch 7, Train Loss: 2.4397, Val Loss: 2.4269, Val Acc: 0.9776
+Precision: 0.9937, Recall: 0.9811, F1-Score: 0.9871
+Fold 3, Epoch 8, Train Loss: 2.4299, Val Loss: 2.3675, Val Acc: 0.9754
+Precision: 0.9938, Recall: 0.9827, F1-Score: 0.9879
+Fold 3, Epoch 9, Train Loss: 2.4347, Val Loss: 2.3648, Val Acc: 0.9793
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]
+
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 2.4524, Val Loss: 2.3916
+Train Loss: 2.4524, Val Loss: 2.3916Train Loss: 2.4524, Val Loss: 2.3916Train Loss: 2.4524, Val Loss: 2.3916
+
+
+Per-Class Precision: [0.99992414 0.05298013 0.16581633 0.08250825 0.02145923 0.08982036
+ 0.14285714 0.         0.01692308 0.         0.03530005 0.04365079
+ 0.         0.06122449 0.13207547 0.15915916 0.         0.
+ 0.15151515]
+Per-Class Recall: [0.98648405 0.10666667 0.43333333 0.25       0.1        0.1
+ 0.016      0.         0.44       0.         0.7        0.22
+ 0.         0.04       0.056      0.212      0.         0.
+ 0.28      ]
+Per-Class F1-Score: [0.99315863 0.07079646 0.2398524  0.12406948 0.03533569 0.09463722
+ 0.02877698 0.         0.03259259 0.         0.06721075 0.07284768
+ 0.         0.0483871  0.07865169 0.18181818 0.         0.
+ 0.19662921]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.9936, Weighted Recall: 0.9808, Weighted F1-Score: 0.9869
+Precision: 0.9936, Recall: 0.9808, F1-Score: 0.9869
+Fold 3, Epoch 10, Train Loss: 2.4524, Val Loss: 2.3916, Val Acc: 0.9750
+Precision: 0.9937, Recall: 0.9767, F1-Score: 0.9849
+Fold 3, Epoch 11, Train Loss: 2.4195, Val Loss: 2.3766, Val Acc: 0.9687
+Precision: 0.9939, Recall: 0.9737, F1-Score: 0.9832
+Fold 3, Epoch 12, Train Loss: 2.4100, Val Loss: 2.4408, Val Acc: 0.9645
+Precision: 0.9937, Recall: 0.9790, F1-Score: 0.9860
+Fold 3, Epoch 13, Train Loss: 2.4216, Val Loss: 2.3356, Val Acc: 0.9726
+Precision: 0.9935, Recall: 0.9826, F1-Score: 0.9878
+Fold 3, Epoch 14, Train Loss: 2.4124, Val Loss: 2.3600, Val Acc: 0.9797
+Precision: 0.9935, Recall: 0.9824, F1-Score: 0.9876
+Fold 3, Epoch 15, Train Loss: 2.4272, Val Loss: 2.3626, Val Acc: 0.9769
+Precision: 0.9935, Recall: 0.9751, F1-Score: 0.9839
+Fold 3, Epoch 16, Train Loss: 2.4159, Val Loss: 2.3833, Val Acc: 0.9667
+Precision: 0.9936, Recall: 0.9841, F1-Score: 0.9886
+Fold 3, Epoch 17, Train Loss: 2.3895, Val Loss: 2.3600, Val Acc: 0.9805
+Precision: 0.9936, Recall: 0.9828, F1-Score: 0.9879
+Fold 3, Epoch 18, Train Loss: 2.3849, Val Loss: 2.3184, Val Acc: 0.9800
+Precision: 0.9940, Recall: 0.9831, F1-Score: 0.9882
+Fold 3, Epoch 19, Train Loss: 2.3703, Val Loss: 2.3068, Val Acc: 0.9787
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 2.3811, Val Loss: 2.3409
+Train Loss: 2.3811, Val Loss: 2.3409Train Loss: 2.3811, Val Loss: 2.3409
+Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]
+
+Learning Rate: 0.001
+Train Loss: 2.3811, Val Loss: 2.3409
+Per-Class Precision: [0.99992741 0.05995717 0.25225225 0.11111111 0.00625    0.05862069
+ 0.14814815 0.03694875 0.03900709 0.01879699 0.03175429 0.
+ 0.         0.05128205 0.07163324 0.19453925 0.07792208 0.03125
+ 0.0952381 ]
+Per-Class Recall: [0.9841367  0.37333333 0.18666667 0.46       0.01       0.11333333
+ 0.032      0.248      0.22       0.4        0.61       0.
+ 0.         0.10666667 0.2        0.228      0.04       0.01333333
+ 0.128     ]
+Per-Class F1-Score: [0.99196922 0.10332103 0.21455939 0.17898833 0.00769231 0.07727273
+ 0.05263158 0.06431535 0.06626506 0.03590664 0.06036616 0.
+ 0.         0.06926407 0.10548523 0.20994475 0.05286344 0.01869159
+ 0.10921502]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.9937, Weighted Recall: 0.9786, Weighted F1-Score: 0.9858
+Precision: 0.9937, Recall: 0.9786, F1-Score: 0.9858
+Fold 3, Epoch 20, Train Loss: 2.3811, Val Loss: 2.3409, Val Acc: 0.9728
+Precision: 0.9937, Recall: 0.9823, F1-Score: 0.9877
+Fold 3, Epoch 21, Train Loss: 2.3715, Val Loss: 2.3052, Val Acc: 0.9775
+Precision: 0.9938, Recall: 0.9831, F1-Score: 0.9880
+Fold 3, Epoch 22, Train Loss: 2.3445, Val Loss: 2.3124, Val Acc: 0.9774
+Precision: 0.9936, Recall: 0.9811, F1-Score: 0.9870
+Fold 3, Epoch 23, Train Loss: 2.3689, Val Loss: 2.3006, Val Acc: 0.9753
+Precision: 0.9935, Recall: 0.9778, F1-Score: 0.9854
+Fold 3, Epoch 24, Train Loss: 2.3572, Val Loss: 2.3072, Val Acc: 0.9712
+Precision: 0.9937, Recall: 0.9852, F1-Score: 0.9890
+Fold 3, Epoch 25, Train Loss: 2.3240, Val Loss: 2.2924, Val Acc: 0.9830
+Precision: 0.9940, Recall: 0.9756, F1-Score: 0.9843
+Fold 3, Epoch 26, Train Loss: 2.3503, Val Loss: 2.2772, Val Acc: 0.9688
+Precision: 0.9939, Recall: 0.9845, F1-Score: 0.9888
+Fold 3, Epoch 27, Train Loss: 2.3337, Val Loss: 2.2982, Val Acc: 0.9818
+Precision: 0.9937, Recall: 0.9809, F1-Score: 0.9869
+Fold 3, Epoch 28, Train Loss: 2.3573, Val Loss: 2.2862, Val Acc: 0.9752
+Precision: 0.9937, Recall: 0.9804, F1-Score: 0.9867
+Fold 3, Epoch 29, Train Loss: 2.3335, Val Loss: 2.2622, Val Acc: 0.9743
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 2.3484, Val Loss: 2.2273
+Class Weights: [2.1200665e-05 5.2479278e-02 5.4635961e-02 5.3897634e-02 6.0430683e-02
+ 5.5394791e-02 5.9528731e-02 5.7803262e-02 5.0486393e-02 5.1797729e-02
+ 5.5394791e-02 5.7803262e-02 6.0430683e-02 5.3897634e-02 5.3179000e-02
+ 5.9528731e-02 5.4635961e-02 5.2479278e-02 5.6175001e-02]Train Loss: 2.3484, Val Loss: 2.2273Train Loss: 2.3484, Val Loss: 2.2273
+
+
+Learning Rate: 0.001
+Train Loss: 2.3484, Val Loss: 2.2273
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npyPair 1:
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+Pair 1:y shape: torch.Size([3654])x shape: torch.Size([3654, 4])
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+y shape: torch.Size([3654])Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+Pair 2:x shape: torch.Size([3654, 4])Pair 2:
+
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npyy shape: torch.Size([3654])Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npyLabel file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+
+x shape: torch.Size([3654, 4])x shape: torch.Size([3654, 4])
+
+y shape: torch.Size([3654])y shape: torch.Size([3654])
+
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+Pair 3:x shape: torch.Size([3654, 4])
+
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npyy shape: torch.Size([3654])
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Per-Class Precision: [0.99992095 0.06382979 0.20597015 0.14381271 0.         0.06257669
+ 0.06862745 0.03174603 0.07246377 0.05116279 0.03663004 0.
+ 0.11414392 0.         0.1344086  0.15396114 0.         0.06666667
+ 0.17659574]
+Per-Class Recall: [0.98975673 0.08       0.46       0.43       0.         0.34
+ 0.448      0.016      0.1        0.22       0.2        0.
+ 0.30666667 0.         0.2        0.412      0.         0.01333333
+ 0.664     ]
+Per-Class F1-Score: [0.99481288 0.07100592 0.28453608 0.21553885 0.         0.10569948
+ 0.11902232 0.0212766  0.08403361 0.08301887 0.0619195  0.
+ 0.16636528 0.         0.1607717  0.22415669 0.         0.02222222
+ 0.2789916 ]
+Support per Class: [293949     75    150    100    100    150    125    125     50     50
+    100     50    150     75    125    250    150     75    125]
+Weighted Precision: 0.9937, Weighted Recall: 0.9847, Weighted F1-Score: 0.9889
+Precision: 0.9937, Recall: 0.9847, F1-Score: 0.9889
+Fold 3, Epoch 30, Train Loss: 2.3484, Val Loss: 2.2273, Val Acc: 0.9823
+Completed Fold 3
+Starting Fold 4
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12139744e-05 5.54295695e-02 5.78395507e-02 5.39314730e-02
+ 5.54295695e-02 5.70132714e-02 5.54295695e-02 5.54295695e-02
+ 5.39314730e-02 5.70132714e-02 5.39314730e-02 6.23582656e-02
+ 5.46702603e-02 5.39314730e-02 5.32123867e-02 5.11657564e-02
+ 5.39314730e-02 6.13989077e-02 5.39314730e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12139744e-05 5.54295695e-02 5.78395507e-02 5.39314730e-02
+ 5.54295695e-02 5.70132714e-02 5.54295695e-02 5.54295695e-02
+ 5.39314730e-02 5.70132714e-02 5.39314730e-02 6.23582656e-02
+ 5.46702603e-02 5.39314730e-02 5.32123867e-02 5.11657564e-02
+ 5.39314730e-02 6.13989077e-02 5.39314730e-02]
+Class weights: [2.12139744e-05 5.54295695e-02 5.78395507e-02 5.39314730e-02
+ 5.54295695e-02 5.70132714e-02 5.54295695e-02 5.54295695e-02
+ 5.39314730e-02 5.70132714e-02 5.39314730e-02 6.23582656e-02
+ 5.46702603e-02 5.39314730e-02 5.32123867e-02 5.11657564e-02
+ 5.39314730e-02 6.13989077e-02 5.39314730e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.05999527e-05 5.38252044e-02 4.61358895e-02 6.05533550e-02
+ 5.38252044e-02 4.84426840e-02 5.38252044e-02 5.38252044e-02
+ 6.05533550e-02 4.84426840e-02 6.05533550e-02 3.72636031e-02
+ 5.69913929e-02 6.05533550e-02 6.45902453e-02 8.07378066e-02
+ 6.05533550e-02 3.87541472e-02 6.05533550e-02]
+Class weights: [2.05999527e-05 5.38252044e-02 4.61358895e-02 6.05533550e-02
+ 5.38252044e-02 4.84426840e-02 5.38252044e-02 5.38252044e-02
+ 6.05533550e-02 4.84426840e-02 6.05533550e-02 3.72636031e-02
+ 5.69913929e-02 6.05533550e-02 6.45902453e-02 8.07378066e-02
+ 6.05533550e-02 3.87541472e-02 6.05533550e-02]
+Class weights: [2.05999527e-05 5.38252044e-02 4.61358895e-02 6.05533550e-02
+ 5.38252044e-02 4.84426840e-02 5.38252044e-02 5.38252044e-02
+ 6.05533550e-02 4.84426840e-02 6.05533550e-02 3.72636031e-02
+ 5.69913929e-02 6.05533550e-02 6.45902453e-02 8.07378066e-02
+ 6.05533550e-02 3.87541472e-02 6.05533550e-02]
+Class weights: [2.12139744e-05 5.54295695e-02 5.78395507e-02 5.39314730e-02
+ 5.54295695e-02 5.70132714e-02 5.54295695e-02 5.54295695e-02
+ 5.39314730e-02 5.70132714e-02 5.39314730e-02 6.23582656e-02
+ 5.46702603e-02 5.39314730e-02 5.32123867e-02 5.11657564e-02
+ 5.39314730e-02 6.13989077e-02 5.39314730e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L16B71.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L16B71.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L18B48.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L18B48.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B30.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B30.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.05999527e-05 5.38252044e-02 4.61358895e-02 6.05533550e-02
+ 5.38252044e-02 4.84426840e-02 5.38252044e-02 5.38252044e-02
+ 6.05533550e-02 4.84426840e-02 6.05533550e-02 3.72636031e-02
+ 5.69913929e-02 6.05533550e-02 6.45902453e-02 8.07378066e-02
+ 6.05533550e-02 3.87541472e-02 6.05533550e-02]
+Precision: 0.9938, Recall: 0.9807, F1-Score: 0.9869
+Fold 4, Epoch 1, Train Loss: 2.4671, Val Loss: 2.2412, Val Acc: 0.9777
+Precision: 0.9937, Recall: 0.9856, F1-Score: 0.9894
+Fold 4, Epoch 2, Train Loss: 2.3815, Val Loss: 2.2964, Val Acc: 0.9836
+Precision: 0.9937, Recall: 0.9846, F1-Score: 0.9889
+Fold 4, Epoch 3, Train Loss: 2.3787, Val Loss: 2.2729, Val Acc: 0.9828
+Precision: 0.9937, Recall: 0.9833, F1-Score: 0.9881
+Fold 4, Epoch 4, Train Loss: 2.3375, Val Loss: 2.2665, Val Acc: 0.9799
+Precision: 0.9937, Recall: 0.9847, F1-Score: 0.9889
+Fold 4, Epoch 5, Train Loss: 2.3066, Val Loss: 2.2268, Val Acc: 0.9828
+Precision: 0.9939, Recall: 0.9834, F1-Score: 0.9883
+Fold 4, Epoch 6, Train Loss: 2.3040, Val Loss: 2.2081, Val Acc: 0.9804
+Precision: 0.9941, Recall: 0.9841, F1-Score: 0.9887
+Fold 4, Epoch 7, Train Loss: 2.2893, Val Loss: 2.2251, Val Acc: 0.9815
+Precision: 0.9939, Recall: 0.9831, F1-Score: 0.9882
+Fold 4, Epoch 8, Train Loss: 2.2852, Val Loss: 2.2039, Val Acc: 0.9807
+Precision: 0.9939, Recall: 0.9847, F1-Score: 0.9890
+Fold 4, Epoch 9, Train Loss: 2.2982, Val Loss: 2.2093, Val Acc: 0.9821
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+--- Epoch 10 ---
+
+
+--- Epoch 10 ---
+Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]
+
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+
+Train Loss: 2.2765, Val Loss: 2.1984
+Train Loss: 2.2765, Val Loss: 2.1984Train Loss: 2.2765, Val Loss: 2.1984
+Train Loss: 2.2765, Val Loss: 2.1984
+
+Per-Class Precision: [0.99995523 0.15920398 0.14503817 0.236      0.0472973  0.06074766
+ 0.08360129 0.0597177  0.02586207 0.05614973 0.00873656 0.
+ 0.01234568 0.32       0.33333333 0.14689266 0.13910761 0.15686275
+ 0.09389671]
+Per-Class Recall: [0.9877972  0.21333333 0.25333333 0.33714286 0.21       0.13
+ 0.14857143 0.44       0.04       0.14       0.52       0.
+ 0.01333333 0.08       0.02       0.208      0.424      0.064
+ 0.53333333]
+Per-Class F1-Score: [0.99383903 0.18233618 0.18446602 0.27764706 0.07720588 0.08280255
+ 0.10699588 0.10516252 0.03141361 0.08015267 0.0171844  0.
+ 0.01282051 0.128      0.03773585 0.17218543 0.20948617 0.09090909
+ 0.15968064]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.9939, Weighted Recall: 0.9824, Weighted F1-Score: 0.9878
+Precision: 0.9939, Recall: 0.9824, F1-Score: 0.9878
+Fold 4, Epoch 10, Train Loss: 2.2765, Val Loss: 2.1984, Val Acc: 0.9787
+Precision: 0.9938, Recall: 0.9843, F1-Score: 0.9888
+Fold 4, Epoch 11, Train Loss: 2.2986, Val Loss: 2.1903, Val Acc: 0.9819
+Precision: 0.9937, Recall: 0.9825, F1-Score: 0.9878
+Fold 4, Epoch 12, Train Loss: 2.2705, Val Loss: 2.2391, Val Acc: 0.9800
+Precision: 0.9940, Recall: 0.9852, F1-Score: 0.9892
+Fold 4, Epoch 13, Train Loss: 2.3011, Val Loss: 2.1672, Val Acc: 0.9833
+Precision: 0.9938, Recall: 0.9835, F1-Score: 0.9883
+Fold 4, Epoch 14, Train Loss: 2.2516, Val Loss: 2.1718, Val Acc: 0.9801
+Precision: 0.9940, Recall: 0.9833, F1-Score: 0.9882
+Fold 4, Epoch 15, Train Loss: 2.2868, Val Loss: 2.1481, Val Acc: 0.9805
+Precision: 0.9939, Recall: 0.9834, F1-Score: 0.9883
+Fold 4, Epoch 16, Train Loss: 2.2679, Val Loss: 2.1638, Val Acc: 0.9805
+Precision: 0.9939, Recall: 0.9827, F1-Score: 0.9880
+Fold 4, Epoch 17, Train Loss: 2.2506, Val Loss: 2.1566, Val Acc: 0.9801
+Precision: 0.9939, Recall: 0.9852, F1-Score: 0.9892
+Fold 4, Epoch 18, Train Loss: 2.2292, Val Loss: 2.1200, Val Acc: 0.9835
+Precision: 0.9939, Recall: 0.9834, F1-Score: 0.9883
+Fold 4, Epoch 19, Train Loss: 2.2394, Val Loss: 2.1014, Val Acc: 0.9806
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]
+
+
+Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]
+
+
+
+Learning Rate: 0.001
+Train Loss: 2.2610, Val Loss: 2.1276Train Loss: 2.2610, Val Loss: 2.1276Train Loss: 2.2610, Val Loss: 2.1276
+
+
+Train Loss: 2.2610, Val Loss: 2.1276
+Per-Class Precision: [0.9999484  0.26168224 0.13529412 0.26829268 0.07515924 0.06909091
+ 0.09173387 0.         0.07964602 0.08183633 0.01080692 0.
+ 0.02040816 0.14035088 0.07843137 0.6        0.         0.11570248
+ 0.14285714]
+Per-Class Recall: [0.98897088 0.18666667 0.30666667 0.37714286 0.59       0.19
+ 0.52       0.         0.12       0.27333333 0.6        0.
+ 0.01333333 0.24       0.16       0.024      0.         0.112
+ 0.30666667]
+Per-Class F1-Score: [0.99442935 0.21789883 0.1877551  0.31353919 0.13333333 0.10133333
+ 0.15595544 0.         0.09574468 0.12596006 0.02123142 0.
+ 0.01612903 0.17712177 0.10526316 0.04615385 0.         0.11382114
+ 0.19491525]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.9940, Weighted Recall: 0.9836, Weighted F1-Score: 0.9884
+Precision: 0.9940, Recall: 0.9836, F1-Score: 0.9884
+Fold 4, Epoch 20, Train Loss: 2.2610, Val Loss: 2.1276, Val Acc: 0.9806
+Precision: 0.9938, Recall: 0.9817, F1-Score: 0.9874
+Fold 4, Epoch 21, Train Loss: 2.2103, Val Loss: 2.1281, Val Acc: 0.9779
+Precision: 0.9938, Recall: 0.9858, F1-Score: 0.9895
+Fold 4, Epoch 22, Train Loss: 2.2491, Val Loss: 2.1411, Val Acc: 0.9841
+Precision: 0.9937, Recall: 0.9840, F1-Score: 0.9885
+Fold 4, Epoch 23, Train Loss: 2.2324, Val Loss: 2.1286, Val Acc: 0.9815
+Precision: 0.9940, Recall: 0.9817, F1-Score: 0.9874
+Fold 4, Epoch 24, Train Loss: 2.2259, Val Loss: 2.1091, Val Acc: 0.9783
+Precision: 0.9939, Recall: 0.9839, F1-Score: 0.9886
+Fold 4, Epoch 25, Train Loss: 2.2289, Val Loss: 2.1292, Val Acc: 0.9817
+Precision: 0.9939, Recall: 0.9844, F1-Score: 0.9888
+Fold 4, Epoch 26, Train Loss: 2.2486, Val Loss: 2.1063, Val Acc: 0.9820
+Precision: 0.9942, Recall: 0.9826, F1-Score: 0.9880
+Fold 4, Epoch 27, Train Loss: 2.2426, Val Loss: 2.0774, Val Acc: 0.9793
+Precision: 0.9938, Recall: 0.9813, F1-Score: 0.9872
+Fold 4, Epoch 28, Train Loss: 2.1886, Val Loss: 2.0967, Val Acc: 0.9773
+Precision: 0.9940, Recall: 0.9846, F1-Score: 0.9889
+Fold 4, Epoch 29, Train Loss: 2.2355, Val Loss: 2.1090, Val Acc: 0.9819
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]
+
+
+Class Weights: [2.1213975e-05 5.5429570e-02 5.7839550e-02 5.3931475e-02 5.5429570e-02
+ 5.7013273e-02 5.5429570e-02 5.5429570e-02 5.3931475e-02 5.7013273e-02
+ 5.3931475e-02 6.2358264e-02 5.4670259e-02 5.3931475e-02 5.3212386e-02
+ 5.1165756e-02 5.3931475e-02 6.1398908e-02 5.3931475e-02]Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 2.2091, Val Loss: 2.0817Train Loss: 2.2091, Val Loss: 2.0817Train Loss: 2.2091, Val Loss: 2.0817
+Train Loss: 2.2091, Val Loss: 2.0817
+
+
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])Pair 1:
+
+y shape: torch.Size([3654])
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npyPair 2:
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npyData file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Per-Class Precision: [0.99995179 0.20238095 0.12757202 0.29947917 0.2195122  0.0665362
+ 0.08833223 0.         0.         0.0582878  0.0109671  0.13043478
+ 0.04054054 0.12206573 0.125      0.24242424 0.0754717  0.
+ 0.11678832]
+Per-Class Recall: [0.98792308 0.45333333 0.41333333 0.65714286 0.09       0.34
+ 0.76571429 0.         0.         0.21333333 0.44       0.015
+ 0.08       0.26       0.08       0.128      0.032      0.
+ 0.21333333]
+Per-Class F1-Score: [0.99390104 0.27983539 0.19496855 0.41144902 0.12765957 0.11129296
+ 0.15839243 0.         0.         0.09155937 0.02140078 0.02690583
+ 0.05381166 0.16613419 0.09756098 0.16753927 0.04494382 0.
+ 0.1509434 ]
+Support per Class: [293949    150     75    175    100    100    175    125     75    150
+     25    200     75    100     50    125    125    125     75]
+Weighted Precision: 0.9939, Weighted Recall: 0.9829, Weighted F1-Score: 0.9880
+Precision: 0.9939, Recall: 0.9829, F1-Score: 0.9880
+Fold 4, Epoch 30, Train Loss: 2.2091, Val Loss: 2.0817, Val Acc: 0.9794
+Completed Fold 4
+Starting Fold 5
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L17B5.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L17B5.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B9.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B9.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B78.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B78.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12049743e-05 5.61864201e-02 5.39085923e-02 5.46470661e-02
+ 5.61864201e-02 5.61864201e-02 5.31898110e-02 5.78150120e-02
+ 6.23318098e-02 5.54060532e-02 5.46470661e-02 5.11440491e-02
+ 5.46470661e-02 5.24899451e-02 5.39085923e-02 6.04429671e-02
+ 6.04429671e-02 5.39085923e-02 5.24899451e-02]
+Class weights: [2.12049743e-05 5.61864201e-02 5.39085923e-02 5.46470661e-02
+ 5.61864201e-02 5.61864201e-02 5.31898110e-02 5.78150120e-02
+ 6.23318098e-02 5.54060532e-02 5.46470661e-02 5.11440491e-02
+ 5.46470661e-02 5.24899451e-02 5.39085923e-02 6.04429671e-02
+ 6.04429671e-02 5.39085923e-02 5.24899451e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.12049743e-05 5.61864201e-02 5.39085923e-02 5.46470661e-02
+ 5.61864201e-02 5.61864201e-02 5.31898110e-02 5.78150120e-02
+ 6.23318098e-02 5.54060532e-02 5.46470661e-02 5.11440491e-02
+ 5.46470661e-02 5.24899451e-02 5.39085923e-02 6.04429671e-02
+ 6.04429671e-02 5.39085923e-02 5.24899451e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.04500545e-05 5.06212470e-02 6.01127308e-02 5.65766878e-02
+ 5.06212470e-02 5.06212470e-02 6.41202462e-02 4.58001758e-02
+ 3.69924497e-02 5.34335385e-02 5.65766878e-02 8.01503077e-02
+ 5.65766878e-02 6.87002638e-02 6.01127308e-02 4.00751539e-02
+ 4.00751539e-02 6.01127308e-02 6.87002638e-02]
+Class weights: [2.04500545e-05 5.06212470e-02 6.01127308e-02 5.65766878e-02
+ 5.06212470e-02 5.06212470e-02 6.41202462e-02 4.58001758e-02
+ 3.69924497e-02 5.34335385e-02 5.65766878e-02 8.01503077e-02
+ 5.65766878e-02 6.87002638e-02 6.01127308e-02 4.00751539e-02
+ 4.00751539e-02 6.01127308e-02 6.87002638e-02]
+Class weights: [2.04500545e-05 5.06212470e-02 6.01127308e-02 5.65766878e-02
+ 5.06212470e-02 5.06212470e-02 6.41202462e-02 4.58001758e-02
+ 3.69924497e-02 5.34335385e-02 5.65766878e-02 8.01503077e-02
+ 5.65766878e-02 6.87002638e-02 6.01127308e-02 4.00751539e-02
+ 4.00751539e-02 6.01127308e-02 6.87002638e-02]
+Class weights: [2.12049743e-05 5.61864201e-02 5.39085923e-02 5.46470661e-02
+ 5.61864201e-02 5.61864201e-02 5.31898110e-02 5.78150120e-02
+ 6.23318098e-02 5.54060532e-02 5.46470661e-02 5.11440491e-02
+ 5.46470661e-02 5.24899451e-02 5.39085923e-02 6.04429671e-02
+ 6.04429671e-02 5.39085923e-02 5.24899451e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L11B87.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L11B87.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L5B11.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L5B11.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L2B24.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L2B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.04500545e-05 5.06212470e-02 6.01127308e-02 5.65766878e-02
+ 5.06212470e-02 5.06212470e-02 6.41202462e-02 4.58001758e-02
+ 3.69924497e-02 5.34335385e-02 5.65766878e-02 8.01503077e-02
+ 5.65766878e-02 6.87002638e-02 6.01127308e-02 4.00751539e-02
+ 4.00751539e-02 6.01127308e-02 6.87002638e-02]
+Precision: 0.9938, Recall: 0.9788, F1-Score: 0.9859
+Fold 5, Epoch 1, Train Loss: 2.3631, Val Loss: 2.1600, Val Acc: 0.9801
+Precision: 0.9938, Recall: 0.9817, F1-Score: 0.9874
+Fold 5, Epoch 2, Train Loss: 2.2688, Val Loss: 2.1402, Val Acc: 0.9828
+Precision: 0.9938, Recall: 0.9771, F1-Score: 0.9850
+Fold 5, Epoch 3, Train Loss: 2.2426, Val Loss: 2.1743, Val Acc: 0.9789
+Precision: 0.9937, Recall: 0.9795, F1-Score: 0.9863
+Fold 5, Epoch 4, Train Loss: 2.1937, Val Loss: 2.1171, Val Acc: 0.9807
+Precision: 0.9937, Recall: 0.9804, F1-Score: 0.9867
+Fold 5, Epoch 5, Train Loss: 2.2015, Val Loss: 2.0963, Val Acc: 0.9818
+Precision: 0.9939, Recall: 0.9801, F1-Score: 0.9866
+Fold 5, Epoch 6, Train Loss: 2.1614, Val Loss: 2.0899, Val Acc: 0.9814
+Precision: 0.9938, Recall: 0.9823, F1-Score: 0.9877
+Fold 5, Epoch 7, Train Loss: 2.2018, Val Loss: 2.0804, Val Acc: 0.9831
+Precision: 0.9939, Recall: 0.9797, F1-Score: 0.9863
+Fold 5, Epoch 8, Train Loss: 2.1608, Val Loss: 2.0793, Val Acc: 0.9808
+Precision: 0.9938, Recall: 0.9816, F1-Score: 0.9873
+Fold 5, Epoch 9, Train Loss: 2.1689, Val Loss: 2.0533, Val Acc: 0.9824
+
+--- Epoch 10 ---
+--- Epoch 10 ---
+--- Epoch 10 ---
+
+
+
+--- Epoch 10 ---
+Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]
+
+
+Learning Rate: 0.001Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 2.1553, Val Loss: 2.0745
+Train Loss: 2.1553, Val Loss: 2.0745Train Loss: 2.1553, Val Loss: 2.0745
+
+Train Loss: 2.1553, Val Loss: 2.0745
+Per-Class Precision: [0.99997212 0.14876033 0.30481283 0.11067194 0.05524862 0.06372549
+ 0.01075269 0.02898551 0.13235294 0.02586818 0.02681319 0.125
+ 0.05426357 0.04819277 0.01639344 0.12997347 0.16161616 0.21875
+ 0.08344198]
+Per-Class Recall: [0.97618294 0.144      0.65142857 0.37333333 0.13333333 0.13
+ 0.01       0.17333333 0.12       0.48666667 0.40666667 0.02
+ 0.04666667 0.16       0.01333333 0.392      0.16       0.04666667
+ 0.85333333]
+Per-Class F1-Score: [0.98793434 0.14634146 0.41530055 0.17073171 0.078125   0.08552632
+ 0.01036269 0.04966571 0.12587413 0.04912517 0.05030928 0.03448276
+ 0.05017921 0.07407407 0.01470588 0.19521912 0.16080402 0.07692308
+ 0.152019  ]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.9938, Weighted Recall: 0.9712, Weighted F1-Score: 0.9820
+Precision: 0.9938, Recall: 0.9712, F1-Score: 0.9820
+Fold 5, Epoch 10, Train Loss: 2.1553, Val Loss: 2.0745, Val Acc: 0.9738
+Precision: 0.9939, Recall: 0.9800, F1-Score: 0.9865
+Fold 5, Epoch 11, Train Loss: 2.1689, Val Loss: 2.0789, Val Acc: 0.9812
+Precision: 0.9939, Recall: 0.9800, F1-Score: 0.9865
+Fold 5, Epoch 12, Train Loss: 2.1723, Val Loss: 2.0614, Val Acc: 0.9815
+Precision: 0.9939, Recall: 0.9804, F1-Score: 0.9867
+Fold 5, Epoch 13, Train Loss: 2.1400, Val Loss: 2.0661, Val Acc: 0.9812
+Precision: 0.9939, Recall: 0.9809, F1-Score: 0.9870
+Fold 5, Epoch 14, Train Loss: 2.1277, Val Loss: 2.0364, Val Acc: 0.9817
+Precision: 0.9940, Recall: 0.9811, F1-Score: 0.9871
+Fold 5, Epoch 15, Train Loss: 2.1471, Val Loss: 2.0335, Val Acc: 0.9819
+Precision: 0.9940, Recall: 0.9741, F1-Score: 0.9835
+Fold 5, Epoch 16, Train Loss: 2.1361, Val Loss: 2.0537, Val Acc: 0.9766
+Precision: 0.9940, Recall: 0.9798, F1-Score: 0.9865
+Fold 5, Epoch 17, Train Loss: 2.1033, Val Loss: 2.0366, Val Acc: 0.9805
+Precision: 0.9939, Recall: 0.9817, F1-Score: 0.9874
+Fold 5, Epoch 18, Train Loss: 2.1240, Val Loss: 2.0617, Val Acc: 0.9823
+Precision: 0.9940, Recall: 0.9797, F1-Score: 0.9864
+Fold 5, Epoch 19, Train Loss: 2.1176, Val Loss: 2.0180, Val Acc: 0.9806
+
+--- Epoch 20 ---
+--- Epoch 20 ---
+--- Epoch 20 ---
+
+
+
+--- Epoch 20 ---
+Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]
+
+
+Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Learning Rate: 0.001Learning Rate: 0.001Learning Rate: 0.001
+
+
+
+Learning Rate: 0.001
+Train Loss: 2.1305, Val Loss: 2.0131Train Loss: 2.1305, Val Loss: 2.0131Train Loss: 2.1305, Val Loss: 2.0131
+Train Loss: 2.1305, Val Loss: 2.0131
+
+
+Per-Class Precision: [0.99997582 0.21290323 0.32352941 0.12355212 0.02134647 0.07368421
+ 0.0617284  0.05699482 0.11111111 0.04318937 0.04805793 0.05405405
+ 0.         0.02684564 0.10059172 0.12121212 0.21333333 0.34285714
+ 0.11262799]
+Per-Class Recall: [0.98462999 0.528      0.25142857 0.42666667 0.17333333 0.14
+ 0.05       0.36666667 0.21333333 0.26       0.48666667 0.02
+ 0.         0.05333333 0.22666667 0.448      0.16       0.4
+ 0.44      ]
+Per-Class F1-Score: [0.99224357 0.30344828 0.2829582  0.19161677 0.0380117  0.09655172
+ 0.05524862 0.09865471 0.14611872 0.07407407 0.08747753 0.02919708
+ 0.         0.03571429 0.13934426 0.19080068 0.18285714 0.36923077
+ 0.17934783]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.9940, Weighted Recall: 0.9797, Weighted F1-Score: 0.9865
+Precision: 0.9940, Recall: 0.9797, F1-Score: 0.9865
+Fold 5, Epoch 20, Train Loss: 2.1305, Val Loss: 2.0131, Val Acc: 0.9809
+Precision: 0.9941, Recall: 0.9792, F1-Score: 0.9861
+Fold 5, Epoch 21, Train Loss: 2.1103, Val Loss: 2.0380, Val Acc: 0.9801
+Precision: 0.9940, Recall: 0.9798, F1-Score: 0.9865
+Fold 5, Epoch 22, Train Loss: 2.1340, Val Loss: 2.0530, Val Acc: 0.9804
+Precision: 0.9940, Recall: 0.9790, F1-Score: 0.9861
+Fold 5, Epoch 23, Train Loss: 2.1236, Val Loss: 2.0269, Val Acc: 0.9799
+Precision: 0.9940, Recall: 0.9811, F1-Score: 0.9871
+Fold 5, Epoch 24, Train Loss: 2.1452, Val Loss: 2.0176, Val Acc: 0.9819
+Precision: 0.9940, Recall: 0.9798, F1-Score: 0.9865
+Fold 5, Epoch 25, Train Loss: 2.1295, Val Loss: 2.0400, Val Acc: 0.9807
+Precision: 0.9940, Recall: 0.9782, F1-Score: 0.9857
+Fold 5, Epoch 26, Train Loss: 2.1241, Val Loss: 1.9926, Val Acc: 0.9794
+Precision: 0.9939, Recall: 0.9820, F1-Score: 0.9876
+Fold 5, Epoch 27, Train Loss: 2.1135, Val Loss: 2.0157, Val Acc: 0.9830
+Precision: 0.9940, Recall: 0.9797, F1-Score: 0.9864
+Fold 5, Epoch 28, Train Loss: 2.0984, Val Loss: 2.0402, Val Acc: 0.9809
+Precision: 0.9940, Recall: 0.9821, F1-Score: 0.9875
+Fold 5, Epoch 29, Train Loss: 2.0916, Val Loss: 2.0564, Val Acc: 0.9827
+
+--- Epoch 30 ---
+--- Epoch 30 ---
+--- Epoch 30 ---
+
+
+
+--- Epoch 30 ---
+Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]
+Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]Class Weights: [2.1204974e-05 5.6186419e-02 5.3908594e-02 5.4647066e-02 5.6186419e-02
+ 5.6186419e-02 5.3189810e-02 5.7815012e-02 6.2331811e-02 5.5406053e-02
+ 5.4647066e-02 5.1144049e-02 5.4647066e-02 5.2489944e-02 5.3908594e-02
+ 6.0442965e-02 6.0442965e-02 5.3908594e-02 5.2489944e-02]
+Learning Rate: 0.001
+
+
+Learning Rate: 0.001Learning Rate: 0.001
+Learning Rate: 0.001
+
+Train Loss: 2.1321, Val Loss: 2.0292
+Train Loss: 2.1321, Val Loss: 2.0292
+Train Loss: 2.1321, Val Loss: 2.0292
+Train Loss: 2.1321, Val Loss: 2.0292
+Per-Class Precision: [0.99997237 0.36220472 0.25910931 0.18181818 0.13559322 0.08591065
+ 0.0369898  0.08939709 0.         0.04304161 0.04743083 0.
+ 0.03442879 0.         0.09009009 0.17021277 0.23529412 0.21212121
+ 0.10384615]
+Per-Class Recall: [0.98496678 0.368      0.73142857 0.42666667 0.10666667 0.25
+ 0.29       0.28666667 0.         0.4        0.32       0.
+ 0.14666667 0.         0.13333333 0.128      0.4        0.04666667
+ 0.72      ]
+Per-Class F1-Score: [0.99241286 0.36507937 0.38266069 0.25498008 0.11940299 0.12787724
+ 0.06561086 0.1362916  0.         0.07772021 0.08261618 0.
+ 0.05576679 0.         0.10752688 0.14611872 0.2962963  0.07650273
+ 0.18151261]
+Support per Class: [293949    125    175     75     75    100    100    150     75    150
+    150    100    150     75     75    125    100    150     75]
+Weighted Precision: 0.9940, Weighted Recall: 0.9801, Weighted F1-Score: 0.9866
+Precision: 0.9940, Recall: 0.9801, F1-Score: 0.9866
+Fold 5, Epoch 30, Train Loss: 2.1321, Val Loss: 2.0292, Val Acc: 0.9809
+Completed Fold 5
+Starting final training on all data...
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L4B24.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L4B24.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B23.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B23.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L7B86.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L7B86.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [2.11825747e-05 5.61270683e-02 5.61270683e-02 5.94779380e-02
+ 5.69288835e-02 5.38516466e-02 5.38516466e-02 4.98127731e-02
+ 5.94779380e-02 5.61270683e-02 6.13080284e-02 5.17535305e-02
+ 5.38516466e-02 6.03791189e-02 5.69288835e-02 4.91978006e-02
+ 5.45893404e-02 5.24344980e-02 5.77539398e-02]
+Pair 1:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L6B43.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L6B43.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 2:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L8B33.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L8B33.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Pair 3:
+Data file: /home/nishioka/GNN/Defect_4x4_Normalized1/Normalized1_Defect4x4_ELNOD_L9B20.npy
+Label file: /home/nishioka/GNN/Defect19Class_OneHot_test3/Defect19Class_L9B20.npy
+x shape: torch.Size([3654, 4])
+y shape: torch.Size([3654])
+Class weights: [1.96882259e-05 4.87354469e-02 4.87354469e-02 4.02597170e-02
+ 4.62986745e-02 5.78733431e-02 5.78733431e-02 9.25973490e-02
+ 4.02597170e-02 4.87354469e-02 3.70389396e-02 7.12287300e-02
+ 5.78733431e-02 3.85822288e-02 4.62986745e-02 1.02885943e-01
+ 5.44690288e-02 6.61409636e-02 4.40939757e-02]
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99   1175796
+           1       0.01      0.00      0.00       475
+           2       0.00      0.00      0.00       475
+           3       0.02      0.03      0.03       575
+           4       0.00      0.00      0.00       500
+           5       0.00      0.00      0.00       400
+           6       0.00      0.00      0.00       400
+           7       0.01      0.16      0.02       250
+           8       0.00      0.00      0.00       575
+           9       0.03      0.16      0.05       475
+          10       0.01      0.12      0.01       625
+          11       0.00      0.00      0.00       325
+          12       0.00      0.00      0.00       400
+          13       0.00      0.00      0.00       600
+          14       0.00      0.00      0.00       500
+          15       0.00      0.00      0.00       225
+          16       0.00      0.00      0.00       425
+          17       0.00      0.00      0.00       350
+          18       0.05      0.97      0.09       525
+
+    accuracy                           0.98   1183896
+   macro avg       0.06      0.13      0.06   1183896
+weighted avg       0.99      0.98      0.98   1183896
+
+Test Loss: 2.6982, Test Accuracy: 0.9762
+Precision: 0.9931, Recall: 0.9762, F1-Score: 0.9843

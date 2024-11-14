@@ -1,0 +1,735 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 3 using device: cuda:3
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Starting Fold 1
+Precision: 0.9894, Recall: 0.9779, F1-Score: 0.9836
+Fold 1, Epoch 1, Train Loss: 2.2518, Val Loss: 2.2498, Val Acc: 0.9805
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9905, Recall: 0.8095, F1-Score: 0.8908
+Fold 2, Epoch 1, Train Loss: 2.2423, Val Loss: 2.2212, Val Acc: 0.8110
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9904, Recall: 0.8874, F1-Score: 0.9358
+Fold 3, Epoch 1, Train Loss: 2.2228, Val Loss: 2.1998, Val Acc: 0.8791
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9906, Recall: 0.9053, F1-Score: 0.9459
+Fold 4, Epoch 1, Train Loss: 2.1943, Val Loss: 2.1714, Val Acc: 0.9129
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9904, Recall: 0.9881, F1-Score: 0.9892
+Fold 5, Epoch 1, Train Loss: 2.1712, Val Loss: 2.1719, Val Acc: 0.9890
+Completed Fold 5
+Starting final training on all data...
+Evaluating and Visualizing on Test Data
+Batch predictions shape: torch.Size([233856]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (233856,)
+Batch predictions shape: torch.Size([233856]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (467712,)
+Batch predictions shape: torch.Size([233856]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (701568,)
+Batch predictions shape: torch.Size([233856]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (935424,)
+Batch predictions shape: torch.Size([233856]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (1169280,)
+Batch predictions shape: torch.Size([14616]), predictions: [0 0 0 0 0]
+Total predictions collected, Shape of all_preds: (1183896,)
+Warning: Mismatch in lengths - all_preds: 1183896, test_data_filenames: 324
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B43, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B20, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B44, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B82, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B90, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B74, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B74, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B32, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B61, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B71, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B16, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B77, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B9, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B59, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B17, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B9, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B18, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B76, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B77, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B44, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B2, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B28, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B1, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B27, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B20, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B64, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B32, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B66, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B38, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B76, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B81, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B44, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B52, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B52, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B51, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B34, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B83, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B65, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B22, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B87, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B15, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B75, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B15, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B36, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B2, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B12, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B19, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B3, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B10, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B29, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B2, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B52, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B32, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B76, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B46, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B22, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B89, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B87, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B64, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B30, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B11, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B26, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B67, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B49, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B71, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B17, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B73, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B9, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B49, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B5, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B11, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B66, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B9, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B8, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B89, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B39, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B26, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B5, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B21, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B87, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B10, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B23, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B58, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B18, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B32, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B35, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B1, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B49, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B15, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B58, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B23, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B83, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B59, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B10, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B59, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B46, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B70, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B34, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B48, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B41, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B41, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B69, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B69, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B50, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B55, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B20, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B74, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B29, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B16, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B78, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B62, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B75, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B56, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B9, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B90, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B90, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B86, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B41, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B75, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B63, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B23, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B27, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B29, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B22, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B63, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B17, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B61, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B17, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B35, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B70, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B67, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B46, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B27, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B64, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B30, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B36, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B70, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B29, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B86, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B75, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B71, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B24, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B37, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B82, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B81, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B6, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B76, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B1, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B76, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B70, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B72, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B89, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B80, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B26, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B19, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B45, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B11, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B64, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B51, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B45, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B53, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B78, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B41, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B39, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B23, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B36, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B30, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B51, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B54, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B71, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B79, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B66, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B12, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B11, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B50, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B67, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B13, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B74, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B77, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B49, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B61, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B5, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B23, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B78, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B14, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B81, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B58, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B85, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B58, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B34, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B67, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B7, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B82, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B21, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B34, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B51, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B21, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B79, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B15, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B39, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B37, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B28, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B27, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B38, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B58, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B10, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B51, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B79, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B19, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B72, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B48, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B21, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B80, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B34, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B40, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B37, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B39, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B5, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B24, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L6B36, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B78, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B56, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B29, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B86, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B71, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L5B75, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B14, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B54, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L7B37, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L8B4, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B31, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B47, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B17, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B62, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B88, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L18B30, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B22, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B62, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B25, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L16B60, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B32, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L9B57, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L13B68, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L17B42, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L10B50, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L12B79, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B86, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B21, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L4B77, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B33, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L11B6, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L19B1, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L15B1, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B30, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L2B37, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L14B7, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Saving predictions for Normalized1_Defect4x4_ELNOD_L3B87, Shape of predictions: ()
+Test data predictions saved for all test samples in: /home/nishioka/GNN/Predict_data/Predict19Class4x4_Test20241101_204926
+Shape of all_preds: (1183896,)
+Shape of all_labels: (1183896,)
+Shape of all_probs: (1183896, 19)
+Balanced Accuracy: 0.07313906986371248
+Matthews Correlation Coefficient: 0.14614402460697512
+ROC AUC Score: 0.615941616315361
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99   1175796
+           1       0.00      0.00      0.00       475
+           2       0.00      0.00      0.00       475
+           3       0.00      0.00      0.00       575
+           4       0.00      0.00      0.00       500
+           5       0.04      0.17      0.07       400
+           6       0.01      0.23      0.01       400
+           7       0.00      0.00      0.00       250
+           8       0.00      0.00      0.00       575
+           9       0.00      0.00      0.00       475
+          10       0.00      0.00      0.00       625
+          11       0.00      0.00      0.00       325
+          12       0.00      0.00      0.00       400
+          13       0.00      0.00      0.00       600
+          14       0.00      0.00      0.00       500
+          15       0.00      0.00      0.00       225
+          16       0.00      0.00      0.00       425
+          17       0.00      0.00      0.00       350
+          18       0.00      0.00      0.00       525
+
+    accuracy                           0.98   1183896
+   macro avg       0.06      0.07      0.06   1183896
+weighted avg       0.99      0.98      0.98   1183896
+
+Test Loss: 0.0000, Test Accuracy: 0.9805
+Precision: 0.9893, Recall: 0.9805, F1-Score: 0.9848
+Balanced Accuracy: 0.0731
+Matthews Correlation Coefficient (MCC): 0.1461
+ROC AUC Score: 0.615941616315361
+Images have been saved in /home/nishioka/GNN/Predict_truth/pred_vs_true_images_20241101_204926
+Test Loss: 2.2495, Test Accuracy: 0.9805
+Precision: 0.9893, Recall: 0.9805, F1-Score: 0.9848

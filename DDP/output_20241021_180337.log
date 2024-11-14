@@ -1,0 +1,1027 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Total valid pairs: 1620
+Rank 2 using device: cuda:2
+Total valid pairs: 1620
+Total valid pairs: 1620
+Total valid pairs: 1620
+Starting Fold 1
+Precision: 0.0000, Recall: 0.0011, F1-Score: 0.0000
+Fold 1, Epoch 1, Train Loss: 2.2768, Val Loss: 2.2510, Val Acc: 0.0008
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 1, Epoch 2, Train Loss: 2.2650, Val Loss: 2.2402, Val Acc: 0.0009
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 1, Epoch 3, Train Loss: 2.2421, Val Loss: 2.2375, Val Acc: 0.0006
+Precision: 0.0000, Recall: 0.0010, F1-Score: 0.0001
+Fold 1, Epoch 4, Train Loss: 2.2329, Val Loss: 2.2222, Val Acc: 0.0008
+Precision: 0.0000, Recall: 0.0008, F1-Score: 0.0000
+Fold 1, Epoch 5, Train Loss: 2.2249, Val Loss: 2.2254, Val Acc: 0.0007
+Precision: 0.0000, Recall: 0.0007, F1-Score: 0.0000
+Fold 1, Epoch 6, Train Loss: 2.2248, Val Loss: 2.2188, Val Acc: 0.0006
+Precision: 0.9934, Recall: 0.0085, F1-Score: 0.0152
+Fold 1, Epoch 7, Train Loss: 2.2255, Val Loss: 2.2210, Val Acc: 0.0086
+Precision: 0.9931, Recall: 0.7818, F1-Score: 0.8745
+Fold 1, Epoch 8, Train Loss: 2.2225, Val Loss: 2.2126, Val Acc: 0.7705
+Precision: 0.9931, Recall: 0.8227, F1-Score: 0.8995
+Fold 1, Epoch 9, Train Loss: 2.2122, Val Loss: 2.2208, Val Acc: 0.7948
+Precision: 0.9927, Recall: 0.9363, F1-Score: 0.9634
+Fold 1, Epoch 10, Train Loss: 2.2144, Val Loss: 2.2101, Val Acc: 0.9518
+Precision: 0.9932, Recall: 0.5217, F1-Score: 0.6835
+Fold 1, Epoch 11, Train Loss: 2.2068, Val Loss: 2.2049, Val Acc: 0.4953
+Precision: 0.9928, Recall: 0.9500, F1-Score: 0.9707
+Fold 1, Epoch 12, Train Loss: 2.2108, Val Loss: 2.2163, Val Acc: 0.9612
+Precision: 0.9930, Recall: 0.8742, F1-Score: 0.9294
+Fold 1, Epoch 13, Train Loss: 2.2084, Val Loss: 2.1975, Val Acc: 0.8764
+Precision: 0.9932, Recall: 0.7628, F1-Score: 0.8624
+Fold 1, Epoch 14, Train Loss: 2.2005, Val Loss: 2.1989, Val Acc: 0.7298
+Precision: 0.9934, Recall: 0.7515, F1-Score: 0.8553
+Fold 1, Epoch 15, Train Loss: 2.2020, Val Loss: 2.1952, Val Acc: 0.7212
+Precision: 0.9932, Recall: 0.8448, F1-Score: 0.9126
+Fold 1, Epoch 16, Train Loss: 2.1996, Val Loss: 2.1895, Val Acc: 0.8327
+Precision: 0.9931, Recall: 0.8516, F1-Score: 0.9165
+Fold 1, Epoch 17, Train Loss: 2.1948, Val Loss: 2.1843, Val Acc: 0.8474
+Precision: 0.9932, Recall: 0.9384, F1-Score: 0.9648
+Fold 1, Epoch 18, Train Loss: 2.1947, Val Loss: 2.1939, Val Acc: 0.9512
+Precision: 0.9930, Recall: 0.8815, F1-Score: 0.9336
+Fold 1, Epoch 19, Train Loss: 2.1986, Val Loss: 2.1838, Val Acc: 0.8974
+Precision: 0.9930, Recall: 0.9324, F1-Score: 0.9615
+Fold 1, Epoch 20, Train Loss: 2.1912, Val Loss: 2.1978, Val Acc: 0.9479
+Precision: 0.9933, Recall: 0.8376, F1-Score: 0.9085
+Fold 1, Epoch 21, Train Loss: 2.1924, Val Loss: 2.1903, Val Acc: 0.8196
+Precision: 0.9934, Recall: 0.7406, F1-Score: 0.8481
+Fold 1, Epoch 22, Train Loss: 2.1952, Val Loss: 2.1830, Val Acc: 0.7088
+Precision: 0.9929, Recall: 0.9655, F1-Score: 0.9787
+Fold 1, Epoch 23, Train Loss: 2.1955, Val Loss: 2.1954, Val Acc: 0.9729
+Precision: 0.9930, Recall: 0.8688, F1-Score: 0.9264
+Fold 1, Epoch 24, Train Loss: 2.2085, Val Loss: 2.1945, Val Acc: 0.8731
+Precision: 0.9930, Recall: 0.9003, F1-Score: 0.9440
+Fold 1, Epoch 25, Train Loss: 2.1981, Val Loss: 2.1874, Val Acc: 0.9152
+Precision: 0.9929, Recall: 0.9156, F1-Score: 0.9524
+Fold 1, Epoch 26, Train Loss: 2.1953, Val Loss: 2.1895, Val Acc: 0.9316
+Precision: 0.9931, Recall: 0.8799, F1-Score: 0.9328
+Fold 1, Epoch 27, Train Loss: 2.1923, Val Loss: 2.1819, Val Acc: 0.8932
+Precision: 0.9929, Recall: 0.9254, F1-Score: 0.9576
+Fold 1, Epoch 28, Train Loss: 2.1895, Val Loss: 2.1912, Val Acc: 0.9429
+Precision: 0.9931, Recall: 0.8646, F1-Score: 0.9241
+Fold 1, Epoch 29, Train Loss: 2.1871, Val Loss: 2.1777, Val Acc: 0.8703
+Precision: 0.9933, Recall: 0.9240, F1-Score: 0.9572
+Fold 1, Epoch 30, Train Loss: 2.1879, Val Loss: 2.1795, Val Acc: 0.9420
+Precision: 0.9933, Recall: 0.8810, F1-Score: 0.9333
+Fold 1, Epoch 31, Train Loss: 2.1939, Val Loss: 2.1808, Val Acc: 0.8932
+Precision: 0.9930, Recall: 0.8973, F1-Score: 0.9424
+Fold 1, Epoch 32, Train Loss: 2.1873, Val Loss: 2.1826, Val Acc: 0.9114
+Precision: 0.9930, Recall: 0.8998, F1-Score: 0.9438
+Fold 1, Epoch 33, Train Loss: 2.1881, Val Loss: 2.1773, Val Acc: 0.9165
+Precision: 0.9930, Recall: 0.9360, F1-Score: 0.9634
+Fold 1, Epoch 34, Train Loss: 2.1866, Val Loss: 2.1806, Val Acc: 0.9537
+Precision: 0.9930, Recall: 0.9195, F1-Score: 0.9545
+Fold 1, Epoch 35, Train Loss: 2.1856, Val Loss: 2.1809, Val Acc: 0.9375
+Precision: 0.9932, Recall: 0.8879, F1-Score: 0.9374
+Fold 1, Epoch 36, Train Loss: 2.1879, Val Loss: 2.1854, Val Acc: 0.9025
+Precision: 0.9929, Recall: 0.9316, F1-Score: 0.9610
+Fold 1, Epoch 37, Train Loss: 2.1867, Val Loss: 2.1843, Val Acc: 0.9471
+Precision: 0.9932, Recall: 0.9064, F1-Score: 0.9475
+Fold 1, Epoch 38, Train Loss: 2.1842, Val Loss: 2.1814, Val Acc: 0.9258
+Precision: 0.9933, Recall: 0.8503, F1-Score: 0.9159
+Fold 1, Epoch 39, Train Loss: 2.1821, Val Loss: 2.1723, Val Acc: 0.8477
+Precision: 0.9930, Recall: 0.9387, F1-Score: 0.9648
+Fold 1, Epoch 40, Train Loss: 2.1842, Val Loss: 2.1830, Val Acc: 0.9560
+Precision: 0.9931, Recall: 0.9273, F1-Score: 0.9588
+Fold 1, Epoch 41, Train Loss: 2.1803, Val Loss: 2.1823, Val Acc: 0.9456
+Precision: 0.9931, Recall: 0.9043, F1-Score: 0.9463
+Fold 1, Epoch 42, Train Loss: 2.1793, Val Loss: 2.1831, Val Acc: 0.9247
+Precision: 0.9939, Recall: 0.9062, F1-Score: 0.9475
+Fold 1, Epoch 43, Train Loss: 2.1796, Val Loss: 2.1707, Val Acc: 0.9226
+Precision: 0.9931, Recall: 0.9206, F1-Score: 0.9551
+Fold 1, Epoch 44, Train Loss: 2.1793, Val Loss: 2.1692, Val Acc: 0.9399
+Precision: 0.9932, Recall: 0.9162, F1-Score: 0.9529
+Fold 1, Epoch 45, Train Loss: 2.1837, Val Loss: 2.1725, Val Acc: 0.9356
+Precision: 0.9933, Recall: 0.9108, F1-Score: 0.9498
+Fold 1, Epoch 46, Train Loss: 2.1773, Val Loss: 2.1658, Val Acc: 0.9245
+Precision: 0.9933, Recall: 0.8891, F1-Score: 0.9381
+Fold 1, Epoch 47, Train Loss: 2.1747, Val Loss: 2.1597, Val Acc: 0.9084
+Precision: 0.9931, Recall: 0.9082, F1-Score: 0.9485
+Fold 1, Epoch 48, Train Loss: 2.1719, Val Loss: 2.1676, Val Acc: 0.9293
+Precision: 0.9930, Recall: 0.9320, F1-Score: 0.9612
+Fold 1, Epoch 49, Train Loss: 2.1761, Val Loss: 2.1654, Val Acc: 0.9504
+Precision: 0.9932, Recall: 0.8823, F1-Score: 0.9341
+Fold 1, Epoch 50, Train Loss: 2.1788, Val Loss: 2.1733, Val Acc: 0.8900
+Precision: 0.9932, Recall: 0.8979, F1-Score: 0.9427
+Fold 1, Epoch 51, Train Loss: 2.1758, Val Loss: 2.1621, Val Acc: 0.9121
+Precision: 0.9934, Recall: 0.8638, F1-Score: 0.9237
+Fold 1, Epoch 52, Train Loss: 2.1681, Val Loss: 2.1619, Val Acc: 0.8731
+Precision: 0.9934, Recall: 0.9218, F1-Score: 0.9560
+Fold 1, Epoch 53, Train Loss: 2.1728, Val Loss: 2.1644, Val Acc: 0.9398
+Precision: 0.9931, Recall: 0.9153, F1-Score: 0.9523
+Fold 1, Epoch 54, Train Loss: 2.1718, Val Loss: 2.1667, Val Acc: 0.9338
+Precision: 0.9932, Recall: 0.8638, F1-Score: 0.9233
+Fold 1, Epoch 55, Train Loss: 2.1702, Val Loss: 2.1487, Val Acc: 0.8716
+Precision: 0.9932, Recall: 0.8770, F1-Score: 0.9311
+Fold 1, Epoch 56, Train Loss: 2.1653, Val Loss: 2.1552, Val Acc: 0.8936
+Precision: 0.9936, Recall: 0.8819, F1-Score: 0.9341
+Fold 1, Epoch 57, Train Loss: 2.1578, Val Loss: 2.1441, Val Acc: 0.8994
+Precision: 0.9934, Recall: 0.8734, F1-Score: 0.9293
+Fold 1, Epoch 58, Train Loss: 2.1558, Val Loss: 2.1389, Val Acc: 0.8881
+Precision: 0.9933, Recall: 0.8987, F1-Score: 0.9432
+Fold 1, Epoch 59, Train Loss: 2.1520, Val Loss: 2.1468, Val Acc: 0.9146
+Precision: 0.9934, Recall: 0.8630, F1-Score: 0.9233
+Fold 1, Epoch 60, Train Loss: 2.1669, Val Loss: 2.1353, Val Acc: 0.8714
+Precision: 0.9937, Recall: 0.8987, F1-Score: 0.9433
+Fold 1, Epoch 61, Train Loss: 2.1564, Val Loss: 2.1424, Val Acc: 0.9111
+Precision: 0.9932, Recall: 0.8449, F1-Score: 0.9127
+Fold 1, Epoch 62, Train Loss: 2.1461, Val Loss: 2.1239, Val Acc: 0.8279
+Precision: 0.9937, Recall: 0.7792, F1-Score: 0.8730
+Fold 1, Epoch 63, Train Loss: 2.1424, Val Loss: 2.1441, Val Acc: 0.7451
+Precision: 0.9930, Recall: 0.8654, F1-Score: 0.9244
+Fold 1, Epoch 64, Train Loss: 2.1502, Val Loss: 2.1281, Val Acc: 0.8699
+Precision: 0.9934, Recall: 0.8300, F1-Score: 0.9040
+Fold 1, Epoch 65, Train Loss: 2.1444, Val Loss: 2.1308, Val Acc: 0.8044
+Precision: 0.9936, Recall: 0.8701, F1-Score: 0.9275
+Fold 1, Epoch 66, Train Loss: 2.1407, Val Loss: 2.1007, Val Acc: 0.8828
+Precision: 0.9938, Recall: 0.8146, F1-Score: 0.8948
+Fold 1, Epoch 67, Train Loss: 2.1268, Val Loss: 2.0998, Val Acc: 0.7778
+Precision: 0.9937, Recall: 0.8732, F1-Score: 0.9291
+Fold 1, Epoch 68, Train Loss: 2.1264, Val Loss: 2.1002, Val Acc: 0.8822
+Precision: 0.9935, Recall: 0.8275, F1-Score: 0.9026
+Fold 1, Epoch 69, Train Loss: 2.1165, Val Loss: 2.0923, Val Acc: 0.7991
+Precision: 0.9938, Recall: 0.8655, F1-Score: 0.9246
+Fold 1, Epoch 70, Train Loss: 2.1132, Val Loss: 2.0985, Val Acc: 0.8721
+Precision: 0.9934, Recall: 0.7989, F1-Score: 0.8850
+Fold 1, Epoch 71, Train Loss: 2.1098, Val Loss: 2.0909, Val Acc: 0.7555
+Precision: 0.9934, Recall: 0.8609, F1-Score: 0.9219
+Fold 1, Epoch 72, Train Loss: 2.1059, Val Loss: 2.0725, Val Acc: 0.8619
+Precision: 0.9940, Recall: 0.8167, F1-Score: 0.8961
+Fold 1, Epoch 73, Train Loss: 2.1023, Val Loss: 2.0714, Val Acc: 0.7828
+Precision: 0.9934, Recall: 0.8613, F1-Score: 0.9222
+Fold 1, Epoch 74, Train Loss: 2.0985, Val Loss: 2.0877, Val Acc: 0.8567
+Precision: 0.9940, Recall: 0.8568, F1-Score: 0.9198
+Fold 1, Epoch 75, Train Loss: 2.0994, Val Loss: 2.0789, Val Acc: 0.8488
+Precision: 0.9941, Recall: 0.8710, F1-Score: 0.9278
+Fold 1, Epoch 76, Train Loss: 2.1002, Val Loss: 2.0710, Val Acc: 0.8786
+Precision: 0.9935, Recall: 0.7977, F1-Score: 0.8843
+Fold 1, Epoch 77, Train Loss: 2.0872, Val Loss: 2.0512, Val Acc: 0.7559
+Precision: 0.9934, Recall: 0.8760, F1-Score: 0.9307
+Fold 1, Epoch 78, Train Loss: 2.0781, Val Loss: 2.1260, Val Acc: 0.8834
+Precision: 0.9933, Recall: 0.7669, F1-Score: 0.8648
+Fold 1, Epoch 79, Train Loss: 2.0900, Val Loss: 2.0550, Val Acc: 0.7264
+Precision: 0.9935, Recall: 0.8188, F1-Score: 0.8972
+Fold 1, Epoch 80, Train Loss: 2.0940, Val Loss: 2.0536, Val Acc: 0.7914
+Precision: 0.9942, Recall: 0.8606, F1-Score: 0.9218
+Fold 1, Epoch 81, Train Loss: 2.0810, Val Loss: 2.0438, Val Acc: 0.8584
+Precision: 0.9938, Recall: 0.8474, F1-Score: 0.9142
+Fold 1, Epoch 82, Train Loss: 2.0711, Val Loss: 2.0520, Val Acc: 0.8317
+Precision: 0.9935, Recall: 0.8714, F1-Score: 0.9281
+Fold 1, Epoch 83, Train Loss: 2.0798, Val Loss: 2.0933, Val Acc: 0.8761
+Precision: 0.9940, Recall: 0.7811, F1-Score: 0.8743
+Fold 1, Epoch 84, Train Loss: 2.0782, Val Loss: 2.0555, Val Acc: 0.7706
+Precision: 0.9937, Recall: 0.9561, F1-Score: 0.9743
+Fold 1, Epoch 85, Train Loss: 2.0698, Val Loss: 2.0471, Val Acc: 0.9581
+Precision: 0.9943, Recall: 0.8632, F1-Score: 0.9236
+Fold 1, Epoch 86, Train Loss: 2.0610, Val Loss: 2.0347, Val Acc: 0.8432
+Precision: 0.9936, Recall: 0.8670, F1-Score: 0.9256
+Fold 1, Epoch 87, Train Loss: 2.0585, Val Loss: 2.0236, Val Acc: 0.8652
+Precision: 0.9941, Recall: 0.8496, F1-Score: 0.9159
+Fold 1, Epoch 88, Train Loss: 2.0575, Val Loss: 2.0130, Val Acc: 0.8357
+Precision: 0.9935, Recall: 0.8759, F1-Score: 0.9307
+Fold 1, Epoch 89, Train Loss: 2.0559, Val Loss: 2.0105, Val Acc: 0.8724
+Precision: 0.9937, Recall: 0.8824, F1-Score: 0.9344
+Fold 1, Epoch 90, Train Loss: 2.0439, Val Loss: 2.0104, Val Acc: 0.8532
+Precision: 0.9938, Recall: 0.9605, F1-Score: 0.9766
+Fold 1, Epoch 91, Train Loss: 2.0467, Val Loss: 2.0393, Val Acc: 0.9507
+Precision: 0.9939, Recall: 0.8580, F1-Score: 0.9206
+Fold 1, Epoch 92, Train Loss: 2.0490, Val Loss: 2.0150, Val Acc: 0.8641
+Precision: 0.9939, Recall: 0.8550, F1-Score: 0.9188
+Fold 1, Epoch 93, Train Loss: 2.0331, Val Loss: 1.9872, Val Acc: 0.8294
+Precision: 0.9939, Recall: 0.9458, F1-Score: 0.9690
+Fold 1, Epoch 94, Train Loss: 2.0290, Val Loss: 2.0537, Val Acc: 0.9320
+Precision: 0.9944, Recall: 0.8544, F1-Score: 0.9185
+Fold 1, Epoch 95, Train Loss: 2.0406, Val Loss: 2.0006, Val Acc: 0.8464
+Precision: 0.9940, Recall: 0.9202, F1-Score: 0.9554
+Fold 1, Epoch 96, Train Loss: 2.0359, Val Loss: 1.9900, Val Acc: 0.9138
+Precision: 0.9939, Recall: 0.8474, F1-Score: 0.9141
+Fold 1, Epoch 97, Train Loss: 2.0209, Val Loss: 2.0119, Val Acc: 0.8350
+Precision: 0.9938, Recall: 0.9160, F1-Score: 0.9530
+Fold 1, Epoch 98, Train Loss: 2.0321, Val Loss: 1.9822, Val Acc: 0.8958
+Precision: 0.9939, Recall: 0.9130, F1-Score: 0.9514
+Fold 1, Epoch 99, Train Loss: 2.0336, Val Loss: 1.9974, Val Acc: 0.8851
+Precision: 0.9940, Recall: 0.9325, F1-Score: 0.9620
+Fold 1, Epoch 100, Train Loss: 2.0189, Val Loss: 1.9845, Val Acc: 0.9464
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9936, Recall: 0.8774, F1-Score: 0.9315
+Fold 2, Epoch 1, Train Loss: 2.0302, Val Loss: 2.0202, Val Acc: 0.8750
+Precision: 0.9936, Recall: 0.6795, F1-Score: 0.8065
+Fold 2, Epoch 2, Train Loss: 2.0224, Val Loss: 2.0123, Val Acc: 0.6762
+Precision: 0.9940, Recall: 0.8261, F1-Score: 0.9016
+Fold 2, Epoch 3, Train Loss: 2.0098, Val Loss: 2.0081, Val Acc: 0.8228
+Precision: 0.9941, Recall: 0.8981, F1-Score: 0.9430
+Fold 2, Epoch 4, Train Loss: 2.0112, Val Loss: 2.0027, Val Acc: 0.8980
+Precision: 0.9936, Recall: 0.9065, F1-Score: 0.9477
+Fold 2, Epoch 5, Train Loss: 1.9966, Val Loss: 1.9959, Val Acc: 0.9042
+Precision: 0.9937, Recall: 0.9333, F1-Score: 0.9622
+Fold 2, Epoch 6, Train Loss: 2.0017, Val Loss: 1.9870, Val Acc: 0.9331
+Precision: 0.9935, Recall: 0.8949, F1-Score: 0.9412
+Fold 2, Epoch 7, Train Loss: 1.9886, Val Loss: 2.0009, Val Acc: 0.8851
+Precision: 0.9937, Recall: 0.8748, F1-Score: 0.9301
+Fold 2, Epoch 8, Train Loss: 1.9914, Val Loss: 1.9910, Val Acc: 0.8730
+Precision: 0.9936, Recall: 0.9207, F1-Score: 0.9554
+Fold 2, Epoch 9, Train Loss: 1.9883, Val Loss: 1.9975, Val Acc: 0.9142
+Precision: 0.9936, Recall: 0.8499, F1-Score: 0.9156
+Fold 2, Epoch 10, Train Loss: 1.9949, Val Loss: 1.9938, Val Acc: 0.8377
+Precision: 0.9936, Recall: 0.9340, F1-Score: 0.9625
+Fold 2, Epoch 11, Train Loss: 1.9897, Val Loss: 2.0307, Val Acc: 0.9356
+Precision: 0.9943, Recall: 0.9043, F1-Score: 0.9464
+Fold 2, Epoch 12, Train Loss: 2.0112, Val Loss: 1.9839, Val Acc: 0.9018
+Precision: 0.9935, Recall: 0.8239, F1-Score: 0.9003
+Fold 2, Epoch 13, Train Loss: 1.9866, Val Loss: 2.0146, Val Acc: 0.8289
+Precision: 0.9936, Recall: 0.9550, F1-Score: 0.9736
+Fold 2, Epoch 14, Train Loss: 1.9995, Val Loss: 1.9794, Val Acc: 0.9577
+Precision: 0.9939, Recall: 0.9399, F1-Score: 0.9656
+Fold 2, Epoch 15, Train Loss: 1.9940, Val Loss: 1.9817, Val Acc: 0.9425
+Precision: 0.9938, Recall: 0.9300, F1-Score: 0.9604
+Fold 2, Epoch 16, Train Loss: 1.9843, Val Loss: 1.9889, Val Acc: 0.9292
+Precision: 0.9941, Recall: 0.9475, F1-Score: 0.9695
+Fold 2, Epoch 17, Train Loss: 1.9827, Val Loss: 1.9801, Val Acc: 0.9499
+Precision: 0.9938, Recall: 0.9485, F1-Score: 0.9702
+Fold 2, Epoch 18, Train Loss: 1.9784, Val Loss: 1.9739, Val Acc: 0.9499
+Precision: 0.9937, Recall: 0.9506, F1-Score: 0.9713
+Fold 2, Epoch 19, Train Loss: 1.9752, Val Loss: 1.9837, Val Acc: 0.9518
+Precision: 0.9937, Recall: 0.9237, F1-Score: 0.9570
+Fold 2, Epoch 20, Train Loss: 1.9877, Val Loss: 1.9716, Val Acc: 0.9184
+Precision: 0.9938, Recall: 0.9448, F1-Score: 0.9682
+Fold 2, Epoch 21, Train Loss: 1.9779, Val Loss: 1.9934, Val Acc: 0.9454
+Precision: 0.9937, Recall: 0.9620, F1-Score: 0.9773
+Fold 2, Epoch 22, Train Loss: 1.9729, Val Loss: 1.9876, Val Acc: 0.9640
+Precision: 0.9934, Recall: 0.8897, F1-Score: 0.9381
+Fold 2, Epoch 23, Train Loss: 1.9858, Val Loss: 1.9757, Val Acc: 0.8843
+Precision: 0.9936, Recall: 0.9381, F1-Score: 0.9647
+Fold 2, Epoch 24, Train Loss: 1.9836, Val Loss: 1.9614, Val Acc: 0.9393
+Precision: 0.9937, Recall: 0.9622, F1-Score: 0.9774
+Fold 2, Epoch 25, Train Loss: 1.9788, Val Loss: 1.9624, Val Acc: 0.9639
+Precision: 0.9939, Recall: 0.8454, F1-Score: 0.9130
+Fold 2, Epoch 26, Train Loss: 1.9712, Val Loss: 2.0069, Val Acc: 0.8493
+Precision: 0.9936, Recall: 0.9349, F1-Score: 0.9630
+Fold 2, Epoch 27, Train Loss: 1.9838, Val Loss: 1.9805, Val Acc: 0.9331
+Precision: 0.9935, Recall: 0.9577, F1-Score: 0.9749
+Fold 2, Epoch 28, Train Loss: 1.9714, Val Loss: 1.9691, Val Acc: 0.9599
+Precision: 0.9935, Recall: 0.8959, F1-Score: 0.9417
+Fold 2, Epoch 29, Train Loss: 1.9566, Val Loss: 1.9503, Val Acc: 0.8959
+Precision: 0.9937, Recall: 0.9356, F1-Score: 0.9633
+Fold 2, Epoch 30, Train Loss: 1.9554, Val Loss: 1.9623, Val Acc: 0.9361
+Precision: 0.9937, Recall: 0.9023, F1-Score: 0.9454
+Fold 2, Epoch 31, Train Loss: 1.9539, Val Loss: 1.9560, Val Acc: 0.9015
+Precision: 0.9937, Recall: 0.8888, F1-Score: 0.9379
+Fold 2, Epoch 32, Train Loss: 1.9578, Val Loss: 1.9647, Val Acc: 0.8887
+Precision: 0.9938, Recall: 0.9169, F1-Score: 0.9533
+Fold 2, Epoch 33, Train Loss: 1.9464, Val Loss: 1.9348, Val Acc: 0.9173
+Precision: 0.9939, Recall: 0.9469, F1-Score: 0.9694
+Fold 2, Epoch 34, Train Loss: 1.9463, Val Loss: 1.9344, Val Acc: 0.9495
+Precision: 0.9938, Recall: 0.9583, F1-Score: 0.9752
+Fold 2, Epoch 35, Train Loss: 1.9404, Val Loss: 1.9462, Val Acc: 0.9608
+Precision: 0.9938, Recall: 0.9635, F1-Score: 0.9779
+Fold 2, Epoch 36, Train Loss: 1.9560, Val Loss: 1.9368, Val Acc: 0.9654
+Precision: 0.9937, Recall: 0.9478, F1-Score: 0.9698
+Fold 2, Epoch 37, Train Loss: 1.9431, Val Loss: 1.9291, Val Acc: 0.9495
+Precision: 0.9937, Recall: 0.8614, F1-Score: 0.9221
+Fold 2, Epoch 38, Train Loss: 1.9384, Val Loss: 1.9514, Val Acc: 0.8626
+Precision: 0.9937, Recall: 0.9647, F1-Score: 0.9787
+Fold 2, Epoch 39, Train Loss: 1.9458, Val Loss: 1.9460, Val Acc: 0.9667
+Precision: 0.9936, Recall: 0.9651, F1-Score: 0.9786
+Fold 2, Epoch 40, Train Loss: 1.9465, Val Loss: 1.9461, Val Acc: 0.9668
+Precision: 0.9938, Recall: 0.9300, F1-Score: 0.9605
+Fold 2, Epoch 41, Train Loss: 1.9474, Val Loss: 1.9506, Val Acc: 0.9349
+Precision: 0.9938, Recall: 0.9587, F1-Score: 0.9756
+Fold 2, Epoch 42, Train Loss: 1.9508, Val Loss: 1.9475, Val Acc: 0.9604
+Precision: 0.9939, Recall: 0.9443, F1-Score: 0.9678
+Fold 2, Epoch 43, Train Loss: 1.9494, Val Loss: 1.9415, Val Acc: 0.9433
+Precision: 0.9938, Recall: 0.9339, F1-Score: 0.9625
+Fold 2, Epoch 44, Train Loss: 1.9381, Val Loss: 1.9146, Val Acc: 0.9348
+Precision: 0.9939, Recall: 0.9294, F1-Score: 0.9600
+Fold 2, Epoch 45, Train Loss: 1.9275, Val Loss: 1.9116, Val Acc: 0.9314
+Precision: 0.9940, Recall: 0.9275, F1-Score: 0.9590
+Fold 2, Epoch 46, Train Loss: 1.9248, Val Loss: 1.9105, Val Acc: 0.9275
+Precision: 0.9938, Recall: 0.9540, F1-Score: 0.9730
+Fold 2, Epoch 47, Train Loss: 1.9138, Val Loss: 1.9027, Val Acc: 0.9565
+Precision: 0.9940, Recall: 0.9515, F1-Score: 0.9718
+Fold 2, Epoch 48, Train Loss: 1.9215, Val Loss: 1.8977, Val Acc: 0.9537
+Precision: 0.9938, Recall: 0.9713, F1-Score: 0.9820
+Fold 2, Epoch 49, Train Loss: 1.9203, Val Loss: 1.9191, Val Acc: 0.9727
+Precision: 0.9938, Recall: 0.9731, F1-Score: 0.9830
+Fold 2, Epoch 50, Train Loss: 1.9146, Val Loss: 1.9168, Val Acc: 0.9744
+Precision: 0.9940, Recall: 0.9623, F1-Score: 0.9773
+Fold 2, Epoch 51, Train Loss: 1.9280, Val Loss: 1.9032, Val Acc: 0.9643
+Precision: 0.9936, Recall: 0.9796, F1-Score: 0.9862
+Fold 2, Epoch 52, Train Loss: 1.9206, Val Loss: 1.9555, Val Acc: 0.9805
+Precision: 0.9940, Recall: 0.9645, F1-Score: 0.9787
+Fold 2, Epoch 53, Train Loss: 1.9384, Val Loss: 1.8917, Val Acc: 0.9663
+Precision: 0.9940, Recall: 0.9555, F1-Score: 0.9738
+Fold 2, Epoch 54, Train Loss: 1.9075, Val Loss: 1.9021, Val Acc: 0.9581
+Precision: 0.9939, Recall: 0.9331, F1-Score: 0.9620
+Fold 2, Epoch 55, Train Loss: 1.9000, Val Loss: 1.8908, Val Acc: 0.9320
+Precision: 0.9941, Recall: 0.9592, F1-Score: 0.9757
+Fold 2, Epoch 56, Train Loss: 1.9076, Val Loss: 1.8807, Val Acc: 0.9613
+Precision: 0.9941, Recall: 0.9659, F1-Score: 0.9792
+Fold 2, Epoch 57, Train Loss: 1.9000, Val Loss: 1.8788, Val Acc: 0.9676
+Precision: 0.9940, Recall: 0.9720, F1-Score: 0.9825
+Fold 2, Epoch 58, Train Loss: 1.8967, Val Loss: 1.8828, Val Acc: 0.9734
+Precision: 0.9940, Recall: 0.9622, F1-Score: 0.9773
+Fold 2, Epoch 59, Train Loss: 1.8996, Val Loss: 1.8770, Val Acc: 0.9643
+Precision: 0.9940, Recall: 0.9659, F1-Score: 0.9792
+Fold 2, Epoch 60, Train Loss: 1.9020, Val Loss: 1.8845, Val Acc: 0.9677
+Precision: 0.9939, Recall: 0.9760, F1-Score: 0.9845
+Fold 2, Epoch 61, Train Loss: 1.9078, Val Loss: 1.9122, Val Acc: 0.9774
+Precision: 0.9938, Recall: 0.9040, F1-Score: 0.9461
+Fold 2, Epoch 62, Train Loss: 1.9092, Val Loss: 1.8856, Val Acc: 0.9050
+Precision: 0.9939, Recall: 0.9650, F1-Score: 0.9788
+Fold 2, Epoch 63, Train Loss: 1.8842, Val Loss: 1.8763, Val Acc: 0.9668
+Precision: 0.9940, Recall: 0.9610, F1-Score: 0.9767
+Fold 2, Epoch 64, Train Loss: 1.8811, Val Loss: 1.8872, Val Acc: 0.9628
+Precision: 0.9941, Recall: 0.9043, F1-Score: 0.9465
+Fold 2, Epoch 65, Train Loss: 1.9025, Val Loss: 1.9031, Val Acc: 0.9015
+Precision: 0.9938, Recall: 0.9118, F1-Score: 0.9505
+Fold 2, Epoch 66, Train Loss: 1.8918, Val Loss: 1.8716, Val Acc: 0.9113
+Precision: 0.9940, Recall: 0.9499, F1-Score: 0.9708
+Fold 2, Epoch 67, Train Loss: 1.9036, Val Loss: 1.8895, Val Acc: 0.9519
+Precision: 0.9939, Recall: 0.9629, F1-Score: 0.9777
+Fold 2, Epoch 68, Train Loss: 1.8895, Val Loss: 1.8862, Val Acc: 0.9647
+Precision: 0.9938, Recall: 0.9308, F1-Score: 0.9608
+Fold 2, Epoch 69, Train Loss: 1.8957, Val Loss: 1.8859, Val Acc: 0.9323
+Precision: 0.9939, Recall: 0.7974, F1-Score: 0.8841
+Fold 2, Epoch 70, Train Loss: 1.8898, Val Loss: 1.8851, Val Acc: 0.8049
+Precision: 0.9939, Recall: 0.9401, F1-Score: 0.9657
+Fold 2, Epoch 71, Train Loss: 1.9070, Val Loss: 1.8611, Val Acc: 0.9415
+Precision: 0.9941, Recall: 0.9615, F1-Score: 0.9770
+Fold 2, Epoch 72, Train Loss: 1.8711, Val Loss: 1.8537, Val Acc: 0.9634
+Precision: 0.9940, Recall: 0.9696, F1-Score: 0.9811
+Fold 2, Epoch 73, Train Loss: 1.8742, Val Loss: 1.8547, Val Acc: 0.9711
+Precision: 0.9940, Recall: 0.9612, F1-Score: 0.9769
+Fold 2, Epoch 74, Train Loss: 1.8736, Val Loss: 1.8485, Val Acc: 0.9633
+Precision: 0.9939, Recall: 0.9458, F1-Score: 0.9686
+Fold 2, Epoch 75, Train Loss: 1.8816, Val Loss: 1.8847, Val Acc: 0.9479
+Precision: 0.9942, Recall: 0.9637, F1-Score: 0.9780
+Fold 2, Epoch 76, Train Loss: 1.8865, Val Loss: 1.8516, Val Acc: 0.9657
+Precision: 0.9941, Recall: 0.9579, F1-Score: 0.9751
+Fold 2, Epoch 77, Train Loss: 1.8658, Val Loss: 1.8460, Val Acc: 0.9600
+Precision: 0.9939, Recall: 0.9599, F1-Score: 0.9760
+Fold 2, Epoch 78, Train Loss: 1.8676, Val Loss: 1.8404, Val Acc: 0.9619
+Precision: 0.9938, Recall: 0.9516, F1-Score: 0.9717
+Fold 2, Epoch 79, Train Loss: 1.8574, Val Loss: 1.8586, Val Acc: 0.9537
+Precision: 0.9939, Recall: 0.9494, F1-Score: 0.9705
+Fold 2, Epoch 80, Train Loss: 1.8589, Val Loss: 1.8665, Val Acc: 0.9516
+Precision: 0.9939, Recall: 0.9717, F1-Score: 0.9823
+Fold 2, Epoch 81, Train Loss: 1.8757, Val Loss: 1.9110, Val Acc: 0.9731
+Precision: 0.9942, Recall: 0.9670, F1-Score: 0.9798
+Fold 2, Epoch 82, Train Loss: 1.8784, Val Loss: 1.8335, Val Acc: 0.9687
+Precision: 0.9942, Recall: 0.9619, F1-Score: 0.9772
+Fold 2, Epoch 83, Train Loss: 1.8576, Val Loss: 1.8331, Val Acc: 0.9636
+Precision: 0.9941, Recall: 0.9440, F1-Score: 0.9678
+Fold 2, Epoch 84, Train Loss: 1.8503, Val Loss: 1.8433, Val Acc: 0.9451
+Precision: 0.9941, Recall: 0.9610, F1-Score: 0.9767
+Fold 2, Epoch 85, Train Loss: 1.8479, Val Loss: 1.8172, Val Acc: 0.9630
+Precision: 0.9939, Recall: 0.9416, F1-Score: 0.9666
+Fold 2, Epoch 86, Train Loss: 1.8465, Val Loss: 1.8279, Val Acc: 0.9442
+Precision: 0.9939, Recall: 0.9376, F1-Score: 0.9643
+Fold 2, Epoch 87, Train Loss: 1.8500, Val Loss: 1.8474, Val Acc: 0.9356
+Precision: 0.9941, Recall: 0.9701, F1-Score: 0.9815
+Fold 2, Epoch 88, Train Loss: 1.8463, Val Loss: 1.8489, Val Acc: 0.9715
+Precision: 0.9938, Recall: 0.9495, F1-Score: 0.9706
+Fold 2, Epoch 89, Train Loss: 1.8517, Val Loss: 1.8154, Val Acc: 0.9520
+Precision: 0.9939, Recall: 0.9485, F1-Score: 0.9700
+Fold 2, Epoch 90, Train Loss: 1.8531, Val Loss: 1.8269, Val Acc: 0.9503
+Precision: 0.9939, Recall: 0.9701, F1-Score: 0.9815
+Fold 2, Epoch 91, Train Loss: 1.8614, Val Loss: 1.8260, Val Acc: 0.9716
+Precision: 0.9941, Recall: 0.9623, F1-Score: 0.9774
+Fold 2, Epoch 92, Train Loss: 1.8447, Val Loss: 1.8138, Val Acc: 0.9642
+Precision: 0.9938, Recall: 0.9549, F1-Score: 0.9734
+Fold 2, Epoch 93, Train Loss: 1.8369, Val Loss: 1.8717, Val Acc: 0.9569
+Precision: 0.9941, Recall: 0.9731, F1-Score: 0.9829
+Fold 2, Epoch 94, Train Loss: 1.8639, Val Loss: 1.8333, Val Acc: 0.9744
+Precision: 0.9940, Recall: 0.9658, F1-Score: 0.9793
+Fold 2, Epoch 95, Train Loss: 1.8459, Val Loss: 1.8468, Val Acc: 0.9685
+Precision: 0.9940, Recall: 0.9554, F1-Score: 0.9737
+Fold 2, Epoch 96, Train Loss: 1.8306, Val Loss: 1.8238, Val Acc: 0.9575
+Precision: 0.9939, Recall: 0.9557, F1-Score: 0.9740
+Fold 2, Epoch 97, Train Loss: 1.8285, Val Loss: 1.8455, Val Acc: 0.9581
+Precision: 0.9940, Recall: 0.9351, F1-Score: 0.9630
+Fold 2, Epoch 98, Train Loss: 1.8315, Val Loss: 1.7987, Val Acc: 0.9375
+Precision: 0.9944, Recall: 0.9617, F1-Score: 0.9769
+Fold 2, Epoch 99, Train Loss: 1.8251, Val Loss: 1.8305, Val Acc: 0.9636
+Precision: 0.9942, Recall: 0.9581, F1-Score: 0.9752
+Fold 2, Epoch 100, Train Loss: 1.8348, Val Loss: 1.7941, Val Acc: 0.9601
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9943, Recall: 0.8493, F1-Score: 0.9156
+Fold 3, Epoch 1, Train Loss: 1.8926, Val Loss: 1.8187, Val Acc: 0.8504
+Precision: 0.9942, Recall: 0.8089, F1-Score: 0.8913
+Fold 3, Epoch 2, Train Loss: 1.8257, Val Loss: 1.8022, Val Acc: 0.8103
+Precision: 0.9944, Recall: 0.9707, F1-Score: 0.9819
+Fold 3, Epoch 3, Train Loss: 1.8302, Val Loss: 1.8010, Val Acc: 0.9544
+Precision: 0.9943, Recall: 0.9657, F1-Score: 0.9793
+Fold 3, Epoch 4, Train Loss: 1.8399, Val Loss: 1.8055, Val Acc: 0.9485
+Precision: 0.9944, Recall: 0.9301, F1-Score: 0.9606
+Fold 3, Epoch 5, Train Loss: 1.8140, Val Loss: 1.8200, Val Acc: 0.9235
+Precision: 0.9944, Recall: 0.9813, F1-Score: 0.9874
+Fold 3, Epoch 6, Train Loss: 1.8282, Val Loss: 1.7877, Val Acc: 0.9698
+Precision: 0.9945, Recall: 0.9825, F1-Score: 0.9880
+Fold 3, Epoch 7, Train Loss: 1.8332, Val Loss: 1.7958, Val Acc: 0.9714
+Precision: 0.9943, Recall: 0.9658, F1-Score: 0.9793
+Fold 3, Epoch 8, Train Loss: 1.8207, Val Loss: 1.8009, Val Acc: 0.9516
+Precision: 0.9945, Recall: 0.9776, F1-Score: 0.9856
+Fold 3, Epoch 9, Train Loss: 1.8210, Val Loss: 1.7853, Val Acc: 0.9654
+Precision: 0.9943, Recall: 0.9539, F1-Score: 0.9733
+Fold 3, Epoch 10, Train Loss: 1.8286, Val Loss: 1.7902, Val Acc: 0.9461
+Precision: 0.9943, Recall: 0.9174, F1-Score: 0.9537
+Fold 3, Epoch 11, Train Loss: 1.8112, Val Loss: 1.7905, Val Acc: 0.9081
+Precision: 0.9946, Recall: 0.9694, F1-Score: 0.9813
+Fold 3, Epoch 12, Train Loss: 1.8044, Val Loss: 1.7814, Val Acc: 0.9531
+Precision: 0.9943, Recall: 0.9803, F1-Score: 0.9870
+Fold 3, Epoch 13, Train Loss: 1.8050, Val Loss: 1.7761, Val Acc: 0.9687
+Precision: 0.9944, Recall: 0.9813, F1-Score: 0.9875
+Fold 3, Epoch 14, Train Loss: 1.8180, Val Loss: 1.7830, Val Acc: 0.9699
+Precision: 0.9943, Recall: 0.9056, F1-Score: 0.9472
+Fold 3, Epoch 15, Train Loss: 1.8105, Val Loss: 1.7922, Val Acc: 0.8968
+Precision: 0.9945, Recall: 0.9836, F1-Score: 0.9885
+Fold 3, Epoch 16, Train Loss: 1.8158, Val Loss: 1.7789, Val Acc: 0.9730
+Precision: 0.9946, Recall: 0.9830, F1-Score: 0.9885
+Fold 3, Epoch 17, Train Loss: 1.8040, Val Loss: 1.7702, Val Acc: 0.9720
+Precision: 0.9946, Recall: 0.9772, F1-Score: 0.9853
+Fold 3, Epoch 18, Train Loss: 1.8094, Val Loss: 1.8001, Val Acc: 0.9641
+Precision: 0.9945, Recall: 0.9832, F1-Score: 0.9885
+Fold 3, Epoch 19, Train Loss: 1.7976, Val Loss: 1.7755, Val Acc: 0.9729
+Precision: 0.9942, Recall: 0.9649, F1-Score: 0.9788
+Fold 3, Epoch 20, Train Loss: 1.8002, Val Loss: 1.8305, Val Acc: 0.9478
+Precision: 0.9944, Recall: 0.9729, F1-Score: 0.9831
+Fold 3, Epoch 21, Train Loss: 1.8103, Val Loss: 1.7651, Val Acc: 0.9571
+Precision: 0.9945, Recall: 0.9777, F1-Score: 0.9855
+Fold 3, Epoch 22, Train Loss: 1.7953, Val Loss: 1.7983, Val Acc: 0.9650
+Precision: 0.9943, Recall: 0.8781, F1-Score: 0.9321
+Fold 3, Epoch 23, Train Loss: 1.8164, Val Loss: 1.7815, Val Acc: 0.8747
+Precision: 0.9944, Recall: 0.9805, F1-Score: 0.9869
+Fold 3, Epoch 24, Train Loss: 1.7941, Val Loss: 1.7698, Val Acc: 0.9687
+Precision: 0.9944, Recall: 0.9739, F1-Score: 0.9836
+Fold 3, Epoch 25, Train Loss: 1.7815, Val Loss: 1.7828, Val Acc: 0.9589
+Precision: 0.9945, Recall: 0.9790, F1-Score: 0.9862
+Fold 3, Epoch 26, Train Loss: 1.8073, Val Loss: 1.7766, Val Acc: 0.9659
+Precision: 0.9945, Recall: 0.9838, F1-Score: 0.9888
+Fold 3, Epoch 27, Train Loss: 1.8061, Val Loss: 1.7736, Val Acc: 0.9731
+Precision: 0.9943, Recall: 0.9344, F1-Score: 0.9628
+Fold 3, Epoch 28, Train Loss: 1.7849, Val Loss: 1.7626, Val Acc: 0.9282
+Precision: 0.9945, Recall: 0.9844, F1-Score: 0.9891
+Fold 3, Epoch 29, Train Loss: 1.7927, Val Loss: 1.7856, Val Acc: 0.9745
+Precision: 0.9945, Recall: 0.9772, F1-Score: 0.9854
+Fold 3, Epoch 30, Train Loss: 1.8111, Val Loss: 1.7648, Val Acc: 0.9636
+Precision: 0.9943, Recall: 0.9391, F1-Score: 0.9653
+Fold 3, Epoch 31, Train Loss: 1.7896, Val Loss: 1.8087, Val Acc: 0.9256
+Precision: 0.9946, Recall: 0.9776, F1-Score: 0.9855
+Fold 3, Epoch 32, Train Loss: 1.8006, Val Loss: 1.7642, Val Acc: 0.9647
+Precision: 0.9944, Recall: 0.9817, F1-Score: 0.9876
+Fold 3, Epoch 33, Train Loss: 1.7880, Val Loss: 1.7627, Val Acc: 0.9696
+Precision: 0.9944, Recall: 0.9696, F1-Score: 0.9813
+Fold 3, Epoch 34, Train Loss: 1.8005, Val Loss: 1.7658, Val Acc: 0.9575
+Precision: 0.9943, Recall: 0.9587, F1-Score: 0.9758
+Fold 3, Epoch 35, Train Loss: 1.7981, Val Loss: 1.7481, Val Acc: 0.9450
+Precision: 0.9944, Recall: 0.8436, F1-Score: 0.9123
+Fold 3, Epoch 36, Train Loss: 1.7805, Val Loss: 1.7534, Val Acc: 0.8425
+Precision: 0.9944, Recall: 0.9694, F1-Score: 0.9811
+Fold 3, Epoch 37, Train Loss: 1.7742, Val Loss: 1.7549, Val Acc: 0.9546
+Precision: 0.9945, Recall: 0.9753, F1-Score: 0.9843
+Fold 3, Epoch 38, Train Loss: 1.7696, Val Loss: 1.7392, Val Acc: 0.9630
+Precision: 0.9944, Recall: 0.9635, F1-Score: 0.9781
+Fold 3, Epoch 39, Train Loss: 1.7660, Val Loss: 1.7966, Val Acc: 0.9489
+Precision: 0.9943, Recall: 0.9122, F1-Score: 0.9508
+Fold 3, Epoch 40, Train Loss: 1.7885, Val Loss: 1.7519, Val Acc: 0.9026
+Precision: 0.9943, Recall: 0.9695, F1-Score: 0.9813
+Fold 3, Epoch 41, Train Loss: 1.7938, Val Loss: 1.7603, Val Acc: 0.9536
+Precision: 0.9944, Recall: 0.9698, F1-Score: 0.9815
+Fold 3, Epoch 42, Train Loss: 1.7994, Val Loss: 1.7444, Val Acc: 0.9577
+Precision: 0.9941, Recall: 0.9330, F1-Score: 0.9621
+Fold 3, Epoch 43, Train Loss: 1.7993, Val Loss: 1.7609, Val Acc: 0.9226
+Precision: 0.9943, Recall: 0.9836, F1-Score: 0.9886
+Fold 3, Epoch 44, Train Loss: 1.7818, Val Loss: 1.7335, Val Acc: 0.9728
+Precision: 0.9944, Recall: 0.9753, F1-Score: 0.9844
+Fold 3, Epoch 45, Train Loss: 1.7772, Val Loss: 1.7540, Val Acc: 0.9609
+Precision: 0.9944, Recall: 0.9823, F1-Score: 0.9878
+Fold 3, Epoch 46, Train Loss: 1.7856, Val Loss: 1.7486, Val Acc: 0.9705
+Precision: 0.9940, Recall: 0.9744, F1-Score: 0.9838
+Fold 3, Epoch 47, Train Loss: 1.7798, Val Loss: 1.8011, Val Acc: 0.9601
+Precision: 0.9946, Recall: 0.9809, F1-Score: 0.9873
+Fold 3, Epoch 48, Train Loss: 1.7788, Val Loss: 1.7347, Val Acc: 0.9690
+Precision: 0.9945, Recall: 0.9821, F1-Score: 0.9878
+Fold 3, Epoch 49, Train Loss: 1.7642, Val Loss: 1.7447, Val Acc: 0.9703
+Precision: 0.9946, Recall: 0.9788, F1-Score: 0.9861
+Fold 3, Epoch 50, Train Loss: 1.7703, Val Loss: 1.7493, Val Acc: 0.9656
+Precision: 0.9945, Recall: 0.9758, F1-Score: 0.9846
+Fold 3, Epoch 51, Train Loss: 1.7788, Val Loss: 1.7348, Val Acc: 0.9616
+Precision: 0.9944, Recall: 0.9823, F1-Score: 0.9879
+Fold 3, Epoch 52, Train Loss: 1.7637, Val Loss: 1.7430, Val Acc: 0.9710
+Precision: 0.9944, Recall: 0.9662, F1-Score: 0.9796
+Fold 3, Epoch 53, Train Loss: 1.7590, Val Loss: 1.7546, Val Acc: 0.9499
+Precision: 0.9945, Recall: 0.9823, F1-Score: 0.9880
+Fold 3, Epoch 54, Train Loss: 1.7595, Val Loss: 1.7345, Val Acc: 0.9707
+Precision: 0.9941, Recall: 0.9758, F1-Score: 0.9845
+Fold 3, Epoch 55, Train Loss: 1.7708, Val Loss: 1.7334, Val Acc: 0.9614
+Precision: 0.9943, Recall: 0.9705, F1-Score: 0.9817
+Fold 3, Epoch 56, Train Loss: 1.7645, Val Loss: 1.7480, Val Acc: 0.9562
+Precision: 0.9945, Recall: 0.9741, F1-Score: 0.9837
+Fold 3, Epoch 57, Train Loss: 1.7591, Val Loss: 1.7314, Val Acc: 0.9596
+Precision: 0.9942, Recall: 0.9500, F1-Score: 0.9710
+Fold 3, Epoch 58, Train Loss: 1.7544, Val Loss: 1.8060, Val Acc: 0.9345
+Precision: 0.9947, Recall: 0.9790, F1-Score: 0.9864
+Fold 3, Epoch 59, Train Loss: 1.7718, Val Loss: 1.7383, Val Acc: 0.9662
+Precision: 0.9943, Recall: 0.8871, F1-Score: 0.9371
+Fold 3, Epoch 60, Train Loss: 1.7700, Val Loss: 1.7610, Val Acc: 0.8844
+Precision: 0.9943, Recall: 0.9796, F1-Score: 0.9865
+Fold 3, Epoch 61, Train Loss: 1.7652, Val Loss: 1.7257, Val Acc: 0.9667
+Precision: 0.9944, Recall: 0.9775, F1-Score: 0.9854
+Fold 3, Epoch 62, Train Loss: 1.7687, Val Loss: 1.7243, Val Acc: 0.9639
+Precision: 0.9945, Recall: 0.9813, F1-Score: 0.9874
+Fold 3, Epoch 63, Train Loss: 1.7565, Val Loss: 1.7429, Val Acc: 0.9696
+Precision: 0.9946, Recall: 0.9780, F1-Score: 0.9858
+Fold 3, Epoch 64, Train Loss: 1.7581, Val Loss: 1.7203, Val Acc: 0.9648
+Precision: 0.9945, Recall: 0.9815, F1-Score: 0.9874
+Fold 3, Epoch 65, Train Loss: 1.7566, Val Loss: 1.7427, Val Acc: 0.9696
+Precision: 0.9942, Recall: 0.9686, F1-Score: 0.9807
+Fold 3, Epoch 66, Train Loss: 1.7694, Val Loss: 1.7445, Val Acc: 0.9551
+Precision: 0.9942, Recall: 0.9550, F1-Score: 0.9738
+Fold 3, Epoch 67, Train Loss: 1.7563, Val Loss: 1.7229, Val Acc: 0.9424
+Precision: 0.9942, Recall: 0.9776, F1-Score: 0.9854
+Fold 3, Epoch 68, Train Loss: 1.7511, Val Loss: 1.7552, Val Acc: 0.9653
+Precision: 0.9943, Recall: 0.9645, F1-Score: 0.9787
+Fold 3, Epoch 69, Train Loss: 1.7629, Val Loss: 1.7523, Val Acc: 0.9495
+Precision: 0.9943, Recall: 0.9822, F1-Score: 0.9879
+Fold 3, Epoch 70, Train Loss: 1.7502, Val Loss: 1.7073, Val Acc: 0.9710
+Precision: 0.9941, Recall: 0.9835, F1-Score: 0.9885
+Fold 3, Epoch 71, Train Loss: 1.7590, Val Loss: 1.7329, Val Acc: 0.9724
+Precision: 0.9945, Recall: 0.9772, F1-Score: 0.9853
+Fold 3, Epoch 72, Train Loss: 1.7495, Val Loss: 1.7188, Val Acc: 0.9647
+Precision: 0.9942, Recall: 0.9820, F1-Score: 0.9878
+Fold 3, Epoch 73, Train Loss: 1.7486, Val Loss: 1.7323, Val Acc: 0.9702
+Precision: 0.9944, Recall: 0.9482, F1-Score: 0.9701
+Fold 3, Epoch 74, Train Loss: 1.7553, Val Loss: 1.7599, Val Acc: 0.9330
+Precision: 0.9945, Recall: 0.9602, F1-Score: 0.9767
+Fold 3, Epoch 75, Train Loss: 1.7783, Val Loss: 1.7622, Val Acc: 0.9530
+Precision: 0.9945, Recall: 0.9524, F1-Score: 0.9725
+Fold 3, Epoch 76, Train Loss: 1.7761, Val Loss: 1.7322, Val Acc: 0.9370
+Precision: 0.9942, Recall: 0.9684, F1-Score: 0.9806
+Fold 3, Epoch 77, Train Loss: 1.7751, Val Loss: 1.7265, Val Acc: 0.9529
+Precision: 0.9945, Recall: 0.9761, F1-Score: 0.9846
+Fold 3, Epoch 78, Train Loss: 1.7558, Val Loss: 1.7217, Val Acc: 0.9625
+Precision: 0.9945, Recall: 0.9805, F1-Score: 0.9869
+Fold 3, Epoch 79, Train Loss: 1.7448, Val Loss: 1.7103, Val Acc: 0.9681
+Precision: 0.9942, Recall: 0.9738, F1-Score: 0.9835
+Fold 3, Epoch 80, Train Loss: 1.7314, Val Loss: 1.7517, Val Acc: 0.9586
+Precision: 0.9944, Recall: 0.9824, F1-Score: 0.9880
+Fold 3, Epoch 81, Train Loss: 1.7545, Val Loss: 1.7100, Val Acc: 0.9709
+Precision: 0.9945, Recall: 0.9822, F1-Score: 0.9880
+Fold 3, Epoch 82, Train Loss: 1.7555, Val Loss: 1.7287, Val Acc: 0.9705
+Precision: 0.9944, Recall: 0.9766, F1-Score: 0.9849
+Fold 3, Epoch 83, Train Loss: 1.7372, Val Loss: 1.7230, Val Acc: 0.9624
+Precision: 0.9942, Recall: 0.9794, F1-Score: 0.9864
+Fold 3, Epoch 84, Train Loss: 1.7484, Val Loss: 1.7180, Val Acc: 0.9672
+Precision: 0.9945, Recall: 0.9749, F1-Score: 0.9841
+Fold 3, Epoch 85, Train Loss: 1.7298, Val Loss: 1.7211, Val Acc: 0.9600
+Precision: 0.9944, Recall: 0.9789, F1-Score: 0.9860
+Fold 3, Epoch 86, Train Loss: 1.7488, Val Loss: 1.7199, Val Acc: 0.9655
+Precision: 0.9945, Recall: 0.9793, F1-Score: 0.9864
+Fold 3, Epoch 87, Train Loss: 1.7471, Val Loss: 1.7040, Val Acc: 0.9665
+Precision: 0.9945, Recall: 0.9798, F1-Score: 0.9867
+Fold 3, Epoch 88, Train Loss: 1.7492, Val Loss: 1.7114, Val Acc: 0.9670
+Precision: 0.9943, Recall: 0.9599, F1-Score: 0.9762
+Fold 3, Epoch 89, Train Loss: 1.7459, Val Loss: 1.7726, Val Acc: 0.9435
+Precision: 0.9944, Recall: 0.9692, F1-Score: 0.9811
+Fold 3, Epoch 90, Train Loss: 1.7593, Val Loss: 1.7222, Val Acc: 0.9541
+Precision: 0.9943, Recall: 0.9764, F1-Score: 0.9848
+Fold 3, Epoch 91, Train Loss: 1.7706, Val Loss: 1.7264, Val Acc: 0.9623
+Precision: 0.9942, Recall: 0.9822, F1-Score: 0.9878
+Fold 3, Epoch 92, Train Loss: 1.7623, Val Loss: 1.7359, Val Acc: 0.9728
+Precision: 0.9943, Recall: 0.9768, F1-Score: 0.9849
+Fold 3, Epoch 93, Train Loss: 1.7468, Val Loss: 1.7524, Val Acc: 0.9627
+Precision: 0.9945, Recall: 0.9729, F1-Score: 0.9832
+Fold 3, Epoch 94, Train Loss: 1.7531, Val Loss: 1.7291, Val Acc: 0.9573
+Precision: 0.9945, Recall: 0.9750, F1-Score: 0.9842
+Fold 3, Epoch 95, Train Loss: 1.7443, Val Loss: 1.7058, Val Acc: 0.9605
+Precision: 0.9943, Recall: 0.9735, F1-Score: 0.9834
+Fold 3, Epoch 96, Train Loss: 1.7443, Val Loss: 1.7322, Val Acc: 0.9582
+Precision: 0.9944, Recall: 0.9845, F1-Score: 0.9892
+Fold 3, Epoch 97, Train Loss: 1.7672, Val Loss: 1.7385, Val Acc: 0.9762
+Precision: 0.9942, Recall: 0.9781, F1-Score: 0.9857
+Fold 3, Epoch 98, Train Loss: 1.7513, Val Loss: 1.7219, Val Acc: 0.9647
+Precision: 0.9944, Recall: 0.9759, F1-Score: 0.9846
+Fold 3, Epoch 99, Train Loss: 1.7490, Val Loss: 1.7105, Val Acc: 0.9618
+Precision: 0.9941, Recall: 0.9707, F1-Score: 0.9818
+Fold 3, Epoch 100, Train Loss: 1.7501, Val Loss: 1.7331, Val Acc: 0.9550
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9942, Recall: 0.9767, F1-Score: 0.9849
+Fold 4, Epoch 1, Train Loss: 1.8060, Val Loss: 1.6887, Val Acc: 0.9700
+Precision: 0.9947, Recall: 0.9864, F1-Score: 0.9902
+Fold 4, Epoch 2, Train Loss: 1.7590, Val Loss: 1.6971, Val Acc: 0.9825
+Precision: 0.9943, Recall: 0.9816, F1-Score: 0.9876
+Fold 4, Epoch 3, Train Loss: 1.7648, Val Loss: 1.6799, Val Acc: 0.9765
+Precision: 0.9943, Recall: 0.9765, F1-Score: 0.9850
+Fold 4, Epoch 4, Train Loss: 1.7514, Val Loss: 1.6669, Val Acc: 0.9707
+Precision: 0.9946, Recall: 0.9815, F1-Score: 0.9877
+Fold 4, Epoch 5, Train Loss: 1.7335, Val Loss: 1.6888, Val Acc: 0.9762
+Precision: 0.9943, Recall: 0.9747, F1-Score: 0.9840
+Fold 4, Epoch 6, Train Loss: 1.7543, Val Loss: 1.6874, Val Acc: 0.9681
+Precision: 0.9943, Recall: 0.9698, F1-Score: 0.9816
+Fold 4, Epoch 7, Train Loss: 1.7598, Val Loss: 1.7351, Val Acc: 0.9643
+Precision: 0.9946, Recall: 0.9848, F1-Score: 0.9894
+Fold 4, Epoch 8, Train Loss: 1.7592, Val Loss: 1.6813, Val Acc: 0.9805
+Precision: 0.9944, Recall: 0.9816, F1-Score: 0.9876
+Fold 4, Epoch 9, Train Loss: 1.7460, Val Loss: 1.6726, Val Acc: 0.9764
+Precision: 0.9942, Recall: 0.9763, F1-Score: 0.9848
+Fold 4, Epoch 10, Train Loss: 1.7461, Val Loss: 1.7080, Val Acc: 0.9696
+Precision: 0.9945, Recall: 0.9808, F1-Score: 0.9871
+Fold 4, Epoch 11, Train Loss: 1.7701, Val Loss: 1.6733, Val Acc: 0.9751
+Precision: 0.9944, Recall: 0.9793, F1-Score: 0.9865
+Fold 4, Epoch 12, Train Loss: 1.7539, Val Loss: 1.6834, Val Acc: 0.9734
+Precision: 0.9946, Recall: 0.9838, F1-Score: 0.9889
+Fold 4, Epoch 13, Train Loss: 1.7540, Val Loss: 1.6691, Val Acc: 0.9792
+Precision: 0.9945, Recall: 0.9594, F1-Score: 0.9763
+Fold 4, Epoch 14, Train Loss: 1.7338, Val Loss: 1.6846, Val Acc: 0.9534
+Precision: 0.9944, Recall: 0.9491, F1-Score: 0.9708
+Fold 4, Epoch 15, Train Loss: 1.7388, Val Loss: 1.6739, Val Acc: 0.9413
+Precision: 0.9941, Recall: 0.9708, F1-Score: 0.9819
+Fold 4, Epoch 16, Train Loss: 1.7384, Val Loss: 1.6682, Val Acc: 0.9646
+Precision: 0.9944, Recall: 0.9829, F1-Score: 0.9883
+Fold 4, Epoch 17, Train Loss: 1.7356, Val Loss: 1.6490, Val Acc: 0.9781
+Precision: 0.9943, Recall: 0.9828, F1-Score: 0.9882
+Fold 4, Epoch 18, Train Loss: 1.7308, Val Loss: 1.6421, Val Acc: 0.9782
+Precision: 0.9945, Recall: 0.9811, F1-Score: 0.9874
+Fold 4, Epoch 19, Train Loss: 1.7514, Val Loss: 1.6498, Val Acc: 0.9760
+Precision: 0.9944, Recall: 0.9870, F1-Score: 0.9904
+Fold 4, Epoch 20, Train Loss: 1.7286, Val Loss: 1.6774, Val Acc: 0.9832
+Precision: 0.9943, Recall: 0.9696, F1-Score: 0.9813
+Fold 4, Epoch 21, Train Loss: 1.7297, Val Loss: 1.7297, Val Acc: 0.9633
+Precision: 0.9946, Recall: 0.9631, F1-Score: 0.9781
+Fold 4, Epoch 22, Train Loss: 1.7795, Val Loss: 1.6987, Val Acc: 0.9575
+Precision: 0.9945, Recall: 0.9667, F1-Score: 0.9801
+Fold 4, Epoch 23, Train Loss: 1.7575, Val Loss: 1.7103, Val Acc: 0.9582
+Precision: 0.9945, Recall: 0.9827, F1-Score: 0.9883
+Fold 4, Epoch 24, Train Loss: 1.7478, Val Loss: 1.6808, Val Acc: 0.9781
+Precision: 0.9942, Recall: 0.9784, F1-Score: 0.9859
+Fold 4, Epoch 25, Train Loss: 1.7490, Val Loss: 1.6788, Val Acc: 0.9727
+Precision: 0.9943, Recall: 0.9834, F1-Score: 0.9885
+Fold 4, Epoch 26, Train Loss: 1.7439, Val Loss: 1.6769, Val Acc: 0.9790
+Precision: 0.9946, Recall: 0.9808, F1-Score: 0.9874
+Fold 4, Epoch 27, Train Loss: 1.7398, Val Loss: 1.6755, Val Acc: 0.9752
+Precision: 0.9944, Recall: 0.9754, F1-Score: 0.9843
+Fold 4, Epoch 28, Train Loss: 1.7353, Val Loss: 1.6668, Val Acc: 0.9690
+Precision: 0.9945, Recall: 0.9783, F1-Score: 0.9859
+Fold 4, Epoch 29, Train Loss: 1.7574, Val Loss: 1.6590, Val Acc: 0.9724
+Precision: 0.9946, Recall: 0.9875, F1-Score: 0.9907
+Fold 4, Epoch 30, Train Loss: 1.7506, Val Loss: 1.7191, Val Acc: 0.9837
+Precision: 0.9945, Recall: 0.9850, F1-Score: 0.9894
+Fold 4, Epoch 31, Train Loss: 1.7506, Val Loss: 1.6956, Val Acc: 0.9808
+Precision: 0.9945, Recall: 0.9694, F1-Score: 0.9815
+Fold 4, Epoch 32, Train Loss: 1.7665, Val Loss: 1.7084, Val Acc: 0.9636
+Precision: 0.9945, Recall: 0.9796, F1-Score: 0.9867
+Fold 4, Epoch 33, Train Loss: 1.7437, Val Loss: 1.6586, Val Acc: 0.9740
+Precision: 0.9946, Recall: 0.9786, F1-Score: 0.9862
+Fold 4, Epoch 34, Train Loss: 1.7472, Val Loss: 1.6458, Val Acc: 0.9730
+Precision: 0.9946, Recall: 0.9840, F1-Score: 0.9888
+Fold 4, Epoch 35, Train Loss: 1.7343, Val Loss: 1.6498, Val Acc: 0.9795
+Precision: 0.9943, Recall: 0.9811, F1-Score: 0.9873
+Fold 4, Epoch 36, Train Loss: 1.7277, Val Loss: 1.6610, Val Acc: 0.9760
+Precision: 0.9947, Recall: 0.9814, F1-Score: 0.9878
+Fold 4, Epoch 37, Train Loss: 1.7387, Val Loss: 1.6639, Val Acc: 0.9760
+Precision: 0.9945, Recall: 0.9812, F1-Score: 0.9875
+Fold 4, Epoch 38, Train Loss: 1.7349, Val Loss: 1.6393, Val Acc: 0.9762
+Precision: 0.9943, Recall: 0.9717, F1-Score: 0.9824
+Fold 4, Epoch 39, Train Loss: 1.7252, Val Loss: 1.6891, Val Acc: 0.9656
+Precision: 0.9947, Recall: 0.9872, F1-Score: 0.9907
+Fold 4, Epoch 40, Train Loss: 1.7550, Val Loss: 1.7063, Val Acc: 0.9834
+Precision: 0.9947, Recall: 0.9839, F1-Score: 0.9888
+Fold 4, Epoch 41, Train Loss: 1.7577, Val Loss: 1.6519, Val Acc: 0.9794
+Precision: 0.9945, Recall: 0.9726, F1-Score: 0.9830
+Fold 4, Epoch 42, Train Loss: 1.7303, Val Loss: 1.6525, Val Acc: 0.9666
+Precision: 0.9944, Recall: 0.9816, F1-Score: 0.9877
+Fold 4, Epoch 43, Train Loss: 1.7397, Val Loss: 1.6563, Val Acc: 0.9761
+Precision: 0.9945, Recall: 0.9796, F1-Score: 0.9867
+Fold 4, Epoch 44, Train Loss: 1.7358, Val Loss: 1.6589, Val Acc: 0.9739
+Precision: 0.9943, Recall: 0.9740, F1-Score: 0.9837
+Fold 4, Epoch 45, Train Loss: 1.7277, Val Loss: 1.6678, Val Acc: 0.9682
+Precision: 0.9947, Recall: 0.9814, F1-Score: 0.9876
+Fold 4, Epoch 46, Train Loss: 1.7203, Val Loss: 1.6452, Val Acc: 0.9760
+Precision: 0.9946, Recall: 0.9779, F1-Score: 0.9858
+Fold 4, Epoch 47, Train Loss: 1.7381, Val Loss: 1.6442, Val Acc: 0.9719
+Precision: 0.9945, Recall: 0.9800, F1-Score: 0.9869
+Fold 4, Epoch 48, Train Loss: 1.7394, Val Loss: 1.6655, Val Acc: 0.9743
+Precision: 0.9944, Recall: 0.9815, F1-Score: 0.9876
+Fold 4, Epoch 49, Train Loss: 1.7377, Val Loss: 1.6437, Val Acc: 0.9764
+Precision: 0.9946, Recall: 0.9795, F1-Score: 0.9866
+Fold 4, Epoch 50, Train Loss: 1.7457, Val Loss: 1.6549, Val Acc: 0.9738
+Precision: 0.9944, Recall: 0.9800, F1-Score: 0.9867
+Fold 4, Epoch 51, Train Loss: 1.7450, Val Loss: 1.6857, Val Acc: 0.9742
+Precision: 0.9941, Recall: 0.9782, F1-Score: 0.9857
+Fold 4, Epoch 52, Train Loss: 1.7486, Val Loss: 1.6735, Val Acc: 0.9721
+Precision: 0.9945, Recall: 0.9828, F1-Score: 0.9883
+Fold 4, Epoch 53, Train Loss: 1.7458, Val Loss: 1.6610, Val Acc: 0.9780
+Precision: 0.9943, Recall: 0.9817, F1-Score: 0.9876
+Fold 4, Epoch 54, Train Loss: 1.7489, Val Loss: 1.6623, Val Acc: 0.9766
+Precision: 0.9943, Recall: 0.9742, F1-Score: 0.9837
+Fold 4, Epoch 55, Train Loss: 1.7247, Val Loss: 1.6968, Val Acc: 0.9676
+Precision: 0.9947, Recall: 0.9842, F1-Score: 0.9891
+Fold 4, Epoch 56, Train Loss: 1.7558, Val Loss: 1.6809, Val Acc: 0.9796
+Precision: 0.9946, Recall: 0.9878, F1-Score: 0.9910
+Fold 4, Epoch 57, Train Loss: 1.7407, Val Loss: 1.7146, Val Acc: 0.9841
+Precision: 0.9947, Recall: 0.9856, F1-Score: 0.9898
+Fold 4, Epoch 58, Train Loss: 1.7430, Val Loss: 1.6496, Val Acc: 0.9814
+Precision: 0.9946, Recall: 0.9757, F1-Score: 0.9845
+Fold 4, Epoch 59, Train Loss: 1.7318, Val Loss: 1.6477, Val Acc: 0.9695
+Precision: 0.9946, Recall: 0.9819, F1-Score: 0.9880
+Fold 4, Epoch 60, Train Loss: 1.7234, Val Loss: 1.6443, Val Acc: 0.9767
+Precision: 0.9943, Recall: 0.9715, F1-Score: 0.9823
+Fold 4, Epoch 61, Train Loss: 1.7199, Val Loss: 1.6657, Val Acc: 0.9650
+Precision: 0.9945, Recall: 0.9788, F1-Score: 0.9861
+Fold 4, Epoch 62, Train Loss: 1.7412, Val Loss: 1.6419, Val Acc: 0.9730
+Precision: 0.9944, Recall: 0.9770, F1-Score: 0.9852
+Fold 4, Epoch 63, Train Loss: 1.7321, Val Loss: 1.6453, Val Acc: 0.9710
+Precision: 0.9945, Recall: 0.9724, F1-Score: 0.9829
+Fold 4, Epoch 64, Train Loss: 1.7366, Val Loss: 1.6583, Val Acc: 0.9657
+Precision: 0.9946, Recall: 0.9772, F1-Score: 0.9855
+Fold 4, Epoch 65, Train Loss: 1.7291, Val Loss: 1.6533, Val Acc: 0.9713
+Precision: 0.9944, Recall: 0.9765, F1-Score: 0.9851
+Fold 4, Epoch 66, Train Loss: 1.7225, Val Loss: 1.6525, Val Acc: 0.9702
+Precision: 0.9943, Recall: 0.9758, F1-Score: 0.9845
+Fold 4, Epoch 67, Train Loss: 1.7111, Val Loss: 1.6445, Val Acc: 0.9692
+Precision: 0.9947, Recall: 0.9763, F1-Score: 0.9851
+Fold 4, Epoch 68, Train Loss: 1.7252, Val Loss: 1.6525, Val Acc: 0.9703
+Precision: 0.9947, Recall: 0.9805, F1-Score: 0.9872
+Fold 4, Epoch 69, Train Loss: 1.7312, Val Loss: 1.6430, Val Acc: 0.9750
+Precision: 0.9946, Recall: 0.9779, F1-Score: 0.9856
+Fold 4, Epoch 70, Train Loss: 1.7248, Val Loss: 1.6358, Val Acc: 0.9722
+Precision: 0.9944, Recall: 0.9775, F1-Score: 0.9855
+Fold 4, Epoch 71, Train Loss: 1.7247, Val Loss: 1.6672, Val Acc: 0.9712
+Precision: 0.9945, Recall: 0.9823, F1-Score: 0.9880
+Fold 4, Epoch 72, Train Loss: 1.7478, Val Loss: 1.6578, Val Acc: 0.9774
+Precision: 0.9945, Recall: 0.9805, F1-Score: 0.9872
+Fold 4, Epoch 73, Train Loss: 1.7349, Val Loss: 1.6433, Val Acc: 0.9749
+Precision: 0.9945, Recall: 0.9731, F1-Score: 0.9832
+Fold 4, Epoch 74, Train Loss: 1.7338, Val Loss: 1.6408, Val Acc: 0.9669
+Precision: 0.9947, Recall: 0.9807, F1-Score: 0.9874
+Fold 4, Epoch 75, Train Loss: 1.7355, Val Loss: 1.6930, Val Acc: 0.9751
+Precision: 0.9946, Recall: 0.9375, F1-Score: 0.9649
+Fold 4, Epoch 76, Train Loss: 1.7463, Val Loss: 1.6540, Val Acc: 0.9267
+Precision: 0.9945, Recall: 0.9751, F1-Score: 0.9845
+Fold 4, Epoch 77, Train Loss: 1.7292, Val Loss: 1.6346, Val Acc: 0.9687
+Precision: 0.9945, Recall: 0.9812, F1-Score: 0.9874
+Fold 4, Epoch 78, Train Loss: 1.7127, Val Loss: 1.6384, Val Acc: 0.9759
+Precision: 0.9946, Recall: 0.9783, F1-Score: 0.9861
+Fold 4, Epoch 79, Train Loss: 1.7177, Val Loss: 1.6572, Val Acc: 0.9724
+Precision: 0.9944, Recall: 0.9742, F1-Score: 0.9836
+Fold 4, Epoch 80, Train Loss: 1.7197, Val Loss: 1.6277, Val Acc: 0.9678
+Precision: 0.9947, Recall: 0.9780, F1-Score: 0.9861
+Fold 4, Epoch 81, Train Loss: 1.7258, Val Loss: 1.6266, Val Acc: 0.9723
+Precision: 0.9944, Recall: 0.9748, F1-Score: 0.9840
+Fold 4, Epoch 82, Train Loss: 1.7056, Val Loss: 1.6563, Val Acc: 0.9683
+Precision: 0.9944, Recall: 0.9764, F1-Score: 0.9849
+Fold 4, Epoch 83, Train Loss: 1.7498, Val Loss: 1.6403, Val Acc: 0.9702
+Precision: 0.9949, Recall: 0.9823, F1-Score: 0.9882
+Fold 4, Epoch 84, Train Loss: 1.7333, Val Loss: 1.6422, Val Acc: 0.9772
+Precision: 0.9945, Recall: 0.9808, F1-Score: 0.9874
+Fold 4, Epoch 85, Train Loss: 1.7093, Val Loss: 1.6334, Val Acc: 0.9755
+Precision: 0.9945, Recall: 0.9762, F1-Score: 0.9849
+Fold 4, Epoch 86, Train Loss: 1.7201, Val Loss: 1.6603, Val Acc: 0.9703
+Precision: 0.9944, Recall: 0.9755, F1-Score: 0.9846
+Fold 4, Epoch 87, Train Loss: 1.7277, Val Loss: 1.6625, Val Acc: 0.9692
+Precision: 0.9945, Recall: 0.9803, F1-Score: 0.9871
+Fold 4, Epoch 88, Train Loss: 1.7283, Val Loss: 1.6552, Val Acc: 0.9746
+Precision: 0.9943, Recall: 0.9782, F1-Score: 0.9858
+Fold 4, Epoch 89, Train Loss: 1.7319, Val Loss: 1.6250, Val Acc: 0.9722
+Precision: 0.9945, Recall: 0.9804, F1-Score: 0.9871
+Fold 4, Epoch 90, Train Loss: 1.7100, Val Loss: 1.6765, Val Acc: 0.9752
+Precision: 0.9945, Recall: 0.9782, F1-Score: 0.9859
+Fold 4, Epoch 91, Train Loss: 1.7182, Val Loss: 1.6397, Val Acc: 0.9725
+Precision: 0.9947, Recall: 0.9840, F1-Score: 0.9890
+Fold 4, Epoch 92, Train Loss: 1.7341, Val Loss: 1.6583, Val Acc: 0.9798
+Precision: 0.9946, Recall: 0.9821, F1-Score: 0.9880
+Fold 4, Epoch 93, Train Loss: 1.7277, Val Loss: 1.6373, Val Acc: 0.9772
+Precision: 0.9946, Recall: 0.9763, F1-Score: 0.9850
+Fold 4, Epoch 94, Train Loss: 1.7112, Val Loss: 1.6337, Val Acc: 0.9704
+Precision: 0.9946, Recall: 0.9710, F1-Score: 0.9823
+Fold 4, Epoch 95, Train Loss: 1.7186, Val Loss: 1.6290, Val Acc: 0.9647
+Precision: 0.9945, Recall: 0.9782, F1-Score: 0.9859
+Fold 4, Epoch 96, Train Loss: 1.7100, Val Loss: 1.6167, Val Acc: 0.9722
+Precision: 0.9945, Recall: 0.9805, F1-Score: 0.9871
+Fold 4, Epoch 97, Train Loss: 1.7140, Val Loss: 1.6500, Val Acc: 0.9753
+Precision: 0.9947, Recall: 0.9720, F1-Score: 0.9829
+Fold 4, Epoch 98, Train Loss: 1.7210, Val Loss: 1.6343, Val Acc: 0.9657
+Precision: 0.9942, Recall: 0.9689, F1-Score: 0.9809
+Fold 4, Epoch 99, Train Loss: 1.7189, Val Loss: 1.6225, Val Acc: 0.9631
+Precision: 0.9945, Recall: 0.9763, F1-Score: 0.9849
+Fold 4, Epoch 100, Train Loss: 1.7211, Val Loss: 1.6325, Val Acc: 0.9702
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9943, Recall: 0.9250, F1-Score: 0.9577
+Fold 5, Epoch 1, Train Loss: 1.7475, Val Loss: 1.6558, Val Acc: 0.9410
+Precision: 0.9945, Recall: 0.9574, F1-Score: 0.9750
+Fold 5, Epoch 2, Train Loss: 1.7065, Val Loss: 1.6526, Val Acc: 0.9659
+Precision: 0.9942, Recall: 0.9521, F1-Score: 0.9721
+Fold 5, Epoch 3, Train Loss: 1.7219, Val Loss: 1.6391, Val Acc: 0.9616
+Precision: 0.9943, Recall: 0.9336, F1-Score: 0.9623
+Fold 5, Epoch 4, Train Loss: 1.7167, Val Loss: 1.6495, Val Acc: 0.9484
+Precision: 0.9944, Recall: 0.9467, F1-Score: 0.9692
+Fold 5, Epoch 5, Train Loss: 1.7136, Val Loss: 1.6291, Val Acc: 0.9567
+Precision: 0.9943, Recall: 0.9589, F1-Score: 0.9757
+Fold 5, Epoch 6, Train Loss: 1.7030, Val Loss: 1.6626, Val Acc: 0.9669
+Precision: 0.9944, Recall: 0.9554, F1-Score: 0.9740
+Fold 5, Epoch 7, Train Loss: 1.7166, Val Loss: 1.6784, Val Acc: 0.9641
+Precision: 0.9946, Recall: 0.9628, F1-Score: 0.9779
+Fold 5, Epoch 8, Train Loss: 1.7247, Val Loss: 1.6705, Val Acc: 0.9692
+Precision: 0.9943, Recall: 0.9565, F1-Score: 0.9744
+Fold 5, Epoch 9, Train Loss: 1.7227, Val Loss: 1.6388, Val Acc: 0.9652
+Precision: 0.9943, Recall: 0.9727, F1-Score: 0.9829
+Fold 5, Epoch 10, Train Loss: 1.7191, Val Loss: 1.6341, Val Acc: 0.9768
+Precision: 0.9942, Recall: 0.9594, F1-Score: 0.9759
+Fold 5, Epoch 11, Train Loss: 1.7143, Val Loss: 1.6620, Val Acc: 0.9674
+Precision: 0.9943, Recall: 0.9754, F1-Score: 0.9844
+Fold 5, Epoch 12, Train Loss: 1.7421, Val Loss: 1.6604, Val Acc: 0.9790
+Precision: 0.9943, Recall: 0.9554, F1-Score: 0.9739
+Fold 5, Epoch 13, Train Loss: 1.7225, Val Loss: 1.6485, Val Acc: 0.9643
+Precision: 0.9945, Recall: 0.9633, F1-Score: 0.9781
+Fold 5, Epoch 14, Train Loss: 1.7167, Val Loss: 1.6379, Val Acc: 0.9693
+Precision: 0.9945, Recall: 0.9632, F1-Score: 0.9778
+Fold 5, Epoch 15, Train Loss: 1.7123, Val Loss: 1.6462, Val Acc: 0.9692
+Precision: 0.9943, Recall: 0.8630, F1-Score: 0.9233
+Fold 5, Epoch 16, Train Loss: 1.7249, Val Loss: 1.7114, Val Acc: 0.8897
+Precision: 0.9943, Recall: 0.9405, F1-Score: 0.9661
+Fold 5, Epoch 17, Train Loss: 1.7228, Val Loss: 1.6589, Val Acc: 0.9534
+Precision: 0.9944, Recall: 0.9618, F1-Score: 0.9773
+Fold 5, Epoch 18, Train Loss: 1.7476, Val Loss: 1.6420, Val Acc: 0.9685
+Precision: 0.9943, Recall: 0.9567, F1-Score: 0.9746
+Fold 5, Epoch 19, Train Loss: 1.7112, Val Loss: 1.6401, Val Acc: 0.9647
+Precision: 0.9943, Recall: 0.9501, F1-Score: 0.9712
+Fold 5, Epoch 20, Train Loss: 1.7137, Val Loss: 1.6472, Val Acc: 0.9597
+Precision: 0.9943, Recall: 0.9360, F1-Score: 0.9636
+Fold 5, Epoch 21, Train Loss: 1.7016, Val Loss: 1.6574, Val Acc: 0.9504
+Precision: 0.9944, Recall: 0.9082, F1-Score: 0.9486
+Fold 5, Epoch 22, Train Loss: 1.7176, Val Loss: 1.6453, Val Acc: 0.9278
+Precision: 0.9945, Recall: 0.9414, F1-Score: 0.9666
+Fold 5, Epoch 23, Train Loss: 1.7013, Val Loss: 1.6569, Val Acc: 0.9530
+Precision: 0.9943, Recall: 0.9362, F1-Score: 0.9637
+Fold 5, Epoch 24, Train Loss: 1.7146, Val Loss: 1.6656, Val Acc: 0.9504
+Precision: 0.9946, Recall: 0.9705, F1-Score: 0.9819
+Fold 5, Epoch 25, Train Loss: 1.7143, Val Loss: 1.6369, Val Acc: 0.9751
+Precision: 0.9943, Recall: 0.9520, F1-Score: 0.9721
+Fold 5, Epoch 26, Train Loss: 1.7165, Val Loss: 1.6358, Val Acc: 0.9615
+Precision: 0.9946, Recall: 0.9612, F1-Score: 0.9772
+Fold 5, Epoch 27, Train Loss: 1.7181, Val Loss: 1.6352, Val Acc: 0.9683
+Precision: 0.9945, Recall: 0.9399, F1-Score: 0.9656
+Fold 5, Epoch 28, Train Loss: 1.7085, Val Loss: 1.6376, Val Acc: 0.9519
+Precision: 0.9945, Recall: 0.9540, F1-Score: 0.9732
+Fold 5, Epoch 29, Train Loss: 1.7044, Val Loss: 1.6427, Val Acc: 0.9624
+Precision: 0.9943, Recall: 0.9417, F1-Score: 0.9666
+Fold 5, Epoch 30, Train Loss: 1.7051, Val Loss: 1.6286, Val Acc: 0.9541
+Precision: 0.9943, Recall: 0.9372, F1-Score: 0.9642
+Fold 5, Epoch 31, Train Loss: 1.7089, Val Loss: 1.6505, Val Acc: 0.9511
+Precision: 0.9942, Recall: 0.9694, F1-Score: 0.9810
+Fold 5, Epoch 32, Train Loss: 1.7154, Val Loss: 1.6713, Val Acc: 0.9745
+Precision: 0.9943, Recall: 0.9328, F1-Score: 0.9619
+Fold 5, Epoch 33, Train Loss: 1.7090, Val Loss: 1.6681, Val Acc: 0.9472
+Precision: 0.9946, Recall: 0.9721, F1-Score: 0.9828
+Fold 5, Epoch 34, Train Loss: 1.7148, Val Loss: 1.6339, Val Acc: 0.9764
+Precision: 0.9943, Recall: 0.9662, F1-Score: 0.9796
+Fold 5, Epoch 35, Train Loss: 1.7136, Val Loss: 1.6413, Val Acc: 0.9718
+Precision: 0.9944, Recall: 0.9591, F1-Score: 0.9759
+Fold 5, Epoch 36, Train Loss: 1.7028, Val Loss: 1.6482, Val Acc: 0.9667
+Precision: 0.9946, Recall: 0.9662, F1-Score: 0.9796
+Fold 5, Epoch 37, Train Loss: 1.7143, Val Loss: 1.6604, Val Acc: 0.9716
+Precision: 0.9942, Recall: 0.9356, F1-Score: 0.9632
+Fold 5, Epoch 38, Train Loss: 1.7171, Val Loss: 1.6546, Val Acc: 0.9489
+Precision: 0.9943, Recall: 0.9650, F1-Score: 0.9789
+Fold 5, Epoch 39, Train Loss: 1.6881, Val Loss: 1.6317, Val Acc: 0.9709
+Precision: 0.9945, Recall: 0.9492, F1-Score: 0.9708
+Fold 5, Epoch 40, Train Loss: 1.6947, Val Loss: 1.6344, Val Acc: 0.9591
+Precision: 0.9946, Recall: 0.9648, F1-Score: 0.9789
+Fold 5, Epoch 41, Train Loss: 1.6962, Val Loss: 1.6316, Val Acc: 0.9707
+Precision: 0.9943, Recall: 0.9394, F1-Score: 0.9654
+Fold 5, Epoch 42, Train Loss: 1.6893, Val Loss: 1.6247, Val Acc: 0.9531
+Precision: 0.9945, Recall: 0.9355, F1-Score: 0.9635
+Fold 5, Epoch 43, Train Loss: 1.6942, Val Loss: 1.6459, Val Acc: 0.9478
+Precision: 0.9946, Recall: 0.9616, F1-Score: 0.9774
+Fold 5, Epoch 44, Train Loss: 1.7042, Val Loss: 1.6543, Val Acc: 0.9683
+Precision: 0.9944, Recall: 0.9384, F1-Score: 0.9649
+Fold 5, Epoch 45, Train Loss: 1.7283, Val Loss: 1.6323, Val Acc: 0.9524
+Precision: 0.9945, Recall: 0.9638, F1-Score: 0.9785
+Fold 5, Epoch 46, Train Loss: 1.7053, Val Loss: 1.6370, Val Acc: 0.9701
+Precision: 0.9943, Recall: 0.9207, F1-Score: 0.9554
+Fold 5, Epoch 47, Train Loss: 1.6866, Val Loss: 1.6426, Val Acc: 0.9397
+Precision: 0.9947, Recall: 0.9740, F1-Score: 0.9836
+Fold 5, Epoch 48, Train Loss: 1.7132, Val Loss: 1.6316, Val Acc: 0.9778
+Precision: 0.9945, Recall: 0.9759, F1-Score: 0.9848
+Fold 5, Epoch 49, Train Loss: 1.7059, Val Loss: 1.6477, Val Acc: 0.9793
+Precision: 0.9945, Recall: 0.9643, F1-Score: 0.9786
+Fold 5, Epoch 50, Train Loss: 1.7132, Val Loss: 1.6223, Val Acc: 0.9705
+Precision: 0.9942, Recall: 0.9538, F1-Score: 0.9730
+Fold 5, Epoch 51, Train Loss: 1.6899, Val Loss: 1.6652, Val Acc: 0.9630
+Precision: 0.9944, Recall: 0.9514, F1-Score: 0.9719
+Fold 5, Epoch 52, Train Loss: 1.7123, Val Loss: 1.6574, Val Acc: 0.9610
+Precision: 0.9944, Recall: 0.9256, F1-Score: 0.9581
+Fold 5, Epoch 53, Train Loss: 1.7182, Val Loss: 1.6481, Val Acc: 0.9415
+Precision: 0.9944, Recall: 0.9408, F1-Score: 0.9662
+Fold 5, Epoch 54, Train Loss: 1.7070, Val Loss: 1.6242, Val Acc: 0.9534
+Precision: 0.9944, Recall: 0.9541, F1-Score: 0.9731
+Fold 5, Epoch 55, Train Loss: 1.6904, Val Loss: 1.6360, Val Acc: 0.9631
+Precision: 0.9943, Recall: 0.9587, F1-Score: 0.9755
+Fold 5, Epoch 56, Train Loss: 1.6990, Val Loss: 1.6466, Val Acc: 0.9669
+Precision: 0.9946, Recall: 0.9707, F1-Score: 0.9820
+Fold 5, Epoch 57, Train Loss: 1.7073, Val Loss: 1.6561, Val Acc: 0.9751
+Precision: 0.9946, Recall: 0.9428, F1-Score: 0.9674
+Fold 5, Epoch 58, Train Loss: 1.7081, Val Loss: 1.6508, Val Acc: 0.9545
+Precision: 0.9944, Recall: 0.9581, F1-Score: 0.9753
+Fold 5, Epoch 59, Train Loss: 1.6862, Val Loss: 1.6445, Val Acc: 0.9663
+Precision: 0.9943, Recall: 0.9659, F1-Score: 0.9794
+Fold 5, Epoch 60, Train Loss: 1.7094, Val Loss: 1.6457, Val Acc: 0.9716
+Precision: 0.9941, Recall: 0.9499, F1-Score: 0.9709
+Fold 5, Epoch 61, Train Loss: 1.7054, Val Loss: 1.6748, Val Acc: 0.9605
+Precision: 0.9944, Recall: 0.9622, F1-Score: 0.9775
+Fold 5, Epoch 62, Train Loss: 1.7105, Val Loss: 1.6642, Val Acc: 0.9688
+Precision: 0.9943, Recall: 0.9660, F1-Score: 0.9794
+Fold 5, Epoch 63, Train Loss: 1.7304, Val Loss: 1.6378, Val Acc: 0.9717
+Precision: 0.9942, Recall: 0.9490, F1-Score: 0.9703
+Fold 5, Epoch 64, Train Loss: 1.7099, Val Loss: 1.6301, Val Acc: 0.9595
+Precision: 0.9942, Recall: 0.9320, F1-Score: 0.9614
+Fold 5, Epoch 65, Train Loss: 1.7078, Val Loss: 1.6594, Val Acc: 0.9458
+Precision: 0.9943, Recall: 0.9522, F1-Score: 0.9722
+Fold 5, Epoch 66, Train Loss: 1.7138, Val Loss: 1.6270, Val Acc: 0.9617
+Precision: 0.9942, Recall: 0.9144, F1-Score: 0.9520
+Fold 5, Epoch 67, Train Loss: 1.6928, Val Loss: 1.6316, Val Acc: 0.9316
+Precision: 0.9944, Recall: 0.9583, F1-Score: 0.9753
+Fold 5, Epoch 68, Train Loss: 1.6968, Val Loss: 1.6299, Val Acc: 0.9664
+Precision: 0.9944, Recall: 0.9496, F1-Score: 0.9709
+Fold 5, Epoch 69, Train Loss: 1.6839, Val Loss: 1.6159, Val Acc: 0.9602
+Precision: 0.9944, Recall: 0.9696, F1-Score: 0.9814
+Fold 5, Epoch 70, Train Loss: 1.6956, Val Loss: 1.6352, Val Acc: 0.9743
+Precision: 0.9945, Recall: 0.9629, F1-Score: 0.9780
+Fold 5, Epoch 71, Train Loss: 1.7041, Val Loss: 1.6304, Val Acc: 0.9693
+Precision: 0.9944, Recall: 0.9640, F1-Score: 0.9784
+Fold 5, Epoch 72, Train Loss: 1.6970, Val Loss: 1.6298, Val Acc: 0.9706
+Precision: 0.9947, Recall: 0.9594, F1-Score: 0.9763
+Fold 5, Epoch 73, Train Loss: 1.7067, Val Loss: 1.6529, Val Acc: 0.9666
+Precision: 0.9943, Recall: 0.9008, F1-Score: 0.9445
+Fold 5, Epoch 74, Train Loss: 1.7107, Val Loss: 1.6271, Val Acc: 0.9202
+Precision: 0.9942, Recall: 0.9537, F1-Score: 0.9729
+Fold 5, Epoch 75, Train Loss: 1.6905, Val Loss: 1.6274, Val Acc: 0.9634
+Precision: 0.9945, Recall: 0.9638, F1-Score: 0.9785
+Fold 5, Epoch 76, Train Loss: 1.6807, Val Loss: 1.6223, Val Acc: 0.9701
+Precision: 0.9943, Recall: 0.9206, F1-Score: 0.9555
+Fold 5, Epoch 77, Train Loss: 1.6992, Val Loss: 1.6238, Val Acc: 0.9359
+Precision: 0.9944, Recall: 0.9640, F1-Score: 0.9784
+Fold 5, Epoch 78, Train Loss: 1.6808, Val Loss: 1.6070, Val Acc: 0.9702
+Precision: 0.9944, Recall: 0.9674, F1-Score: 0.9802
+Fold 5, Epoch 79, Train Loss: 1.7020, Val Loss: 1.6182, Val Acc: 0.9729
+Precision: 0.9945, Recall: 0.9506, F1-Score: 0.9713
+Fold 5, Epoch 80, Train Loss: 1.6911, Val Loss: 1.6199, Val Acc: 0.9608
+Precision: 0.9943, Recall: 0.9512, F1-Score: 0.9716
+Fold 5, Epoch 81, Train Loss: 1.6878, Val Loss: 1.6273, Val Acc: 0.9609
+Precision: 0.9945, Recall: 0.9609, F1-Score: 0.9769
+Fold 5, Epoch 82, Train Loss: 1.7023, Val Loss: 1.6288, Val Acc: 0.9681
+Precision: 0.9944, Recall: 0.9355, F1-Score: 0.9634
+Fold 5, Epoch 83, Train Loss: 1.6841, Val Loss: 1.6367, Val Acc: 0.9502
+Precision: 0.9944, Recall: 0.9600, F1-Score: 0.9762
+Fold 5, Epoch 84, Train Loss: 1.6840, Val Loss: 1.6140, Val Acc: 0.9677
+Precision: 0.9946, Recall: 0.9626, F1-Score: 0.9779
+Fold 5, Epoch 85, Train Loss: 1.6913, Val Loss: 1.6259, Val Acc: 0.9689
+Precision: 0.9943, Recall: 0.9547, F1-Score: 0.9735
+Fold 5, Epoch 86, Train Loss: 1.7058, Val Loss: 1.6164, Val Acc: 0.9640
+Precision: 0.9944, Recall: 0.9509, F1-Score: 0.9716
+Fold 5, Epoch 87, Train Loss: 1.6855, Val Loss: 1.6309, Val Acc: 0.9602
+Precision: 0.9944, Recall: 0.9532, F1-Score: 0.9730
+Fold 5, Epoch 88, Train Loss: 1.7121, Val Loss: 1.6523, Val Acc: 0.9609
+Precision: 0.9943, Recall: 0.9528, F1-Score: 0.9725
+Fold 5, Epoch 89, Train Loss: 1.7110, Val Loss: 1.6220, Val Acc: 0.9627
+Precision: 0.9942, Recall: 0.8964, F1-Score: 0.9420
+Fold 5, Epoch 90, Train Loss: 1.6900, Val Loss: 1.6438, Val Acc: 0.9166
+Precision: 0.9943, Recall: 0.8982, F1-Score: 0.9430
+Fold 5, Epoch 91, Train Loss: 1.6869, Val Loss: 1.6390, Val Acc: 0.9218
+Precision: 0.9943, Recall: 0.9525, F1-Score: 0.9723
+Fold 5, Epoch 92, Train Loss: 1.7041, Val Loss: 1.6458, Val Acc: 0.9622
+Precision: 0.9944, Recall: 0.9531, F1-Score: 0.9727
+Fold 5, Epoch 93, Train Loss: 1.6966, Val Loss: 1.6325, Val Acc: 0.9629
+Precision: 0.9945, Recall: 0.9190, F1-Score: 0.9546
+Fold 5, Epoch 94, Train Loss: 1.6886, Val Loss: 1.6673, Val Acc: 0.9366
+Precision: 0.9946, Recall: 0.9584, F1-Score: 0.9756
+Fold 5, Epoch 95, Train Loss: 1.7019, Val Loss: 1.6374, Val Acc: 0.9660
+Precision: 0.9946, Recall: 0.9445, F1-Score: 0.9683
+Fold 5, Epoch 96, Train Loss: 1.6794, Val Loss: 1.6013, Val Acc: 0.9559
+Precision: 0.9942, Recall: 0.9203, F1-Score: 0.9551
+Fold 5, Epoch 97, Train Loss: 1.6808, Val Loss: 1.6601, Val Acc: 0.9401
+Precision: 0.9943, Recall: 0.8817, F1-Score: 0.9338
+Fold 5, Epoch 98, Train Loss: 1.7246, Val Loss: 1.6294, Val Acc: 0.9043
+Precision: 0.9947, Recall: 0.9625, F1-Score: 0.9778
+Fold 5, Epoch 99, Train Loss: 1.6971, Val Loss: 1.6515, Val Acc: 0.9689
+Precision: 0.9942, Recall: 0.9663, F1-Score: 0.9795
+Fold 5, Epoch 100, Train Loss: 1.6917, Val Loss: 1.6178, Val Acc: 0.9724
+Completed Fold 5
+Starting final training on all data...
+Test Loss: 1.9932, Test Accuracy: 0.8958
+Precision: 0.9936, Recall: 0.8958, F1-Score: 0.9418

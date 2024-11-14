@@ -1,0 +1,78 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 4090
+Using device: NVIDIA GeForce RTX 4090
+usage: DDP10class4x4_1.py [-h] [--hidden_channels HIDDEN_CHANNELS]
+                          [--learning_rate LEARNING_RATE]
+                          [--batch_size BATCH_SIZE] [--epochs EPOCHS]
+                          [--weight_decay WEIGHT_DECAY] [--patience PATIENCE]
+DDP10class4x4_1.py: error: unrecognized arguments: --verbose
+usage: DDP10class4x4_1.py [-h] [--hidden_channels HIDDEN_CHANNELS]
+                          [--learning_rate LEARNING_RATE]
+                          [--batch_size BATCH_SIZE] [--epochs EPOCHS]
+                          [--weight_decay WEIGHT_DECAY] [--patience PATIENCE]
+DDP10class4x4_1.py: error: unrecognized arguments: --verbose
+Using device: NVIDIA GeForce RTX 4090
+usage: DDP10class4x4_1.py [-h] [--hidden_channels HIDDEN_CHANNELS]
+                          [--learning_rate LEARNING_RATE]
+                          [--batch_size BATCH_SIZE] [--epochs EPOCHS]
+                          [--weight_decay WEIGHT_DECAY] [--patience PATIENCE]
+DDP10class4x4_1.py: error: unrecognized arguments: --verbose
+Using device: NVIDIA GeForce RTX 4090
+usage: DDP10class4x4_1.py [-h] [--hidden_channels HIDDEN_CHANNELS]
+                          [--learning_rate LEARNING_RATE]
+                          [--batch_size BATCH_SIZE] [--epochs EPOCHS]
+                          [--weight_decay WEIGHT_DECAY] [--patience PATIENCE]
+DDP10class4x4_1.py: error: unrecognized arguments: --verbose
+[2024-10-21 11:22:07,994] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 2) local_rank: 0 (pid: 1094662) of binary: /home/nishioka/miniconda3/envs/interstage_gnn_first/bin/python
+Traceback (most recent call last):
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.2', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishioka/miniconda3/envs/interstage_gnn_first/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+DDP10class4x4_1.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-10-21_11:22:07
+  host      : vancouver01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 1094663)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-10-21_11:22:07
+  host      : vancouver01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 1094664)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-10-21_11:22:07
+  host      : vancouver01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 1094665)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-21_11:22:07
+  host      : vancouver01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 1094662)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

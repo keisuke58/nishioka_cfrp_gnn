@@ -1,0 +1,8 @@
+{
+    "hidden_channels": 64,
+    "learning_rate": 1e-05,
+    "batch_size": 64,
+    "epochs": 1500,
+    "weight_decay": 0.0005,
+    "patience": 50
+}

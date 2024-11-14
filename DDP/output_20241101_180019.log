@@ -1,0 +1,71 @@
+nohup: ignoring input
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Using device: NVIDIA GeForce RTX 3090
+Rank: 0, World Size: 4, Master Addr: 127.0.0.1, Master Port: 12355
+Rank 0 using device: cuda:0
+Rank 2 using device: cuda:2
+Rank 1 using device: cuda:1
+Rank 3 using device: cuda:3
+Starting Fold 1
+Precision: 0.9894, Recall: 0.9800, F1-Score: 0.9846
+Fold 1, Epoch 1, Train Loss: 2.5079, Val Loss: 2.5061, Val Acc: 0.9826
+Completed Fold 1
+Starting Fold 2
+Precision: 0.9905, Recall: 0.8168, F1-Score: 0.8951
+Fold 2, Epoch 1, Train Loss: 2.4995, Val Loss: 2.4806, Val Acc: 0.8182
+Completed Fold 2
+Starting Fold 3
+Precision: 0.9903, Recall: 0.8970, F1-Score: 0.9411
+Fold 3, Epoch 1, Train Loss: 2.4817, Val Loss: 2.4599, Val Acc: 0.8889
+Completed Fold 3
+Starting Fold 4
+Precision: 0.9905, Recall: 0.9168, F1-Score: 0.9521
+Fold 4, Epoch 1, Train Loss: 2.4536, Val Loss: 2.4317, Val Acc: 0.9239
+Completed Fold 4
+Starting Fold 5
+Precision: 0.9902, Recall: 0.9896, F1-Score: 0.9898
+Fold 5, Epoch 1, Train Loss: 2.4310, Val Loss: 2.4338, Val Acc: 0.9903
+Completed Fold 5
+Starting final training on all data...
+Evaluating and Visualizing on Test Data
+Balanced Accuracy: 0.07230717833079171
+Matthews Correlation Coefficient: 0.15359039148994313
+ROC AUC Score: 0.612698983388168
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99   1175796
+           1       0.02      0.00      0.00       475
+           2       0.00      0.00      0.00       475
+           3       0.00      0.00      0.00       575
+           4       0.00      0.00      0.00       500
+           5       0.04      0.17      0.07       400
+           6       0.01      0.21      0.01       400
+           7       0.00      0.00      0.00       250
+           8       0.00      0.00      0.00       575
+           9       0.00      0.00      0.00       475
+          10       0.00      0.00      0.00       625
+          11       0.00      0.00      0.00       325
+          12       0.00      0.00      0.00       400
+          13       0.00      0.00      0.00       600
+          14       0.00      0.00      0.00       500
+          15       0.00      0.00      0.00       225
+          16       0.00      0.00      0.00       425
+          17       0.00      0.00      0.00       350
+          18       0.00      0.00      0.00       525
+
+    accuracy                           0.98   1183896
+   macro avg       0.06      0.07      0.06   1183896
+weighted avg       0.99      0.98      0.99   1183896
+
+Test Loss: 0.0000, Test Accuracy: 0.9826
+Precision: 0.9892, Recall: 0.9826, F1-Score: 0.9858
+Balanced Accuracy: 0.0723
+Matthews Correlation Coefficient (MCC): 0.1536
+ROC AUC Score: 0.612698983388168
+Images have been saved in /home/nishioka/GNN/Predict_truth/pred_vs_true_images_20241101_180031
+Test Loss: 2.5058, Test Accuracy: 0.9826
+Precision: 0.9892, Recall: 0.9826, F1-Score: 0.9858
