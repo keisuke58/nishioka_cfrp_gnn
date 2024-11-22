@@ -46,30 +46,94 @@ def initialize_weights(layer):
         if layer.bias is not None:
             nn.init.zeros_(layer.bias)
 
+def edge_dropout(edge_index, drop_prob=0.2):
+    """
+    エッジを一定確率で削除する関数。
+    
+    Args:
+        edge_index (torch.Tensor): エッジインデックステンソル (2, num_edges) の形状。
+        drop_prob (float): エッジを削除する確率 (0から1の範囲)。
+        
+    Returns:
+        torch.Tensor: ドロップアウト後のエッジインデックステンソル。
+    """
+    num_edges = edge_index.size(1)
+    mask = torch.rand(num_edges) > drop_prob  # 一定確率でTrue/Falseを生成
+    edge_index_dropped = edge_index[:, mask]  # ドロップアウト後のエッジを保持
+    
+    return edge_index_dropped
+
 
 class GATModel(torch.nn.Module):
     def __init__(self, hidden_channels=64, num_classes=19):
         super(GATModel, self).__init__()
         self.conv1 = GATConv(4, hidden_channels, heads=4, concat=True)
+        self.batch_norm1 = nn.BatchNorm1d(hidden_channels * 4)
+        
         self.conv2 = GATConv(hidden_channels * 4, hidden_channels * 2, heads=4, concat=True)
+        self.batch_norm2 = nn.BatchNorm1d(hidden_channels * 8)
+        
         self.conv3 = GATConv(hidden_channels * 8, hidden_channels, heads=4, concat=True)
+        self.batch_norm3 = nn.BatchNorm1d(hidden_channels * 4)
+        
         self.conv4 = GATConv(hidden_channels * 4, hidden_channels, heads=4, concat=True)
+        self.batch_norm4 = nn.BatchNorm1d(hidden_channels * 4)
+        
         self.fc = nn.Linear(hidden_channels * 4, num_classes)
         self.dropout = nn.Dropout(p=0.2)
+
+        # プロジェクションレイヤー
+        self.proj1 = nn.Linear(4, hidden_channels * 4)
+        self.proj2 = nn.Linear(hidden_channels * 4, hidden_channels * 8)
+        self.proj3 = nn.Linear(hidden_channels * 8, hidden_channels * 4)
 
         self.apply(initialize_weights)
 
     def forward(self, data):
         x, edge_index = data.x, data.edge_index
-        x = F.relu(self.conv1(x, edge_index))
-        x = self.dropout(x)
-        x = F.relu(self.conv2(x, edge_index))
-        x = self.dropout(x)
-        x = F.relu(self.conv3(x, edge_index))
-        x = self.dropout(x)
-        x = F.relu(self.conv4(x, edge_index))
-        x = self.fc(x)
 
+        # # エッジドロップアウトの適用（トレーニング時のみ）
+        # if self.training:
+        #     edge_index = edge_dropout(edge_index, drop_prob=0.2)
+
+        # Layer 1 with residual connection
+        x_residual = x
+        x = F.relu(self.conv1(x, edge_index))
+        x = self.batch_norm1(x)
+        x = self.dropout(x)
+        if x_residual.size(1) != x.size(1):
+            x_residual = self.proj1(x_residual)  # プロジェクションでサイズを合わせる
+        x = x + x_residual
+
+        # Layer 2 with residual connection
+        x_residual = x
+        x = F.relu(self.conv2(x, edge_index))
+        x = self.batch_norm2(x)
+        x = self.dropout(x)
+        if x_residual.size(1) != x.size(1):
+            x_residual = self.proj2(x_residual)  # プロジェクションでサイズを合わせる
+        x = x + x_residual
+
+        # Layer 3 with residual connection
+        x_residual = x
+        x = F.relu(self.conv3(x, edge_index))
+        x = self.batch_norm3(x)
+        x = self.dropout(x)
+        if x_residual.size(1) != x.size(1):
+            x_residual = self.proj3(x_residual)  # プロジェクションでサイズを合わせる
+        x = x + x_residual
+
+        # Layer 4 with residual connection
+        x_residual = x
+        x = F.relu(self.conv4(x, edge_index))
+        x = self.batch_norm4(x)
+        x = self.dropout(x)
+        if x_residual.size(1) != x.size(1):
+            x_residual = self.proj3(x_residual)  # プロジェクションでサイズを合わせる
+        x = x + x_residual
+
+        # Fully connected layer
+        x = self.fc(x)
         x = F.softmax(x, dim=-1)
 
         return x
@@ -80,8 +144,10 @@ class GATModel(torch.nn.Module):
 
 
 # gamma = 1.5
-gamma = 1.75
-# gamma = 2.0
+# gamma = 1.75
+# gamma = 1.9
+gamma = 2.0
+# gamma = 2.25
 # gamma = 3.0
 # gamma = 5.0
 # gamma = 10.0
@@ -97,7 +163,7 @@ def compute_class_weights(labels):
     
     return torch.tensor(class_weights, dtype=torch.float)
 
-def evaluate_and_visualize(final_test_loader, final_train_loader, ddp_model, device, class_weights, test_pairs, train_pairs):
+def evaluate_and_visualize(final_test_loader, train_loader, ddp_model, device, class_weights, test_pairs, train_pairs):
     ddp_model.eval()# モデルを評価モードに切り替え
     all_preds = []
     all_labels = []
@@ -160,7 +226,7 @@ def evaluate_and_visualize(final_test_loader, final_train_loader, ddp_model, dev
     total_samples = 0
 
     with torch.no_grad():
-        for batch in final_train_loader:
+        for batch in train_loader:
             batch = batch.to(device)
             out = ddp_model(batch)
             y = batch.y
@@ -174,7 +240,6 @@ def evaluate_and_visualize(final_test_loader, final_train_loader, ddp_model, dev
             total_samples += y.size(0)
 
     train_accuracy = correct / total_samples
-    avg_train_loss = total_loss / len(final_train_loader)
 
     # --- 出力ディレクトリの作成 ---
     output_dir_train_predict = f"/home/nishioka/GNN/Predict_data/Predict19Class4x4_Train{timestamp}"
@@ -499,7 +564,7 @@ def main(args):
 
     # Data preparation and model definition
     standardized_data_folder = "/home/nishioka/GNN/Defect_4x4_Normalized1"
-    label_data_folder = "/home/nishioka/GNN/Defect19Class_OneHot_test3"
+    label_data_folder = "/home/nishioka/GNN/Defect19Class_OneHot_test4"
 
     x_coords = np.load("/home/nishioka/GNN/BasicdataforGNN/x_2layer_normalized.npy")[:3654]
     y_coords = np.load("/home/nishioka/GNN/BasicdataforGNN/y_2layer_normalized.npy")[:3654]
@@ -543,11 +608,6 @@ def main(args):
 
         optimizer = torch.optim.Adam(ddp_model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
 
-        # 修正ポイント：class_weightsを使用してloss_fnを定義
-        # loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights).to(device)
-        # loss_fn = FocalLoss(apply_nonlin=F.softmax, alpha=class_weights, gamma=2, size_average=True).to(device)
-        # loss_fn = FocalLoss(alpha=0.25, gamma=gamma, reduction='mean').to(device)
-        # loss_fn = FocalLoss(alpha=class_weights, gamma=gamma, reduction='mean').to(device)
         loss_fn = FocalLoss(weights=class_weights, gamma=gamma, reduction='mean').to(device)
 
 
@@ -566,13 +626,7 @@ def main(args):
                 y = batch.y
 
                 loss = loss_fn(out, y)
-                # loss = loss.mean()  # 勾配計算の前に平均を取る reduction='none' の場合
                 loss.backward()
-                # for name, param in model.named_parameters():
-                #     if param.grad is not None:
-                #         print(f"Layer {name} grad: {param.grad.abs().mean()}")
-                #     else:
-                #         print(f"Layer {name} has no gradient.")
 
                 optimizer.step()
                 total_loss += loss.item()
@@ -681,7 +735,7 @@ def main(args):
         train_val_dataset, class_weights = prepare_data(train_val_pairs, standardized_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index)
         test_dataset, _ = prepare_data(test_pairs, standardized_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index)
 
-        final_train_loader = DataLoader(train_val_dataset, batch_size=args.batch_size, shuffle=True)
+        # final_train_loader = DataLoader(train_val_dataset, batch_size=args.batch_size, shuffle=True)
         final_test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
 
         model_path = f"/home/nishioka/GNN/GNNmodel/19classmodel/{type(model).__name__}_{timestamp}best_model_fold_{all_fold_metrics[0]['fold']}.pth"
@@ -690,15 +744,9 @@ def main(args):
 
         print("Evaluating and Visualizing on Test Data")
 
-        evaluate_and_visualize(final_test_loader, final_train_loader, ddp_model, device, class_weights, test_pairs, train_pairs)
+        evaluate_and_visualize(final_test_loader, train_loader, ddp_model, device, class_weights, test_pairs, train_pairs)
 
-
-        # 修正ポイント：loss_fnを定義
-        # loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights).to(device)
-        # loss_fn = FocalLoss(apply_nonlin=F.softmax, alpha=class_weights, gamma=2, size_average=True).to(device)
-        # loss_fn = FocalLoss(alpha=class_weights, gamma=gamma, reduction='mean').to(device)
         loss_fn = FocalLoss(weights=class_weights, gamma=gamma, reduction='mean').to(device)
-        # loss_fn = FocalLoss(alpha=0.25, gamma=gamma, reduction='mean').to(device)
 
 
         correct = 0
