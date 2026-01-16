@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.python-version
+.env
+.env.*
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML / GNN artifacts
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+
+# Logs / reports / visualization outputs
+*.log
+*.out
+*.rpt
+*.vtk
+*.vtp
+
+# Common experiment output dirs
+runs/
+outputs/
+wandb/
+lightning_logs/
+
+# Local-only large data / scratch
+downloads/
+tmp_refs/
+reports/
+.vscode/
+GNN_hole/
+GNN_hole_2026/
+
+# Large datasets / experiment logs (keep outside Git)
+GNNlogs/
+4x4trainindata_confirm1/
+BasicdataforGNN/
+Defect*_OneHot_test*/
+Defect_12x12_data/
+Defect_4x4_Normalized1/
+Defect_4x4_Standardized1/
+Defect_4x4_Region1_21_DSPSSoriginal.npy/
+Defect_data_sizechanged/
+Defectlabel4x4/
+Predict_data/
+
