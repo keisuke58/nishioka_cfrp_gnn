@@ -1,0 +1,65 @@
+# .cursorindexingignore
+# This file reduces Cursor's search indexing (not AI access, just indexing)
+# Large data directories and generated files
+
+# Large data directories with many CSV/image files
+DDP_VGAE/
+GNNmodel/
+GNNmodelcsv/
+GNNmodelgraphfig/
+Predict_truth/
+Predict_truth_fig/
+
+# Environment and virtual environments
+GNNEmulEnv/
+venv/
+.venv/
+__pycache__/
+
+# Generated model files and checkpoints
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+
+# Logs and reports
+*.log
+*.out
+*.err
+*.rpt
+reports/
+
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.vtk
+*.vtp
+
+# Large dataset directories (if any)
+GNNlogs/
+4x4trainindata_confirm1/
+BasicdataforGNN/
+Defect*_OneHot_test*/
+Defect_12x12_data/
+Defect_4x4_Normalized1/
+Defect_4x4_Standardized1/
+Defect_4x4_Region1_21_DSPSSoriginal.npy/
+Defect_data_sizechanged/
+Defectlabel4x4/
+Predict_data/
+predictiondatavtk/
+GNN_hole/
+GNN_hole_2026/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Temporary and restore files
+restore_*.txt
+restore_*.err

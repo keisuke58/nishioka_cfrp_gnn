@@ -55,3 +55,10 @@ Defect_data_sizechanged/
 Defectlabel4x4/
 Predict_data/
 
+# Local environments / recovered artifacts
+GNNEmulEnv/
+DDP_VGAE/
+GNNmodel/
+restore_*.txt
+restore_*.err
+
