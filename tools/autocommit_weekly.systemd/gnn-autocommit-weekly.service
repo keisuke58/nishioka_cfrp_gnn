@@ -1,0 +1,8 @@
+[Unit]
+Description=GNN weekly auto commit (local)
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/GNN
+ExecStart=/usr/bin/env python3 %h/GNN/tools/autocommit_weekly.py --interval-days 7
+
