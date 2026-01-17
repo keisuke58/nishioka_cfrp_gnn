@@ -12,6 +12,15 @@ systemctl --user enable --now gnn-autocommit-weekly.timer
 systemctl --user list-timers | grep gnn-autocommit-weekly || true
 ```
 
+### If `systemctl --user` fails (SSH / no user bus): use cron
+
+Some environments don't have a running user-session DBus (`Failed to connect to bus`).
+In that case, use cron (runs as your user, no DBus needed):
+
+```bash
+bash tools/autocommit_weekly.cron/install_cron.sh
+```
+
 ### Dry run
 
 ```bash
