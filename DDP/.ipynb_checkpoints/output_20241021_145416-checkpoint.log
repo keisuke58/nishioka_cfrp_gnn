@@ -1,2 +1,0 @@
-nohup: ignoring input
-OMP_NUM_THREADS=1: ‘CUDA_VISIBLE_DEVICES=0,1,2,3: command not found
