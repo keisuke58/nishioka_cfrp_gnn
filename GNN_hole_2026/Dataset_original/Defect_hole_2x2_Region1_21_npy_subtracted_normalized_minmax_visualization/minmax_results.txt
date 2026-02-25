@@ -1,0 +1,5 @@
+データディレクトリ: /home/nishioka/GNN/GNN_hole_2026/Defect_hole_2x2_Region1_21_npy_subtracted_normalized
+グローバル最小値: 0.0
+最小値を持つファイル: Defect_L11_B197_el2495_H2_W2.npy
+グローバル最大値: 1.0
+最大値を持つファイル: Defect_L8_B236_el3155_H2_W2.npy

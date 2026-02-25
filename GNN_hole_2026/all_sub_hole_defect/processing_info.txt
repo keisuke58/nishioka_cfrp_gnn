@@ -1,0 +1,29 @@
+================================================================================
+引き算処理情報
+================================================================================
+
+【処理日時】
+2026-01-10 03:14:11
+
+【入力情報】
+引き算用ファイル: /home/nishioka/GNN/GNN_hole_2026/DSPSS_8x8/hole_no_defect_original.npy
+引き算用ファイルの形状: (13942,)
+
+【入力ディレクトリ】
+1. /home/nishioka/GNN/GNN_hole_2026/Defect_hole_4x8_Region1_21_npy
+2. /home/nishioka/GNN/GNN_hole_2026/Defect_hole_2x2_Region1_21_npy
+3. /home/nishioka/GNN/GNN_hole_2026/Defect_hole_4x4_Region1_21_npy
+4. /home/nishioka/GNN/GNN_hole_2026/DSPSS_8x8/Defect_hole_8x8_original
+
+【出力情報】
+出力ディレクトリ: /home/nishioka/GNN/GNN_hole_2026/all_subtracted_hole_no_defect
+
+【処理結果】
+処理ファイル数: 14170
+成功: 14169 ファイル
+エラー: 1 ファイル
+
+【エラーファイル一覧】
+  - Defect_L18_B80_el1125_H2_W2.npy: 形状不一致: (6971,) vs (13942,)
+
+================================================================================
