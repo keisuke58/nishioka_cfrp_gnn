@@ -1,0 +1,75 @@
+# GNN Training Configuration Example
+# Copy this file to config.yaml and modify as needed
+
+# Environment paths
+paths:
+  conda_py: "/home/nishioka/miniconda3/envs/gnn_final_env/bin/python"
+  torchrun: "/home/nishioka/miniconda3/envs/gnn_final_env/bin/torchrun"
+  script: "/home/nishioka/GNN/GNN_hole_2026/GNN_program/GNN_zscore_sub_noise_defect_free.py"
+  workdir: "/home/nishioka/GNN/GNN_hole_2026/GNN_program"
+  launcher: "/home/nishioka/GNN/tools/launch_run.py"
+  output_base: "/home/nishioka/GNN/runs"
+
+# Training hyperparameters
+training:
+  profile: "ndf_recommended"
+  dataset_tag: "NDF"
+  epochs: 2000
+  patience: 300
+  batch_size: 64
+  hidden_channels: 16
+  learning_rate: 0.002
+  weight_decay: 5e-4
+  dropout: 0.10
+  edge_drop_prob: 0.01
+  data_usage_ratio: 1.0
+
+# Hardware configuration
+hardware:
+  nproc_per_node: 4
+  omp_num_threads: 4
+
+# Feature flags
+features:
+  use_amp: true
+  use_class_frequency_sampler: true
+  use_onecycle: true
+
+# Logging
+logging:
+  log_level: "INFO"
+  verbose_print: false
+
+# Sweep configuration
+sweep:
+  max_retries: 0  # 0 = disabled, >0 = number of retries
+  retry_delay: 60  # seconds
+
+# Data splitting configuration
+data_splitting:
+  split_type: "iid"  # 'iid', 'defect_size', 'defect_ratio', 'layer'
+  test_ratio: 0.2
+  val_ratio: 0.1
+  seed: 42
+  
+  # OOD分割のパラメータ
+  ood_params:
+    defect_size:
+      size_threshold: 5  # この値以上の欠陥クラス数を持つサンプルをtestに
+    defect_ratio:
+      ratio_threshold: 0.1  # この値以上の欠陥比率を持つサンプルをtestに
+    layer:
+      train_layers: [1, 2, 3]  # これらの層をtrainに、それ以外をtestに
+
+# Cross-edge configuration (Yehia-style surface-to-interior routing)
+cross_edge:
+  enabled: true  # Cross-edgeを使用するか
+  k: 1  # 各ノードからsurfaceノードへのエッジ数
+  surface_method: "outer_layer"  # 'outer_layer' or 'top_p'
+  top_p: 0.1  # surface_method='top_p'の場合の上位p%
+
+# Environment variables
+env:
+  TORCH_DISTRIBUTED_DEBUG: "OFF"
+  NCCL_DEBUG: "WARN"
+  NCCL_ASYNC_ERROR_HANDLING: "1"

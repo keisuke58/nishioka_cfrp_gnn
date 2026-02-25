@@ -1,7 +1,0 @@
-Parameter,Value
-Model,GCNModel
-Learning Rate,0.005
-Batch Size,16
-Epochs,103
-Weight Decay,0.0005
-Patience,50

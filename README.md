@@ -1,0 +1,310 @@
+# GNN Training Framework
+
+Graph Neural Network (GNN) トレーニングフレームワーク
+
+## 概要
+
+このプロジェクトは、GNNモデルのトレーニング、ハイパーパラメータスイープ、結果分析を自動化するためのフレームワークです。
+
+## ディレクトリ構造
+
+```
+GNN/
+├── gnn_common/          # 共通ユーティリティ
+│   ├── config.py       # 設定管理
+│   ├── data_utils.py   # データ処理
+│   ├── models.py       # モデル定義
+│   ├── training_utils.py  # トレーニングユーティリティ
+│   ├── metrics.py      # 評価メトリクス
+│   └── losses.py       # 損失関数
+├── tools/              # ツールスクリプト
+│   ├── launch_run.py   # トレーニングランチャー
+│   ├── analyze_sweeps.py  # スイープ結果分析
+│   ├── visualize_training.py  # 学習曲線可視化
+│   └── config_loader.py  # 設定読み込み
+├── run_train_recommended.sh  # 推奨トレーニングスクリプト
+├── run_sweep_lr.sh     # 学習率スイープスクリプト
+└── config.yaml.example # 設定ファイル例
+```
+
+## ドキュメントマップ
+
+フレームワークの使い方や研究計画は、以下のドキュメントに整理されています。
+
+- `QUICK_START.md` : 最小ステップでの実行方法
+- `USAGE_EXAMPLES.md` : OOD分割・Localization指標・Cross-edge の具体的なコード例
+- `IMPLEMENTATION_GUIDE.md` : 実装の詳細設計と背景
+- `IMPLEMENTATION_SUMMARY.md` : 実装した機能のサマリー
+- `INTEGRATION_GUIDE.md` : 既存スクリプト（例: `GNN_hole_2026` 系）への統合手順
+- `INTEGRATION_SUMMARY.md` : 旧コードベースとの対応付けサマリー
+- `FINETUNING_GUIDE.md` : 事前学習済みモデルのファインチューニング手順
+- `FINETUNING_ANALYSIS.md` / `FINETUNING_RESULTS_COMPARISON.md` : ファインチューニング結果の整理
+- `EXECUTION_ORDER.md` : 推奨する実行順序・ワークフローメモ
+- `NEXT_PLAN.md` / `NEXT_STEPS_COMPLETE.md` : 今後の研究・実装計画
+- `EMAIL_SETUP.md` / `SLACK_SETUP.md` : 通知設定（オプション）
+
+## セットアップ
+
+### 依存関係のインストール
+
+```bash
+# conda環境をアクティベート
+conda activate gnn_final_env
+
+# 分析・可視化ツール用の依存関係（オプション）
+pip install -r requirements.txt
+```
+
+必要なパッケージ:
+- `pandas`: データ分析
+- `matplotlib`, `seaborn`: 可視化
+- `scikit-learn`: メトリクス計算
+- `pyyaml`: 設定ファイル読み込み
+
+## クイックスタート
+
+### 0. 環境変数の設定（推奨）
+
+`.env`ファイルを使用して環境変数を管理することを推奨します。
+
+```bash
+# .env.exampleをコピー
+cp .env.example .env
+
+# .envファイルを編集して値を設定
+vim .env
+```
+
+詳細は `ENV_SETUP.md` を参照してください。
+
+### 0-1. 通知の設定（オプション）
+
+トレーニング完了時に通知を送信できます。メールまたはSlack、または両方を設定可能です。
+
+#### Gmail通知の設定
+
+`.env`ファイルに以下を設定：
+```bash
+GMAIL_FROM="your-email@gmail.com"
+GMAIL_TO="recipient@gmail.com"
+GMAIL_PASSWORD="your-app-password"  # Gmailアプリパスワード
+```
+
+詳細は `EMAIL_SETUP.md` を参照してください。
+
+#### Slack通知の設定
+
+`.env`ファイルに以下を設定：
+```bash
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/XXXXX/YYYYY/ZZZZZ"
+```
+
+詳細は `SLACK_SETUP.md` を参照してください。
+
+### 1. 基本的なトレーニング実行
+
+```bash
+bash run_train_recommended.sh
+```
+
+### 2. ハイパーパラメータのカスタマイズ
+
+環境変数で設定を上書き:
+
+```bash
+LR=0.001 EPOCHS=1000 BATCH_SIZE=32 bash run_train_recommended.sh
+```
+
+### 3. 学習率スイープ
+
+```bash
+bash run_sweep_lr.sh
+```
+
+カスタム学習率でスイープ:
+
+```bash
+LRS="0.001 0.002 0.005 0.01" bash run_sweep_lr.sh
+```
+
+自動リトライ機能付き:
+
+```bash
+MAX_RETRIES=3 RETRY_DELAY=60 bash run_sweep_lr.sh
+```
+
+## 設定管理
+
+### 環境変数による設定
+
+主要な環境変数:
+
+- `LR`: 学習率 (default: 0.002)
+- `EPOCHS`: エポック数 (default: 2000)
+- `BATCH_SIZE`: バッチサイズ (default: 64)
+- `HIDDEN`: 隠れ層のチャネル数 (default: 16)
+- `OUTPUT_BASE`: 出力ディレクトリ (default: /home/nishioka/GNN/runs)
+- `DATASET_TAG`: データセットタグ (default: NDF)
+- `MAX_RETRIES`: 自動リトライ回数 (default: 0 = 無効)
+- `RETRY_DELAY`: リトライ前の待機時間（秒） (default: 60)
+
+### YAML設定ファイル
+
+`config.yaml.example` を `config.yaml` にコピーして編集:
+
+```bash
+cp config.yaml.example config.yaml
+# 編集
+vim config.yaml
+```
+
+## 分析と可視化
+
+### スイープ結果の分析
+
+```bash
+python tools/analyze_sweeps.py --sweep_dir runs/_sweeps --output_dir reports
+```
+
+### 学習曲線の可視化
+
+```bash
+python tools/visualize_training.py --run_dir runs/20250115_abc123
+```
+
+または:
+
+```bash
+python tools/visualize_training.py --metrics_json runs/20250115_abc123/metrics.json
+```
+
+## 主要機能
+
+### 1. 自動リトライ機能
+
+トレーニングが失敗した場合、自動的にリトライ:
+
+```bash
+MAX_RETRIES=3 bash run_sweep_lr.sh
+```
+
+### 2. 結果の自動記録
+
+各実行の結果は以下の形式で記録されます:
+
+- `runs/{run_id}/meta/summary.json`: 実行サマリー
+- `runs/{run_id}/metrics.json`: 詳細メトリクス
+- `runs/{run_id}/logs/train.log`: トレーニングログ
+- `runs/_sweeps/sweep_lr_*.csv`: スイープ結果CSV
+
+### 3. ベストモデルの自動特定
+
+スイープ実行後、最良のモデルが自動的に特定され、レポートに記録されます。
+
+## API ドキュメント
+
+### gnn_common モジュール
+
+#### `gnn_common.models`
+
+- `GCNModel`: Graph Convolutional Network モデル
+- `GATModel`: Graph Attention Network モデル
+
+#### `gnn_common.metrics`
+
+- `metrics_from_confusion_matrix()`: 混同行列からメトリクスを計算
+- `evaluate_and_visualize()`: 評価と可視化
+
+#### `gnn_common.training_utils`
+
+- `set_seed()`: 再現性のためのシード設定
+- `setup()`: 分散学習の初期化
+- `cleanup()`: 分散学習のクリーンアップ
+
+### tools モジュール
+
+#### `tools.launch_run`
+
+トレーニング実行を管理するランチャー。
+
+主要な引数:
+- `--profile`: トレーニングプロファイル名
+- `--run_id`: 実行ID（省略時は自動生成）
+- `--resume`: リジューム動作 (auto|off)
+- `--dry_run`: ドライラン（実行せずにコマンドを表示）
+
+#### `tools.analyze_sweeps`
+
+スイープ結果を分析し、可視化を生成。
+
+主要な引数:
+- `--sweep_csv`: スイープCSVファイルのパス
+- `--sweep_dir`: スイープCSVが含まれるディレクトリ
+- `--output_dir`: 出力ディレクトリ
+
+#### `tools.visualize_training`
+
+学習曲線とメトリクスを可視化。
+
+主要な引数:
+- `--run_dir`: 実行ディレクトリ
+- `--metrics_json`: メトリクスJSONファイルのパス
+- `--output_dir`: 出力ディレクトリ
+
+## トラブルシューティング
+
+### GPUが見つからない
+
+```bash
+# GPUの確認
+python -c "import torch; print(torch.cuda.is_available(), torch.cuda.device_count())"
+
+# GPU数を調整
+NPROC_PER_NODE=1 bash run_train_recommended.sh
+```
+
+### メモリ不足エラー
+
+バッチサイズを減らす:
+
+```bash
+BATCH_SIZE=32 bash run_train_recommended.sh
+```
+
+### 分散学習エラー
+
+NCCLデバッグを有効化:
+
+```bash
+NCCL_DEBUG=INFO bash run_train_recommended.sh
+```
+
+## ベストプラクティス
+
+1. **実験管理**: 各実験に一意の `RUN_ID` を設定
+2. **ログ確認**: 実行後は `runs/{run_id}/logs/train.log` を確認
+3. **リソース監視**: GPU使用率とメモリ使用量を監視
+4. **定期的なバックアップ**: 重要なモデルと結果をバックアップ
+5. **バージョン管理**: コード変更時はGitでコミット
+
+## 関連論文・リポジトリ
+
+本フレームワークは，以下の研究・コードベースを発展させたものです。
+
+- 研究論文  
+  - Nishioka, K., Kojima, Y., Saito, T., Kawakami, K., Washiya, M., & Muramatsu, M. (2025).  
+    *Development of Defect Localization Method for Perforated Carbon-fiber-reinforced Plastic Specimens Using Finite Element Method and Graph Neural Network.*  
+    Frontiers in Materials, Computational Materials Science. Manuscript ID: 1652484.  
+    オンライン版: https://www.frontiersin.org/journals/materials/articles/10.3389/fmats.2025.1652484/full
+
+- もとの単一スクリプト実装  
+  - keisuke58/CFRP_GNN (`code/GNN_noise_each_0913_all.py`)  
+    FEM + GAT ベースの単一スクリプト実装から，本リポジトリでは「再利用しやすい共通フレームワーク」として `gnn_common/` 以下に機能を切り出しています。
+
+## ライセンス
+
+[ライセンス情報を追加]
+
+## 貢献
+
+[貢献ガイドラインを追加]

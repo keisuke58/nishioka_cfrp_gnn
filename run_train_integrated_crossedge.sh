@@ -1,6 +1,6 @@
 #!/bin/sh
 # This script uses bash features (arrays, [[ ]], etc).
-# Make it robust even if invoked as: sh run_train_recommended.sh
+# Make it robust even if invoked as: sh run_train_integrated_crossedge.sh
 if [ -z "${BASH_VERSION:-}" ]; then
   exec bash "$0" "$@"
 fi
@@ -15,20 +15,15 @@ if [[ -f "${SCRIPT_DIR}/.env" ]]; then
     set +a
 fi
 
-# Recommended training launcher for:
-#   /home/nishioka/GNN/GNN_hole_2026/GNN_program/GNN_zscore_sub_noise_defect_free.py
-#
-# Key notes based on the last run (20260115_015448):
-# - Your script default is --data_usage_ratio 0.5, so explicitly set 1.0 for full-data training.
-# - Layer-constraint masking and per-file prediction mapping were fixed in the script; re-run to regenerate outputs.
-#
+# Training launcher for integrated script with Cross-edge enabled
 # Usage:
-#   bash run_train_recommended.sh
+#   bash run_train_integrated_crossedge.sh
 
 CONDA_PY="/home/nishioka/miniconda3/envs/gnn_final_env/bin/python"
 TORCHRUN="/home/nishioka/miniconda3/envs/gnn_final_env/bin/torchrun"
 
-SCRIPT="/home/nishioka/GNN/GNN_hole_2026/GNN_program/GNN_zscore_sub_noise_defect_free.py"
+# 統合版スクリプトを使用
+SCRIPT="/home/nishioka/GNN/GNN_hole_2026/GNN_program/GNN_zscore_sub_noise_defect_free_integrated.py"
 WORKDIR="/home/nishioka/GNN/GNN_hole_2026/GNN_program"
 LAUNCHER="/home/nishioka/GNN/tools/launch_run.py"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -42,7 +37,8 @@ NPROC_PER_NODE="${NPROC_PER_NODE:-4}"
 # Training hyperparams (baseline)
 EPOCHS="${EPOCHS:-2000}"
 PATIENCE="${PATIENCE:-300}"
-BATCH_SIZE="${BATCH_SIZE:-64}"
+# Cross-edge使用時はメモリ使用量が増えるため、バッチサイズを減らす
+BATCH_SIZE="${BATCH_SIZE:-32}"
 HIDDEN="${HIDDEN:-16}"
 # NOTE: 0.01 can be unstable for this setup; use 0.002 as a safer default.
 LR="${LR:-0.002}"
@@ -90,6 +86,9 @@ preflight() {
   [[ -f "$SCRIPT" ]] || die "script not found: $SCRIPT"
   [[ -f "$LAUNCHER" ]] || die "launcher not found: $LAUNCHER"
   [[ -d "$WORKDIR" ]] || die "workdir not found: $WORKDIR"
+  
+  # config.yamlの存在確認
+  [[ -f "${SCRIPT_DIR}/config.yaml" ]] || die "config.yaml not found: ${SCRIPT_DIR}/config.yaml"
 
   # GPU visibility / count check (fail fast if nproc_per_node is impossible).
   NPROC_PER_NODE="$NPROC_PER_NODE" "$CONDA_PY" - <<'PY'
@@ -135,7 +134,7 @@ maybe_autoset_run_id() {
   fi
 
   local lr_s; lr_s="$(slug_num "${LR}")"
-  RUN_ID="${ts}_${git_sha}${git_dirty}_ds${DATASET_TAG}_ep${EPOCHS}_lr${lr_s}"
+  RUN_ID="${ts}_${git_sha}${git_dirty}_ds${DATASET_TAG}_ep${EPOCHS}_lr${lr_s}_crossedge"
   AUTO_RUN_ID=1
 }
 
@@ -151,6 +150,8 @@ echo "[INFO] DRY_RUN: ${DRY_RUN}"
 echo "[INFO] PREFLIGHT_ONLY: ${PREFLIGHT_ONLY}"
 echo "[INFO] LOG_LEVEL: ${LOG_LEVEL}"
 echo "[INFO] VERBOSE_PRINT: ${VERBOSE_PRINT}"
+echo "[INFO] Script: ${SCRIPT}"
+echo "[INFO] Cross-edge: enabled (from config.yaml)"
 
 LOG_DIR="${LOG_DIR:-/home/nishioka/GNN/runs/_logs}"
 mkdir -p "$LOG_DIR"
@@ -190,76 +191,19 @@ if [[ "${PREFLIGHT_ONLY}" == "1" ]]; then
 fi
 
 "$CONDA_PY" "$LAUNCHER" \
-  --profile "$PROFILE" \
-  --torchrun "$TORCHRUN" \
-  --nproc_per_node "$NPROC_PER_NODE" \
-  --script "$SCRIPT" \
-  --workdir "$WORKDIR" \
-  --output_base "$OUTPUT_BASE" \
-  ${RUN_ID:+--run_id "$RUN_ID"} \
-  --resume "$RESUME" \
+  --profile "${PROFILE}" \
+  --torchrun "${TORCHRUN}" \
+  --nproc_per_node "${NPROC_PER_NODE}" \
+  --script "${SCRIPT}" \
+  --workdir "${WORKDIR}" \
+  --output_base "${OUTPUT_BASE}" \
+  ${RUN_ID:+--run_id "${RUN_ID}"} \
+  --resume "${RESUME}" \
   "${launcher_extra[@]}" \
-  -- "${args[@]}" 2>&1 | tee -a "$LOG_FILE"
+  -- \
+  "${args[@]}" \
+  2>&1 | tee "${LOG_FILE}"
 
-FINAL_RUN_ID="$RUN_ID"
-FINAL_RUN_DIR="${OUTPUT_BASE}/${RUN_ID}"
-
-if [[ "${DRY_RUN}" != "1" && "${PREFLIGHT_ONLY}" != "1" && "${AUTO_RUN_ID}" == "1" ]]; then
-  RUN_DIR="${OUTPUT_BASE}/${RUN_ID}"
-  SUMMARY_JSON="${RUN_DIR}/meta/summary.json"
-  if [[ -f "$SUMMARY_JSON" ]]; then
-    F1_TAG="$(
-      SUMMARY_JSON="$SUMMARY_JSON" "$CONDA_PY" - <<'PY'
-import json, os
-p = os.environ["SUMMARY_JSON"]
-with open(p, "r", encoding="utf-8") as f:
-    d = json.load(f)
-f1 = d.get("best_macro_f1", None)
-if f1 is None:
-    print("")
-else:
-    print(("F1" + f"{float(f1):.3f}").replace(".", "p"))
-PY
-    )"
-    if [[ -n "$F1_TAG" ]]; then
-      NEW_RUN_ID="${RUN_ID}_${F1_TAG}"
-      NEW_RUN_DIR="${OUTPUT_BASE}/${NEW_RUN_ID}"
-      if [[ "$NEW_RUN_ID" != "$RUN_ID" && ! -e "$NEW_RUN_DIR" ]]; then
-        mv "$RUN_DIR" "$NEW_RUN_DIR"
-        ln -s "$NEW_RUN_DIR" "$RUN_DIR"
-        FINAL_RUN_ID="$NEW_RUN_ID"
-        FINAL_RUN_DIR="$NEW_RUN_DIR"
-        echo "[INFO] Renamed run dir: ${NEW_RUN_DIR}"
-      fi
-    fi
-  fi
-fi
-
-echo "$FINAL_RUN_DIR" > "${LOG_DIR}/last_run_dir.txt"
-echo "$FINAL_RUN_ID" > "${LOG_DIR}/last_run_id.txt"
-echo "[INFO] FINAL_RUN_ID: ${FINAL_RUN_ID}"
-echo "[INFO] FINAL_RUN_DIR: ${FINAL_RUN_DIR}"
-
-# メール通知（オプション）
-if [[ -n "${GMAIL_TO:-}" && -n "${GMAIL_FROM:-}" && -n "${GMAIL_PASSWORD:-}" ]]; then
-  echo "[INFO] Sending email notification..."
-  "$CONDA_PY" "${SCRIPT_DIR}/tools/email_notify.py" \
-    --to "${GMAIL_TO}" \
-    --from_email "${GMAIL_FROM}" \
-    --password "${GMAIL_PASSWORD}" \
-    --run_dir "${FINAL_RUN_DIR}" \
-    --html \
-    || echo "[WARN] Failed to send email notification"
-fi
-
-# Slack通知（オプション）
-if [[ -n "${SLACK_WEBHOOK_URL:-}" ]]; then
-  echo "[INFO] Sending Slack notification..."
-  "$CONDA_PY" "${SCRIPT_DIR}/tools/slack_notify.py" \
-    --webhook_url "${SLACK_WEBHOOK_URL}" \
-    --run_dir "${FINAL_RUN_DIR}" \
-    || echo "[WARN] Failed to send Slack notification"
-fi
-
-echo "[INFO] Done."
-
+exit_code="${PIPESTATUS[0]}"
+echo "[INFO] Training finished with exit code: ${exit_code}"
+exit "${exit_code}"
