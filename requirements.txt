@@ -14,5 +14,8 @@ scikit-learn>=0.24.0
 # Configuration management
 pyyaml>=5.4.0
 
+# Hyperparameter optimization
+optuna>=3.0.0
+
 # Testing (optional)
 pytest>=6.0.0
