@@ -21,11 +21,13 @@ class DataConfig:
 @dataclass
 class ModelConfig:
     """モデル設定"""
-    model_type: str = "GCN"  # "GCN" or "GAT"
+    model_type: str = "GCN"  # "GCN", "GAT", or "GATMultiTask"
     hidden_channels: int = 128
     num_classes: int = 19
     dropout: float = 0.2
     num_heads: int = 4  # GAT用
+    multitask: bool = False
+    size_weight: float = 0.5  # multi-task時のsize lossの重み
 
 
 @dataclass
