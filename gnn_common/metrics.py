@@ -399,3 +399,90 @@ def calculate_localization_metrics(
         'distance_error': dist_error,
         'auprc': float(auprc)
     }
+
+
+def compute_benchmark_metrics(
+    all_labels: np.ndarray,
+    all_preds: np.ndarray,
+    num_classes: int = 19,
+    all_probs: Optional[np.ndarray] = None,
+    coordinates: Optional[np.ndarray] = None,
+    size_labels: Optional[np.ndarray] = None,
+    size_preds: Optional[np.ndarray] = None,
+) -> Dict[str, any]:
+    """
+    Compute the full standardized benchmark metric suite.
+
+    Composes existing metric functions into a single dict suitable for
+    benchmark comparison tables.
+
+    Args:
+        all_labels: Ground-truth class labels [N]
+        all_preds: Predicted class labels [N]
+        num_classes: Number of classes (default 19)
+        all_probs: Predicted probabilities [N, num_classes] (optional, for top-k / AUPRC)
+        coordinates: Node coordinates [N, 3] (optional, for distance error)
+        size_labels: Ground-truth size class labels [G] (optional, multi-task)
+        size_preds: Predicted size class labels [G] (optional, multi-task)
+
+    Returns:
+        Dictionary with keys:
+            macro_f1, weighted_f1, balanced_accuracy, mcc, accuracy,
+            top_k_accuracy (if all_probs), mean_distance_error (if coordinates),
+            auprc (if all_probs), size_accuracy (if size_labels/preds)
+    """
+    all_labels = np.asarray(all_labels)
+    all_preds = np.asarray(all_preds)
+
+    # --- Core classification metrics from confusion matrix ---
+    cm = confusion_matrix(all_labels, all_preds, labels=list(range(num_classes)))
+    cm_metrics = metrics_from_confusion_matrix(cm)
+
+    result: Dict[str, any] = {
+        "accuracy": cm_metrics["accuracy"],
+        "macro_f1": cm_metrics["macro_f1"],
+        "macro_f1_support_only": cm_metrics["macro_f1_support_only"],
+        "weighted_f1": cm_metrics["weighted_f1"],
+        "weighted_precision": cm_metrics["weighted_precision"],
+        "weighted_recall": cm_metrics["weighted_recall"],
+        "balanced_accuracy": float(balanced_accuracy_score(all_labels, all_preds)),
+        "mcc": float(matthews_corrcoef(all_labels, all_preds)),
+    }
+
+    # --- Localization metrics (require probabilities) ---
+    if all_probs is not None:
+        all_probs = np.asarray(all_probs)
+        top_k = calculate_top_k_accuracy(all_probs, all_labels, top_k_list=[1, 3, 5])
+        result["top_1_accuracy"] = top_k.get(1, np.nan)
+        result["top_3_accuracy"] = top_k.get(3, np.nan)
+        result["top_5_accuracy"] = top_k.get(5, np.nan)
+
+        # AUPRC (binary: defect vs non-defect)
+        defect_class_ids = set(range(1, num_classes))
+        binary_labels = np.array([1 if l in defect_class_ids else 0 for l in all_labels])
+        if len(np.unique(binary_labels)) == 2:
+            defect_probs = all_probs[:, list(defect_class_ids)].sum(axis=1)
+            try:
+                result["auprc"] = float(average_precision_score(binary_labels, defect_probs))
+            except Exception:
+                result["auprc"] = np.nan
+        else:
+            result["auprc"] = np.nan
+
+    # --- Distance error (require probabilities + coordinates) ---
+    if all_probs is not None and coordinates is not None:
+        coordinates = np.asarray(coordinates)
+        dist = calculate_distance_error(all_probs, all_labels, coordinates)
+        result["mean_distance_error"] = dist["mean_distance_error"]
+        result["median_distance_error"] = dist["median_distance_error"]
+
+    # --- Multi-task size accuracy ---
+    if size_labels is not None and size_preds is not None:
+        size_labels = np.asarray(size_labels)
+        size_preds = np.asarray(size_preds)
+        if len(size_labels) > 0:
+            result["size_accuracy"] = float(np.mean(size_labels == size_preds))
+        else:
+            result["size_accuracy"] = np.nan
+
+    return result

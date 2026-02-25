@@ -2994,10 +2994,23 @@ def main(args):
     np.random.shuffle(all_pairs)
     
     # train/val/testに分割
+    # Benchmark: split_manifest が指定されている場合は外部マニフェストを使用
+    split_manifest_path = getattr(args, "split_manifest", None)
+    if split_manifest_path is not None:
+        import json as _json
+        with open(split_manifest_path, "r") as _f:
+            _manifest = _json.load(_f)
+        if rank == 0:
+            print(f"[BENCHMARK] Using external split manifest: {split_manifest_path}")
+            print(f"[BENCHMARK] Split type: {_manifest.get('split_type', 'unknown')}, seed: {_manifest.get('seed', 'N/A')}")
+        train_pairs = [tuple(p[:2]) for p in _manifest["train"]]
+        val_pairs = [tuple(p[:2]) for p in _manifest["val"]]
+        test_pairs = [tuple(p[:2]) for p in _manifest["test"]]
+        train_data_folder_map = {p[0]: p[2] for p in _manifest["train"]}
+        val_data_folder_map = {p[0]: p[2] for p in _manifest["val"]}
+        test_data_folder_map = {p[0]: p[2] for p in _manifest["test"]}
     # 重要: group単位で分割して leakage (val∩test など) をゼロにする
-    enforce_disjoint_groups = getattr(args, "enforce_disjoint_groups", True)
-    group_key = getattr(args, "group_key", "LBel")
-    if enforce_disjoint_groups:
+    elif getattr(args, "enforce_disjoint_groups", True):
         train_pairs, val_pairs, test_pairs, train_data_folder_map, val_data_folder_map, test_data_folder_map = group_disjoint_split(
             all_pairs,
             train_ratio=0.7,
@@ -4696,6 +4709,11 @@ if __name__ == '__main__':
     
     # Step4: File-level threshold optimization from CSV signals
     parser.add_argument('--optimize_file_thresholds', action='store_true', default=False, help='Run file-level threshold optimization from file_statistics CSV signals (default: False). Saves threshold_optimization_*.csv')
+
+    # Benchmark: external split manifest
+    parser.add_argument('--split_manifest', type=str, default=None,
+                        help='JSON file with pre-computed train/val/test file lists (for benchmark runner). '
+                             'When provided, skips internal splitting and uses the manifest lists.')
 
     args = parser.parse_args()
 
