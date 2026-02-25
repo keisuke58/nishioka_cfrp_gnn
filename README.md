@@ -1,31 +1,161 @@
 # GNN Training Framework
 
-Graph Neural Network (GNN) トレーニングフレームワーク
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffmats.2025.1652484-blue.svg)](https://doi.org/10.3389/fmats.2025.1652484)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+Graph Neural Network (GNN) による CFRP 欠陥位置推定のトレーニングフレームワーク
+
+---
+
+## 目次
+
+- [概要](#概要)
+- [研究背景・課題](#研究背景課題)
+- [主な機能](#主な機能)
+- [ディレクトリ構造](#ディレクトリ構造)
+- [クイックスタート](#クイックスタート)
+- [セットアップ](#セットアップ)
+- [論文との対応](#frontiers-2025-実験との対応)
+- [ドキュメント](#ドキュメントマップ)
+- [API リファレンス](#api-ドキュメント)
+- [トラブルシューティング](#トラブルシューティング)
+- [引用](#関連論文リポジトリ)
+
+---
 
 ## 概要
 
-このプロジェクトは、GNNモデルのトレーニング、ハイパーパラメータスイープ、結果分析を自動化するためのフレームワークです。
+このプロジェクトは，**Frontiers in Materials** に掲載された論文  
+**["Development of Defect Localization Method for Perforated Carbon-fiber-reinforced Plastic Specimens Using Finite Element Method and Graph Neural Network"](https://doi.org/10.3389/fmats.2025.1652484) (Nishioka et al., 2025)**  
+の実験コードをベースにした，**汎用 GNN トレーニングフレームワーク** です。
+
+| 項目 | 内容 |
+|------|------|
+| **タスク** | CFRP 穴あき試験片の 3D 欠陥位置推定（19クラス：18層＋欠陥なし） |
+| **入力** | FEM 由来の DSPSS（主応力和）をノード特徴量としたメッシュグラフ |
+| **モデル** | Graph Attention Network (GAT / GATv2), GCN |
+| **用途** | 論文再現・他メッシュへの転用・OOD解析・Localization 評価 |
+
+## 研究背景・課題
+
+CFRP（炭素繊維強化プラスチック）の非破壊検査において，**欠陥の層位置を正確に推定する**ことは重要です。本フレームワークは，
+
+1. **FEM シミュレーション**で得た DSPSS をグラフのノード特徴量として利用
+2. **GAT** により隣接ノード間の関係を学習
+3. **19クラス分類**（層1〜18 + 欠陥なし）で欠陥位置を推定
+
+というパイプラインを実装し，論文実験の再現や，OOD 分割・Top-k 精度・距離誤差などの追加解析を容易にしています。
+
+## 主な機能
+
+- **実験再現**: 論文と同等の前処理・学習パイプライン
+- **OOD 分割**: `iid` / `defect_size` / `defect_ratio` / `layer` による Out-of-Distribution 評価
+- **Localization 指標**: Top-k Accuracy, 距離誤差, AUPRC
+- **Cross-edge**: Surface-to-interior ルーティング（Yehia 方式）
+- **分散学習**: マルチ GPU 対応（torchrun）
+- **実験管理**: スイープ・可視化・通知（メール/Slack）
+
+### パイプライン概要
+
+```
+FEM シミュレーション (DSPSS)
+        ↓
+前処理（差分・正規化・z-score）
+        ↓
+メッシュ → グラフ構築（ノード=要素, エッジ=隣接）
+        ↓
+GAT / GCN で学習
+        ↓
+19クラス分類（層1〜18 + 欠陥なし）
+        ↓
+評価（Accuracy, Macro F1, Top-k, 距離誤差）
+```
+
+### 評価指標
+
+| 指標 | 説明 |
+|------|------|
+| Accuracy / Macro F1 | 分類精度 |
+| Top-k Accuracy | 正解が上位 k 件に含まれる割合 |
+| 距離誤差 | 予測層と正解層の距離（層単位） |
+| AUPRC | 欠陥検出の Precision-Recall 曲線下面積 |
+| MCC | Matthews 相関係数（不均衡データ向け） |
 
 ## ディレクトリ構造
 
 ```
 GNN/
-├── gnn_common/          # 共通ユーティリティ
-│   ├── config.py       # 設定管理
-│   ├── data_utils.py   # データ処理
-│   ├── models.py       # モデル定義
-│   ├── training_utils.py  # トレーニングユーティリティ
-│   ├── metrics.py      # 評価メトリクス
-│   └── losses.py       # 損失関数
-├── tools/              # ツールスクリプト
-│   ├── launch_run.py   # トレーニングランチャー
-│   ├── analyze_sweeps.py  # スイープ結果分析
+├── gnn_common/              # 共通モジュール（データ・モデル・評価）
+│   ├── config.py           # 設定管理
+│   ├── data_utils.py       # データ読み込み・OOD分割・Cross-edge
+│   ├── models.py           # GCN / GAT / GATv2 / Cross-edge 対応モデル
+│   ├── training_utils.py   # シード・分散学習・学習ループ
+│   ├── metrics.py          # 分類・Top-k・距離誤差・AUPRC
+│   └── losses.py           # Ordinal Focal Loss 等
+├── tools/                  # 実験管理・解析ツール
+│   ├── launch_run.py       # トレーニングランチャー
+│   ├── analyze_sweeps.py   # 学習率スイープ解析
 │   ├── visualize_training.py  # 学習曲線可視化
-│   └── config_loader.py  # 設定読み込み
-├── run_train_recommended.sh  # 推奨トレーニングスクリプト
-├── run_sweep_lr.sh     # 学習率スイープスクリプト
-└── config.yaml.example # 設定ファイル例
+│   ├── compare_runs.py     # 実行結果比較
+│   └── config_loader.py    # YAML 設定読み込み
+├── GNN_hole_2026/          # 論文用 CFRP データセット & 前処理・学習
+│   ├── Dataset_original/   # FEM 生データ・正規化結果
+│   └── GNN_program/        # 論文ベースの学習スクリプト
+├── run_train_recommended.sh  # 推奨トレーニング
+├── run_sweep_lr.sh         # 学習率スイープ
+├── config.yaml.example     # 設定例
+├── requirements.txt        # Python 依存関係
+└── runs/                   # 実行結果（自動生成）
 ```
+
+## クイックスタート
+
+```bash
+# 1. 環境構築
+conda activate gnn_final_env
+pip install -r requirements.txt
+
+# 2. 推奨設定でトレーニング
+bash run_train_recommended.sh
+
+# 3. 学習率スイープ
+bash run_sweep_lr.sh
+
+# 4. 結果分析
+python tools/analyze_sweeps.py --sweep_dir runs/_sweeps --output_dir reports
+python tools/visualize_training.py --run_dir runs/<run_id>
+```
+
+詳細は [QUICK_START.md](QUICK_START.md) を参照してください。
+
+---
+
+## Frontiers 2025 実験との対応
+
+論文中の実験と，本リポジトリ内のコードの対応関係は概ね以下の通りです。
+
+- **データセット & 前処理 (`GNN_hole_2026/`)**
+  - `Dataset_original/` : FEM 由来の生データと，各種正規化・差分処理の結果
+  - `normalize_all_subtracted*.py` : 欠陥なし試験片との差分・正規化処理
+  - `subtract_hole_no_defect.py` : 欠陥なし基準からの差分生成
+  - `visualize_normalization_comparison.py`, `visualize_normalized_zscore_spatial.py` : 正規化・ z-score の空間的分布の可視化
+  - `GNN_program/` : 論文用の GNN 学習スクリプト群（元々の単一スクリプト実装をベースにしたもの）
+
+- **共通フレームワーク (`gnn_common/`)**
+  - `data_utils.py` : データ読み込み・前処理・OOD 分割・Cross-edge 生成
+  - `models.py` : GCN / GAT / Cross-edge 対応モデル
+  - `metrics.py` : 分類指標に加え，Top-k / 距離誤差 / AUPRC などの Localization 指標
+  - `training_utils.py` : 乱数シード設定，学習ループ補助，分散学習ヘルパ
+  - `losses.py` : 19 クラス用の損失関数（例：Ordinal Focal Loss など）
+
+- **実験管理 & 解析 (`tools/`, `runs/`, `reports/`)**
+  - `tools/launch_run.py`, `run_train_recommended.sh` : 推奨設定での学習ランチャ
+  - `tools/analyze_sweeps.py` : 学習率スイープ結果の解析
+  - `tools/visualize_training.py` : 学習曲線やメトリクスの可視化
+
+詳細は `IMPLEMENTATION_GUIDE.md`, `INTEGRATION_GUIDE.md`, `USAGE_EXAMPLES.md` を参照してください。
 
 ## ドキュメントマップ
 
@@ -45,6 +175,12 @@ GNN/
 
 ## セットアップ
 
+### 必要な環境
+
+- Python 3.8+
+- PyTorch 2.0+（CUDA 対応推奨）
+- conda 環境 `gnn_final_env`（または同等）
+
 ### 依存関係のインストール
 
 ```bash
@@ -61,9 +197,7 @@ pip install -r requirements.txt
 - `scikit-learn`: メトリクス計算
 - `pyyaml`: 設定ファイル読み込み
 
-## クイックスタート
-
-### 0. 環境変数の設定（推奨）
+### 環境変数の設定（推奨）
 
 `.env`ファイルを使用して環境変数を管理することを推奨します。
 
@@ -77,7 +211,7 @@ vim .env
 
 詳細は `ENV_SETUP.md` を参照してください。
 
-### 0-1. 通知の設定（オプション）
+### 通知の設定（オプション）
 
 トレーニング完了時に通知を送信できます。メールまたはSlack、または両方を設定可能です。
 
@@ -100,6 +234,8 @@ SLACK_WEBHOOK_URL="https://hooks.slack.com/services/XXXXX/YYYYY/ZZZZZ"
 ```
 
 詳細は `SLACK_SETUP.md` を参照してください。
+
+## 実行手順
 
 ### 1. 基本的なトレーニング実行
 
@@ -294,8 +430,23 @@ NCCL_DEBUG=INFO bash run_train_recommended.sh
 - 研究論文  
   - Nishioka, K., Kojima, Y., Saito, T., Kawakami, K., Washiya, M., & Muramatsu, M. (2025).  
     *Development of Defect Localization Method for Perforated Carbon-fiber-reinforced Plastic Specimens Using Finite Element Method and Graph Neural Network.*  
-    Frontiers in Materials, Computational Materials Science. Manuscript ID: 1652484.  
+    Frontiers in Materials (Computational Materials Science). Manuscript ID: 1652484.  
+    DOI: 10.3389/fmats.2025.1652484  
     オンライン版: https://www.frontiersin.org/journals/materials/articles/10.3389/fmats.2025.1652484/full
+
+  **引用用 BibTeX**
+
+  ```text
+  @article{Nishioka2025CFRP,
+    title   = {Development of Defect Localization Method for Perforated Carbon-fiber-reinforced Plastic Specimens Using Finite Element Method and Graph Neural Network},
+    author  = {Nishioka, Keisuke and Kojima, Yuta and Saito, Toshiya and Kawakami, Kosuke and Washiya, Masahito and Muramatsu, Mayu},
+    journal = {Frontiers in Materials},
+    year    = {2025},
+    doi     = {10.3389/fmats.2025.1652484},
+    note    = {Section: Computational Materials Science, Manuscript ID: 1652484},
+    publisher = {Frontiers Media S.A.}
+  }
+  ```
 
 - もとの単一スクリプト実装  
   - keisuke58/CFRP_GNN (`code/GNN_noise_each_0913_all.py`)  
@@ -303,8 +454,9 @@ NCCL_DEBUG=INFO bash run_train_recommended.sh
 
 ## ライセンス
 
-[ライセンス情報を追加]
+本プロジェクトは論文と同様に **CC BY 4.0**（Creative Commons Attribution 4.0 International）で提供しています。  
+利用・改変・再配布は自由ですが、適切な引用表記が必要です。
 
 ## 貢献
 
-[貢献ガイドラインを追加]
+バグ報告・機能提案・プルリクエストを歓迎します。変更を加える場合は、既存のコードスタイルとドキュメント方針に従ってください。

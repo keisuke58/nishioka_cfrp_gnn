@@ -730,6 +730,190 @@ def visualize_split_statistics(
     plt.close()
 
 
+# ---------------------------------------------------------------------------
+# Group-disjoint split utilities (extracted from GNN_zscore_sub_noise_defect_free.py)
+# ---------------------------------------------------------------------------
+_RE_DEFECT = re.compile(r"Defect_L(?P<L>\d+)_B(?P<B>\d+)_el(?P<el>\d+)")
+_RE_NDF = re.compile(r"NoiseDefectFree_(?P<id>\d+)")
+
+
+def group_id_from_filename(filename: str, group_key: str = "LBel") -> str:
+    """
+    Derive a group id string from a sample filename for leakage-free splitting.
+
+    Supported:
+    - Defect_L{L}_B{B}_el{el}_... -> keys: L, B, el, LB, LBel (default)
+    - NoiseDefectFree_000123...    -> NDF:{id}
+    """
+    fn = str(filename)
+    if fn.startswith("NoiseDefectFree_"):
+        m = _RE_NDF.search(fn)
+        return f"NDF:{m.group('id')}" if m else f"NDF:{fn}"
+
+    m = _RE_DEFECT.search(fn)
+    if not m:
+        return fn
+
+    L = m.group("L")
+    B = m.group("B")
+    el = m.group("el")
+    key = str(group_key)
+    if key == "L":
+        return f"L{L}"
+    if key == "B":
+        return f"B{B}"
+    if key == "el":
+        return f"el{el}"
+    if key == "LB":
+        return f"L{L}_B{B}"
+    # default: Layer+Block+element
+    return f"L{L}_B{B}_el{el}"
+
+
+def group_disjoint_split(
+    all_pairs_with_dir,
+    train_ratio: float = 0.7,
+    val_ratio: float = 0.15,
+    test_ratio: float = 0.15,
+    *,
+    group_key: str = "LBel",
+    seed: int = 42,
+):
+    """
+    Split samples into train/val/test ensuring **no group id overlaps** across splits.
+
+    Args:
+        all_pairs_with_dir: list of tuples (data_file, label_file, data_dir)
+        train_ratio/val_ratio/test_ratio: target ratios (by sample count)
+        group_key: grouping key for leakage prevention (e.g., LBel)
+        seed: RNG seed for reproducible group shuffle
+
+    Returns:
+        train_pairs, val_pairs, test_pairs, train_map, val_map, test_map
+    """
+    pairs = list(all_pairs_with_dir)
+    if len(pairs) == 0:
+        return [], [], [], {}, {}, {}
+
+    # Normalize ratios
+    tr = float(train_ratio)
+    vr = float(val_ratio)
+    ter = float(test_ratio)
+    s = tr + vr + ter
+    if s <= 0:
+        raise ValueError("split ratios must sum to > 0")
+    tr, vr, ter = tr / s, vr / s, ter / s
+
+    # Group items
+    group_to_items = {}
+    for data_file, label_file, data_dir in pairs:
+        gid = group_id_from_filename(data_file, group_key=group_key)
+        group_to_items.setdefault(gid, []).append((data_file, label_file, data_dir))
+
+    # Shuffle groups deterministically
+    rng = np.random.RandomState(seed)
+    group_ids = list(group_to_items.keys())
+    rng.shuffle(group_ids)
+
+    total = len(pairs)
+    target_train = int(total * tr)
+    target_val = int(total * vr)
+    target_test = total - target_train - target_val
+
+    train_items = []
+    val_items = []
+    test_items = []
+
+    # Greedy fill by group while keeping disjointness by construction
+    for gid in group_ids:
+        items = group_to_items[gid]
+        rem_train = target_train - len(train_items)
+        rem_val = target_val - len(val_items)
+        rem_test = target_test - len(test_items)
+
+        choices = []
+        if rem_train > 0:
+            choices.append(("train", rem_train))
+        if rem_val > 0:
+            choices.append(("val", rem_val))
+        if rem_test > 0:
+            choices.append(("test", rem_test))
+        if choices:
+            bucket = max(choices, key=lambda x: x[1])[0]
+        else:
+            sizes = [("train", len(train_items)), ("val", len(val_items)), ("test", len(test_items))]
+            bucket = min(sizes, key=lambda x: x[1])[0]
+
+        if bucket == "train":
+            train_items.extend(items)
+        elif bucket == "val":
+            val_items.extend(items)
+        else:
+            test_items.extend(items)
+
+    # Post-adjust: ensure exact counts when possible by moving whole groups
+    def _bucketize(items_):
+        m = {}
+        for a, b, c in items_:
+            gid = group_id_from_filename(a, group_key=group_key)
+            m.setdefault(gid, []).append((a, b, c))
+        return m
+
+    train_g = _bucketize(train_items)
+    val_g = _bucketize(val_items)
+    test_g = _bucketize(test_items)
+
+    def _flatten(gmap):
+        out = []
+        for gid in gmap:
+            out.extend(gmap[gid])
+        return out
+
+    def _rebalance(source_map, dest_map, dest_target):
+        moved = 0
+        if len(_flatten(dest_map)) >= dest_target:
+            return moved
+        gids = sorted(source_map.keys(), key=lambda k: len(source_map[k]), reverse=True)
+        for gid in gids:
+            if len(_flatten(dest_map)) >= dest_target:
+                break
+            dest_map[gid] = source_map.pop(gid)
+            moved += 1
+        return moved
+
+    def _size(gmap):
+        return len(_flatten(gmap))
+
+    for _ in range(3):
+        sizes = {"train": _size(train_g), "val": _size(val_g), "test": _size(test_g)}
+        if sizes["val"] < target_val:
+            src = "train" if sizes["train"] > sizes["test"] else "test"
+            _rebalance(train_g if src == "train" else test_g, val_g, target_val)
+        sizes = {"train": _size(train_g), "val": _size(val_g), "test": _size(test_g)}
+        if sizes["test"] < target_test:
+            src = "train" if sizes["train"] > sizes["val"] else "val"
+            _rebalance(train_g if src == "train" else val_g, test_g, target_test)
+        sizes = {"train": _size(train_g), "val": _size(val_g), "test": _size(test_g)}
+        if sizes["train"] < target_train:
+            src = "val" if sizes["val"] > sizes["test"] else "test"
+            _rebalance(val_g if src == "val" else test_g, train_g, target_train)
+
+    # Final flatten
+    train_items = _flatten(train_g)
+    val_items = _flatten(val_g)
+    test_items = _flatten(test_g)
+
+    train_pairs = [(a, b) for a, b, _ in train_items]
+    val_pairs = [(a, b) for a, b, _ in val_items]
+    test_pairs = [(a, b) for a, b, _ in test_items]
+
+    train_map = {a: d for a, _, d in train_items}
+    val_map = {a: d for a, _, d in val_items}
+    test_map = {a: d for a, _, d in test_items}
+
+    return train_pairs, val_pairs, test_pairs, train_map, val_map, test_map
+
+
 def identify_surface_nodes(
     coordinates: np.ndarray,  # [N, 3]
     z_coords: np.ndarray,     # [N] z座標（層方向）
