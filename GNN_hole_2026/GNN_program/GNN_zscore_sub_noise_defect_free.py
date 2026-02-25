@@ -3011,6 +3011,7 @@ def main(args):
         test_data_folder_map = {p[0]: p[2] for p in _manifest["test"]}
     # 重要: group単位で分割して leakage (val∩test など) をゼロにする
     elif getattr(args, "enforce_disjoint_groups", True):
+        group_key = getattr(args, "group_key", "LBel")
         train_pairs, val_pairs, test_pairs, train_data_folder_map, val_data_folder_map, test_data_folder_map = group_disjoint_split(
             all_pairs,
             train_ratio=0.7,
