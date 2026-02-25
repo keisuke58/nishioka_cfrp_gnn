@@ -1,0 +1,91 @@
+# Hyperparameter optimization configuration
+# Usage: python tools/optuna_hpo.py --config tools/hpo_config.yaml
+
+hpo:
+  study_name: "cfrp_hpo_v1"
+  n_trials: 20
+  direction: "maximize"
+  metric: "macro_f1"  # key in metrics.json -> best -> macro_f1
+
+  # Optuna pruner (MedianPruner: prune trials performing below median)
+  pruner:
+    type: "median"
+    n_startup_trials: 5     # don't prune first N trials
+    n_warmup_steps: 50      # don't prune before N epochs
+
+  # Optuna sampler
+  sampler:
+    type: "tpe"  # Tree-structured Parzen Estimator
+    seed: 42
+
+  # Search space definition
+  search_space:
+    learning_rate:
+      type: log_float
+      low: 5.0e-4
+      high: 5.0e-3
+    batch_size:
+      type: categorical
+      choices: [32, 64, 128]
+    hidden_channels:
+      type: categorical
+      choices: [16, 32, 64]
+    dropout:
+      type: float
+      low: 0.05
+      high: 0.25
+    gamma:
+      type: float
+      low: 2.0
+      high: 5.0
+    weight_decay:
+      type: log_float
+      low: 1.0e-4
+      high: 1.0e-3
+    edge_drop_prob:
+      type: float
+      low: 0.0
+      high: 0.05
+    use_logit_adjust:
+      type: categorical
+      choices: [true, false]
+
+  # Parameters fixed across all trials
+  fixed_params:
+    epochs: 500
+    patience: 100
+    use_amp: true
+    use_class_frequency_sampler: true
+    data_usage_ratio: 1.0
+
+  # Hardware
+  hardware:
+    nproc_per_node: 4
+
+  # Output
+  output:
+    base_dir: "runs"
+    study_db_dir: "runs/hpo_studies"
+
+# Fine-tuning comparison mode
+finetune:
+  pretrained_from: null  # path to pretrained model (override via CLI)
+  strategies:
+    - name: "freeze_backbone"
+      args:
+        freeze_backbone: true
+        head_lr: 0.001
+        epochs: 500
+        patience: 150
+    - name: "differential_lr"
+      args:
+        backbone_lr: 0.0001
+        head_lr: 0.001
+        epochs: 1000
+        patience: 200
+    - name: "higher_lr"
+      args:
+        learning_rate: 0.0005
+        epochs: 1000
+        patience: 200
+  seeds: [42, 84, 126]

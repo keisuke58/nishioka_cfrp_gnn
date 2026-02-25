@@ -13,6 +13,7 @@ import argparse
 import csv
 import json
 from pathlib import Path
+from typing import Optional
 from typing import Any, Dict, List, Optional
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -178,15 +179,86 @@ def generate_summary_report(df: pd.DataFrame, best_model: Dict[str, Any], output
     print(f"[INFO] Saved: {txt_path}")
 
 
+def load_optuna_study(study_db_path: str, study_name: Optional[str] = None) -> pd.DataFrame:
+    """Load trials from an Optuna SQLite study database as a DataFrame.
+
+    Args:
+        study_db_path: Path to the .db file (SQLite)
+        study_name: Study name (if None, uses the first study found)
+
+    Returns:
+        DataFrame with columns similar to sweep CSVs for unified analysis
+    """
+    try:
+        import optuna
+    except ImportError:
+        print("[ERR] optuna is required for --optuna_db. pip install optuna")
+        return pd.DataFrame()
+
+    storage = f"sqlite:///{Path(study_db_path).resolve()}"
+    studies = optuna.study.get_all_study_summaries(storage)
+    if not studies:
+        print(f"[WARN] No studies found in {study_db_path}")
+        return pd.DataFrame()
+
+    if study_name is None:
+        study_name = studies[0].study_name
+        print(f"[INFO] Using study: {study_name}")
+
+    study = optuna.load_study(study_name=study_name, storage=storage)
+    df = study.trials_dataframe()
+
+    if df.empty:
+        return df
+
+    # Rename columns to match sweep CSV format for unified analysis
+    rename_map = {}
+    for col in df.columns:
+        if col.startswith("params_"):
+            rename_map[col] = col.replace("params_", "")
+    df = df.rename(columns=rename_map)
+
+    if "value" in df.columns:
+        df["best_macro_f1"] = df["value"]
+    if "number" in df.columns:
+        df["run_id"] = df["number"].apply(lambda n: f"trial_{n:03d}")
+
+    return df
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Analyze hyperparameter sweep results")
     parser.add_argument('--sweep_csv', type=str, nargs='+', help='Path(s) to sweep CSV file(s)')
     parser.add_argument('--sweep_dir', type=str, help='Directory containing sweep CSV files')
+    parser.add_argument('--optuna_db', type=str, help='Path to Optuna SQLite study database (.db)')
+    parser.add_argument('--study_name', type=str, default=None, help='Optuna study name (default: first)')
     parser.add_argument('--output_dir', type=str, default='reports', help='Output directory for reports')
     parser.add_argument('--pattern', type=str, default='sweep_*.csv', help='File pattern for sweep CSVs')
-    
+
     args = parser.parse_args()
     
+    # Optuna DB mode
+    if args.optuna_db:
+        db_path = Path(args.optuna_db).expanduser().resolve()
+        if not db_path.exists():
+            print(f"[ERR] Optuna DB not found: {db_path}")
+            return 1
+        combined_df = load_optuna_study(str(db_path), args.study_name)
+        if combined_df.empty:
+            print("[ERR] No trials found in Optuna study")
+            return 1
+        print(f"[INFO] Loaded {len(combined_df)} trials from Optuna study")
+        output_dir = Path(args.output_dir)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        best_model = find_best_model(combined_df)
+        if best_model:
+            print(f"[INFO] Best model: {best_model['run_id']} (F1: {best_model.get('best_macro_f1', 'N/A')})")
+        plot_learning_rate_comparison(combined_df, output_dir)
+        plot_hyperparameter_heatmap(combined_df, output_dir)
+        generate_summary_report(combined_df, best_model, output_dir)
+        print(f"[INFO] Analysis complete. Output directory: {output_dir}")
+        return 0
+
     # Collect CSV files
     csv_files: List[Path] = []
     if args.sweep_csv:
@@ -201,7 +273,7 @@ def main() -> int:
         sweep_dir = Path(args.sweep_dir)
         csv_files = list(sweep_dir.glob(args.pattern))
     else:
-        parser.error("Either --sweep_csv or --sweep_dir must be provided")
+        parser.error("Either --sweep_csv, --sweep_dir, or --optuna_db must be provided")
     
     if not csv_files:
         print("[ERR] No CSV files found")
