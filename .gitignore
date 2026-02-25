@@ -40,8 +40,6 @@ downloads/
 tmp_refs/
 reports/
 .vscode/
-GNN_hole/
-GNN_hole_2026/
 
 # Large datasets / experiment logs (keep outside Git)
 GNNlogs/
