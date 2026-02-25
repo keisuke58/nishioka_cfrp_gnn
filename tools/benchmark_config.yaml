@@ -1,0 +1,61 @@
+# Benchmark configuration for CFRP GNN defect localization
+# Usage: python tools/benchmark.py --config tools/benchmark_config.yaml
+
+benchmark:
+  name: "cfrp_gnn_benchmark_v1"
+  description: "CFRP defect localization GNN reproducible benchmark"
+
+  # Fixed seeds for reproducibility (each split_type is run with each seed)
+  seeds: [42, 84, 126]
+
+  # Split strategies to evaluate
+  split_types:
+    - type: "iid"
+    - type: "defect_size"
+      params:
+        size_threshold: 5
+    - type: "layer"
+      params:
+        train_layers: [1, 2, 3, 4, 5]
+
+  # Model configurations to benchmark
+  models:
+    - name: "GAT_base"
+      args:
+        hidden_channels: 16
+        learning_rate: 0.002
+        epochs: 500
+        patience: 100
+        batch_size: 64
+        dropout: 0.10
+        edge_drop: 0.01
+        use_amp: true
+        use_class_frequency_sampler: true
+
+  # Primary and secondary metrics for comparison
+  metrics:
+    primary: "macro_f1"
+    secondary:
+      - "weighted_f1"
+      - "balanced_accuracy"
+      - "mcc"
+      - "top_1_accuracy"
+      - "top_3_accuracy"
+      - "top_5_accuracy"
+      - "mean_distance_error"
+      - "auprc"
+
+  # Hardware settings
+  hardware:
+    nproc_per_node: 4
+
+  # Data paths (relative to project root)
+  data:
+    data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore"
+    label_dir: "GNN_hole_2026/all_19class_label"
+    num_classes: 19
+
+  # Output
+  output:
+    base_dir: "runs"
+    prefix: "bench"
