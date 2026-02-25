@@ -13,6 +13,27 @@ from sklearn.neighbors import NearestNeighbors
 VERBOSE_PRINT = int(os.environ.get("VERBOSE_PRINT", "0") or "0")
 
 
+def extract_size_class(filename):
+    """ファイル名から欠陥サイズクラスを抽出
+
+    Args:
+        filename: データファイル名（例: "L1_B1_el1_H2_W2.npy"）
+
+    Returns:
+        int: 0 (H2_W2=small), 1 (H4_W4=medium), 2 (H8_W8=large), -1 (除外)
+    """
+    SIZE_MAP = {
+        ('2', '2'): 0,  # small
+        ('4', '4'): 1,  # medium
+        ('8', '8'): 2,  # large
+    }
+    match = re.search(r'H(\d+)_W(\d+)', filename)
+    if match:
+        key = (match.group(1), match.group(2))
+        return SIZE_MAP.get(key, -1)
+    return -1
+
+
 def extract_layer_block(file_name):
     """ファイル名から層とブロック番号を抽出（すべてのH_Wサイズに対応）
     
@@ -306,6 +327,9 @@ def prepare_data(pairs, normalized_data_folder, label_data_folder,
         # ファイル名を保存（推論時の対応付けのため）
         data.filename = data_file
         
+        # 欠陥サイズクラスを付与（multi-task学習用）
+        data.size_class = extract_size_class(data_file)
+
         # ファイル単位のminority_ratioを計算して保存（sampler用）
         # minority_ratio = 1 - (count0 / N) で、高いほどminorityが多い
         unique_labels, counts = torch.unique(y, return_counts=True)
@@ -313,7 +337,7 @@ def prepare_data(pairs, normalized_data_folder, label_data_folder,
         count0 = counts[unique_labels == 0].item() if 0 in unique_labels else 0
         minority_ratio = 1.0 - (count0 / total_nodes) if total_nodes > 0 else 0.0
         data.minority_ratio = minority_ratio
-        
+
         data_list.append(data)
         if return_class_weights:
             labels.extend(y.tolist())

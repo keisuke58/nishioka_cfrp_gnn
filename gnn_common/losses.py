@@ -170,3 +170,47 @@ class FocalLossLogSoftmax(nn.Module):
             return loss.sum()
         else:
             return loss
+
+
+class MultiTaskLoss(nn.Module):
+    """Multi-task loss: 位置分類 + 欠陥サイズ分類
+
+    Args:
+        location_loss_fn: 位置分類用の損失関数（LogitAdjustLoss, FocalLossLogSoftmax 等）
+        size_weight: size loss の重み（デフォルト 0.5）
+    """
+
+    def __init__(self, location_loss_fn, size_weight=0.5):
+        super(MultiTaskLoss, self).__init__()
+        self.location_loss_fn = location_loss_fn
+        self.size_loss_fn = nn.CrossEntropyLoss()
+        self.size_weight = size_weight
+
+    def forward(self, outputs, location_target, size_labels):
+        """
+        Args:
+            outputs: dict {"location": [N, 19], "size": [G, 3]}
+            location_target: [N] ノード単位のクラスインデックス
+            size_labels: [G] グラフ単位のサイズクラス（-1 = 除外）
+
+        Returns:
+            total_loss, dict with individual losses for logging
+        """
+        location_loss = self.location_loss_fn(outputs["location"], location_target)
+
+        # size_class == -1 のグラフを除外
+        size_mask = size_labels >= 0
+        if size_mask.any():
+            size_loss = self.size_loss_fn(
+                outputs["size"][size_mask], size_labels[size_mask]
+            )
+        else:
+            size_loss = torch.tensor(0.0, device=location_loss.device)
+
+        total_loss = location_loss + self.size_weight * size_loss
+
+        return total_loss, {
+            "location_loss": location_loss.detach(),
+            "size_loss": size_loss.detach() if isinstance(size_loss, torch.Tensor) else size_loss,
+            "total_loss": total_loss.detach(),
+        }

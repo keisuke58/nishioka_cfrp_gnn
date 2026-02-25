@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv, GATConv
+from torch_geometric.nn import GCNConv, GATConv, global_mean_pool
 
 
 class GCNModel(torch.nn.Module):
@@ -159,7 +159,7 @@ class GATModelWithCrossEdges(torch.nn.Module):
         if self.use_edge_type and hasattr(data, 'edge_type'):
             # 将来の実装: エッジタイプに応じた重み付けなど
             pass
-        
+
         x = F.relu(self.conv1(x, edge_index))
         x = self.dropout(x)
         x = F.relu(self.conv2(x, edge_index))
@@ -169,3 +169,93 @@ class GATModelWithCrossEdges(torch.nn.Module):
         x = F.relu(self.conv4(x, edge_index))
         x = self.fc(x)
         return x
+
+
+class GATMultiTaskModel(torch.nn.Module):
+    """Multi-task GAT: 位置分類（ノード単位）+ 欠陥サイズ分類（グラフ単位）
+
+    共有GATバックボーン（4層）から2つのヘッドに分岐:
+      - head_location: Linear → [N, num_classes] （ノード単位、既存GATModelと同等）
+      - head_size: global_mean_pool → Linear → [G, num_size_classes] （グラフ単位）
+    """
+
+    def __init__(
+        self,
+        hidden_channels=64,
+        num_classes=19,
+        num_size_classes=3,
+        num_heads=4,
+        dropout=0.2,
+    ):
+        super(GATMultiTaskModel, self).__init__()
+        self.conv1 = GATConv(4, hidden_channels, heads=num_heads, concat=True)
+        self.conv2 = GATConv(hidden_channels * num_heads, hidden_channels * 2, heads=num_heads, concat=True)
+        self.conv3 = GATConv(hidden_channels * 2 * num_heads, hidden_channels, heads=num_heads, concat=True)
+        self.conv4 = GATConv(hidden_channels * num_heads, hidden_channels, heads=num_heads, concat=True)
+        self.dropout = nn.Dropout(p=dropout)
+
+        backbone_out = hidden_channels * num_heads
+        self.head_location = nn.Linear(backbone_out, num_classes)
+        self.head_size = nn.Linear(backbone_out, num_size_classes)
+
+        self.init_weights()
+
+    def init_weights(self):
+        """Xavier初期化を適用"""
+        for module in self.modules():
+            if isinstance(module, nn.Linear):
+                nn.init.xavier_uniform_(module.weight)
+                if module.bias is not None:
+                    nn.init.constant_(module.bias, 0)
+            elif isinstance(module, GATConv):
+                if hasattr(module, 'lin_src') and module.lin_src is not None:
+                    nn.init.xavier_uniform_(module.lin_src.weight)
+                    if module.lin_src.bias is not None:
+                        nn.init.constant_(module.lin_src.bias, 0)
+                if hasattr(module, 'lin_dst') and module.lin_dst is not None:
+                    nn.init.xavier_uniform_(module.lin_dst.weight)
+                    if module.lin_dst.bias is not None:
+                        nn.init.constant_(module.lin_dst.bias, 0)
+                if hasattr(module, 'att_src') and module.att_src is not None:
+                    nn.init.xavier_uniform_(module.att_src)
+                if hasattr(module, 'att_dst') and module.att_dst is not None:
+                    nn.init.xavier_uniform_(module.att_dst)
+
+    def _backbone(self, x, edge_index):
+        """共有GATバックボーン"""
+        x = F.relu(self.conv1(x, edge_index))
+        x = self.dropout(x)
+        x = F.relu(self.conv2(x, edge_index))
+        x = self.dropout(x)
+        x = F.relu(self.conv3(x, edge_index))
+        x = self.dropout(x)
+        x = F.relu(self.conv4(x, edge_index))
+        return x
+
+    def forward(self, data, multitask=True):
+        """
+        Args:
+            data: PyG Data / Batch オブジェクト
+            multitask: Falseの場合、既存GATModelと同じ単一テンソル出力
+
+        Returns:
+            multitask=True:  dict {"location": [N, 19], "size": [G, 3]}
+            multitask=False: Tensor [N, 19] （後方互換）
+        """
+        x, edge_index = data.x, data.edge_index
+        batch = data.batch if hasattr(data, 'batch') else None
+
+        shared = self._backbone(x, edge_index)
+
+        location_out = self.head_location(shared)
+
+        if not multitask:
+            return location_out
+
+        if batch is None:
+            batch = torch.zeros(shared.size(0), dtype=torch.long, device=shared.device)
+
+        graph_emb = global_mean_pool(shared, batch)
+        size_out = self.head_size(graph_emb)
+
+        return {"location": location_out, "size": size_out}
