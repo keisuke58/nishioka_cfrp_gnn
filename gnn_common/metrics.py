@@ -59,6 +59,12 @@ def metrics_from_confusion_matrix(cm: np.ndarray, eps: float = 1e-12):
     weighted_recall = float((recall * support).sum() / (total + eps)) if total > 0 else 0.0
     weighted_f1 = float((f1 * support).sum() / (total + eps)) if total > 0 else 0.0
 
+    # M1-3: 層別F1 (Layer1: classes 1-9, Layer2: classes 10-18)
+    layer1_mask = (np.arange(len(f1)) >= 1) & (np.arange(len(f1)) <= 9) & (support > 0)
+    layer2_mask = (np.arange(len(f1)) >= 10) & (np.arange(len(f1)) <= 18) & (support > 0)
+    layer1_macro_f1 = float(f1[layer1_mask].mean()) if np.any(layer1_mask) else None
+    layer2_macro_f1 = float(f1[layer2_mask].mean()) if np.any(layer2_mask) else None
+
     return {
         "accuracy": float(accuracy),
         "precision_per_class": precision,
@@ -74,6 +80,9 @@ def metrics_from_confusion_matrix(cm: np.ndarray, eps: float = 1e-12):
         "weighted_precision": weighted_precision,
         "weighted_recall": weighted_recall,
         "weighted_f1": weighted_f1,
+        # M1-3: 層別F1
+        "layer1_macro_f1": layer1_macro_f1,
+        "layer2_macro_f1": layer2_macro_f1,
     }
 
 
@@ -447,6 +456,9 @@ def compute_benchmark_metrics(
         "weighted_recall": cm_metrics["weighted_recall"],
         "balanced_accuracy": float(balanced_accuracy_score(all_labels, all_preds)),
         "mcc": float(matthews_corrcoef(all_labels, all_preds)),
+        # M1-3: 層別F1
+        "layer1_macro_f1": cm_metrics.get("layer1_macro_f1"),
+        "layer2_macro_f1": cm_metrics.get("layer2_macro_f1"),
     }
 
     # --- Localization metrics (require probabilities) ---
@@ -476,6 +488,9 @@ def compute_benchmark_metrics(
         result["mean_distance_error"] = dist["mean_distance_error"]
         result["median_distance_error"] = dist["median_distance_error"]
 
+    # --- M1-3: サイズ別F1 (batch + size_class がある場合) ---
+    # 呼び出し側で compute_size_wise_f1 を別途呼ぶ想定
+
     # --- Multi-task size accuracy ---
     if size_labels is not None and size_preds is not None:
         size_labels = np.asarray(size_labels)
@@ -486,3 +501,48 @@ def compute_benchmark_metrics(
             result["size_accuracy"] = np.nan
 
     return result
+
+
+def compute_size_wise_f1(
+    labels: np.ndarray,
+    preds: np.ndarray,
+    batch: np.ndarray,
+    size_classes: np.ndarray,
+    size_names: Optional[Dict[int, str]] = None,
+) -> Dict[str, float]:
+    """
+    M1-3: サイズ別マクロF1を計算
+
+    Args:
+        labels: ノード正解ラベル [N]
+        preds: ノード予測ラベル [N]
+        batch: ノード→グラフインデックス [N]
+        size_classes: グラフごとのサイズクラス [G] (0=small, 1=medium, 2=large, -1=不明)
+        size_names: サイズクラスID→名前のマッピング (default: {0:"small", 1:"medium", 2:"large"})
+
+    Returns:
+        {"small": f1, "medium": f1, "large": f1} (該当サンプルがないキーは None)
+    """
+    if size_names is None:
+        size_names = {0: "small", 1: "medium", 2: "large"}
+    labels = np.asarray(labels)
+    preds = np.asarray(preds)
+    batch = np.asarray(batch)
+    size_classes = np.asarray(size_classes)
+    out = {}
+    for sc, name in size_names.items():
+        mask = (size_classes == sc)
+        graph_indices = np.where(mask)[0]
+        if len(graph_indices) == 0:
+            out[name] = None
+            continue
+        node_mask = np.isin(batch, graph_indices)
+        if not np.any(node_mask):
+            out[name] = None
+            continue
+        ly = labels[node_mask]
+        py = preds[node_mask]
+        cm = confusion_matrix(ly, py, labels=list(range(19)))
+        m = metrics_from_confusion_matrix(cm)
+        out[name] = m["macro_f1"]
+    return out

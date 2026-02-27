@@ -471,16 +471,20 @@ def calculate_defect_statistics(
             layer_block = extract_layer_block(data_file)
             layer = layer_block[0] if layer_block else -1
             block = layer_block[1] if layer_block else -1
-            
+
+            # ファイル名からサイズクラス（物性代理）を抽出
+            size_class = extract_size_class(data_file)
+
             # 欠陥サイズ（簡易版：欠陥クラス数）
             defect_size = len(defect_classes)
-            
+
             base_name = os.path.splitext(data_file)[0]
             stats[base_name] = {
                 'defect_ratio': defect_ratio,
                 'defect_size': defect_size,
                 'layer': layer,
                 'block': block,
+                'size_class': size_class,  # M1-1: 物性OOD用 (0=small, 1=medium, 2=large, -1=NDF)
                 'defect_classes': defect_classes,
                 'data_file': data_file,
                 'label_file': label_file
@@ -518,6 +522,8 @@ def create_ood_split(
             - defect_size: size_threshold (int)
             - defect_ratio: ratio_threshold (float)
             - layer: train_layers (list of int)
+            - property_ood: train_size_classes (list), test_size_classes (list)
+                          or size_class_threshold (int): train on classes < threshold, test on >=
     
     Returns:
         (train_pairs, val_pairs, test_pairs)
@@ -620,10 +626,51 @@ def create_ood_split(
         
         print(f"[INFO] Defect ratio split (threshold={ratio_threshold}): "
               f"train={len(train_pairs)}, val={len(val_pairs)}, test={len(test_pairs)}")
-        
+
+    elif split_type == 'property_ood':
+        # M1-1: 物性OOD（size_class を物性代理として使用。将来は φ, E_ratio 等のメタデータで拡張）
+        train_size_classes = kwargs.get('train_size_classes', [0, 1])  # small, medium
+        test_size_classes = kwargs.get('test_size_classes', [2])       # large
+        size_class_threshold = kwargs.get('size_class_threshold', None)
+        if size_class_threshold is not None:
+            train_pairs = []
+            test_pairs = []
+            for base_name, stat in stats.items():
+                pair = (stat['data_file'], stat['label_file'])
+                sc = stat.get('size_class', -1)
+                if sc < 0:  # NDF 等
+                    train_pairs.append(pair)
+                elif sc < size_class_threshold:
+                    train_pairs.append(pair)
+                else:
+                    test_pairs.append(pair)
+        else:
+            train_set = set(train_size_classes)
+            test_set = set(test_size_classes)
+            train_pairs = []
+            test_pairs = []
+            for base_name, stat in stats.items():
+                pair = (stat['data_file'], stat['label_file'])
+                sc = stat.get('size_class', -1)
+                if sc in train_set:
+                    train_pairs.append(pair)
+                elif sc in test_set:
+                    test_pairs.append(pair)
+                # else: どちらにも含めない（NDF等は train に）
+                elif sc < 0:
+                    train_pairs.append(pair)
+        if len(train_pairs) > 0:
+            train_pairs, val_pairs = train_test_split(
+                train_pairs, test_size=val_ratio, random_state=seed
+            )
+        else:
+            val_pairs = []
+        print(f"[INFO] Property OOD split (train_sizes={train_size_classes}, test_sizes={test_size_classes}): "
+              f"train={len(train_pairs)}, val={len(val_pairs)}, test={len(test_pairs)}")
+
     else:
         raise ValueError(f"Unknown split_type: {split_type}. "
-                      f"Supported types: 'iid', 'defect_size', 'defect_ratio', 'layer'")
+                      f"Supported types: 'iid', 'defect_size', 'defect_ratio', 'layer', 'property_ood'")
     
     return train_pairs, val_pairs, test_pairs
 
