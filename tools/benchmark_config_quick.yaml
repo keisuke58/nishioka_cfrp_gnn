@@ -1,0 +1,31 @@
+# Quick benchmark: IID vs OOD defect_size (reduced epochs for fast iteration)
+benchmark:
+  name: "cfrp_gnn_benchmark_quick"
+  seeds: [42]
+  split_types:
+    - type: "iid"
+    - type: "defect_size"
+      params:
+        size_threshold: 5
+  models:
+    - name: "GAT_base"
+      args:
+        hidden_channels: 16
+        learning_rate: 0.002
+        epochs: 100
+        patience: 25
+        batch_size: 64
+        dropout: 0.10
+        edge_drop: 0.01
+        use_amp: true
+        use_class_frequency_sampler: true
+        data_usage_ratio: 1.0
+  hardware:
+    nproc_per_node: 4
+  data:
+    data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore_noise"
+    label_dir: "GNN_hole_2026/all_19class_label"
+    num_classes: 19
+  output:
+    base_dir: "runs"
+    prefix: "bench_quick"

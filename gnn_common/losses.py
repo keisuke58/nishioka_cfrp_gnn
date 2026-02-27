@@ -173,25 +173,28 @@ class FocalLossLogSoftmax(nn.Module):
 
 
 class MultiTaskLoss(nn.Module):
-    """Multi-task loss: 位置分類 + 欠陥サイズ分類
+    """Multi-task loss: 位置分類 + 欠陥サイズ分類 + 回帰（M3-3）
 
     Args:
-        location_loss_fn: 位置分類用の損失関数（LogitAdjustLoss, FocalLossLogSoftmax 等）
+        location_loss_fn: 位置分類用の損失関数
         size_weight: size loss の重み（デフォルト 0.5）
+        reg_weight: 回帰 loss の重み（デフォルト 0.0、教師あり時のみ有効）
     """
 
-    def __init__(self, location_loss_fn, size_weight=0.5):
+    def __init__(self, location_loss_fn, size_weight=0.5, reg_weight=0.0):
         super(MultiTaskLoss, self).__init__()
         self.location_loss_fn = location_loss_fn
         self.size_loss_fn = nn.CrossEntropyLoss()
         self.size_weight = size_weight
+        self.reg_weight = reg_weight
 
-    def forward(self, outputs, location_target, size_labels):
+    def forward(self, outputs, location_target, size_labels, reg_targets=None):
         """
         Args:
-            outputs: dict {"location": [N, 19], "size": [G, 3]}
+            outputs: dict {"location": [N, 19], "size": [G, 3], "regression": [G, reg_dim] (optional)}
             location_target: [N] ノード単位のクラスインデックス
             size_labels: [G] グラフ単位のサイズクラス（-1 = 除外）
+            reg_targets: [G, reg_dim] 回帰教師（None の場合はスキップ）
 
         Returns:
             total_loss, dict with individual losses for logging
@@ -208,9 +211,18 @@ class MultiTaskLoss(nn.Module):
             size_loss = torch.tensor(0.0, device=location_loss.device)
 
         total_loss = location_loss + self.size_weight * size_loss
-
-        return total_loss, {
+        losses_dict = {
             "location_loss": location_loss.detach(),
             "size_loss": size_loss.detach() if isinstance(size_loss, torch.Tensor) else size_loss,
-            "total_loss": total_loss.detach(),
         }
+
+        # M3-3: 回帰損失（教師あり時のみ）
+        if self.reg_weight > 0 and reg_targets is not None and "regression" in outputs:
+            reg_mask = ~torch.isnan(reg_targets).any(dim=1)
+            if reg_mask.any():
+                reg_loss = F.mse_loss(outputs["regression"][reg_mask], reg_targets[reg_mask])
+                total_loss = total_loss + self.reg_weight * reg_loss
+                losses_dict["reg_loss"] = reg_loss.detach()
+
+        losses_dict["total_loss"] = total_loss.detach()
+        return total_loss, losses_dict

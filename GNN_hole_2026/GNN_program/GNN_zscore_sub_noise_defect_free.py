@@ -2994,6 +2994,8 @@ def main(args):
     np.random.shuffle(all_pairs)
     
     # train/val/testに分割
+    # group_key は後続の overlap check で使用（split_manifest 時も必要）
+    group_key = getattr(args, "group_key", "LBel")
     # Benchmark: split_manifest が指定されている場合は外部マニフェストを使用
     split_manifest_path = getattr(args, "split_manifest", None)
     if split_manifest_path is not None:
@@ -3011,7 +3013,6 @@ def main(args):
         test_data_folder_map = {p[0]: p[2] for p in _manifest["test"]}
     # 重要: group単位で分割して leakage (val∩test など) をゼロにする
     elif getattr(args, "enforce_disjoint_groups", True):
-        group_key = getattr(args, "group_key", "LBel")
         train_pairs, val_pairs, test_pairs, train_data_folder_map, val_data_folder_map, test_data_folder_map = group_disjoint_split(
             all_pairs,
             train_ratio=0.7,
