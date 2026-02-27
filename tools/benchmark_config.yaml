@@ -17,6 +17,10 @@ benchmark:
     - type: "layer"
       params:
         train_layers: [1, 2, 3, 4, 5]
+    - type: "property_ood"  # M1-1: 物性OOD（size_class 代理）
+      params:
+        train_size_classes: [0, 1]
+        test_size_classes: [2]
 
   # Model configurations to benchmark
   models:
@@ -50,8 +54,9 @@ benchmark:
     nproc_per_node: 4
 
   # Data paths (relative to project root)
+  # Use all_sub_hole_defect_zscore_noise to match main script (noise+defect combined)
   data:
-    data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore"
+    data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore_noise"
     label_dir: "GNN_hole_2026/all_19class_label"
     num_classes: 19
 

@@ -172,11 +172,12 @@ class GATModelWithCrossEdges(torch.nn.Module):
 
 
 class GATMultiTaskModel(torch.nn.Module):
-    """Multi-task GAT: 位置分類（ノード単位）+ 欠陥サイズ分類（グラフ単位）
+    """Multi-task GAT: 位置分類 + 欠陥サイズ分類 + 回帰（M3-1）
 
-    共有GATバックボーン（4層）から2つのヘッドに分岐:
-      - head_location: Linear → [N, num_classes] （ノード単位、既存GATModelと同等）
-      - head_size: global_mean_pool → Linear → [G, num_size_classes] （グラフ単位）
+    共有GATバックボーン（4層）から3つのヘッドに分岐:
+      - head_location: [N, num_classes] （ノード単位）
+      - head_size: [G, num_size_classes] （グラフ単位）
+      - head_regression: [G, reg_dim] （グラフ単位、φ, E_ratio, 重心, サイズ等）
     """
 
     def __init__(
@@ -186,17 +187,20 @@ class GATMultiTaskModel(torch.nn.Module):
         num_size_classes=3,
         num_heads=4,
         dropout=0.2,
+        reg_dim=6,  # M3-1: [phi, E_ratio, cx, cy, cz, size] 等
     ):
         super(GATMultiTaskModel, self).__init__()
+        self.reg_dim = reg_dim
         self.conv1 = GATConv(4, hidden_channels, heads=num_heads, concat=True)
         self.conv2 = GATConv(hidden_channels * num_heads, hidden_channels * 2, heads=num_heads, concat=True)
         self.conv3 = GATConv(hidden_channels * 2 * num_heads, hidden_channels, heads=num_heads, concat=True)
         self.conv4 = GATConv(hidden_channels * num_heads, hidden_channels, heads=num_heads, concat=True)
-        self.dropout = nn.Dropout(p=dropout)
+        self.dropout = nn.Dropout(dropout)
 
         backbone_out = hidden_channels * num_heads
         self.head_location = nn.Linear(backbone_out, num_classes)
         self.head_size = nn.Linear(backbone_out, num_size_classes)
+        self.head_regression = nn.Linear(backbone_out, reg_dim) if reg_dim > 0 else None
 
         self.init_weights()
 
@@ -257,5 +261,7 @@ class GATMultiTaskModel(torch.nn.Module):
 
         graph_emb = global_mean_pool(shared, batch)
         size_out = self.head_size(graph_emb)
-
-        return {"location": location_out, "size": size_out}
+        out = {"location": location_out, "size": size_out}
+        if self.head_regression is not None:
+            out["regression"] = self.head_regression(graph_emb)  # [G, reg_dim]
+        return out

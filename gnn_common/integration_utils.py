@@ -234,15 +234,17 @@ def evaluate_with_localization_metrics(
     accuracy = (all_preds == all_labels).mean()
     avg_loss = total_loss / len(data_loader)
     
-    # 混同行列からメトリクスを計算
-    cm = confusion_matrix(all_labels, all_preds)
+    # 混同行列からメトリクスを計算（M1-3: 層別F1含む）
+    cm = confusion_matrix(all_labels, all_preds, labels=list(range(num_classes)))
+    from .metrics import metrics_from_confusion_matrix
+    cm_metrics = metrics_from_confusion_matrix(cm)
     precision, recall, f1, _ = precision_recall_fscore_support(
         all_labels, all_preds, average='weighted', zero_division=0
     )
     macro_precision, macro_recall, macro_f1, _ = precision_recall_fscore_support(
         all_labels, all_preds, average='macro', zero_division=0
     )
-    
+
     results = {
         'test_loss': avg_loss,
         'test_accuracy': float(accuracy),
@@ -252,6 +254,9 @@ def evaluate_with_localization_metrics(
         'macro_precision': float(macro_precision),
         'macro_recall': float(macro_recall),
         'macro_f1': float(macro_f1),
+        # M1-3: 層別F1
+        'layer1_macro_f1': cm_metrics.get('layer1_macro_f1'),
+        'layer2_macro_f1': cm_metrics.get('layer2_macro_f1'),
     }
     
     # Localization指標を追加

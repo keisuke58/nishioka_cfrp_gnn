@@ -1,0 +1,51 @@
+# M2-1: 欠陥パラメータ空間の定義
+# ミクロ欠陥モデル用。FEM 前処理で要素ごとに有効物性を渡す際のスキーマ。
+
+defect_params:
+  # 空隙率 (void fraction)
+  phi:
+    min: 0.0
+    max: 0.3
+    default: 0.1
+    unit: "-"
+    description: "欠陥領域の空隙率。Halpin-Tsai 等で有効弾性係数に変換"
+
+  # 弾性係数比 (E_defect / E_base)
+  E_ratio:
+    min: 0.1
+    max: 1.0
+    default: 0.5
+    unit: "-"
+    description: "欠陥領域の弾性係数と健全部の比"
+
+  # 脱層係数 (層間剛性比)
+  delamination_ratio:
+    min: 0.0
+    max: 1.0
+    default: 0.5
+    unit: "-"
+    description: "層間せん断剛性の低減率"
+
+  # 形状パラメータ
+  shape:
+    aspect_ratio:
+      min: 0.5
+      max: 2.0
+      default: 1.0
+      description: "楕円のアスペクト比 (H/W)"
+    blur_sigma:
+      min: 0.0
+      max: 5.0
+      default: 1.0
+      description: "境界のぼかし幅 (ガウシアン σ、要素数単位)"
+
+  # 既存との対応（ファイル名から抽出）
+  legacy:
+    size_class: [0, 1, 2]  # small, medium, large
+    H_W: "H2_W2, H4_W4, H8_W8 等"
+
+# サンプリング例（ラテン超立方）
+sampling:
+  method: "latin_hypercube"
+  n_samples: 1000
+  # 各パラメータの範囲は defect_params から取得
