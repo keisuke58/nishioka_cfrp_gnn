@@ -103,6 +103,7 @@ GNN/
 ├── GNN_hole_2026/          # 論文用 CFRP データセット & 前処理・学習
 │   ├── Dataset_original/   # FEM 生データ・正規化結果
 │   └── GNN_program/        # 論文ベースの学習スクリプト
+├── wiki/                   # GitHub Wiki 用ソース（実運用ロードマップ等）
 ├── run_train_recommended.sh  # 推奨トレーニング
 ├── run_sweep_lr.sh         # 学習率スイープ
 ├── config.yaml.example     # 設定例
@@ -161,6 +162,8 @@ python tools/visualize_training.py --run_dir runs/<run_id>
 
 フレームワークの使い方や研究計画は、以下のドキュメントに整理されています。
 
+- **Wiki** : [実運用ロードマップ](wiki/実運用ロードマップ（ミクロ欠陥×GNN-MultiTask）.md)（ミクロ欠陥×GNN Multi-Task 計画）
+- `literature_notes/plan_micro_defect_gnn_multitask.md` : 詳細計画書（タスク一覧・マイルストーン）
 - `QUICK_START.md` : 最小ステップでの実行方法
 - `USAGE_EXAMPLES.md` : OOD分割・Localization指標・Cross-edge の具体的なコード例
 - `IMPLEMENTATION_GUIDE.md` : 実装の詳細設計と背景

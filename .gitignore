@@ -54,6 +54,9 @@ Defect_data_sizechanged/
 Defectlabel4x4/
 Predict_data/
 
+# Wiki clone (for local editing; use wiki/ as source)
+wiki_repo/
+
 # Local environments / recovered artifacts
 GNNEmulEnv/
 DDP_VGAE/
