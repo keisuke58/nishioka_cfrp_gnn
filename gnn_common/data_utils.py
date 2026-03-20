@@ -20,9 +20,10 @@ def extract_size_class(filename):
         filename: データファイル名（例: "L1_B1_el1_H2_W2.npy"）
 
     Returns:
-        int: 0 (H2_W2=small), 1 (H4_W4=medium), 2 (H8_W8=large), -1 (除外)
+        int: 0 (H2_W2=small), 1 (H4_W4=medium), 2 (H8_W8=large), 3 (H1_W1=micro), -1 (除外)
     """
     SIZE_MAP = {
+        ('1', '1'): 3,  # micro
         ('2', '2'): 0,  # small
         ('4', '4'): 1,  # medium
         ('8', '8'): 2,  # large
@@ -222,10 +223,11 @@ def compute_class_weights(labels, multiplier=None, fix_class0_weight=True, class
     return torch.tensor(class_weights, dtype=torch.float)
 
 
-def prepare_data(pairs, normalized_data_folder, label_data_folder, 
-                 x_coords, y_coords, z_coords, edge_index, 
+def prepare_data(pairs, normalized_data_folder, label_data_folder,
+                 x_coords, y_coords, z_coords, edge_index,
                  class_weight_multiplier=None, data_folder_map=None,
-                 max_nodes=13942, return_class_weights=True, verbose_print=None):
+                 max_nodes=13942, return_class_weights=True, verbose_print=None,
+                 use_synthetic_ir=False, ir_noise_std=0.05, ir_seed=42):
     """
     データを準備してDataオブジェクトのリストを返す
     （GNN_zscore_sub_noise_defect_free.pyの実装を基に）
@@ -241,6 +243,9 @@ def prepare_data(pairs, normalized_data_folder, label_data_folder,
         max_nodes: 最大ノード数（デフォルト: 13942）
         return_class_weights: クラス重みを返すかどうか（デフォルト: True）
         verbose_print: 詳細出力フラグ（Noneの場合は環境変数VERBOSE_PRINTを使用）
+        use_synthetic_ir: 合成IR特徴量を追加するかどうか（デフォルト: False）
+        ir_noise_std: 合成IRノイズの標準偏差（デフォルト: 0.05）
+        ir_seed: 合成IR乱数シード（デフォルト: 42）
     
     Returns:
         data_list: Dataオブジェクトのリスト
@@ -303,7 +308,18 @@ def prepare_data(pairs, normalized_data_folder, label_data_folder,
 
         # ノード特徴量を作成
         try:
-            node_features = np.vstack((x_coords, y_coords, z_coords, values)).T
+            if use_synthetic_ir:
+                ir_feats = generate_synthetic_ir_features(
+                    values, x_coords, y_coords, z_coords,
+                    noise_std=ir_noise_std,
+                    seed=ir_seed + pair_idx,  # サンプルごとに異なるseed
+                )
+                node_features = np.vstack((
+                    x_coords, y_coords, z_coords, values,
+                    ir_feats[:, 0], ir_feats[:, 1], ir_feats[:, 2]
+                )).T  # [N, 7]
+            else:
+                node_features = np.vstack((x_coords, y_coords, z_coords, values)).T  # [N, 4]
             x = torch.tensor(node_features, dtype=torch.float)
             
             # ラベルの形状を確認して適切に処理
@@ -959,6 +975,83 @@ def group_disjoint_split(
     test_map = {a: d for a, _, d in test_items}
 
     return train_pairs, val_pairs, test_pairs, train_map, val_map, test_map
+
+
+def generate_synthetic_ir_features(
+    dspss_values: np.ndarray,    # [N] DSPSS値
+    x_coords: np.ndarray,        # [N] x座標
+    y_coords: np.ndarray,        # [N] y座標
+    z_coords: np.ndarray,        # [N] z座標
+    surface_mask: np.ndarray = None,  # [N] bool, Trueがsurfaceノード
+    noise_std: float = 0.05,     # ガウスノイズの標準偏差
+    seed: int = None,
+) -> np.ndarray:
+    """FEM DSPSS値から合成IR（サーモグラフィ）特徴量を生成
+
+    フラッシュサーモグラフィの熱応答をDSPSSから近似的にシミュレート。
+    欠陥部は熱伝導を阻害するため、温度コントラストが高く、冷却が遅い。
+
+    Features:
+        - max_contrast: 温度上昇量（|DSPSS|に比例）
+        - slope: 冷却速度（欠陥近傍で小さい = 遅い冷却）
+        - peak_time: ピーク到達時間（欠陥近傍で遅い）
+
+    Args:
+        dspss_values: [N] FEM応力/ひずみ値
+        x_coords, y_coords, z_coords: [N] ノード座標
+        surface_mask: [N] bool, Trueがsurfaceノード（Noneの場合は自動検出）
+        noise_std: 合成IRノイズの標準偏差
+        seed: 乱数シード
+
+    Returns:
+        ir_features: [N, 3] (max_contrast, slope, peak_time), z-score正規化済み
+    """
+    rng = np.random.RandomState(seed)
+    N = len(dspss_values)
+
+    # surface_maskが未指定の場合は自動検出
+    if surface_mask is None:
+        coordinates = np.vstack((x_coords, y_coords, z_coords)).T
+        surface_mask = identify_surface_nodes(coordinates, z_coords)
+
+    ir_features = np.zeros((N, 3), dtype=np.float64)
+
+    # DSPSS絶対値を正規化（0-1スケール）
+    abs_dspss = np.abs(dspss_values)
+    dspss_max = abs_dspss.max()
+    if dspss_max > 1e-10:
+        norm_dspss = abs_dspss / dspss_max
+    else:
+        norm_dspss = abs_dspss
+
+    # 表面ノードのみIR信号を生成
+    surface_idx = np.where(surface_mask)[0]
+
+    for i in surface_idx:
+        heat = norm_dspss[i]
+
+        # 熱時定数: 欠陥近傍(DSPSS大) → tau大 → 冷却が遅い
+        tau = 2.0 + 3.0 * heat + noise_std * rng.randn()
+        tau = max(tau, 0.5)  # 正値を保証
+
+        # max_contrast: 温度上昇幅
+        ir_features[i, 0] = 5.0 * heat + noise_std * rng.randn()
+
+        # slope: 冷却速度（負値、欠陥近傍で絶対値が小さい）
+        ir_features[i, 1] = -1.0 / tau + noise_std * 0.1 * rng.randn()
+
+        # peak_time: ピーク到達時間（欠陥近傍で遅い）
+        ir_features[i, 2] = 0.1 + 0.4 * heat + noise_std * rng.randn()
+
+    # z-score正規化（表面ノードの統計量で正規化）
+    for j in range(3):
+        surface_vals = ir_features[surface_idx, j]
+        if len(surface_vals) > 0:
+            mean = surface_vals.mean()
+            std = surface_vals.std() + 1e-8
+            ir_features[:, j] = (ir_features[:, j] - mean) / std
+
+    return ir_features
 
 
 def identify_surface_nodes(

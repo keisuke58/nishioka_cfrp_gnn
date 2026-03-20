@@ -29,7 +29,7 @@ from torch_geometric.loader import DataLoader as PyGDataLoader
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from gnn_common.models import GATMultiTaskModel
-from gnn_common.losses import LogitAdjustLoss, FocalLossLogSoftmax, MultiTaskLoss
+from gnn_common.losses import LogitAdjustLoss, FocalLossLogSoftmax, FocalLogitAdjustLoss, MultiTaskLoss
 from gnn_common.data_utils import (
     prepare_data,
     extract_size_class,
@@ -64,7 +64,15 @@ _MAX_NODES = 13942
 # ============================================================================
 def build_location_loss_fn(args, class_prior: torch.Tensor, device: torch.device):
     """Build the location classification loss function."""
-    if args.use_logit_adjust:
+    if args.use_focal_logit_adjust:
+        base_loss = FocalLogitAdjustLoss(
+            class_prior=class_prior.to(device),
+            tau=args.logit_adjust_tau,
+            gamma=args.focal_gamma,
+        )
+        logger.info("Location loss: FocalLogitAdjustLoss (tau=%.2f, gamma=%.1f)",
+                     args.logit_adjust_tau, args.focal_gamma)
+    elif args.use_logit_adjust:
         base_loss = LogitAdjustLoss(
             class_prior=class_prior.to(device),
             tau=args.logit_adjust_tau,
@@ -504,6 +512,24 @@ def main(args):
         val_sampler = torch.utils.data.distributed.DistributedSampler(
             val_data, num_replicas=world_size, rank=rank, shuffle=False
         ) if val_data else None
+    elif args.use_weighted_sampler:
+        # WeightedRandomSampler: マイノリティクラスをオーバーサンプリング
+        # minority_ratioが高いサンプルほど高い確率で選ばれる
+        sample_weights = []
+        for d in train_data:
+            mr = d.minority_ratio if hasattr(d, 'minority_ratio') else 0.0
+            # minority_ratio=0（背景のみ）は重み1、高いほど重みアップ
+            w = 1.0 + mr * 10.0  # 欠陥サンプルを最大11倍オーバーサンプル
+            sample_weights.append(w)
+        sample_weights = torch.tensor(sample_weights, dtype=torch.float64)
+        train_sampler = torch.utils.data.WeightedRandomSampler(
+            weights=sample_weights,
+            num_samples=len(train_data),
+            replacement=True,
+        )
+        if is_main:
+            logger.info("Using WeightedRandomSampler (max_weight=%.1f)", sample_weights.max().item())
+        val_sampler = None
     else:
         train_sampler = None
         val_sampler = None
@@ -524,12 +550,14 @@ def main(args):
     ) if test_data else None
 
     # --- Model ---
+    num_size_cls = args.num_size_classes
     model = GATMultiTaskModel(
         hidden_channels=args.hidden_channels,
         num_classes=19,
-        num_size_classes=3,
+        num_size_classes=num_size_cls,
         num_heads=args.num_heads,
         dropout=args.dropout,
+        input_channels=args.input_channels,
     ).to(device)
 
     if world_size > 1:
@@ -623,7 +651,7 @@ def main(args):
             if val_loader is not None:
                 val_metrics = validate(
                     model, val_loader, criterion, device,
-                    num_classes=19, num_size_classes=3,
+                    num_classes=19, num_size_classes=num_size_cls,
                     world_size=world_size,
                 )
 
@@ -732,7 +760,7 @@ def main(args):
         save_confusion_matrix_plot(
             test_results["size_cm"],
             os.path.join(result_dir, "test_size_confusion_matrix.png"),
-            title="Test Size Confusion Matrix (3 classes)",
+            title=f"Test Size Confusion Matrix ({num_size_cls} classes)",
         )
 
         # Classification report
@@ -802,16 +830,31 @@ def parse_args():
     parser.add_argument("--learning_rate", type=float, default=0.002)
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--epochs", type=int, default=500)
-    parser.add_argument("--patience", type=int, default=50)
+    parser.add_argument("--patience", type=int, default=100)
 
     # Multi-task
-    parser.add_argument("--size_weight", type=float, default=0.5,
+    parser.add_argument("--size_weight", type=float, default=1.0,
                         help="Weight for size classification loss")
+    parser.add_argument("--num_size_classes", type=int, default=4,
+                        help="Number of size classes (3=small/medium/large, 4=+micro)")
+    parser.add_argument("--input_channels", type=int, default=4,
+                        help="Number of input features per node (4=FEM, 7=FEM+IR)")
 
     # Loss
     parser.add_argument("--use_logit_adjust", action="store_true", default=True)
     parser.add_argument("--no_logit_adjust", dest="use_logit_adjust", action="store_false")
-    parser.add_argument("--logit_adjust_tau", type=float, default=1.0)
+    parser.add_argument("--logit_adjust_tau", type=float, default=3.0,
+                        help="Logit adjustment strength (higher = stronger minority boost)")
+    parser.add_argument("--use_focal_logit_adjust", action="store_true", default=True,
+                        help="Combine Focal Loss + Logit Adjustment")
+    parser.add_argument("--no_focal_logit_adjust", dest="use_focal_logit_adjust", action="store_false")
+    parser.add_argument("--focal_gamma", type=float, default=2.0,
+                        help="Focal loss gamma parameter")
+
+    # Sampler
+    parser.add_argument("--use_weighted_sampler", action="store_true", default=True,
+                        help="Use WeightedRandomSampler for class-balanced training")
+    parser.add_argument("--no_weighted_sampler", dest="use_weighted_sampler", action="store_false")
 
     # Scheduler
     parser.add_argument("--use_onecycle", action="store_true", default=True)
