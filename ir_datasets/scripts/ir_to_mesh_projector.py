@@ -153,19 +153,27 @@ def project_ir_to_mesh(
     z_coords: np.ndarray,
     surface_mask: Optional[np.ndarray] = None,
     calibration: Optional[AffineCalibration] = None,
-    normalize: bool = True,
+    normalize: bool = False,
+    n_surface_nodes: Optional[int] = None,
 ) -> np.ndarray:
     """
     Project IR image features onto FEM mesh nodes.
 
     Args:
-        ir_features: [H, W, 3] IR feature map (from converter output)
-        x_coords: [N] mesh node x coordinates
-        y_coords: [N] mesh node y coordinates
-        z_coords: [N] mesh node z coordinates
-        surface_mask: [N] bool, True for surface nodes
+        ir_features: [H, W, 3] IR feature map (from converter output,
+                     already z-score normalized)
+        x_coords: [N] mesh node x coordinates (should be normalized to [0,1])
+        y_coords: [N] mesh node y coordinates (should be normalized to [0,1])
+        z_coords: [N] mesh node z coordinates (should be normalized to [0,1])
+        surface_mask: [N] bool, True for surface nodes. If None, auto-detect
+                      using n_surface_nodes or the 2-layer convention
+                      (first half = surface, second half = interior).
         calibration: Affine transform FEM→IR. Auto-computed if None.
-        normalize: Z-score normalize output features
+        normalize: Z-score normalize output features. Default False because
+                   the input IR features are typically already z-score normalized.
+        n_surface_nodes: Number of surface nodes (first n_surface_nodes in the
+                         array). Used for auto surface mask when surface_mask
+                         is None.
 
     Returns:
         node_ir_features: [N, 3] IR features projected onto mesh nodes
@@ -178,18 +186,27 @@ def project_ir_to_mesh(
         ir_features = ir_features[:, :, np.newaxis]
 
     # Auto-detect surface nodes if not provided
+    # For 2-layer meshes: first half = surface (layer 1), second half = interior (layer 2)
     if surface_mask is None:
-        z_min, z_max = z_coords.min(), z_coords.max()
-        z_range = z_max - z_min
-        if z_range > 1e-10:
-            threshold = z_range * 0.1
-            surface_mask = (z_coords <= z_min + threshold) | (z_coords >= z_max - threshold)
+        if n_surface_nodes is not None:
+            surface_mask = np.zeros(N, dtype=bool)
+            surface_mask[:n_surface_nodes] = True
+        elif N % 2 == 0:
+            # 2-layer convention: first half is surface
+            surface_mask = np.zeros(N, dtype=bool)
+            surface_mask[:N // 2] = True
         else:
+            # Fallback: all nodes are surface
             surface_mask = np.ones(N, dtype=bool)
 
     # Auto-calibration if not provided
     if calibration is None:
-        fem_bounds = (x_coords.min(), x_coords.max(), y_coords.min(), y_coords.max())
+        # Use only surface node coordinates for bounding box
+        sx = surface_mask
+        fem_bounds = (
+            x_coords[sx].min(), x_coords[sx].max(),
+            y_coords[sx].min(), y_coords[sx].max(),
+        )
         calibration = AffineCalibration.from_bounds(fem_bounds, (H, W))
 
     # Project surface nodes
@@ -200,13 +217,13 @@ def project_ir_to_mesh(
         fem_xy = np.column_stack([x_coords[surface_idx], y_coords[surface_idx]])
         uv = calibration.transform(fem_xy)  # [n_surface, 2]
 
-        # Bilinear interpolation
+        # Bilinear interpolation for ALL channels simultaneously
         node_ir[surface_idx] = bilinear_interpolate(
             ir_features.astype(np.float64),
             uv[:, 0], uv[:, 1]
         )
 
-    # Z-score normalize using surface node statistics
+    # Optional Z-score normalize using surface node statistics
     if normalize:
         for c in range(C):
             surface_vals = node_ir[surface_idx, c]
@@ -246,12 +263,12 @@ def create_fused_node_features(
     # Original FEM features
     fem_features = np.vstack([x_coords, y_coords, z_coords, dspss_values]).T  # [N, 4]
 
-    # Project IR onto mesh
+    # Project IR onto mesh (input is already z-score normalized)
     ir_node_features = project_ir_to_mesh(
         ir_features, x_coords, y_coords, z_coords,
         surface_mask=surface_mask,
         calibration=calibration,
-        normalize=True,
+        normalize=False,
     )  # [N, 3]
 
     # Concatenate
@@ -277,18 +294,44 @@ def batch_project_ir_dataset(
     """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Load FEM mesh coordinates
-    x = np.load(os.path.join(coords_dir, "hole_x_2layer.npy"))
-    y = np.load(os.path.join(coords_dir, "hole_y_2layer.npy"))
-    z = np.load(os.path.join(coords_dir, "hole_z_2layer.npy"))
+    # Load NORMALIZED FEM mesh coordinates (range [0, 1])
+    # The normalized coordinates ensure proper mapping to IR image pixel space.
+    # Raw coordinates (hole_x_2layer.npy) are in physical units (mm) and must
+    # NOT be used — they produce pixel indices in the hundreds of thousands,
+    # causing all nodes to clamp to the image boundary.
+    coord_names_priority = [
+        ("normalized_x_2layer.npy", "normalized_y_2layer.npy", "normalized_z_2layer.npy"),
+        ("hole_x_2layer.npy", "hole_y_2layer.npy", "hole_z_2layer.npy"),
+    ]
 
-    print(f"FEM mesh: {len(x)} nodes")
+    x, y, z = None, None, None
+    for xf, yf, zf in coord_names_priority:
+        xp = os.path.join(coords_dir, xf)
+        yp = os.path.join(coords_dir, yf)
+        zp = os.path.join(coords_dir, zf)
+        if os.path.exists(xp) and os.path.exists(yp) and os.path.exists(zp):
+            x = np.load(xp)
+            y = np.load(yp)
+            z = np.load(zp)
+            print(f"Loaded coordinates: {xf} (range x=[{x.min():.4f}, {x.max():.4f}], "
+                  f"y=[{y.min():.4f}, {y.max():.4f}], z=[{z.min():.4f}, {z.max():.4f}])")
+            break
+
+    if x is None:
+        raise FileNotFoundError(
+            f"No coordinate files found in {coords_dir}. "
+            f"Expected normalized_{{x,y,z}}_2layer.npy or hole_{{x,y,z}}_2layer.npy"
+        )
+
+    N = len(x)
+    n_surface = N // 2  # 2-layer mesh: first half = surface
+    print(f"FEM mesh: {N} nodes ({n_surface} surface + {N - n_surface} interior)")
 
     # Find IR feature files
     ir_files = sorted(Path(ir_processed_dir).glob("*_ir.npy"))
     print(f"Found {len(ir_files)} IR feature files")
 
-    stats = {"n_projected": 0}
+    stats = {"n_projected": 0, "channel_stats": []}
 
     for ir_path in ir_files:
         try:
@@ -297,17 +340,33 @@ def batch_project_ir_dataset(
                 print(f"  [SKIP] {ir_path.name}: unexpected shape {ir_feat.shape}")
                 continue
 
-            node_ir = project_ir_to_mesh(ir_feat, x, y, z)  # [N, 3]
+            node_ir = project_ir_to_mesh(
+                ir_feat, x, y, z,
+                normalize=False,  # Input is already z-score normalized
+                n_surface_nodes=n_surface,
+            )  # [N, 3]
 
             out_name = ir_path.stem.replace("_ir", "_ir_mesh") + ".npy"
             np.save(os.path.join(output_dir, out_name), node_ir)
 
             stats["n_projected"] += 1
-            if stats["n_projected"] % 50 == 0 or stats["n_projected"] == 1:
+
+            # Log channel statistics for verification
+            ch_info = []
+            for c in range(node_ir.shape[1]):
+                surf_vals = node_ir[:n_surface, c]
+                ch_info.append(f"ch{c}: mean={surf_vals.mean():.3f}, std={surf_vals.std():.3f}, "
+                              f"range=[{surf_vals.min():.3f}, {surf_vals.max():.3f}]")
+
+            if stats["n_projected"] <= 3 or stats["n_projected"] % 10 == 0:
                 print(f"  [{stats['n_projected']}] {ir_path.name} → {out_name}")
+                for info in ch_info:
+                    print(f"       {info}")
 
         except Exception as e:
             print(f"  [ERROR] {ir_path.name}: {e}")
+            import traceback
+            traceback.print_exc()
 
     print(f"\nProjected {stats['n_projected']} IR files onto mesh → {output_dir}")
     return stats
@@ -316,11 +375,31 @@ def batch_project_ir_dataset(
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Project IR features onto FEM mesh")
-    parser.add_argument("ir_dir", help="Directory with processed IR .npy files")
+    parser.add_argument("--ir-dir", default=None,
+                       help="Directory with processed IR .npy files")
     parser.add_argument("-o", "--output", default=None, help="Output directory")
     parser.add_argument("--coords-dir", default="/home/nishioka/GNN/GNN_hole/GNN_hole_data",
                        help="FEM coordinate directory")
     args = parser.parse_args()
 
-    output = args.output or os.path.join(args.ir_dir, "mesh_projected")
-    batch_project_ir_dataset(args.ir_dir, output, args.coords_dir)
+    # Default: process zenodo step heating dataset
+    ir_dir = args.ir_dir
+    if ir_dir is None:
+        ir_dir = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "processed", "zenodo_step_heating"
+        )
+
+    output = args.output
+    if output is None:
+        output = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "processed", "mesh_projected", "zenodo"
+        )
+
+    print(f"IR input dir:  {ir_dir}")
+    print(f"Output dir:    {output}")
+    print(f"Coords dir:    {args.coords_dir}")
+    print()
+
+    batch_project_ir_dataset(ir_dir, output, args.coords_dir)

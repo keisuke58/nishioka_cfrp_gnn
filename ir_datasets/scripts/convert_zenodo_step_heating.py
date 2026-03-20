@@ -32,8 +32,12 @@ except ImportError:
 
 
 def find_multiband_files(raw_dir: str) -> list:
-    """Find multi-band image files from Zenodo dataset."""
-    patterns = ["*.npy", "*.mat", "*.hdf5", "*.h5", "*.tif", "*.tiff", "*.png", "*.zip"]
+    """Find multi-band image files from Zenodo dataset.
+
+    Excludes single-channel mask files (PNG) to prevent them from
+    overwriting multi-channel TIFF outputs with the same basename.
+    """
+    patterns = ["*.npy", "*.mat", "*.hdf5", "*.h5", "*.tif", "*.tiff"]
     files = []
     for p in patterns:
         files.extend(glob.glob(os.path.join(raw_dir, "**", p), recursive=True))
@@ -114,19 +118,21 @@ def reduce_channels_pca(features: np.ndarray, n_components: int = 3) -> np.ndarr
     H, W, C = features.shape
     flat = features.reshape(-1, C)  # [H*W, C]
 
-    # Center
+    # Standardize (center + scale) before PCA to prevent
+    # high-variance channels from dominating all components
     mean = flat.mean(axis=0)
-    centered = flat - mean
+    std = flat.std(axis=0) + 1e-8
+    standardized = (flat - mean) / std
 
     # PCA via SVD
     try:
-        U, S, Vt = np.linalg.svd(centered, full_matrices=False)
+        U, S, Vt = np.linalg.svd(standardized, full_matrices=False)
         components = Vt[:n_components]  # [n_components, C]
-        reduced_flat = centered @ components.T  # [H*W, n_components]
+        reduced_flat = standardized @ components.T  # [H*W, n_components]
     except np.linalg.LinAlgError:
         # Fallback: use first n_components channels
         print("  [WARN] SVD failed, using first channels as fallback")
-        reduced_flat = flat[:, :n_components]
+        reduced_flat = standardized[:, :n_components]
 
     reduced = reduced_flat.reshape(H, W, n_components)
     return reduced
