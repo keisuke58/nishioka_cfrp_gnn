@@ -64,3 +64,20 @@ GNNmodel/
 restore_*.txt
 restore_*.err
 
+# Large binary files (GitHub 100MB limit)
+*.odb
+*.tfevents.*
+*.inp
+*.dat
+*.sta
+*.msg
+*.com
+*.sim
+
+# Large data directories
+GNN_hole/GNN_noise/
+GNN_hole/GNN_hole_data/*.odb
+GNN_hole/1hole_CFRP_model/
+Defecthole_1x1_*/
+ir_datasets/raw/
+

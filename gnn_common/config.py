@@ -1,7 +1,7 @@
 """設定管理"""
 from pathlib import Path
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, field
+from typing import Optional, List
 
 
 @dataclass
@@ -26,8 +26,26 @@ class ModelConfig:
     num_classes: int = 19
     dropout: float = 0.2
     num_heads: int = 4  # GAT用
+    input_channels: int = 4  # ノード特徴量の次元数 (4=FEM, 7=FEM+IR)
     multitask: bool = False
-    size_weight: float = 0.5  # multi-task時のsize lossの重み
+    num_size_classes: int = 4  # サイズクラス数 (micro/small/medium/large)
+    size_weight: float = 1.0  # multi-task時のsize lossの重み
+    logit_adjust_tau: float = 3.0  # LogitAdjust強度
+    use_synthetic_ir: bool = False  # 合成IR特徴量を使用するか
+
+
+@dataclass
+class IRConfig:
+    """IR thermography fusion settings (Issue #3)"""
+    ir_data_dir: Optional[str] = None           # IR processed data directory
+    ir_feature_dim: int = 3                     # Number of IR feature channels
+    ir_normalize: bool = True                   # Z-score normalize IR features
+    interpolation: str = "bilinear"             # Interpolation method
+    fusion_mode: str = "concatenate"            # "concatenate" (→7D) or "add"
+    calibration_file: Optional[str] = None      # Affine calibration .npy file
+    use_synthetic_ir: bool = False              # Generate synthetic IR from DSPSS
+    synthetic_noise_std: float = 0.05           # Noise for synthetic IR
+    dataset_source: str = "none"               # "mendeley_cfrp", "mendeley_composite", "zenodo_sh", "synthetic"
 
 
 @dataclass
@@ -49,6 +67,11 @@ class Config:
     data: DataConfig
     model: ModelConfig
     training: TrainingConfig
+    ir: IRConfig = None
+
+    def __post_init__(self):
+        if self.ir is None:
+            self.ir = IRConfig()
     
     @classmethod
     def default(cls):

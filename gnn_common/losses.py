@@ -172,16 +172,51 @@ class FocalLossLogSoftmax(nn.Module):
             return loss
 
 
+class FocalLogitAdjustLoss(nn.Module):
+    """Focal Loss + Logit Adjustment の組み合わせ
+
+    極端なクラス不均衡に対して、LogitAdjustで事前確率補正 +
+    Focalで易しいサンプルの重みを下げる二重の対策を行う。
+    """
+    def __init__(self, class_prior: torch.Tensor, tau=3.0, gamma=2.0, reduction='mean'):
+        super(FocalLogitAdjustLoss, self).__init__()
+        self.tau = float(tau)
+        self.gamma = float(gamma)
+        self.reduction = reduction
+        self.register_buffer('log_pi', torch.log(class_prior + 1e-8))
+
+    def forward(self, logits, target):
+        # Logit adjustment
+        adjusted_logits = logits + self.tau * self.log_pi.unsqueeze(0)
+
+        # Focal loss on adjusted logits
+        log_probs = F.log_softmax(adjusted_logits, dim=1)
+        probs = torch.exp(log_probs)
+
+        target_one_hot = F.one_hot(target, num_classes=logits.size(1)).float()
+        log_probs_target = (log_probs * target_one_hot).sum(dim=1)
+        probs_target = (probs * target_one_hot).sum(dim=1)
+
+        focal_weight = (1.0 - probs_target) ** self.gamma
+        loss = -focal_weight * log_probs_target
+
+        if self.reduction == 'mean':
+            return loss.mean()
+        elif self.reduction == 'sum':
+            return loss.sum()
+        return loss
+
+
 class MultiTaskLoss(nn.Module):
     """Multi-task loss: 位置分類 + 欠陥サイズ分類 + 回帰（M3-3）
 
     Args:
         location_loss_fn: 位置分類用の損失関数
-        size_weight: size loss の重み（デフォルト 0.5）
+        size_weight: size loss の重み（デフォルト 1.0）
         reg_weight: 回帰 loss の重み（デフォルト 0.0、教師あり時のみ有効）
     """
 
-    def __init__(self, location_loss_fn, size_weight=0.5, reg_weight=0.0):
+    def __init__(self, location_loss_fn, size_weight=1.0, reg_weight=0.0):
         super(MultiTaskLoss, self).__init__()
         self.location_loss_fn = location_loss_fn
         self.size_loss_fn = nn.CrossEntropyLoss()

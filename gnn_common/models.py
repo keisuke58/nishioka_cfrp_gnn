@@ -7,9 +7,9 @@ from torch_geometric.nn import GCNConv, GATConv, global_mean_pool
 
 class GCNModel(torch.nn.Module):
     """Graph Convolutional Network モデル"""
-    def __init__(self, hidden_channels=128, num_classes=19, dropout=0.2):
+    def __init__(self, hidden_channels=128, num_classes=19, dropout=0.2, input_channels=4):
         super(GCNModel, self).__init__()
-        self.conv1 = GCNConv(4, hidden_channels)
+        self.conv1 = GCNConv(input_channels, hidden_channels)
         self.conv2 = GCNConv(hidden_channels, hidden_channels * 2)
         self.conv3 = GCNConv(hidden_channels * 2, hidden_channels)
         self.fc = nn.Linear(hidden_channels, num_classes)
@@ -45,9 +45,9 @@ class GCNModel(torch.nn.Module):
 
 class GATModel(torch.nn.Module):
     """Graph Attention Network モデル"""
-    def __init__(self, hidden_channels=64, num_classes=19, num_heads=4, dropout=0.2):
+    def __init__(self, hidden_channels=64, num_classes=19, num_heads=4, dropout=0.2, input_channels=4):
         super(GATModel, self).__init__()
-        self.conv1 = GATConv(4, hidden_channels, heads=num_heads, concat=True)
+        self.conv1 = GATConv(input_channels, hidden_channels, heads=num_heads, concat=True)
         self.conv2 = GATConv(hidden_channels * num_heads, hidden_channels * 2, heads=num_heads, concat=True)
         self.conv3 = GATConv(hidden_channels * 2 * num_heads, hidden_channels, heads=num_heads, concat=True)
         self.conv4 = GATConv(hidden_channels * num_heads, hidden_channels, heads=num_heads, concat=True)
@@ -100,17 +100,18 @@ class GATModelWithCrossEdges(torch.nn.Module):
     エッジタイプの区別は行わず、すべてのエッジを同等に扱います。
     """
     def __init__(
-        self, 
-        hidden_channels=64, 
-        num_classes=19, 
-        num_heads=4, 
+        self,
+        hidden_channels=64,
+        num_classes=19,
+        num_heads=4,
         dropout=0.2,
+        input_channels=4,
         use_edge_type=False  # エッジタイプを使うか（将来の拡張用）
     ):
         super(GATModelWithCrossEdges, self).__init__()
         self.use_edge_type = use_edge_type
-        
-        self.conv1 = GATConv(4, hidden_channels, heads=num_heads, concat=True)
+
+        self.conv1 = GATConv(input_channels, hidden_channels, heads=num_heads, concat=True)
         self.conv2 = GATConv(hidden_channels * num_heads, hidden_channels * 2, heads=num_heads, concat=True)
         self.conv3 = GATConv(hidden_channels * 2 * num_heads, hidden_channels, heads=num_heads, concat=True)
         self.conv4 = GATConv(hidden_channels * num_heads, hidden_channels, heads=num_heads, concat=True)
@@ -187,11 +188,12 @@ class GATMultiTaskModel(torch.nn.Module):
         num_size_classes=3,
         num_heads=4,
         dropout=0.2,
+        input_channels=4,
         reg_dim=6,  # M3-1: [phi, E_ratio, cx, cy, cz, size] 等
     ):
         super(GATMultiTaskModel, self).__init__()
         self.reg_dim = reg_dim
-        self.conv1 = GATConv(4, hidden_channels, heads=num_heads, concat=True)
+        self.conv1 = GATConv(input_channels, hidden_channels, heads=num_heads, concat=True)
         self.conv2 = GATConv(hidden_channels * num_heads, hidden_channels * 2, heads=num_heads, concat=True)
         self.conv3 = GATConv(hidden_channels * 2 * num_heads, hidden_channels, heads=num_heads, concat=True)
         self.conv4 = GATConv(hidden_channels * num_heads, hidden_channels, heads=num_heads, concat=True)
