@@ -9,6 +9,72 @@ from collections import defaultdict
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import NearestNeighbors
 
+
+# ============================================================================
+# Data augmentation transforms for noise robustness
+# ============================================================================
+class NoiseAugmentTransform:
+    """Add Gaussian noise to node features during training for robustness.
+
+    Designed to be applied on-the-fly in the training loop so that each
+    epoch sees a different noise realization without modifying stored data.
+
+    Args:
+        noise_std: Standard deviation of Gaussian noise (default: 0.05).
+        feature_indices: Which feature columns to add noise to.
+            ``None`` means all columns.
+    """
+
+    def __init__(self, noise_std: float = 0.05, feature_indices=None):
+        self.noise_std = noise_std
+        self.feature_indices = feature_indices
+
+    def __call__(self, data):
+        data = data.clone()
+        x = data.x
+        if self.feature_indices is not None:
+            idx = self.feature_indices
+            noise = torch.randn(x.size(0), len(idx), device=x.device, dtype=x.dtype) * self.noise_std
+            x = x.clone()
+            x[:, idx] = x[:, idx] + noise
+        else:
+            noise = torch.randn_like(x) * self.noise_std
+            x = x + noise
+        data.x = x
+        return data
+
+    def __repr__(self):
+        return (f"{self.__class__.__name__}(noise_std={self.noise_std}, "
+                f"feature_indices={self.feature_indices})")
+
+
+class FeatureDropout:
+    """Randomly zero out entire feature channels during training.
+
+    For each sample, each feature column is independently zeroed with
+    probability ``p``.
+
+    Args:
+        p: Probability of dropping each feature channel (default: 0.1).
+    """
+
+    def __init__(self, p: float = 0.1):
+        if not 0.0 <= p < 1.0:
+            raise ValueError(f"p must be in [0, 1), got {p}")
+        self.p = p
+
+    def __call__(self, data):
+        data = data.clone()
+        x = data.x
+        num_features = x.size(1)
+        # Draw a mask per feature column (shared across all nodes)
+        mask = torch.rand(num_features, device=x.device, dtype=x.dtype) >= self.p
+        data.x = x * mask.unsqueeze(0)
+        return data
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}(p={self.p})"
+
 # VERBOSE_PRINT のデフォルト値（環境変数から取得可能）
 VERBOSE_PRINT = int(os.environ.get("VERBOSE_PRINT", "0") or "0")
 

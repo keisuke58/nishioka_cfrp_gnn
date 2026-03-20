@@ -36,6 +36,8 @@ from gnn_common.data_utils import (
     compute_class_weights,
     create_data_label_pairs,
     group_disjoint_split,
+    NoiseAugmentTransform,
+    FeatureDropout,
 )
 from gnn_common.metrics import metrics_from_confusion_matrix, compute_benchmark_metrics
 from gnn_common.training_utils import set_seed, setup, cleanup
@@ -91,8 +93,13 @@ def build_location_loss_fn(args, class_prior: torch.Tensor, device: torch.device
 # Train / validate / evaluate
 # ============================================================================
 def train_one_epoch(model, loader, criterion, optimizer, scheduler, device, epoch,
-                    use_amp=False, grad_clip=1.0):
-    """Train for one epoch. Returns dict of average losses."""
+                    use_amp=False, grad_clip=1.0, augment_transforms=None):
+    """Train for one epoch. Returns dict of average losses.
+
+    Args:
+        augment_transforms: list of callable transforms applied on-the-fly
+            to each batch during training (e.g. NoiseAugmentTransform).
+    """
     model.train()
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 
@@ -103,6 +110,10 @@ def train_one_epoch(model, loader, criterion, optimizer, scheduler, device, epoc
 
     for batch in loader:
         batch = batch.to(device)
+        # Apply on-the-fly augmentation (noise, feature dropout, etc.)
+        if augment_transforms:
+            for t in augment_transforms:
+                batch = t(batch)
         # Ensure size_class is a tensor
         size_labels = batch.size_class
         if not isinstance(size_labels, torch.Tensor):
@@ -636,6 +647,19 @@ def main(args):
         if is_main:
             logger.info("Scheduler: None")
 
+    # --- Noise augmentation transforms (training only) ---
+    augment_transforms = []
+    if args.use_noise_augmentation:
+        augment_transforms.append(NoiseAugmentTransform(noise_std=args.noise_std))
+        if args.feature_dropout > 0:
+            augment_transforms.append(FeatureDropout(p=args.feature_dropout))
+        if is_main:
+            logger.info("Noise augmentation enabled: noise_std=%.4f, feature_dropout=%.2f",
+                        args.noise_std, args.feature_dropout)
+    else:
+        if is_main:
+            logger.info("Noise augmentation disabled")
+
     # --- Resume ---
     start_epoch = 0
     if args.resume_from and os.path.isfile(args.resume_from):
@@ -677,6 +701,7 @@ def main(args):
                 model, train_loader, criterion, optimizer,
                 scheduler if per_batch_scheduler else None,
                 device, epoch, use_amp=args.use_amp,
+                augment_transforms=augment_transforms,
             )
             dt_train = time.time() - t0
 
@@ -912,6 +937,14 @@ def parse_args():
     # Data
     parser.add_argument("--group_key", type=str, default="LBel")
     parser.add_argument("--data_usage_ratio", type=float, default=1.0)
+
+    # Noise augmentation
+    parser.add_argument("--use_noise_augmentation", action="store_true", default=False,
+                        help="Enable noise augmentation during training for robustness")
+    parser.add_argument("--noise_std", type=float, default=0.05,
+                        help="Std of Gaussian noise added to node features (default: 0.05)")
+    parser.add_argument("--feature_dropout", type=float, default=0.1,
+                        help="Probability of zeroing feature channels (default: 0.1)")
 
     # Output
     parser.add_argument("--output_root", type=str, default=None)
