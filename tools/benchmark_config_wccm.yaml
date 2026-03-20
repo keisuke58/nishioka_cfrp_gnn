@@ -1,14 +1,12 @@
-# Benchmark configuration for CFRP GNN defect localization
-# Usage: python tools/benchmark.py --config tools/benchmark_config.yaml
+# WCCM Benchmark: OOD evaluation for all 4 split types
+# Usage: python tools/benchmark.py --config tools/benchmark_config_wccm.yaml
 
 benchmark:
-  name: "cfrp_gnn_benchmark_v1"
-  description: "CFRP defect localization GNN reproducible benchmark"
+  name: "cfrp_gnn_wccm_ood"
+  description: "WCCM 2026: OOD robustness evaluation (4 split types × 3 seeds)"
 
-  # Fixed seeds for reproducibility (each split_type is run with each seed)
   seeds: [42, 84, 126]
 
-  # Split strategies to evaluate
   split_types:
     - type: "iid"
     - type: "defect_size"
@@ -17,17 +15,11 @@ benchmark:
     - type: "layer"
       params:
         train_layers: [1, 2, 3, 4, 5]
-    - type: "property_ood"  # M1-1: 物性OOD（size_class 代理）
+    - type: "property_ood"
       params:
         train_size_classes: [0, 1]
         test_size_classes: [2]
-    - type: "property_ood"  # M1-1: 1x1 micro-defect OOD
-      name: "property_ood_1x1"
-      params:
-        train_size_classes: [0, 1, 2]  # small + medium + large
-        test_size_classes: [3]          # micro (H1_W1)
 
-  # Model configurations to benchmark
   models:
     - name: "GAT_base"
       args:
@@ -40,8 +32,8 @@ benchmark:
         edge_drop: 0.01
         use_amp: true
         use_class_frequency_sampler: true
+        data_usage_ratio: 1.0
 
-  # Primary and secondary metrics for comparison
   metrics:
     primary: "macro_f1"
     secondary:
@@ -51,21 +43,16 @@ benchmark:
       - "top_1_accuracy"
       - "top_3_accuracy"
       - "top_5_accuracy"
-      - "mean_distance_error"
       - "auprc"
 
-  # Hardware settings
   hardware:
-    nproc_per_node: 4
+    nproc_per_node: 1  # Single GPU to avoid OOM
 
-  # Data paths (relative to project root)
-  # Use all_sub_hole_defect_zscore_noise to match main script (noise+defect combined)
   data:
     data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore_noise"
     label_dir: "GNN_hole_2026/all_19class_label"
     num_classes: 19
 
-  # Output
   output:
     base_dir: "runs"
-    prefix: "bench"
+    prefix: "wccm"

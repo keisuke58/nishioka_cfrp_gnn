@@ -465,12 +465,19 @@ def main(args):
                      len(train_pairs), len(val_pairs), len(test_pairs))
 
     # --- Prepare datasets ---
+    use_ir = args.input_channels > 4
+    if use_ir and is_main:
+        logger.info("IR fusion enabled: input_channels=%d, using synthetic IR features", args.input_channels)
+
     train_data, class_weights = prepare_data(
         train_pairs, None, label_dir,
         x_coords, y_coords, z_coords, edge_index,
         data_folder_map=train_map,
         max_nodes=_MAX_NODES,
         return_class_weights=True,
+        use_synthetic_ir=use_ir,
+        ir_noise_std=0.05,
+        ir_seed=42,
     )
     val_data = prepare_data(
         val_pairs, None, label_dir,
@@ -478,6 +485,9 @@ def main(args):
         data_folder_map=val_map,
         max_nodes=_MAX_NODES,
         return_class_weights=False,
+        use_synthetic_ir=use_ir,
+        ir_noise_std=0.05,
+        ir_seed=10000,
     )
     test_data = prepare_data(
         test_pairs, None, label_dir,
@@ -485,6 +495,9 @@ def main(args):
         data_folder_map=test_map,
         max_nodes=_MAX_NODES,
         return_class_weights=False,
+        use_synthetic_ir=use_ir,
+        ir_noise_std=0.05,
+        ir_seed=20000,
     )
 
     if train_data is None:
@@ -589,16 +602,39 @@ def main(args):
         weight_decay=5e-4,
     )
 
-    scheduler = None
+    # Resolve scheduler type (--use_onecycle overrides --scheduler for backward compat)
+    sched_type = args.scheduler
     if args.use_onecycle:
+        sched_type = "onecycle"
+
+    scheduler = None
+    per_batch_scheduler = False  # OneCycleLR steps per batch, others per epoch
+
+    if sched_type == "onecycle":
         max_lr = args.learning_rate * 2.0
         total_steps = args.epochs * len(train_loader)
         scheduler = torch.optim.lr_scheduler.OneCycleLR(
             optimizer, max_lr=max_lr, total_steps=total_steps,
             pct_start=0.1, anneal_strategy="cos",
         )
+        per_batch_scheduler = True
         if is_main:
             logger.info("Scheduler: OneCycleLR (max_lr=%.4f, total_steps=%d)", max_lr, total_steps)
+    elif sched_type == "cosine":
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(
+            optimizer, T_0=50, T_mult=2, eta_min=1e-6,
+        )
+        if is_main:
+            logger.info("Scheduler: CosineAnnealingWarmRestarts (T_0=50, T_mult=2)")
+    elif sched_type == "plateau":
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+            optimizer, mode="max", factor=0.5, patience=20, min_lr=1e-6,
+        )
+        if is_main:
+            logger.info("Scheduler: ReduceLROnPlateau (factor=0.5, patience=20)")
+    else:
+        if is_main:
+            logger.info("Scheduler: None")
 
     # --- Resume ---
     start_epoch = 0
@@ -633,18 +669,16 @@ def main(args):
 
     try:
         for epoch in range(start_epoch, args.epochs):
-            if train_sampler is not None:
+            if train_sampler is not None and hasattr(train_sampler, 'set_epoch'):
                 train_sampler.set_epoch(epoch)
 
             t0 = time.time()
             train_metrics = train_one_epoch(
                 model, train_loader, criterion, optimizer,
-                scheduler if args.use_onecycle else None,
+                scheduler if per_batch_scheduler else None,
                 device, epoch, use_amp=args.use_amp,
             )
             dt_train = time.time() - t0
-
-            # Non-OneCycle scheduler step would go here if needed
 
             # Validation
             val_metrics = {}
@@ -685,6 +719,13 @@ def main(args):
                         train_metrics["size_loss"],
                         val_loss, macro_f1, size_acc, current_lr,
                     )
+
+            # Per-epoch scheduler step
+            if scheduler is not None and not per_batch_scheduler:
+                if sched_type == "plateau":
+                    scheduler.step(macro_f1)
+                else:
+                    scheduler.step()
 
             # Early stopping on macro_f1 (location)
             improved = macro_f1 > best_macro_f1
@@ -833,8 +874,8 @@ def parse_args():
     parser.add_argument("--patience", type=int, default=100)
 
     # Multi-task
-    parser.add_argument("--size_weight", type=float, default=1.0,
-                        help="Weight for size classification loss")
+    parser.add_argument("--size_weight", type=float, default=0.1,
+                        help="Weight for size classification loss (default: 0.1, location_loss ~ 0.02, size_loss ~ 0.7)")
     parser.add_argument("--num_size_classes", type=int, default=4,
                         help="Number of size classes (3=small/medium/large, 4=+micro)")
     parser.add_argument("--input_channels", type=int, default=4,
@@ -857,7 +898,11 @@ def parse_args():
     parser.add_argument("--no_weighted_sampler", dest="use_weighted_sampler", action="store_false")
 
     # Scheduler
-    parser.add_argument("--use_onecycle", action="store_true", default=True)
+    parser.add_argument("--scheduler", type=str, default="plateau",
+                        choices=["onecycle", "cosine", "plateau", "none"],
+                        help="LR scheduler type (default: plateau)")
+    parser.add_argument("--use_onecycle", action="store_true", default=False,
+                        help="(deprecated) Use --scheduler onecycle instead")
     parser.add_argument("--no_onecycle", dest="use_onecycle", action="store_false")
 
     # AMP

@@ -1,31 +1,23 @@
-# Benchmark configuration for CFRP GNN defect localization
-# Usage: python tools/benchmark.py --config tools/benchmark_config.yaml
+# Benchmark configuration for 1x1 micro-defect OOD evaluation
+# Usage: python tools/benchmark.py --config tools/benchmark_config_1x1_ood.yaml
+#
+# Property OOD split:
+#   train: H2_W2 (small, class 0) + H4_W4 (medium, class 1) + H8_W8 (large, class 2)
+#   test:  H1_W1 (micro, class 3) -- unseen size class
 
 benchmark:
-  name: "cfrp_gnn_benchmark_v1"
-  description: "CFRP defect localization GNN reproducible benchmark"
+  name: "cfrp_gnn_1x1_micro_defect_ood"
+  description: "Property OOD benchmark: train on H2_W2/H4_W4/H8_W8, test on H1_W1 micro-defect (unseen size class)"
 
   # Fixed seeds for reproducibility (each split_type is run with each seed)
   seeds: [42, 84, 126]
 
-  # Split strategies to evaluate
+  # Split strategy: property_ood with micro-defect as OOD test
   split_types:
-    - type: "iid"
-    - type: "defect_size"
+    - type: "property_ood"
       params:
-        size_threshold: 5
-    - type: "layer"
-      params:
-        train_layers: [1, 2, 3, 4, 5]
-    - type: "property_ood"  # M1-1: 物性OOD（size_class 代理）
-      params:
-        train_size_classes: [0, 1]
-        test_size_classes: [2]
-    - type: "property_ood"  # M1-1: 1x1 micro-defect OOD
-      name: "property_ood_1x1"
-      params:
-        train_size_classes: [0, 1, 2]  # small + medium + large
-        test_size_classes: [3]          # micro (H1_W1)
+        train_size_classes: [0, 1, 2]  # small(H2_W2), medium(H4_W4), large(H8_W8)
+        test_size_classes: [3]          # micro(H1_W1)
 
   # Model configurations to benchmark
   models:
@@ -59,7 +51,6 @@ benchmark:
     nproc_per_node: 4
 
   # Data paths (relative to project root)
-  # Use all_sub_hole_defect_zscore_noise to match main script (noise+defect combined)
   data:
     data_dir: "GNN_hole_2026/all_sub_hole_defect_zscore_noise"
     label_dir: "GNN_hole_2026/all_19class_label"
@@ -68,4 +59,4 @@ benchmark:
   # Output
   output:
     base_dir: "runs"
-    prefix: "bench"
+    prefix: "bench_1x1_ood"
