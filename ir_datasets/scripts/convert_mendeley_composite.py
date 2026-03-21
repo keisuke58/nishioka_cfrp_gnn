@@ -27,25 +27,48 @@ except ImportError:
 
 
 def find_sequence_files(raw_dir: str) -> list:
-    """Find thermal sequence files (.mat, .npy, .raw, .seq)."""
-    patterns = ["*.mat", "*.npy", "*.raw", "*.seq", "*.csv", "*.dat"]
+    """Find thermal sequence files and CSV frame directories.
+
+    For this dataset, each sequence is a directory of ~2000 CSV files
+    (one CSV per thermal frame, 512x512 temperature values).
+    """
+    patterns = ["*.mat", "*.npy"]
     files = []
     for p in patterns:
         files.extend(glob.glob(os.path.join(raw_dir, "**", p), recursive=True))
-    # Also look for directories containing frame-by-frame images
+    # Look for directories containing frame-by-frame data
     frame_dirs = []
     for d in glob.glob(os.path.join(raw_dir, "**"), recursive=True):
         if os.path.isdir(d):
-            frames = glob.glob(os.path.join(d, "*.png")) + \
-                     glob.glob(os.path.join(d, "*.tif")) + \
-                     glob.glob(os.path.join(d, "*.tiff"))
-            if len(frames) > 50:  # Likely a frame sequence
+            # Check for CSV frame sequences
+            csv_frames = sorted(glob.glob(os.path.join(d, "*.csv")))
+            if len(csv_frames) > 50:
+                frame_dirs.append(d)
+                continue
+            # Also check image frames
+            img_frames = glob.glob(os.path.join(d, "*.png")) + \
+                         glob.glob(os.path.join(d, "*.tif")) + \
+                         glob.glob(os.path.join(d, "*.tiff"))
+            if len(img_frames) > 50:
                 frame_dirs.append(d)
     return sorted(files), sorted(frame_dirs)
 
 
 def load_sequence_from_frames(frame_dir: str, max_frames: int = 2000) -> np.ndarray:
-    """Load a temporal sequence from individual frame images."""
+    """Load a temporal sequence from individual frame files (CSV or images)."""
+    # Check for CSV frames first (Mendeley composite format)
+    csv_paths = sorted(glob.glob(os.path.join(frame_dir, "*.csv")))
+    if csv_paths:
+        csv_paths = csv_paths[:max_frames]
+        first = np.loadtxt(csv_paths[0], delimiter=",", dtype=np.float32)
+        H, W = first.shape
+        sequence = np.zeros((len(csv_paths), H, W), dtype=np.float32)
+        sequence[0] = first
+        for i, fp in enumerate(csv_paths[1:], 1):
+            sequence[i] = np.loadtxt(fp, delimiter=",", dtype=np.float32)
+        return sequence
+
+    # Fall back to image frames
     try:
         from PIL import Image
     except ImportError:
