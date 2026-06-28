@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GATConv
+from torch_geometric.nn import GATConv, GATv2Conv
 from torch_geometric.data import Data
 from torch_geometric.loader import DataLoader
 from sklearn.model_selection import train_test_split, KFold
@@ -435,34 +435,38 @@ def edge_dropout(edge_index, drop_prob=0.0002):
 
 
 class GATModel(torch.nn.Module):
-    def __init__(self, hidden_channels=8, num_classes=19, dropout=0.1, edge_drop_prob=0.01):
+    def __init__(self, hidden_channels=8, num_classes=19, dropout=0.1, edge_drop_prob=0.01,
+                 in_channels=4, conv_type='gat'):
         """
         Args:
             hidden_channels: 隠れ層のチャネル数
             num_classes: クラス数
             dropout: Dropout確率（デフォルト: 0.1, 推奨範囲: 0.0~0.3）
             edge_drop_prob: Edge dropout確率（デフォルト: 0.01, 推奨範囲: 0.0~0.05）
+            in_channels: 入力ノード特徴量の次元（デフォルト: 4 = x,y,z,DSPSS）
+            conv_type: 'gat'（GATConv, 既存）または 'gatv2'（GATv2Conv, dynamic attention）
         """
         super(GATModel, self).__init__()
         self.edge_drop_prob = edge_drop_prob
-        
-        self.conv1 = GATConv(4, hidden_channels, heads=4, concat=True)
+        Conv = GATv2Conv if str(conv_type).lower() == 'gatv2' else GATConv
+
+        self.conv1 = Conv(in_channels, hidden_channels, heads=4, concat=True)
         self.batch_norm1 = nn.BatchNorm1d(hidden_channels * 4)
-        
-        self.conv2 = GATConv(hidden_channels * 4, hidden_channels * 2, heads=4, concat=True)
+
+        self.conv2 = Conv(hidden_channels * 4, hidden_channels * 2, heads=4, concat=True)
         self.batch_norm2 = nn.BatchNorm1d(hidden_channels * 8)
-        
-        self.conv3 = GATConv(hidden_channels * 8, hidden_channels, heads=4, concat=True)
+
+        self.conv3 = Conv(hidden_channels * 8, hidden_channels, heads=4, concat=True)
         self.batch_norm3 = nn.BatchNorm1d(hidden_channels * 4)
-        
-        # self.conv4 = GATConv(hidden_channels * 4, hidden_channels, heads=4, concat=True)
+
+        # self.conv4 = Conv(hidden_channels * 4, hidden_channels, heads=4, concat=True)
         # self.batch_norm4 = nn.BatchNorm1d(hidden_channels * 4)
-        
+
         self.fc = nn.Linear(hidden_channels * 4, num_classes)
         self.dropout = nn.Dropout(p=dropout)
 
         # プロジェクションレイヤー
-        self.proj1 = nn.Linear(4, hidden_channels * 4)
+        self.proj1 = nn.Linear(in_channels, hidden_channels * 4)
         self.proj2 = nn.Linear(hidden_channels * 4, hidden_channels * 8)
         self.proj3 = nn.Linear(hidden_channels * 8, hidden_channels * 4)
 
@@ -1648,8 +1652,44 @@ class DistributedClassFrequencySampler(DistributedSampler):
 # ----------------------------
 # データ準備関数
 # ----------------------------
-def prepare_data(pairs, normalized_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=None):
+def _build_geo_features(x_coords, y_coords, z_coords):
+    """座標から派生する追加ノード特徴量（メッシュ接続不要・安全）。
+    r = sqrt(x^2+y^2)（軸からの距離 → 穴/縁の近接を間接表現）, theta = atan2(y, x)。
+    返り値は (N, 2) の np.float32。z-score済み座標前提だが正規化は学習側のBNが吸収。"""
+    x = np.asarray(x_coords, dtype=np.float32)
+    y = np.asarray(y_coords, dtype=np.float32)
+    r = np.sqrt(x * x + y * y)
+    theta = np.arctan2(y, x)
+    return np.vstack((r, theta)).T  # (N, 2)
+
+
+def augment_with_mirror(data_list, mirror_perm, dspss_col=3):
+    """左右反転データ拡張（trainのみ）。
+    スロット固定メッシュ前提: スロットkの物理位置の鏡像がスロットmirror_perm[k]。
+    DSPSS列とラベルyだけをmirror_permで並べ替える（座標/幾何特徴列はスロット固有なので不変）。
+    元データは保持し、反転コピーを末尾に追加して返す（データ量2倍）。"""
+    perm = torch.as_tensor(mirror_perm, dtype=torch.long)
+    augmented = list(data_list)
+    for data in data_list:
+        N = data.x.size(0)
+        if perm.numel() != N or int(perm.max()) >= N:
+            # 形状不一致なら安全側で拡張をスキップ
+            continue
+        new_x = data.x.clone()
+        new_x[:, dspss_col] = data.x[perm, dspss_col]
+        new_y = data.y[perm].clone()
+        new_data = Data(x=new_x, edge_index=data.edge_index, y=new_y)
+        new_data.filename = getattr(data, 'filename', '') + '_mirror'
+        if hasattr(data, 'minority_ratio'):
+            new_data.minority_ratio = data.minority_ratio
+        augmented.append(new_data)
+    return augmented
+
+
+def prepare_data(pairs, normalized_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=None, extra_geo_features=False):
     data_list = []
+    # 追加の幾何特徴量（全ノード共通・一度だけ計算）
+    geo_extra = _build_geo_features(x_coords, y_coords, z_coords)[:13942] if extra_geo_features else None
     labels = []
     pair_counter = 0  # 確認用カウンタ
 
@@ -1676,8 +1716,14 @@ def prepare_data(pairs, normalized_data_folder, label_data_folder, x_coords, y_c
             continue
 
         # ノード特徴量を作成
+        # 列順序: [x, y, z, DSPSS, (r, theta)]  ← DSPSSは常に列index=3（ノイズ注入で参照）
         try:
-            node_features = np.vstack((x_coords, y_coords, z_coords, values)).T
+            if geo_extra is not None:
+                node_features = np.column_stack(
+                    (x_coords[:13942], y_coords[:13942], z_coords[:13942], values, geo_extra)
+                )
+            else:
+                node_features = np.vstack((x_coords, y_coords, z_coords, values)).T
             x = torch.tensor(node_features, dtype=torch.float)
             
             # ラベルの形状を確認して適切に処理
@@ -2041,12 +2087,21 @@ def main(args):
     # Dropout/EdgeDropのパラメータを取得（デフォルト値を推奨値に変更）
     dropout = getattr(args, 'dropout', 0.1)  # デフォルト: 0.1（推奨範囲: 0.0~0.3）
     edge_drop_prob = getattr(args, 'edge_drop_prob', 0.01)  # デフォルト: 0.01（推奨範囲: 0.0~0.05）
+    # 入力次元: ベース4(x,y,z,DSPSS) + 幾何特徴2(r,theta) を任意で追加
+    extra_geo_features = getattr(args, 'extra_geo_features', False)
+    in_channels = 4 + (2 if extra_geo_features else 0)
+    conv_type = getattr(args, 'conv_type', 'gat')
     model = GATModel(
-        hidden_channels=args.hidden_channels, 
+        hidden_channels=args.hidden_channels,
         num_classes=19,
         dropout=dropout,
-        edge_drop_prob=edge_drop_prob
+        edge_drop_prob=edge_drop_prob,
+        in_channels=in_channels,
+        conv_type=conv_type,
     ).to(device)
+    if rank == 0:
+        print(f"Model: GATModel(conv_type={conv_type}, in_channels={in_channels}, "
+              f"extra_geo_features={extra_geo_features})")
     
     # Create the DDP model after initializing the process group
     # device_idsはlocal_rankを使用（利用可能なGPU数に合わせる）
@@ -2060,13 +2115,30 @@ def main(args):
     class_weight_multiplier = getattr(args, 'class_weight_multiplier', default_class_weight_multiplier)
     if rank == 0:
         print(f"\nPreparing train dataset ({len(train_pairs)} pairs)...")
-    train_dataset, class_weights = prepare_data(train_pairs, train_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier)
+    train_dataset, class_weights = prepare_data(train_pairs, train_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier, extra_geo_features=extra_geo_features)
     if rank == 0:
         print(f"Preparing val dataset ({len(val_pairs)} pairs)...")
-    val_dataset, _ = prepare_data(val_pairs, val_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier)
+    val_dataset, _ = prepare_data(val_pairs, val_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier, extra_geo_features=extra_geo_features)
     if rank == 0:
         print(f"Preparing test dataset ({len(test_pairs)} pairs)...")
-    test_dataset, _ = prepare_data(test_pairs, test_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier)
+    test_dataset, _ = prepare_data(test_pairs, test_data_folder, label_data_folder, x_coords, y_coords, z_coords, edge_index, class_weight_multiplier=class_weight_multiplier, extra_geo_features=extra_geo_features)
+
+    # --- #1 ミラー（左右反転）データ拡張: train のみ ---
+    # 物理的な左右対称性を利用。スロット固定メッシュなので、DSPSS列とラベルだけを
+    # 反転permで並べ替える（座標/幾何特徴列はスロット固有なので不変）。
+    if getattr(args, 'mirror_augment', False):
+        perm_path = getattr(args, 'mirror_perm_path', '') or ''
+        if os.path.exists(perm_path):
+            mirror_perm = np.load(perm_path).astype(np.int64)[:13942]
+            n_before = len(train_dataset)
+            train_dataset = augment_with_mirror(train_dataset, mirror_perm, dspss_col=3)
+            if rank == 0:
+                print(f"[mirror_augment] train {n_before} -> {len(train_dataset)} "
+                      f"(perm={perm_path})")
+        else:
+            if rank == 0:
+                print(f"[mirror_augment] SKIPPED: perm file not found: '{perm_path}'. "
+                      f"Generate it with make_mirror_perm.py first.")
 
     if train_dataset is None or class_weights is None:
         if rank == 0:
@@ -2225,9 +2297,11 @@ def main(args):
                 print(f"Using FocalLossLogSoftmax (gamma={gamma}) - logits input with log_softmax for numerical stability")
         else:
             # For logits, use standard CrossEntropyLoss (equivalent to log_softmax + nll_loss)
-            base_loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights.to(device)).to(device)
+            # #5 label smoothing: 隣接層への過信を緩和（論文の弱点「隣接層誤分類」対策）。CE経路のみ。
+            label_smoothing = getattr(args, 'label_smoothing', 0.0)
+            base_loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights.to(device), label_smoothing=label_smoothing).to(device)
             if rank == 0:
-                print(f"Using CrossEntropyLoss (logits input) - standard loss for logits")
+                print(f"Using CrossEntropyLoss (logits input, label_smoothing={label_smoothing}) - standard loss for logits")
     
     # 層ごとのラベル制約を追加（デフォルトで有効）
     if use_layer_constraint:
@@ -2294,10 +2368,21 @@ def main(args):
             val_sampler.set_epoch(epoch)
         total_loss = 0
 
+        # #2 オンラインノイズ注入の強度（curriculum指定なら 0→std へ線形に増加）
+        _train_noise_std = getattr(args, 'train_noise_std', 0.0)
+        if _train_noise_std > 0 and getattr(args, 'train_noise_curriculum', False):
+            current_noise_std = _train_noise_std * (epoch / max(1, args.epochs))
+        else:
+            current_noise_std = _train_noise_std
+
         for batch in train_loader:
             batch = batch.to(device)
             optimizer.zero_grad()
-            
+
+            # #2 学習時のみ DSPSS列(index=3)にGaussianノイズを加える（実測ノイズ模擬・汎化向上）
+            if current_noise_std > 0:
+                batch.x[:, 3] = batch.x[:, 3] + torch.randn_like(batch.x[:, 3]) * current_noise_std
+
             # Mixed precision forward pass
             if use_amp:
                 with torch.cuda.amp.autocast():
@@ -3170,7 +3255,28 @@ if __name__ == '__main__':
     # Layer constraint: デフォルトで有効（--no_layer_constraintで無効化可能）
     parser.add_argument('--no_layer_constraint', dest='use_layer_constraint', action='store_false', default=True, help='Disable layer-aware label constraints (default: enabled, Layer 1: 0,1~9 only, Layer 2: 0,10~18 only)')
     parser.add_argument('--layer_constraint_weight', type=float, default=1.0, help='Weight for layer constraint penalty (default: 1.0, higher=stronger constraint)')
-    
+
+    # ===== Accuracy-improvement options (all default-OFF; baseline unchanged) =====
+    # #4 GATv2 / 入力次元
+    parser.add_argument('--conv_type', type=str, default='gat', choices=['gat', 'gatv2'],
+                        help='Graph conv type: gat (GATConv, default/baseline) or gatv2 (GATv2Conv, dynamic attention).')
+    # #3 幾何特徴量（座標由来 r,theta。NDT制約下でOK = 既知形状のみ使用）
+    parser.add_argument('--extra_geo_features', action='store_true', default=False,
+                        help='Append coordinate-derived geometric features (r=sqrt(x^2+y^2), theta) to node features. in_channels 4->6.')
+    # #2 学習中オンラインノイズ注入（実測ノイズ模擬・ノイズ頑健化+汎化）
+    parser.add_argument('--train_noise_std', type=float, default=0.0,
+                        help='Std of Gaussian noise added ONLINE to the DSPSS feature column during training (z-scored units). 0=off. Try 0.05~0.2.')
+    parser.add_argument('--train_noise_curriculum', action='store_true', default=False,
+                        help='Ramp injected noise std linearly from 0 to --train_noise_std over epochs (avoids early collapse).')
+    # #5 ラベル平滑化（CE経路のみ。隣接層誤分類対策）
+    parser.add_argument('--label_smoothing', type=float, default=0.0,
+                        help='Label smoothing for CrossEntropyLoss path (effective only with --no_logit_adjust). Try 0.05~0.1.')
+    # #1 左右ミラー拡張（train のみ。左右領域非対称対策）
+    parser.add_argument('--mirror_augment', action='store_true', default=False,
+                        help='Left-right mirror augmentation for TRAIN set (doubles data). Requires --mirror_perm_path.')
+    parser.add_argument('--mirror_perm_path', type=str, default='',
+                        help='Path to mirror permutation .npy (length=13942). Generate with make_mirror_perm.py.')
+
     # Step0: Macro definition (support=0 handling)
     parser.add_argument(
         '--macro_mode',
